@@ -2426,6 +2426,12 @@
             </intent-filter>
         </receiver>
 
+        <service android:label="LtoService"
+            android:enabled="true"
+            android:exported="false"
+            android:name=".cyanogenmod.LtoService">
+        </service>
+
         <!-- Carbon Application Methods -->
         <activity android:name="com.carbon.fibers.CarbonSettingsActivity" />
         <activity android:name=".carbon.CarbonAboutMe" />
