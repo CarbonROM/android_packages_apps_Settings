@@ -35,4 +35,10 @@
     <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
     <string name="double_tap_to_sleep_anywhere_title">Double-tap lock screen to sleep</string>
     <string name="double_tap_to_sleep_anywhere_summary">Double tap lock screen to put the device to sleep</string>
+
+    <!-- ADB debugging notifications -->
+    <string name="enable_adb_custom">Android debugging</string>
+    <string name="enable_adb_summary_custom">Enable the Android Debug Bridge (adb) interface</string>
+    <string name="adb_notify">ADB notification</string>
+    <string name="adb_notify_summary">Display a notification when android debugging is enabled</string>
 </resources>
