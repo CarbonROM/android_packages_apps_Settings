@@ -132,7 +132,7 @@ public class DeviceInfoSettings extends DashboardFragment implements Indexable {
         controllers.add(new FccEquipmentIdPreferenceController(context));
         controllers.add(new SELinuxStatusPreferenceController(context));
         controllers.add(new SafetyInfoPreferenceController(context));
-        controllers.add(new CarbonInfoPreferenceController(context));
+        controllers.add(new CarbonInfoPreferenceController(context, lifecycle));
         return controllers;
     }
 
