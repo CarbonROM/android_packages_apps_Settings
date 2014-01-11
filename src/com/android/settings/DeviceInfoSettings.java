@@ -74,6 +74,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
     long[] mHits = new long[3];
+    long[] mTaps = new long[3];
     int mDevHitCountdown;
     Toast mDevHitToast;
 
@@ -197,6 +198,19 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 Intent intent = new Intent(Intent.ACTION_MAIN);
                 intent.setClassName("android",
                         com.android.internal.app.PlatLogoActivity.class.getName());
+                try {
+                    startActivity(intent);
+                } catch (Exception e) {
+                    Log.e(LOG_TAG, "Unable to start activity " + intent.toString());
+                }
+            }
+        } else if (preference.getKey().equals(KEY_CARBON_VERSION)) {
+            System.arraycopy(mTaps, 1, mTaps, 0, mTaps.length-1);
+            mTaps[mTaps.length-1] = SystemClock.uptimeMillis();
+            if (mTaps[0] >= (SystemClock.uptimeMillis()-500)) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setClassName("android",
+                        com.android.internal.app.CarbonLogoActivity.class.getName());
                 try {
                     startActivity(intent);
                 } catch (Exception e) {
