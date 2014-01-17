@@ -75,4 +75,7 @@
    <string name="filter_substratum_icons">Substratum icon overlays</string>
    <string name="menu_show_substratum_icons">Show icon overlays</string>
    <string name="menu_hide_substratum_icons">Hide icon overlays</string>
+
+   <!-- Root in Settings -->
+   <string name="supersu_title">SuperSU</string>
 </resources>
