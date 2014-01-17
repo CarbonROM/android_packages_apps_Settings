@@ -27,5 +27,12 @@
     <!-- Encryption and credential -->
     <string name="custom_encryption_and_credential_settings_summary_on">Device is encrypted</string>
     <string name="custom_encryption_and_credential_settings_summary_off">Device is decrypted</string>
+
+    <!-- Root Management -->
+    <string name="rootmanagement_title">Root management</string>
+    <string name="rootmanagement_dashboard_summary">Manage root access</string>
+
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <string name="supersu_title">SuperSU</string>
 </resources>
 
