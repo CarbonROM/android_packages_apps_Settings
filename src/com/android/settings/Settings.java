@@ -162,4 +162,5 @@ public class Settings extends SettingsActivity {
 
     // CarbonROM Additions
     public static class CarbonFibersActivity extends SettingsActivity { /* empty */ }
+    public static class SuperSUActivity extends SettingsActivity { /* empty */ }
 }
