@@ -118,7 +118,7 @@ public class CarbonInterface extends SettingsPreferenceFragment {
         titleString = new String[] {
                     getString(R.string.interface_settings_title),
                     getString(R.string.gesture_anywhere_title),
-                    getString(R.string.disp_anim_settings_title)
+                    getString(R.string.disp_anim_settings_title),
                     getString(R.string.app_circle_bar_title)};
         return titleString;
     }
