@@ -55,6 +55,10 @@
                 android:title="@string/notification_volume_option_title"
                 settings:advanced="true"/>
 
+        <PreferenceScreen
+                android:key="volume_steps"
+                android:fragment="com.android.settings.carbon.VolumeSteps"
+                android:title="@string/volume_steps_title" />
     </PreferenceCategory>
 
     <PreferenceCategory
