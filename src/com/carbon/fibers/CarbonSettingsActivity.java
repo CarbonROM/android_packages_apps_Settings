@@ -270,6 +270,7 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         StatusBarNotifSystemIconsSettings.class.getName(),
         StatusBarSettings.class.getName(),
         StatusBarSignalSettings.class.getName(),
+        SystemappRemover.class.getName(),
         WakeLockBlocker.class.getName()
     };
 
