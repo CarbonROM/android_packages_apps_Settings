@@ -2286,6 +2286,9 @@
 
         <activity android:name=".cyanogenmod.PerformanceSettings" />
 
+        <!-- SystemApp Remover -->
+        <activity android:name="com.carbon.fibers.fragments.SystemappRemover" />
+
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
                 android:exported="false"
