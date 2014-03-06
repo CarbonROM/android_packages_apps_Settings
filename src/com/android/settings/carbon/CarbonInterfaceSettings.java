@@ -36,9 +36,10 @@ import com.android.settings.util.Helpers;
 
 public class CarbonInterfaceSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "CarbonInterfaceSettings";
 
+    private static final String TAG = "CarbonInterfaceSettings";
     private static final String KEY_LOCKCLOCK = "lock_clock";
+    private static final String KEY_TOAST_ANIMATION = "toast_animation";
 
     // Package name of the cLock app
     public static final String LOCKCLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
@@ -46,6 +47,8 @@ public class CarbonInterfaceSettings extends SettingsPreferenceFragment implemen
     private Context mContext;
 
     private Preference mLockClock;
+    private ListPreference mToastAnimation;
+    private Context mContext;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -62,6 +65,13 @@ public class CarbonInterfaceSettings extends SettingsPreferenceFragment implemen
         if (!Helpers.isPackageInstalled(LOCKCLOCK_PACKAGE_NAME, pm)) {
             prefSet.removePreference(mLockClock);
         }
+        // Toast Animations
+        mToastAnimation = (ListPreference) findPreference(KEY_TOAST_ANIMATION);
+        mToastAnimation.setSummary(mToastAnimation.getEntry());
+        int CurrentToastAnimation = Settings.System.getInt(getContentResolver(), Settings.System.TOAST_ANIMATION, 1);
+        mToastAnimation.setValueIndex(CurrentToastAnimation); //set to index of default value
+        mToastAnimation.setSummary(mToastAnimation.getEntries()[CurrentToastAnimation]);
+        mToastAnimation.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -70,6 +80,13 @@ public class CarbonInterfaceSettings extends SettingsPreferenceFragment implemen
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == mToastAnimation) {
+            int index = mToastAnimation.findIndexOfValue((String) objValue);
+            Settings.System.putString(getContentResolver(), Settings.System.TOAST_ANIMATION, (String) objValue);
+            mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
+            Toast.makeText(mContext, "Toast Test", Toast.LENGTH_SHORT).show();
+            return true;
+        }
         return false;
     }
 }
