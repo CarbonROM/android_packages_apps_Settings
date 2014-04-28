@@ -97,6 +97,7 @@ public class CarbonInterface extends SettingsPreferenceFragment {
             frags[2] = new DisplayAnimationsSettings();
             frags[3] = new AnimationControls();
             frags[4] = new AppCircleBar();
+            frags[5] = new AppSidebar();
         }
 
         @Override
@@ -122,7 +123,8 @@ public class CarbonInterface extends SettingsPreferenceFragment {
                     getString(R.string.gesture_anywhere_title),
                     getString(R.string.disp_anim_settings_title),
                     getString(R.string.aokp_animation_title),
-                    getString(R.string.app_circle_bar_title)};
+                    getString(R.string.app_circle_bar_title),
+                    getString(R.string.app_sidebar_title)};
         return titleString;
     }
 }
