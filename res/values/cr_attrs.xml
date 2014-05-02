@@ -20,4 +20,12 @@
         <attr name="units" format="string|reference" />
         <attr name="defaultText" format="string|reference" />
     </declare-styleable>
+
+    <declare-styleable name="IntervalSeekBar">
+        <attr name="minI" format="float" />
+        <attr name="maxI" format="float" />
+        <attr name="defaultValueAni" format="float" />
+        <attr name="digits" format="integer" />
+    </declare-styleable>
+
 </resources>
