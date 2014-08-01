@@ -537,6 +537,10 @@
     <string name="recents_clear_all_dismiss_all_title">Clear all tasks</string>
     <string name="recents_clear_all_dismiss_all_summary">Choose whether to dismiss all tasks or ignore the foreground task</string>
 
+    <!-- Performance Misc -->
+    <string name="misc_title">CarbonROM misc</string>
+    <string name="pref_force_fast_charge_title">Force fast charge</string>
+
     <!-- QuickSettings haptic feedback -->
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
     <string name="quick_settings_vibrate_summary">Vibrate when touching tiles</string>
