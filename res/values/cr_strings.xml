@@ -590,7 +590,7 @@
     <string name="qs_notifications_tile">Notifications</string>
     <string name="qs_wifi_detail_title">Detailed Wi\u2011Fi view</string>
     <string name="qs_wifi_detail_summary">Enable detailed view for Wi\u2011Fi in Quick Settings</string>
-    <string name="qs_tile_headsup">Heads Up</string> 
+    <string name="qs_tile_headsup">Heads Up</string>
 
     <!-- QuickSettings collapse panel -->
     <string name="quick_settings_collapse_title">Auto close panel</string>
@@ -783,5 +783,9 @@
     <string name="clock_font_normal">Normal</string>
     <string name="clock_use_second">Use second clock</string>
     <string name="clock_use_second_summary">Show second in clock</string>
+
+    <!-- Instant reboot -->
+    <string name="advanced_reboot_oneclick">One click reboot</string>
+    <string name="advanced_reboot_oneclick_summary">Instantly trigger reboot action</string>
 
 </resources>
