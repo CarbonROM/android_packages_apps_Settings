@@ -18,4 +18,8 @@
 
     <!-- CarbonROM version -->
     <string name="carbon_mod_version">CarbonROM version</string>
+
+    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
+    <string name="supersu_title">SuperSU</string>
+
 </resources>
