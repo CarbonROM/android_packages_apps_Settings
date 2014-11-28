@@ -1300,11 +1300,20 @@ public class SettingsActivity extends Activity
                         removeTile = true;
                     }
                 } else if (id == R.id.carbonfiber_settings) {
-                    boolean supported = false;
                     try {
-                            pm.getPackageInfo("org.carbonrom.carbonfibers", PackageManager.GET_ACTIVITIES);
+                            getPackageManager().getPackageInfo("org.carbonrom.carbonfibers", PackageManager.GET_ACTIVITIES);
                     } catch (PackageManager.NameNotFoundException e) {
                             removeTile = true;
+                    }
+                } else if (id == R.id.supersu_settings) {
+                    // Embedding into Settings is supported from SuperSU v1.85 and up
+                    boolean supported = false;
+                    try {
+                        supported = (getPackageManager().getPackageInfo("eu.chainfire.supersu", 0).versionCode >= 185);
+                    } catch (PackageManager.NameNotFoundException e) {
+                    }
+                    if (!supported) {
+                        removeTile = true;
                     }
                 }
 
