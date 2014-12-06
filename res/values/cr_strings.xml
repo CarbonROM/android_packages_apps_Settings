@@ -39,6 +39,16 @@
     <string name="status_core_dev">Core Developer</string>
     <string name="status_dev_and_co_founder">Developer / Co-Founder</string>
 
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+
     <!-- Share to clipboard -->
     <string name="clipboard_notification">Copied to clipboard</string>
 
@@ -139,7 +149,8 @@
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Network traffic</string>
-    <string name="network_traffic_vector_title">Network traffic - vector style</string>
+    <string name="show_network_traffic_state">Status bar traffic monitor</string>
+    <string name="network_traffic_vector_title">Network traffic VS</string>
     <string name="network_traffic_vector_summary">Enable various network traffic options in statusbar</string>
     <string name="show_network_traffic_disable">Disabled</string>
     <string name="show_network_traffic_meter">Meter</string>
@@ -163,6 +174,9 @@
     <string name="network_traffic_autohide">Auto hide</string>
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
+    <string name="network_traffic_color_style">Color style</string>
+    <string name="network_traffic_color_reset">Reset color</string>
+    <string name="network_traffic_color_reset_message">Reset network traffic color to default?</string>
 
     <!-- LockClocK -->
     <string name="lock_clock_title">cLock settings</string>
