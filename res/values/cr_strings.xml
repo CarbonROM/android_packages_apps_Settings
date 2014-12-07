@@ -178,8 +178,20 @@
     <string name="network_traffic_color_reset">Reset color</string>
     <string name="network_traffic_color_reset_message">Reset network traffic color to default?</string>
 
+    <!-- Navigation Bar Height -->
+    <string name="navigation_bar_title">Navigation Bar</string>
+    <string name="navigation_bar_height">Navigation bar height</string>
+    <string name="navigation_bar_height_48">48dp (default)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_20">20dp</string>
+    <string name="navigation_bar_height_0">0dp (hide)</string>
+
     <!-- LockClocK -->
     <string name="lock_clock_title">cLock settings</string>
     <string name="lock_clock_summary">View or change how the \'cLock\' widget will be displayed.</string>
-
 </resources>

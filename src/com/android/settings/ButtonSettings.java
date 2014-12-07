@@ -88,6 +88,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_VOLUME = "volume_keys";
     private static final String CATEGORY_BACKLIGHT = "key_backlight";
     private static final String CATEGORY_NAVBAR = "navigation_bar_category";
+    private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
 
     // Available custom actions to perform on a key press.
     // Must match values for KEY_HOME_LONG_PRESS_ACTION in:
@@ -129,6 +130,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private ListPreference mNavigationRecentsLongPressAction;
     private SwitchPreference mPowerEndCall;
     private SwitchPreference mHomeAnswerCall;
+    private ListPreference mNavigationBarHeight;
 
     private PreferenceCategory mNavigationPreferencesCat;
 
@@ -139,6 +141,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.button_settings);
+        ContentResolver resolver = getActivity().getContentResolver();
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -210,6 +213,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mVolumeWakeScreen.setDisableDependentsState(true);
             }
         }
+
+        // Navbar height
+        mNavigationBarHeight = (ListPreference) findPreference(KEY_NAVIGATION_BAR_HEIGHT);
+        mNavigationBarHeight.setOnPreferenceChangeListener(this);
+        int statusNavigationBarHeight = Settings.System.getInt(resolver,
+                Settings.System.NAVIGATION_BAR_HEIGHT, 48);
+        mNavigationBarHeight.setValue(String.valueOf(statusNavigationBarHeight));
+        mNavigationBarHeight.setSummary(mNavigationBarHeight.getEntry());
     }
 
     private static Map<String, String> getPreferencesToRemove(ButtonSettings settings,
@@ -537,6 +548,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mHomeLongPressAction) {
             handleActionListChange(mHomeLongPressAction, newValue,
                     Settings.System.KEY_HOME_LONG_PRESS_ACTION);
@@ -587,6 +599,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             Settings.Secure.putString(getContentResolver(),
                     Settings.Secure.RECENTS_LONG_PRESS_ACTIVITY, putString);
             return true;
+        } else if (preference == mNavigationBarHeight) {
+            int statusNavigationBarHeight = Integer.valueOf((String) newValue);
+            int index = mNavigationBarHeight.findIndexOfValue((String) newValue);
+            Settings.System.putInt(resolver, Settings.System.NAVIGATION_BAR_HEIGHT,
+                    statusNavigationBarHeight);
+            mNavigationBarHeight.setSummary(mNavigationBarHeight.getEntries()[index]);
         }
         return false;
     }
