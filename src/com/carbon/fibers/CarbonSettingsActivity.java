@@ -45,6 +45,7 @@ import com.android.settings.cyanogenmod.qs.*;
 import com.android.settings.lockscreen.*;
 import com.android.settings.notification.*;
 import com.android.settings.slim.*;
+import com.android.settings.slim.dslv.*;
 import com.carbon.fibers.fragments.*;
 
 public class CarbonSettingsActivity extends PreferenceActivity implements ButtonBarHandler {
@@ -199,6 +200,7 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
     }
 
     private static final String[] ENTRY_FRAGMENTS = {
+        ActionListViewSettings.class.getName(),
         BacklightTimeoutSeekBar.class.getName(),
         ButtonBacklightBrightness.class.getName(),
         ButtonSettings.class.getName(),
