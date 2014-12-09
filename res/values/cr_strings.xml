@@ -55,12 +55,12 @@
     <!-- Share to clipboard -->
     <string name="clipboard_notification">Copied to clipboard</string>
 
-    <!-- Header Strings -->
-    <string name="user_interface">Interface</string>
-    <string name="bars">Bar Interface</string>
+    <!-- General Strings -->
+    <string name="choose_app">Choose application</string>
     <string name="system">System</string>
     <string name="cancel">Cancel</string>
     <string name="ok">OK</string>
+    <string name="help">Help</string>
     <string name="add">Add</string>
     <string name="save">Save</string>
     <string name="reset">Reset</string>
@@ -77,17 +77,24 @@
     <string name="reset_message">Reset all entries to default?</string>
     <string name="reset_option_message">Reset values to\nAndroid- or Bliss default?</string>
     <string name="category_general_title">General options</string>
-    <string name="dlg_reset_values_message">Reset values to\nAndroid- or Bliss default?</string>
+    <string name="dlg_ok">OK</string>
+    <string name="dlg_cancel">Cancel</string>
+    <string name="dlg_reset_values_message">Reset values to\nAndroid- or Carbon default?</string>
     <string name="dlg_reset_android">Android</string>
     <string name="dlg_reset_carbon">Carbon</string>
     <string name="attention">Attention</string>
     <string name="empty">Empty</string>
     <string name="delete">Delete</string>
     <string name="default_string">Default</string>
+    <string name="menu_save">Save</string>
     <string name="menu_cancel">Discard</string>
     <string name="enabled">Enabled</string>
     <string name="disabled">Disabled</string>
     <string name="additional_options_title">Additional options</string>
+
+    <!-- Header Strings -->
+    <string name="user_interface">Interface</string>
+    <string name="bars">Bar Interface</string>
 
     <!-- Activity titles defined in AndroidManifest.xml -->
         <string name="enabled">Enabled</string><string name="title_clipboard_share">Copy to Clipboard</string>
@@ -117,20 +124,6 @@
     <string name="advanced_options_title">Advanced options</string>
     <string name="touch_screen_gesture_title">Touch Screen Gestures Device</string>
     <string name="touch_screen_gesture_summary">Touch Screen Gestures Device options</string>
-
-    <string name="ok">OK</string>
-    <string name="dlg_ok">OK</string>
-    <string name="menu_save">Save</string>
-    <string name="menu_cancel">Discard</string>
-    <string name="cancel">Cancel</string>
-    <string name="dlg_cancel">Cancel</string>
-    <string name="reset">Reset</string>
-    <string name="add">Add</string>
-    <string name="help">Help</string>
-    <string name="attention">Attention</string>
-    <string name="enabled">Enabled</string>
-    <string name="default_string">Default</string>
-    <string name="choose_app">Choose application</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
