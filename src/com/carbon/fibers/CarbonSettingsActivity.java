@@ -44,6 +44,8 @@ import com.android.settings.carbon.gestureanywhere.*;
 import com.android.settings.cyanogenmod.*;
 import com.android.settings.cyanogenmod.qs.*;
 import com.android.settings.slim.*;
+import com.android.settings.slim.dslv.*;
+import com.android.settings.slim.util.*;
 import com.carbon.fibers.fragments.*;
 
 public class CarbonSettingsActivity extends PreferenceActivity implements ButtonBarHandler {
@@ -198,6 +200,7 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
     }
 
     private static final String[] ENTRY_FRAGMENTS = {
+        ActionListViewSettings.class.getName(),
         AnimationControls.class.getName(),
         AppCircleBar.class.getName(),
         AppSidebar.class.getName(),
@@ -225,6 +228,7 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         QSColors.class.getName(),
         QSTiles.class.getName(),
         ScrollAnimationInterfaceSettings.class.getName(),
+        ShortcutPickerHelper.class.getName(),
         StatusBarClockStyle.class.getName(),
         StatusBarExpandedHeaderSettings.class.getName(),
         StatusBarSettings.class.getName(),
