@@ -92,6 +92,7 @@ public class CarbonInterface extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new CarbonInterfaceSettings();
+            frags[1] = new GestureAnywhereSettings();
         }
 
         @Override
@@ -113,7 +114,8 @@ public class CarbonInterface extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[] {
-                    getString(R.string.interface_settings_title)};
+                    getString(R.string.interface_settings_title),
+                    getString(R.string.gesture_anywhere_title)};
         return titleString;
     }
 }
