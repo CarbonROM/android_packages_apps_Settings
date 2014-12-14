@@ -82,6 +82,9 @@
         android:name="cyanogenmod.permission.PROTECTED_APP"
         android:protectionLevel="signatureOrSystem" />
 
+    <!-- Heads up -->
+    <uses-permission android:name="android.permission.CHANGE_HEADS_UP_STATE" />
+
     <application android:label="@string/settings_label"
             android:icon="@mipmap/ic_launcher_settings"
             android:taskAffinity=""
