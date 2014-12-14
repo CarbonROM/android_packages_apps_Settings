@@ -2410,6 +2410,9 @@
         <activity android:name="com.carbon.fibers.CarbonSettingsActivity" />
         <activity android:name=".carbon.CarbonAboutMe" />
 
+        <activity android:name=".carbon.gestureanywhere.GestureAnywhereBuilderActivity" />
+        <activity android:name=".carbon.gestureanywhere.GestureAnywhereCreateGestureActivity" />
+
         <activity
         android:name="com.carbon.fibers.ShareToClipboard"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"

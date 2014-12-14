@@ -40,6 +40,7 @@ import android.widget.TextView;
 // fragments import for entry
 import com.android.settings.*;
 import com.android.settings.carbon.*;
+import com.android.settings.carbon.gestureanywhere.*;
 import com.android.settings.cyanogenmod.*;
 import com.android.settings.cyanogenmod.qs.*;
 import com.android.settings.lockscreen.*;
@@ -207,6 +208,7 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         CarbonMoreDeviceSettings.class.getName(),
         CarbonStatusBar.class.getName(),
         DeviceUtils.class.getName(),
+        GestureAnywhereSettings.class.getName(),
         LockScreenSettings.class.getName(),
         NavBar.class.getName(),
         NavRing.class.getName(),
