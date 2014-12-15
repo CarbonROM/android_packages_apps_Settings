@@ -93,6 +93,7 @@ public class CarbonInterface extends SettingsPreferenceFragment {
             super(fm);
             frags[0] = new CarbonInterfaceSettings();
             frags[1] = new GestureAnywhereSettings();
+            frags[2] = new DisplayAnimationsSettings();
         }
 
         @Override
@@ -115,7 +116,8 @@ public class CarbonInterface extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[] {
                     getString(R.string.interface_settings_title),
-                    getString(R.string.gesture_anywhere_title)};
+                    getString(R.string.gesture_anywhere_title),
+                    getString(R.string.disp_anim_settings_title)};
         return titleString;
     }
 }
