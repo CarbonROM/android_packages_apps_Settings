@@ -96,7 +96,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_SCREEN_SAVER = "screensaver";
     private static final String KEY_LIFT_TO_WAKE = "lift_to_wake";
-    private static final String KEY_DOZE = "doze";
     private static final String KEY_AUTO_BRIGHTNESS = "auto_brightness";
     private static final String KEY_TAP_TO_WAKE = "double_tap_wake_gesture";
     private static final String KEY_PROXIMITY_WAKE = "proximity_on_wake";
@@ -111,13 +110,15 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private FontDialogPreference mFontSizePref;
     private PreferenceScreen mDisplayRotationPreference;
 
-    private final Configuration mCurConfig = new Configuration();
+    private static final String KEY_DOZE_CATEGORY = "category_doze_options";
+    private static final String KEY_DOZE = "doze";
+    private static final String KEY_ADVANCED_DOZE_OPTIONS = "advanced_doze_options";
 
+    private final Configuration mCurConfig = new Configuration();
     private ListPreference mScreenTimeoutPreference;
     private Preference mScreenSaverPreference;
     private SwitchPreference mAccelerometer;
     private SwitchPreference mLiftToWakePreference;
-    private SwitchPreference mDozePreference;
     private SwitchPreference mAutoBrightnessPreference;
     private SwitchPreference mTapToWake;
     private SwitchPreference mWakeWhenPluggedOrUnplugged;
@@ -141,6 +142,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             updateDisplayRotationPreferenceDescription();
         }
     };
+
+    private PreferenceCategory mDozeCategory;
+    private SwitchPreference mDozePreference;
+    private PreferenceScreen mAdvancedDozeOptions;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -237,12 +242,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
         }
 
-        mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
+        mDozeCategory = (PreferenceCategory) findPreference(KEY_DOZE_CATEGORY);
         if (mDozePreference != null && Utils.isDozeAvailable(activity)) {
             mDozePreference.setOnPreferenceChangeListener(this);
         } else {
             if (displayPrefs != null && mDozePreference != null) {
-                displayPrefs.removePreference(mDozePreference);
+                displayPrefs.removePreference(mDozeCategory);
             }
         }
 
@@ -760,6 +765,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     }
                     if (!Utils.isDozeAvailable(context)) {
                         result.add(KEY_DOZE);
+                        result.add(KEY_ADVANCED_DOZE_OPTIONS);
                     }
                     return result;
                 }
