@@ -199,6 +199,7 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
     }
 
     private static final String[] ENTRY_FRAGMENTS = {
+        AppCircleBar.class.getName(),
         BacklightTimeoutSeekBar.class.getName(),
         ButtonBacklightBrightness.class.getName(),
         ButtonSettings.class.getName(),
