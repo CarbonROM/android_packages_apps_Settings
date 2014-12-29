@@ -44,8 +44,6 @@ public class CarbonInterfaceSettings extends SettingsPreferenceFragment implemen
     // Package name of the cLock app
     public static final String LOCKCLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
 
-    private Context mContext;
-
     private Preference mLockClock;
     private ListPreference mToastAnimation;
     private Context mContext;
