@@ -378,6 +378,8 @@
     <string name="qs_brightness_tile">Brightness</string>
     <string name="qs_expanded_desktop_tile">Expanded desktop</string>
     <string name="qs_notifications_tile">Notifications</string>
+    <string name="qs_wifi_detail_title">Detailed Wi\u2011Fi view</string>
+    <string name="qs_wifi_detail_summary">Enable detailed view for Wi\u2011Fi in Quick Settings</string>
 
     <!-- QuickSettings collapse panel -->
     <string name="quick_settings_collapse_title">Auto close panel</string>
