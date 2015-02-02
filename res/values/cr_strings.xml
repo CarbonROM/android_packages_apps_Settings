@@ -555,5 +555,6 @@
     <!-- QuickSettings tiles -->
     <string name="qs_screenshot_tile">Screenshot</string>
     <string name="qs_sync_tile">Sync</string>
+    <string name="quick_settings_powermenu_label">Power Menu</string>
 
 </resources>
