@@ -280,6 +280,7 @@ public class SettingsActivity extends Activity
             CarbonAboutMe.class.getName(),
             LockscreenShortcutFragment.class.getName(),
             NavBar.class.getName(),
+            PerformanceSettings.class.getName(),
             WirelessSettings.class.getName(),
             WifiSettings.class.getName(),
             AdvancedWifiSettings.class.getName(),
@@ -1283,6 +1284,10 @@ public class SettingsActivity extends Activity
                 } else if (id == R.id.development_settings) {
                     if (!showDev || um.hasUserRestriction(
                             UserManager.DISALLOW_DEBUGGING_FEATURES)) {
+                        removeTile = true;
+                    }
+                } else if (id == R.id.performance_settings) {
+                    if (!(pm.hasPowerProfiles() || (showDev && !Build.TYPE.equals("user")))) {
                         removeTile = true;
                     }
                 } else if (id == R.id.supersu_settings) {

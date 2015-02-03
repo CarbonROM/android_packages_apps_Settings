@@ -2262,7 +2262,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".cyanogenmod.PerformanceSettings" />
+        <activity android:name=".slim.PerformanceSettings" />
 
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
