@@ -152,6 +152,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_screenshot";
                 stringId = R.string.qs_screenshot_tile;
                 break;
+            case QSConstants.TILE_SCREENRECORD:
+                resourceName = "ic_qs_screenrecord";
+                stringId = R.string.qs_screenrecord_tile;
+                break;
             case QSConstants.TILE_LIVE_DISPLAY:
                 resourceName ="ic_livedisplay_day";
                 stringId = R.string.live_display_title;

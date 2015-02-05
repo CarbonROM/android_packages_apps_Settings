@@ -372,6 +372,7 @@
 
     <!-- QuickSettings tiles -->
     <string name="qs_screenshot_tile">Screenshot</string>
+    <string name="qs_screenrecord_tile">Screenrecord</string>
     <string name="quick_settings_powermenu_label">Power Menu</string>
 
 </resources>
