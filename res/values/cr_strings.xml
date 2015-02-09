@@ -557,5 +557,6 @@
     <string name="qs_screenrecord_tile">Screenrecord</string>
     <string name="qs_sync_tile">Sync</string>
     <string name="quick_settings_powermenu_label">Power Menu</string>
+    <string name="quick_settings_sleepscreen_label">Sleep Screen</string>
 
 </resources>
