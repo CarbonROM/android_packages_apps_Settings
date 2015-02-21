@@ -83,6 +83,7 @@ import com.android.settings.applications.ManageApplications;
 import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
+import com.android.settings.carbon.AppCircleBar;
 import com.android.settings.carbon.CarbonAboutMe;
 import com.android.settings.contributors.ContributorsCloudFragment;
 import com.android.settings.cyanogenmod.DisplayRotation;
@@ -272,6 +273,7 @@ public class SettingsActivity extends Activity
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
+            AppCircleBar.class.getName(),
             CarbonSettingsActivity.class.getName(),
             CarbonAboutMe.class.getName(),
             LockScreenWeatherSettings.class.getName(),
