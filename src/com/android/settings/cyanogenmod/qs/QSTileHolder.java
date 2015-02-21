@@ -193,6 +193,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_navbar_on";
                 stringId = R.string.nav_bar_title;
                 break;
+            case QSConstants.TILE_APPCIRCLEBAR:
+                resourceName = "ic_qs_appcirclebar_on";
+                stringId = R.string.app_circle_bar_title;
+                break;
             default:
                 return null;
         }
