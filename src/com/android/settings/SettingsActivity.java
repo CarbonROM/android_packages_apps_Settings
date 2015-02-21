@@ -83,6 +83,7 @@ import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.carbon.CarbonAboutMe;
 import com.android.settings.cyanogenmod.DisplayRotation;
+import com.android.settings.cyanogenmod.NavBar;
 import com.android.settings.dashboard.DashboardCategory;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.dashboard.DashboardTile;
@@ -274,6 +275,7 @@ public class SettingsActivity extends Activity
             CarbonSettingsActivity.class.getName(),
             CarbonAboutMe.class.getName(),
             HeadsUpSettings.class.getName(),
+            NavBar.class.getName(),
             WirelessSettings.class.getName(),
             WifiSettings.class.getName(),
             AdvancedWifiSettings.class.getName(),
