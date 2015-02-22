@@ -376,4 +376,8 @@
     <string name="quick_settings_powermenu_label">Power Menu</string>
     <string name="quick_settings_sleepscreen_label">Sleep Screen</string>
 
+    <!-- Double Tap Navbar to Sleep -->
+    <string name="double_tap_sleep_nav_bar_title">Double-tap to sleep</string>
+    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+
 </resources>
