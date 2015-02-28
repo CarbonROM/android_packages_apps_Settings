@@ -95,6 +95,7 @@ public class CarbonStatusBar extends SettingsPreferenceFragment {
             frags[1] = new NetworkTraffic();
             frags[2] = new NetworkTrafficFragment();
             frags[3] = new CarrierLabel();
+            frags[4] = new QSColors();
         }
 
         @Override
@@ -119,7 +120,8 @@ public class CarbonStatusBar extends SettingsPreferenceFragment {
                     getString(R.string.status_bar_title),
                     getString(R.string.network_traffic_title),
                     getString(R.string.network_traffic_vector_title),
-                    getString(R.string.carrier_options)};
+                    getString(R.string.carrier_options),
+                    getString(R.string.qs_colors_title)};
         return titleString;
     }
 }
