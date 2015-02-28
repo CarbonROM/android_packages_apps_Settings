@@ -305,6 +305,20 @@ limitations under the License.
         <item>3</item>
     </string-array>
 
+    <string-array name="shortcut_action_tile_entries">
+        <item>@string/shortcut_action_power</item>
+        <item>@string/shortcut_action_power_menu</item>
+        <item>@string/shortcut_action_screenshot</item>
+        <item>@string/shortcut_action_recent</item>
+    </string-array>
+
+    <string-array name="shortcut_action_tile_values" translatable="false">
+        <item>**power**</item>
+        <item>**power_menu**</item>
+        <item>**screenshot**</item>
+        <item>**recents**</item>
+    </string-array>
+
     <!-- Gesture Anywhere -->
     <string-array name="gesture_anywhere_position_entries" translatable="false">
         <item>@string/gesture_anywhere_position_left</item>
