@@ -184,6 +184,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_reboot";
                 stringId = R.string.qs_tile_reboot;
                 break;
+            case QSConstants.TILE_SLIMACTION:
+                resourceName = "ic_qs_reboot_recovery";
+                stringId = R.string.qs_tile_slimaction;
+                break;
             case QSConstants.TILE_USB_TETHER:
                 resourceName = "ic_qs_usb_tether_on";
                 stringId = R.string.qs_tile_usb_tether;
