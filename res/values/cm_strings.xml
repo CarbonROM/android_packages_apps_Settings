@@ -1207,4 +1207,7 @@
     <string name="sim_card_lock_settings_title">SIM %d lock settings</string>
     <string name="sim_card_summary_empty">SIM not inserted</string>
 
+    <!-- Slim Shortcuts -->
+    <string name="slim_shortcut_picker">Slim Actions</string>
+
 </resources>
