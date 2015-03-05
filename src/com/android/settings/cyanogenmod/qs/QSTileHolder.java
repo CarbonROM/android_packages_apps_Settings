@@ -124,6 +124,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_powermenu";
                 stringId = R.string.quick_settings_powermenu_label;
                 break;
+            case QSConstants.TILE_REBOOT:
+                resourceName = "ic_qs_reboot";
+                stringId = R.string.qs_tile_reboot;
+                break;
             case QSConstants.TILE_NFC:
                 resourceName = "ic_qs_nfc_on";
                 stringId = R.string.qs_tile_nfc;
@@ -214,7 +218,6 @@ public class QSTileHolder {
                 resourceName = "ic_dynamic_qs_adb";
                 stringId = R.string.qs_dynamic_tile_adb;
                 break;
-
             default:
                 return null;
         }
