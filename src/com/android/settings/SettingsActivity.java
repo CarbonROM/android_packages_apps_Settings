@@ -286,6 +286,7 @@ public class SettingsActivity extends Activity
             LockscreenShortcutFragment.class.getName(),
             LockScreenWeatherSettings.class.getName(),
             NavBar.class.getName(),
+            QuickTileFragment.class.getName(),
             ShortcutPickerHelper.class.getName(),
             SimpleFloatViewManager.class.getName(),
             WirelessSettings.class.getName(),

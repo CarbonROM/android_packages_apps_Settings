@@ -46,6 +46,7 @@ import com.android.settings.cyanogenmod.qs.*;
 import com.android.settings.slim.*;
 import com.android.settings.slim.dslv.*;
 import com.android.settings.slim.util.*;
+import com.android.settings.slim.fragments.*;
 import com.carbon.fibers.fragments.*;
 
 public class CarbonSettingsActivity extends PreferenceActivity implements ButtonBarHandler {
@@ -228,6 +229,7 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         NotificationDrawerSettings.class.getName(),
         OverscrollEffects.class.getName(),
         PowerMenuActions.class.getName(),
+        QuickTileFragment.class.getName(),
         QSColors.class.getName(),
         QSTiles.class.getName(),
         ScrollAnimationInterfaceSettings.class.getName(),
