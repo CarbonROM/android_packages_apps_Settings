@@ -19,6 +19,12 @@
     android:title="@string/more_device_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Wakelock blocker -->
+    <PreferenceScreen
+        android:key="wakelock_blocker"
+        android:fragment="com.android.settings.aicp.WakeLockBlocker"
+        android:title="@string/wakelock_blocker_title" />
+
    <!-- Advanced Settings -->
     <PreferenceScreen
         android:key="advanced_device_settings"

@@ -57,7 +57,7 @@
 
         <header
             android:id="@+id/carbon_more_device_settings"
-            android:title="@string/more_device_controls_title"
+            android:title="@string/more_device_settings_title"
             android:icon="@drawable/ic_settings_advanced_teal"
             android:fragment="com.carbon.fibers.fragments.CarbonMoreDeviceSettings" />
 
