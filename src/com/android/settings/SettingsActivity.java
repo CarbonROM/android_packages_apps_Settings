@@ -131,6 +131,7 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.android.settings.carbon.*;
+
 import com.carbon.fibers.*;
 import com.carbon.fibers.CarbonSettingsActivity;
 
@@ -272,6 +273,7 @@ public class SettingsActivity extends Activity
     private static final String[] ENTRY_FRAGMENTS = {
             CarbonSettingsActivity.class.getName(),
             CarbonAboutMe.class.getName(),
+            LockScreenWeatherSettings.class.getName(),
             WirelessSettings.class.getName(),
             WifiSettings.class.getName(),
             AdvancedWifiSettings.class.getName(),
