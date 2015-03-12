@@ -274,7 +274,6 @@ public class SettingsActivity extends Activity
             CarbonSettingsActivity.class.getName(),
             CarbonAboutMe.class.getName(),
             HeadsUpSettings.class.getName(),
-            LockScreenWeatherSettings.class.getName(),
             WirelessSettings.class.getName(),
             WifiSettings.class.getName(),
             AdvancedWifiSettings.class.getName(),
@@ -339,7 +338,9 @@ public class SettingsActivity extends Activity
             ProfilesSettings.class.getName(),
             com.android.settings.cyanogenmod.PrivacySettings.class.getName(),
             NotificationManagerSettings.class.getName(),
+            LockScreenColorSettings.class.getName(),
             LockScreenSettings.class.getName(),
+            LockScreenWeatherSettings.class.getName(),
             ExpandedDesktopPreferenceFragment.class.getName(),
             LiveDisplay.class.getName(),
             DisplayRotation.class.getName()
