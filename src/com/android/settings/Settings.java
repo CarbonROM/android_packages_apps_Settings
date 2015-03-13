@@ -17,7 +17,7 @@
 package com.android.settings;
 
 import com.android.settings.applications.AppOpsSummary;
-import org.omnirom.omnigears.ButtonSettings;
+import org.carbon.fibers.ButtonSettings;
 import com.brewcrewfoo.performance.activities.MainActivity;
 
 /**

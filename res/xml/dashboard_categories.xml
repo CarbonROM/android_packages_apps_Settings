@@ -80,7 +80,7 @@
         <dashboard-tile
                android:id="@+id/interface_bars"
                android:title="@string/interface_bars_title"
-               android:fragment="org.omnirom.omnigears.interfacesettings.BarsSettings"
+               android:fragment="org.carbon.fibers.interfacesettings.BarsSettings"
                android:icon="@drawable/ic_bars"
                /> -->
 
@@ -88,7 +88,7 @@
         <dashboard-tile
                android:id="@+id/interface_menus"
                android:title="@string/interface_menus_title"
-               android:fragment="org.omnirom.omnigears.interfacesettings.MenusSettings"
+               android:fragment="org.carbon.fibers.interfacesettings.MenusSettings"
                android:icon="@drawable/ic_menus"
                /> -->
 
@@ -96,7 +96,7 @@
         <dashboard-tile
                android:id="@+id/interface_more"
                android:title="@string/radio_controls_title"
-               android:fragment="org.omnirom.omnigears.interfacesettings.MoreInterfaceSettings"
+               android:fragment="org.carbon.fibers.interfacesettings.MoreInterfaceSettings"
                android:icon="@drawable/ic_settings_more"
                /> -->
     </dashboard-category>
@@ -126,7 +126,7 @@
         <dashboard-tile
                 android:id="@+id/button_settings"
                 android:title="@string/button_settings"
-                android:fragment="org.omnirom.omnigears.ButtonSettings"
+                android:fragment="org.carbon.fibers.ButtonSettings"
                 android:icon="@drawable/ic_buttons"
                 />
 

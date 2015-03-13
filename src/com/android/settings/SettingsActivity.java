@@ -113,7 +113,7 @@ import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
-import org.omnirom.omnigears.ButtonSettings;
+import org.carbon.fibers.ButtonSettings;
 import com.brewcrewfoo.performance.activities.MainActivity;
 
 import org.xmlpull.v1.XmlPullParser;

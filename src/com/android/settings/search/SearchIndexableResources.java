@@ -50,8 +50,8 @@ import com.android.settings.wifi.AdvancedWifiSettings;
 import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 
-import org.omnirom.omnigears.AmbientSettings;
-import org.omnirom.omnigears.ButtonSettings;
+import org.carbon.fibers.AmbientSettings;
+import org.carbon.fibers.ButtonSettings;
 
 import java.util.Collection;
 import java.util.HashMap;
