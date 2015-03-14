@@ -231,6 +231,7 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         DeviceUtils.class.getName(),
         DisplayAnimationsSettings.class.getName(),
         GestureAnywhereSettings.class.getName(),
+        HeadsUpSettings.class.getName(),
         NavBar.class.getName(),
         NavRing.class.getName(),
         NetworkTraffic.class.getName(),
