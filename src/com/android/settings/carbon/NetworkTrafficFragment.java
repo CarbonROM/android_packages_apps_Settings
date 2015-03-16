@@ -55,7 +55,7 @@ public class NetworkTrafficFragment extends SettingsPreferenceFragment implement
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.aicp_network_traffic_settings);
+        addPreferencesFromResource(R.xml.carbon_network_traffic_settings);
 
         loadResources();
 
