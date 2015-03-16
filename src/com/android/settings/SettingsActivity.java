@@ -81,6 +81,7 @@ import com.android.settings.applications.ManageApplications;
 import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
+import com.android.settings.carbon.CarbonAboutMe;
 import com.android.settings.contributors.ContributorsCloudFragment;
 import com.android.settings.cyanogenmod.DisplayRotation;
 import com.android.settings.dashboard.DashboardCategory;
@@ -126,6 +127,10 @@ import com.android.settings.wifi.AdvancedWifiSettings;
 import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
+
+import com.android.settings.carbon.*;
+import com.carbon.fibers.*;
+import com.carbon.fibers.CarbonSettingsActivity;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -229,6 +234,7 @@ public class SettingsActivity extends Activity
 
     // Show only these settings for restricted users
     private int[] SETTINGS_FOR_RESTRICTED = {
+            R.id.carbon_fibers,
             R.id.wireless_section,
             R.id.wifi_settings,
             R.id.bluetooth_settings,
@@ -262,6 +268,8 @@ public class SettingsActivity extends Activity
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
+            CarbonSettingsActivity.class.getName(),
+            CarbonAboutMe.class.getName(),
             WirelessSettings.class.getName(),
             WifiSettings.class.getName(),
             AdvancedWifiSettings.class.getName(),

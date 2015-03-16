@@ -46,6 +46,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
 
     private SwitchPreference mSafeHeadsetVolume;
     private ListPreference mAnnoyingNotifications;
+    private SwitchPreference mCameraSounds;
 
     private static final String KEY_CAMERA_SOUNDS = "camera_sounds";
     private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";

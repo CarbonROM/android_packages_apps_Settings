@@ -2406,5 +2406,32 @@
             android:name=".cyanogenmod.LtoService">
         </service>
 
+        <!-- Carbon Application Methods -->
+        <activity android:name="com.carbon.fibers.CarbonSettingsActivity" />
+        <activity android:name=".carbon.CarbonAboutMe" />
+
+        <activity
+        android:name="com.carbon.fibers.ShareToClipboard"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:label="@string/title_clipboard_share" >
+            <intent-filter>
+             <action android:name="android.intent.action.SEND"/>
+
+             <category android:name="android.intent.category.ALTERNATIVE"/>
+             <category android:name="android.intent.category.DEFAULT"/>
+
+             <data android:mimeType="text/*" />
+            </intent-filter>
+        </activity>
+        <activity
+        android:name="com.carbon.fibers.CreateShortcut"
+            android:theme="@style/Theme.CreateShortCut" >
+        <intent-filter>
+               <action android:name="android.intent.action.CREATE_SHORTCUT" />
+
+           <category android:name="android.intent.category.DEFAULT" />
+          </intent-filter>
+        </activity>
+
     </application>
 </manifest>
