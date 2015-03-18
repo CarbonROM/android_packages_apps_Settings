@@ -115,6 +115,7 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import org.carbon.fibers.ButtonSettings;
 import com.brewcrewfoo.performance.activities.MainActivity;
+import org.carbon.fibers.batterylight.BatteryLightSettings;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -309,7 +310,8 @@ public class SettingsActivity extends Activity
             QuickLaunchSettings.class.getName(),
             ApnSettings.class.getName(),
             ButtonSettings.class.getName(),
-            MainActivity.class.getName()
+            MainActivity.class.getName(),
+            BatteryLightSettings.class.getName()
     };
 
 

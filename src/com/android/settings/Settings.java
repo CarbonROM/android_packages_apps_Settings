@@ -19,7 +19,7 @@ package com.android.settings;
 import com.android.settings.applications.AppOpsSummary;
 import org.carbon.fibers.ButtonSettings;
 import com.brewcrewfoo.performance.activities.MainActivity;
-
+import org.carbon.fibers.batterylight.BatteryLightSettings;
 /**
  * Top-level Settings activity
  */
@@ -104,5 +104,6 @@ public class Settings extends SettingsActivity {
     public static class ApnSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ButtonSettingsActivity extends SettingsActivity { /* empty */ }
     public static class MainActivityActivity extends SettingsActivity { /* empty */ }
+    public static class BatteryLightSettingsActivity extends SettingsActivity { /* empty */ }
 }
 
