@@ -203,6 +203,12 @@ x
         android:title="@string/touch_sounds_title"
         android:order="-30"/>
 
+    <!-- Screenshot sound -->
+    <SwitchPreference
+        android:key="screenshot_shutter_sound"
+        android:title="@string/screenshot_shutter_sound_title"
+        android:order="-29"/>
+
     <!-- Show vibrate icon in status bar -->
     <SwitchPreference
         android:key="vibrate_icon"
