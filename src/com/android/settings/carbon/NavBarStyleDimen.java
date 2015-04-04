@@ -40,7 +40,9 @@ import com.android.internal.util.temasek.DeviceUtils;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 
-public class NavBarDimensions extends SettingsPreferenceFragment implements
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
+public class NavBarStyleDimen extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String TAG = "NavBarStyleDimen";
@@ -48,6 +50,7 @@ public class NavBarDimensions extends SettingsPreferenceFragment implements
     private static final String KEY_DIMEN_OPTIONS = "navbar_dimensions";
     private static final String PREF_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
     private static final String PREF_NAVIGATION_BAR_WIDTH = "navigation_bar_width";
+    private static final String NAVIGATION_BAR_TINT = "navigation_bar_tint";
 
     private static final int MENU_RESET = Menu.FIRST;
 
@@ -55,13 +58,14 @@ public class NavBarDimensions extends SettingsPreferenceFragment implements
 
     private ListPreference mNavigationBarHeight;
     private ListPreference mNavigationBarWidth;
+    private ColorPickerPreference mNavbarButtonTint;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Load the preferences from an XML resource
-        addPreferencesFromResource(R.xml.navbar_dimensions);
+        addPreferencesFromResource(R.xml.navbar_style_dimensions);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
@@ -77,6 +81,15 @@ public class NavBarDimensions extends SettingsPreferenceFragment implements
         } else {
             mNavigationBarWidth.setOnPreferenceChangeListener(this);
         }
+
+        // Navigation bar button color
+        mNavbarButtonTint = (ColorPickerPreference) findPreference(NAVIGATION_BAR_TINT);
+        mNavbarButtonTint.setOnPreferenceChangeListener(this);
+        int intColor = Settings.Secure.getInt(getActivity().getContentResolver(),
+                Settings.Secure.NAVIGATION_BAR_TINT, 0xffffffff);
+        String hexColor = String.format("#%08x", (0xffffffff & intColor));
+        mNavbarButtonTint.setSummary(hexColor);
+        mNavbarButtonTint.setNewPreviewColor(intColor);
 
         updateDimensionValues();
         setHasOptionsMenu(true);
@@ -143,6 +156,14 @@ public class NavBarDimensions extends SettingsPreferenceFragment implements
                     Settings.Secure.NAVIGATION_BAR_HEIGHT,
                     Integer.parseInt(newVal));
             return true;
+        } else if (preference == mNavbarButtonTint) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.NAVIGATION_BAR_TINT, intHex);
+            return true;
         }
         return false;
     }
@@ -183,6 +204,8 @@ public class NavBarDimensions extends SettingsPreferenceFragment implements
                                     Settings.Secure.NAVIGATION_BAR_HEIGHT, -2);
                             Settings.Secure.putInt(getActivity().getContentResolver(),
                                     Settings.Secure.NAVIGATION_BAR_WIDTH, -2);
+                            Settings.Secure.putInt(getActivity().getContentResolver(),
+                                    Settings.Secure.NAVIGATION_BAR_TINT, #FFFFFF);
                             getOwner().updateDimensionValues();
                         }
                     })

@@ -94,7 +94,7 @@ public class CarbonButtons extends SettingsPreferenceFragment {
             super(fm);
             frags[0] = new ButtonSettings();
             frags[1] = new NavBar();
-            frags[2] = new NavBarDimensions();
+            frags[2] = new NavBarStyleDimen();
             frags[3] = new NavRing();
             frags[4] = new PowerMenuActions();
         }
