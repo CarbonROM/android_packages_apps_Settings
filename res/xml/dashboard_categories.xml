@@ -172,17 +172,6 @@
                     android:targetClass="com.cyanogenmod.settings.device.BluetoothInputSettings" />
         </dashboard-tile>
 
-        <!-- Gestures -->
-        <dashboard-tile
-                android:id="@+id/device_specific_gesture_settings"
-                android:title="@string/gesture_settings_title"
-                android:icon="@drawable/ic_settings_gestures">
-            <intent
-                    android:action="com.cyanogenmod.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
-                    android:targetPackage="com.cyanogenmod.settings.device"
-                    android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
-        </dashboard-tile>
-
         <!-- Battery -->
         <dashboard-tile
                 android:id="@+id/battery_settings"
@@ -228,24 +217,6 @@
                 android:fragment="com.android.settings.profiles.ProfilesSettings"
                 android:title="@string/profiles_settings_title"
                 android:icon="@drawable/ic_settings_profiles"
-                />
-
-        <!-- Status bar -->
-        <dashboard-tile
-                android:id="@+id/status_bar_settings"
-                android:title="@string/status_bar_title"
-                android:fragment="com.android.settings.cyanogenmod.StatusBarSettings"
-                android:icon="@drawable/ic_settings_extdesk_hidenavbar"
-                settings:advanced="true"
-                />
-
-        <!-- Notification drawer -->
-        <dashboard-tile
-                android:id="@+id/notification_drawer_settings"
-                android:title="@string/notification_drawer_title"
-                android:fragment="com.android.settings.cyanogenmod.NotificationDrawerSettings"
-                android:icon="@drawable/ic_settings_notification_drawer"
-                settings:advanced="true"
                 />
 
         <!-- Application Settings -->

@@ -276,7 +276,7 @@
   <string name="navigation_bar_category">Barra di navigazione</string>
   <string name="navigation_bar_left_title">Modalità mancino</string>
   <string name="navigation_bar_left_summary">Posiziona la barra di navigazione sul lato sinistro dello schermo in modalità orizzontale</string>
-  <string name="navigation_bar_title">Pulsanti e disposizione</string>
+  <string name="navigation_bar_title">Obbiettivi NavBar</string>
   <string name="navigation_bar_help_text">Per iniziare clicca sull\'icona di modifica per sbloccare la barra di navigazione.\n\nPuoi toccare un\'icona per modificare il suo collegamento, o tenere premuto un\'icona per ri-organizzare il layout.\n\nTocca Salva per salvare le modifiche o Ripristina per reimpostare il layout alle impostazioni predefinite.</string>
   <string name="navigation_restore_button_text">Ripristina\npredefinite</string>
   <string name="navigation_edit_button_text">Modifica</string>
@@ -769,7 +769,7 @@
   <string name="lockscreen_visualizer_title">Mostra visualizzatore musicale</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Gestisci le impostazioni SMS sicuri</string>
-  <string name="navigation_ring_title">Collegamenti anello di navigazione</string>
+  <string name="navigation_ring_title">Obbiettivi Anello</string>
   <string name="navigation_ring_message">Tocca l\'icona di modifica per modificare l\'anello di navigazione.\n\nSeleziona un collegamento per configurarne il comportamento.\n\nTocca l\'icona \'\u2713\' per salvare le modifiche, o \'Ripristina le impostazioni predefinite\' per ritornare ai valori predefiniti.</string>
   <string name="lcd_density">Densità LCD</string>
   <string name="dialog_title_lcd_density">Densità LCD</string>
