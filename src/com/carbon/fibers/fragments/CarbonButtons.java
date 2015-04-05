@@ -31,6 +31,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.android.settings.*;
 import com.android.settings.carbon.*;
 import com.android.settings.cyanogenmod.*;
 import com.android.settings.R;
@@ -41,9 +42,9 @@ import com.carbon.fibers.Utils;
 import java.lang.Exception;
 import java.util.ArrayList;
 
-public class CarbonStatusBar extends SettingsPreferenceFragment {
+public class CarbonButtons extends SettingsPreferenceFragment {
 
-    private static final String TAG = "CarbonStatusBar";
+    private static final String TAG = "CarbonButtons";
 
     PagerTabStrip mPagerTabStrip;
     ViewPager mViewPager;
@@ -91,9 +92,10 @@ public class CarbonStatusBar extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new StatusBarSettings();
-            frags[1] = new NetworkTraffic();
-            frags[2] = new NetworkTrafficFragment();
+            frags[0] = new ButtonSettings();
+            frags[1] = new NavBar();
+            frags[2] = new NavRing();
+            frags[3] = new PowerMenuActions();
         }
 
         @Override
@@ -115,9 +117,10 @@ public class CarbonStatusBar extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[] {
-                    getString(R.string.status_bar_title),
-                    getString(R.string.network_traffic_title),
-                    getString(R.string.network_traffic_vector_title)};
+                    getString(R.string.button_pref_title),
+                    getString(R.string.navigation_bar_title),
+                    getString(R.string.navigation_ring_title),
+                    getString(R.string.power_menu_title)};
         return titleString;
     }
 }

@@ -43,6 +43,7 @@ import com.android.settings.carbon.*;
 import com.android.settings.cyanogenmod.*;
 import com.android.settings.cyanogenmod.qs.*;
 import com.android.settings.lockscreen.*;
+import com.android.settings.notification.*;
 import com.android.settings.slim.*;
 import com.carbon.fibers.fragments.*;
 
@@ -200,14 +201,19 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
     private static final String[] ENTRY_FRAGMENTS = {
         BacklightTimeoutSeekBar.class.getName(),
         ButtonBacklightBrightness.class.getName(),
+        ButtonSettings.class.getName(),
+        CarbonButtons.class.getName(),
         CarbonInterface.class.getName(),
         CarbonMoreDeviceSettings.class.getName(),
         CarbonStatusBar.class.getName(),
         DeviceUtils.class.getName(),
         LockScreenSettings.class.getName(),
+        NavBar.class.getName(),
+        NavRing.class.getName(),
         NetworkTraffic.class.getName(),
         NetworkTrafficFragment.class.getName(),
         NotificationDrawerSettings.class.getName(),
+        NotificationManagerSettings.class.getName(),
         PowerMenuActions.class.getName(),
         QSTiles.class.getName(),
         StatusBarSettings.class.getName()
