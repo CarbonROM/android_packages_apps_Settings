@@ -796,7 +796,7 @@ limitations under the License.
         <item>3</item>
         <item>5</item>
     </string-array>
-    
+
 
     <!--  Status bar power menu -->
     <string-array name="status_bar_power_menu_entries" translatable="false">
@@ -809,7 +809,7 @@ limitations under the License.
         <item>0</item>
         <item>1</item>
         <item>2</item>
-	 </string-array>  
+	 </string-array>
 
     <string-array name="lockscreen_shortcuts_launch_type_entries" translatable="false">
         <item>@string/lockscreen_shortcuts_single_tap</item>
@@ -821,6 +821,21 @@ limitations under the License.
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+
+    <!-- Smart pulldown -->
+        <string-array name="smart_pulldown_entries" translatable="false">
+        <item>@string/smart_pulldown_off</item>
+        <item>@string/smart_pulldown_dismissable</item>
+        <item>@string/smart_pulldown_persistent</item>
+        <item>@string/smart_pulldown_all</item>
+    </string-array>
+
+    <string-array name="smart_pulldown_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
     </string-array>
 
 </resources>
