@@ -54,7 +54,7 @@ public class QSColors extends SettingsPreferenceFragment implements
 
     private static final int DEFAULT_BACKGROUND_COLOR = 0xff263238;
     private static final int WHITE = 0xffffffff;
-    private static final int SWAG_TEAL = 0xfff700ff;
+    private static final int SWAG_TEAL = 0x3399ffff;
 
     private static final int MENU_RESET = Menu.FIRST;
     private static final int DLG_RESET = 0;

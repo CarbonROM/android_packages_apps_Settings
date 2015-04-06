@@ -224,6 +224,7 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         QSColors.class.getName(),
         QSTiles.class.getName(),
         StatusBarClockStyle.class.getName(),
+        StatusBarExpandedHeaderSettings.class.getName(),
         StatusBarSettings.class.getName(),
         WakeLockBlocker.class.getName()
     };

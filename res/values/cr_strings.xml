@@ -64,17 +64,33 @@
     <string name="add">Add</string>
     <string name="save">Save</string>
     <string name="reset">Reset</string>
+    <string name="reset_android">Android</string>
+    <string name="reset_carbon">Carbon</string>
+    <string name="more_string">More</string>
+    <string name="color_title">Color</string>
+    <string name="colors_title">Colors</string>
+    <string name="category_colors_title">Customize colors</string>
+    <string name="icons_title">Icons</string>
+    <string name="text_title">Text</string>
+    <string name="background_title">Background</string>
+    <string name="icon_title">Icon</string>
     <string name="reset_message">Reset all entries to default?</string>
+    <string name="reset_option_message">Reset values to\nAndroid- or Bliss default?</string>
+    <string name="category_general_title">General options</string>
+    <string name="dlg_reset_values_message">Reset values to\nAndroid- or Bliss default?</string>
+    <string name="dlg_reset_android">Android</string>
+    <string name="dlg_reset_carbon">Carbon</string>
     <string name="attention">Attention</string>
     <string name="empty">Empty</string>
     <string name="delete">Delete</string>
     <string name="default_string">Default</string>
     <string name="menu_cancel">Discard</string>
+    <string name="enabled">Enabled</string>
     <string name="disabled">Disabled</string>
     <string name="additional_options_title">Additional options</string>
 
     <!-- Activity titles defined in AndroidManifest.xml -->
-    <string name="title_clipboard_share">Copy to Clipboard</string>
+        <string name="enabled">Enabled</string><string name="title_clipboard_share">Copy to Clipboard</string>
 
     <!-- T-Mobile Theme chooser settings  -->
     <string name="themes_title">Themes</string>
@@ -86,7 +102,7 @@
     <string name="header_summary" translatable="false">@null</string>
 
     <!-- Menu Strings -->
-    <string name="menu_main_activity_change_locale">Locale</string>
+     <string name="enabled">Enabled</string>   <string name="menu_main_activity_change_locale">Locale</string>
 
     <!--  Advanced device settings -->
     <string name="more_device_settings_title">Advanced options</string>
@@ -364,8 +380,9 @@
     <string name="position_right_title">Right</string>
     <string name="position_centered_title">Centered</string>
     <string name="hidden_title">Hidden</string>
-    <string name="dlg_reset_values_message">Reset values to\nAndroid- or AICP default?</string>
+    <string name="dlg_reset_values_message">Reset values to\nAndroid- or Carbon default?</string>
     <string name="dlg_reset_android">Android</string>
+    <string name="dlg_reset_carbon">Carbon</string>
 
     <!-- Recents panel settings -->
     <string name="recents_panel_settings">Recents Panel Settings</string>
@@ -472,6 +489,7 @@
     <string name="mount_notification_summary">Display ongoing notification for mounted storage</string>
 
     <!-- Navigation bar -->
+    <string name="navigation_category">Navigation</string>
     <string name="navigation_bar_pref_title">Navigation bar</string>
     <string name="navigation_options">Navigation Options</string>
     <string name="nav_bar_title">Navigation bar</string>
@@ -594,5 +612,13 @@
     <string name="trigger_top_summary">Adjust the vertical postion of the trigger area</string>
     <string name="trigger_bottom_title">Trigger height</string>
     <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
+
+    <!-- Status bar Header -->
+    <string name="status_bar_expanded_header_settings_title">Status bar header</string>
+    <string name="status_bar_expanded_header_settings_summary">Customize the Expanded Header Layout</string>
+    <string name="expanded_header_show_weather_title">Show weather</string>
+    <string name="expanded_header_show_weather_summary">Enable to show the weather</string>
+    <string name="expanded_header_show_weather_location_title">Show location</string>
+    <string name="expanded_header_show_weather_location_summary">Enable to show the location</string>
 
 </resources>
