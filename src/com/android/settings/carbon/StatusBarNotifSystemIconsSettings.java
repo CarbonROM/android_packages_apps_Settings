@@ -21,9 +21,9 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.ContentResolver;
 import android.content.DialogInterface;
-import android.content.DialogInterface.OnCancelListener;
 import android.os.Bundle;
 import android.preference.Preference;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
@@ -31,30 +31,33 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import com.android.internal.util.slim.DeviceUtils;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
-public class StatusBarExpandedHeaderSettings extends SettingsPreferenceFragment implements
+public class StatusBarNotifSystemIconsSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String PREF_SHOW_WEATHER = "expanded_header_show_weather";
-    private static final String PREF_SHOW_LOCATION = "expanded_header_show_weather_location";
-    private static final String PREF_BG_COLOR = "expanded_header_background_color";
-    private static final String PREF_TEXT_COLOR = "expanded_header_text_color";
-    private static final String PREF_ICON_COLOR = "expanded_header_icon_color";
+    private static final String KEY_CATEGORY_COLORS = "notif_system_icons_category_colors";
+    private static final String KEY_COLORIZE_NOTIF_ICONS = "notif_system_icons_colorize_notif_icons";
+    private static final String KEY_SHOW_COUNT = "notif_system_icons_show_count";
+    private static final String KEY_ICON_COLOR = "notif_system_icons_icon_color";
+    private static final String KEY_COUNT_ICON_COLOR = "notif_system_icons_count_icon_color";
+    private static final String KEY_COUNT_TEXT_COLOR = "notif_system_icons_count_text_color";
 
     private static final int DEFAULT_COLOR = 0xffffffff;
-    private static final int DEFAULT_BG_COLOR = 0xff384248;
+    private static final int DEFAULT_COUNT_ICON_COLOR = 0xffE5350D;
 
     private static final int MENU_RESET = Menu.FIRST;
     private static final int DLG_RESET = 0;
 
-    private SwitchPreference mShowWeather;
-    private SwitchPreference mShowLocation;
-    private ColorPickerPreference mBackgroundColor;
-    private ColorPickerPreference mTextColor;
+    private SwitchPreference mColorizeNotifIcons;
+    private SwitchPreference mShowCount;
     private ColorPickerPreference mIconColor;
+    private ColorPickerPreference mCountIconColor;
+    private ColorPickerPreference mCountTextColor;
 
     private ContentResolver mResolver;
 
@@ -70,59 +73,61 @@ public class StatusBarExpandedHeaderSettings extends SettingsPreferenceFragment 
             prefs.removeAll();
         }
 
-        addPreferencesFromResource(R.xml.status_bar_expanded_header_settings);
+        addPreferencesFromResource(R.xml.status_bar_notif_system_icons_settings);
+
         mResolver = getActivity().getContentResolver();
+        int intColor = DEFAULT_COLOR;
+        String hexColor = String.format("#%08x", (0xffffffff & intColor));
 
-        boolean showWeather = Settings.System.getInt(mResolver,
-                Settings.System.STATUS_BAR_EXPANDED_HEADER_SHOW_WEATHER, 0) == 1;
+        boolean showCount = Settings.System.getInt(mResolver,
+               Settings.System.STATUS_BAR_SHOW_NOTIF_COUNT, 0) == 1;
 
-        int intColor;
-        String hexColor;
+        mColorizeNotifIcons = (SwitchPreference) findPreference(KEY_COLORIZE_NOTIF_ICONS);
+        mColorizeNotifIcons.setChecked(Settings.System.getInt(mResolver,
+               Settings.System.STATUS_BAR_COLORIZE_NOTIF_ICONS, 0) == 1);
+        /*if (DeviceUtils.isPhone(getActivity())) {
+            mColorizeNotifIcons.setTitle(R.string.notif_system_icons_colorize_notif_icons_title_phone);
+        }*/
+        mColorizeNotifIcons.setOnPreferenceChangeListener(this);
 
-        mShowWeather = (SwitchPreference) findPreference(PREF_SHOW_WEATHER);
-        mShowWeather.setChecked(showWeather);
-        mShowWeather.setOnPreferenceChangeListener(this);
+        mShowCount = (SwitchPreference) findPreference(KEY_SHOW_COUNT);
+        mShowCount.setChecked(showCount);
+        mShowCount.setOnPreferenceChangeListener(this);
 
-        if (showWeather) {
-            mShowLocation = (SwitchPreference) findPreference(PREF_SHOW_LOCATION);
-            mShowLocation.setChecked(Settings.System.getInt(mResolver,
-                    Settings.System.STATUS_BAR_EXPANDED_HEADER_SHOW_WEATHER_LOCATION, 1) == 1);
-            mShowLocation.setOnPreferenceChangeListener(this);
-        } else {
-            removePreference(PREF_SHOW_LOCATION);
-        }
-
-        mBackgroundColor =
-                (ColorPickerPreference) findPreference(PREF_BG_COLOR);
+        mIconColor = (ColorPickerPreference) findPreference(KEY_ICON_COLOR);
         intColor = Settings.System.getInt(mResolver,
-                Settings.System.STATUS_BAR_EXPANDED_HEADER_BG_COLOR,
-                DEFAULT_BG_COLOR);
-        mBackgroundColor.setNewPreviewColor(intColor);
-        hexColor = String.format("#%08x", (0xffffffff & intColor));
-        mBackgroundColor.setSummary(hexColor);
-        mBackgroundColor.setDefaultColors(DEFAULT_BG_COLOR, DEFAULT_BG_COLOR);
-        mBackgroundColor.setOnPreferenceChangeListener(this);
-		mBackgroundColor.setAlphaSliderEnabled(true);
-
-        mTextColor = (ColorPickerPreference) findPreference(PREF_TEXT_COLOR);
-        intColor = Settings.System.getInt(mResolver,
-                Settings.System.STATUS_BAR_EXPANDED_HEADER_TEXT_COLOR,
-                DEFAULT_COLOR);
-        mTextColor.setNewPreviewColor(intColor);
-        hexColor = String.format("#%08x", (0xffffffff & intColor));
-        mTextColor.setSummary(hexColor);
-        mTextColor.setOnPreferenceChangeListener(this);
-        mTextColor.setAlphaSliderEnabled(true);
-
-        mIconColor = (ColorPickerPreference) findPreference(PREF_ICON_COLOR);
-        intColor = Settings.System.getInt(mResolver,
-                Settings.System.STATUS_BAR_EXPANDED_HEADER_ICON_COLOR,
+                Settings.System.STATUS_BAR_NOTIF_SYSTEM_ICON_COLOR,
                 DEFAULT_COLOR);
         mIconColor.setNewPreviewColor(intColor);
         hexColor = String.format("#%08x", (0xffffffff & intColor));
         mIconColor.setSummary(hexColor);
         mIconColor.setOnPreferenceChangeListener(this);
-        mIconColor.setAlphaSliderEnabled(true);
+
+        PreferenceCategory catColors = (PreferenceCategory) findPreference(KEY_CATEGORY_COLORS);
+
+        mCountIconColor = (ColorPickerPreference) findPreference(KEY_COUNT_ICON_COLOR);
+        mCountTextColor = (ColorPickerPreference) findPreference(KEY_COUNT_TEXT_COLOR);
+        if (showCount) {
+            intColor = Settings.System.getInt(mResolver,
+                    Settings.System.STATUS_BAR_NOTIF_COUNT_ICON_COLOR,
+                    DEFAULT_COUNT_ICON_COLOR);
+            mCountIconColor.setNewPreviewColor(intColor);
+            hexColor = String.format("#%08x", (0xffffffff & intColor));
+            mCountIconColor.setSummary(hexColor);
+            mCountIconColor.setOnPreferenceChangeListener(this);
+
+            intColor = Settings.System.getInt(mResolver,
+                    Settings.System.STATUS_BAR_NOTIF_COUNT_TEXT_COLOR,
+                    DEFAULT_COLOR);
+            mCountTextColor.setNewPreviewColor(intColor);
+            hexColor = String.format("#%08x", (0xffffffff & intColor));
+            mCountTextColor.setSummary(hexColor);
+            mCountTextColor.setOnPreferenceChangeListener(this);
+        } else {
+            // Remove uneeded preferences if notification count is disabled
+            catColors.removePreference(mCountIconColor);
+            catColors.removePreference(mCountTextColor);
+        }
 
         setHasOptionsMenu(true);
     }
@@ -130,7 +135,7 @@ public class StatusBarExpandedHeaderSettings extends SettingsPreferenceFragment 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.add(0, MENU_RESET, 0, R.string.reset)
-                .setIcon(R.drawable.ic_settings_reset)
+                .setIcon(R.drawable.ic_settings_reset) // use the KitKat backup icon
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
     }
 
@@ -147,47 +152,47 @@ public class StatusBarExpandedHeaderSettings extends SettingsPreferenceFragment 
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         boolean value;
-        String hex;
         int intHex;
+        String hex;
 
-        if (preference == mShowWeather) {
+        if (preference == mColorizeNotifIcons) {
             value = (Boolean) newValue;
             Settings.System.putInt(mResolver,
-                Settings.System.STATUS_BAR_EXPANDED_HEADER_SHOW_WEATHER,
-                value ? 1 : 0);
+                    Settings.System.STATUS_BAR_COLORIZE_NOTIF_ICONS,
+                    value ? 1 : 0);
+            return true;
+        } else if (preference == mShowCount) {
+            value = (Boolean) newValue;
+            Settings.System.putInt(mResolver,
+                    Settings.System.STATUS_BAR_SHOW_NOTIF_COUNT, value ? 1 : 0);
             refreshSettings();
-            return true;
-        } else if (preference == mShowLocation) {
-            value = (Boolean) newValue;
-            Settings.System.putInt(mResolver,
-                Settings.System.STATUS_BAR_EXPANDED_HEADER_SHOW_WEATHER_LOCATION,
-                value ? 1 : 0);
-            return true;
-        } else if (preference == mBackgroundColor) {
-            hex = ColorPickerPreference.convertToARGB(
-                Integer.valueOf(String.valueOf(newValue)));
-            intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(mResolver,
-                Settings.System.STATUS_BAR_EXPANDED_HEADER_BG_COLOR, intHex);
-            preference.setSummary(hex);
-            return true;
-        } else if (preference == mTextColor) {
-            hex = ColorPickerPreference.convertToARGB(
-                Integer.valueOf(String.valueOf(newValue)));
-            intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(mResolver,
-                Settings.System.STATUS_BAR_EXPANDED_HEADER_TEXT_COLOR, intHex);
-            preference.setSummary(hex);
             return true;
         } else if (preference == mIconColor) {
             hex = ColorPickerPreference.convertToARGB(
-                Integer.valueOf(String.valueOf(newValue)));
+                    Integer.valueOf(String.valueOf(newValue)));
             intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(mResolver,
-                Settings.System.STATUS_BAR_EXPANDED_HEADER_ICON_COLOR, intHex);
+                    Settings.System.STATUS_BAR_NOTIF_SYSTEM_ICON_COLOR, intHex);
+            preference.setSummary(hex);
+            return true;
+        } else if (preference == mCountIconColor) {
+            hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(mResolver,
+                    Settings.System.STATUS_BAR_NOTIF_COUNT_ICON_COLOR, intHex);
+            preference.setSummary(hex);
+            return true;
+        } else if (preference == mCountTextColor) {
+            hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(mResolver,
+                    Settings.System.STATUS_BAR_NOTIF_COUNT_TEXT_COLOR, intHex);
             preference.setSummary(hex);
             return true;
         }
+
         return false;
     }
 
@@ -207,8 +212,8 @@ public class StatusBarExpandedHeaderSettings extends SettingsPreferenceFragment 
             return frag;
         }
 
-        StatusBarExpandedHeaderSettings getOwner() {
-            return (StatusBarExpandedHeaderSettings) getTargetFragment();
+        StatusBarNotifSystemIconsSettings getOwner() {
+            return (StatusBarNotifSystemIconsSettings) getTargetFragment();
         }
 
         @Override
@@ -224,37 +229,37 @@ public class StatusBarExpandedHeaderSettings extends SettingsPreferenceFragment 
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             Settings.System.putInt(getOwner().mResolver,
-                                    Settings.System.STATUS_BAR_EXPANDED_HEADER_SHOW_WEATHER, 0);
+                                    Settings.System.STATUS_BAR_COLORIZE_NOTIF_ICONS, 0);
                             Settings.System.putInt(getOwner().mResolver,
-                                    Settings.System.STATUS_BAR_EXPANDED_HEADER_SHOW_WEATHER_LOCATION, 1);
-                             Settings.System.putInt(getOwner().mResolver,
-                                    Settings.System.STATUS_BAR_EXPANDED_HEADER_BG_COLOR,
-                                    DEFAULT_BG_COLOR);
+                                    Settings.System.STATUS_BAR_SHOW_NOTIF_COUNT, 0);
                             Settings.System.putInt(getOwner().mResolver,
-                                    Settings.System.STATUS_BAR_EXPANDED_HEADER_TEXT_COLOR,
+                                    Settings.System.STATUS_BAR_NOTIF_SYSTEM_ICON_COLOR,
                                     DEFAULT_COLOR);
                             Settings.System.putInt(getOwner().mResolver,
-                                    Settings.System.STATUS_BAR_EXPANDED_HEADER_ICON_COLOR,
+                                    Settings.System.STATUS_BAR_NOTIF_COUNT_ICON_COLOR,
+                                    DEFAULT_COUNT_ICON_COLOR);
+                            Settings.System.putInt(getOwner().mResolver,
+                                    Settings.System.STATUS_BAR_NOTIF_COUNT_TEXT_COLOR,
                                     DEFAULT_COLOR);
                             getOwner().refreshSettings();
                         }
                     })
-                    .setPositiveButton(R.string.reset_carbon,
+                    .setPositiveButton(R.string.reset_android,
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             Settings.System.putInt(getOwner().mResolver,
-                                    Settings.System.STATUS_BAR_EXPANDED_HEADER_SHOW_WEATHER, 1);
+                                    Settings.System.STATUS_BAR_COLORIZE_NOTIF_ICONS, 1);
                             Settings.System.putInt(getOwner().mResolver,
-                                    Settings.System.STATUS_BAR_EXPANDED_HEADER_SHOW_WEATHER_LOCATION, 1);
+                                    Settings.System.STATUS_BAR_SHOW_NOTIF_COUNT, 1);
                             Settings.System.putInt(getOwner().mResolver,
-                                    Settings.System.STATUS_BAR_EXPANDED_HEADER_BG_COLOR,
-                                    0xff000000);
-                            Settings.System.putInt(getOwner().mResolver,
-                                    Settings.System.STATUS_BAR_EXPANDED_HEADER_TEXT_COLOR,
-                                    0xffff0000);
-                            Settings.System.putInt(getOwner().mResolver,
-                                    Settings.System.STATUS_BAR_EXPANDED_HEADER_ICON_COLOR,
+                                    Settings.System.STATUS_BAR_NOTIF_SYSTEM_ICON_COLOR,
                                     0xff33b5e5);
+                            Settings.System.putInt(getOwner().mResolver,
+                                    Settings.System.STATUS_BAR_NOTIF_COUNT_ICON_COLOR,
+                                    0xff33b5e5);
+                            Settings.System.putInt(getOwner().mResolver,
+                                    Settings.System.STATUS_BAR_NOTIF_COUNT_TEXT_COLOR,
+                                    0xffff0000);
                             getOwner().refreshSettings();
                         }
                     })

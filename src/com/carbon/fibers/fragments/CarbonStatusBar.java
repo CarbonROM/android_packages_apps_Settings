@@ -93,8 +93,12 @@ public class CarbonStatusBar extends SettingsPreferenceFragment {
             super(fm);
             frags[0] = new StatusBarSettings();
             frags[1] = new StatusBarClockStyle();
-            frags[2] = new NetworkTraffic();
-            frags[3] = new NetworkTrafficFragment();
+            frags[2] = new StatusBarBatteryStatusSettings();
+            frags[3] = new StatusBarSignalSettings();
+            frags[4] = new NetworkTraffic();
+            frags[5] = new NetworkTrafficFragment();
+            frags[6] = new StatusBarExpandedHeaderSettings();
+            frags[7] = new StatusBarNotifSystemIconsSettings();
         }
 
         @Override
@@ -118,8 +122,12 @@ public class CarbonStatusBar extends SettingsPreferenceFragment {
         titleString = new String[] {
                     getString(R.string.status_bar_title),
                     getString(R.string.status_bar_clock),
+                    getString(R.string.status_bar_battery_status_settings_title),
+                    getString(R.string.status_bar_signal_settings_title),
                     getString(R.string.network_traffic_title),
-                    getString(R.string.network_traffic_vector_title)};
+                    getString(R.string.network_traffic_vector_title),
+                    getString(R.string.status_bar_expanded_header_settings_title),
+                    getString(R.string.status_bar_notif_system_icons_settings_title)};
         return titleString;
     }
 }
