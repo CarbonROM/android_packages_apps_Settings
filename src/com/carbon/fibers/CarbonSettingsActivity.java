@@ -43,7 +43,6 @@ import com.android.settings.carbon.*;
 import com.android.settings.carbon.gestureanywhere.*;
 import com.android.settings.cyanogenmod.*;
 import com.android.settings.cyanogenmod.qs.*;
-import com.android.settings.lockscreen.*;
 import com.android.settings.notification.*;
 import com.android.settings.slim.*;
 import com.android.settings.slim.dslv.*;
@@ -212,7 +211,6 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         DeviceUtils.class.getName(),
         DisplayAnimationsSettings.class.getName(),
         GestureAnywhereSettings.class.getName(),
-        LockScreenSettings.class.getName(),
         NavBar.class.getName(),
         NavRing.class.getName(),
         NetworkTraffic.class.getName(),
