@@ -522,14 +522,6 @@
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
 
-    <!-- StatusBar Clock style -->
-    <string name="clock_font_style_title">Clock font style</string>
-    <string name="clock_font_bold">Bold</string>
-    <string name="clock_font_condensed">Condensed</string>
-    <string name="clock_font_light">Light</string>
-    <string name="clock_font_light_italic">Light italic</string>
-    <string name="clock_font_normal">Normal</string>
-
     <!-- Recents panel settings -->
     <string name="recents_panel_settings">Recents Panel Settings</string>
     <string name="recents_panel_title">Recents Panel</string>
