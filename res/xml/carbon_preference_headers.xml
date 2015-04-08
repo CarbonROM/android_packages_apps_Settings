@@ -55,14 +55,6 @@
             android:icon="@drawable/ic_settings_notifications"
             settings:advanced="true" />
 
-        <!-- Lock screen -->
-        <header
-            android:id="@+id/lockscreen_settings"
-            android:title="@string/lockscreen_settings"
-            android:fragment="com.android.settings.lockscreen.LockScreenSettings"
-            android:icon="@drawable/ic_settings_security"
-            settings:advanced="true" />
-
         <header
             android:id="@+id/carbon_more_device_settings"
             android:title="@string/more_device_controls_title"
