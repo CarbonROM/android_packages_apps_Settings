@@ -47,14 +47,6 @@
             android:icon="@drawable/ic_settings_notification_drawer"
             settings:advanced="true" />
 
-        <!-- Notification manager -->
-        <header
-            android:id="@+id/notification_manager"
-            android:title="@string/notification_manager"
-            android:fragment="com.android.settings.notification.NotificationManagerSettings"
-            android:icon="@drawable/ic_settings_notifications"
-            settings:advanced="true" />
-
         <!-- Recents Settings -->
         <header
             android:id="@+id/recents_panel_settings"
