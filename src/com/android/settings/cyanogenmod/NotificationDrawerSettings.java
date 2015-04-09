@@ -53,8 +53,17 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.notification_drawer_settings);
-
         mQSTiles = findPreference("qs_order");
+        PreferenceScreen prefs = getPreferenceScreen();
+        final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
+        mBlockOnSecureKeyguard = (SwitchPreference) findPreference(PREF_BLOCK_ON_SECURE_KEYGUARD);
+        if (lockPatternUtils.isSecure()) {
+            mBlockOnSecureKeyguard.setChecked(Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD, 1) == 1);
+            mBlockOnSecureKeyguard.setOnPreferenceChangeListener(this);
+        } else {
+            prefs.removePreference(mBlockOnSecureKeyguard);
+        }
     }
 
     @Override
@@ -70,15 +79,6 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
                 Settings.System.QS_QUICK_PULLDOWN, 0, UserHandle.USER_CURRENT);
         mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
         updatePulldownSummary(quickPulldownValue);
-        final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
-        mBlockOnSecureKeyguard = (SwitchPreference) findPreference(PREF_BLOCK_ON_SECURE_KEYGUARD);
-        if (lockPatternUtils.isSecure()) {
-            mBlockOnSecureKeyguard.setChecked(Settings.Secure.getInt(getContentResolver(),
-                    Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD, 1) == 1);
-            mBlockOnSecureKeyguard.setOnPreferenceChangeListener(this);
-        } else {
-            prefs.removePreference(mBlockOnSecureKeyguard);
-        }
     }
 
     @Override
