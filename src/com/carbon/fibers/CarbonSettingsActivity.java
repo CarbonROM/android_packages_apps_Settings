@@ -43,7 +43,6 @@ import com.android.settings.carbon.*;
 import com.android.settings.carbon.gestureanywhere.*;
 import com.android.settings.cyanogenmod.*;
 import com.android.settings.cyanogenmod.qs.*;
-import com.android.settings.notification.*;
 import com.android.settings.slim.*;
 import com.android.settings.slim.dslv.*;
 import com.carbon.fibers.fragments.*;
@@ -219,7 +218,6 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         NetworkTraffic.class.getName(),
         NetworkTrafficFragment.class.getName(),
         NotificationDrawerSettings.class.getName(),
-        NotificationManagerSettings.class.getName(),
         PowerMenuActions.class.getName(),
         QSTiles.class.getName(),
         StatusBarSettings.class.getName()
