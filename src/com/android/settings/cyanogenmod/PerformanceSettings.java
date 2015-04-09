@@ -109,7 +109,7 @@ public class PerformanceSettings extends SettingsPreferenceFragment {
         } else {
             prefSet.removePreference(category);
         }
-        
+
         /* Performance Misc crDroid */
         category = (PreferenceCategory) prefSet.findPreference(CATEGORY_MISC);
         mForceFastCharge = (SwitchPreference) prefSet.findPreference(KEY_FORCE_FAST_CHARGE);
@@ -119,7 +119,6 @@ public class PerformanceSettings extends SettingsPreferenceFragment {
             prefSet.removePreference(category);
         }
 
-        mPerformanceProfileObserver = new PerformanceProfileObserver(new Handler());
     }
 
     private boolean showAdvancedPerfSettings() {
