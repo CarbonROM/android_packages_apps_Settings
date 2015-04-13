@@ -55,6 +55,9 @@ import android.widget.TextView;
 
 // fragments import for entry
 import com.android.settings.*;
+import com.android.settings.bliss.*;
+import com.android.settings.bliss.activities.*;
+import com.android.settings.bliss.navbar.*;
 import com.android.settings.carbon.*;
 import com.android.settings.carbon.gestureanywhere.*;
 import com.android.settings.cyanogenmod.*;
@@ -219,12 +222,15 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         AnimationControls.class.getName(),
         AppCircleBar.class.getName(),
         AppSidebar.class.getName(),
+        ArrangeNavbarFragment.class.getName(),
+        BaseSetting.class.getName(),
         BacklightTimeoutSeekBar.class.getName(),
         ButtonBacklightBrightness.class.getName(),
         ButtonSettings.class.getName(),
         CarbonButtons.class.getName(),
         CarbonInterface.class.getName(),
         CarbonMoreDeviceSettings.class.getName(),
+        CarbonNavBar.class.getName(),
         CarbonNotificationDrawerSettings.class.getName(),
         CarbonRecentsSettings.class.getName(),
         CarbonStatusBar.class.getName(),
@@ -232,8 +238,9 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         DeviceUtils.class.getName(),
         DisplayAnimationsSettings.class.getName(),
         GestureAnywhereSettings.class.getName(),
-        NavBar.class.getName(),
-        NavBarStyleDimen.class.getName(),
+        NavBarSettings.class.getName(),
+        NavbarSettingsFragment.class.getName(),
+        NavbarTabHostFragment.class.getName(),
         NavRing.class.getName(),
         NetworkTraffic.class.getName(),
         NetworkTrafficFragment.class.getName(),

@@ -35,6 +35,14 @@
             android:title="@string/button_pref_title"
             settings:advanced="true" />
 
+        <!-- Navigation Bar -->
+        <header
+            android:id="@+id/navbar"
+            android:fragment="com.carbon.fibers.fragments.CarbonNavBar"
+            android:icon="@drawable/ic_navbar_layout"
+            android:title="@string/navbar_title"
+            settings:advanced="true" />
+
         <!-- Pie control -->
         <header
             android:id="@+id/pie_settings"

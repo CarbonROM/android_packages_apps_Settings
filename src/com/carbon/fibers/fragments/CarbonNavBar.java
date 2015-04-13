@@ -34,17 +34,19 @@ import android.view.ViewGroup;
 import com.android.settings.R;
 
 import com.android.settings.*;
+import com.android.settings.bliss.*;
 import com.android.settings.carbon.*;
 import com.android.settings.cyanogenmod.*;
+
 import com.carbon.fibers.preference.SettingsPreferenceFragment;
 import com.carbon.fibers.Utils;
 
 import java.lang.Exception;
 import java.util.ArrayList;
 
-public class CarbonButtons extends SettingsPreferenceFragment {
+public class CarbonNavBar extends SettingsPreferenceFragment {
 
-    private static final String TAG = "CarbonButtons";
+    private static final String TAG = "CarbonNavBar";
 
     PagerTabStrip mPagerTabStrip;
     ViewPager mViewPager;
@@ -92,8 +94,8 @@ public class CarbonButtons extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new ButtonSettings();
-            frags[1] = new PowerMenuActions();
+            frags[0] = new NavBarSettings();
+            frags[1] = new NavRing();
         }
 
         @Override
@@ -115,8 +117,8 @@ public class CarbonButtons extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[] {
-                    getString(R.string.button_pref_title),
-                    getString(R.string.power_menu_title)};
+                    getString(R.string.navbar_title),
+                    getString(R.string.navigation_ring_title)};
         return titleString;
     }
 }
