@@ -53,6 +53,12 @@
             android:summary="@string/double_tap_sleep_nav_bar_summary"
             android:defaultValue="false" />
 
+        <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
+            android:key="dev_force_show_navbar"
+            android:title="@string/force_show_navbar_title"
+            android:summary="@string/force_show_navbar_summary"
+            android:defaultValue="true" />
+
         <ListPreference
             android:key="navigation_recents_long_press"
             android:dialogTitle="@string/navigation_bar_recents_title"
