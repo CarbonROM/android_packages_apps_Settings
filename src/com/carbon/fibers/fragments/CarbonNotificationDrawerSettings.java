@@ -41,9 +41,9 @@ import com.carbon.fibers.Utils;
 import java.lang.Exception;
 import java.util.ArrayList;
 
-public class CarbonStatusBar extends SettingsPreferenceFragment {
+public class CarbonNotificationDrawerSettings extends SettingsPreferenceFragment {
 
-    private static final String TAG = "CarbonStatusBar";
+    private static final String TAG = "CarbonNotificationDrawerSettings";
 
     PagerTabStrip mPagerTabStrip;
     ViewPager mViewPager;
@@ -91,10 +91,8 @@ public class CarbonStatusBar extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new StatusBarSettings();
-            frags[1] = new NetworkTraffic();
-            frags[2] = new NetworkTrafficFragment();
-            frags[3] = new CarrierLabel();
+            frags[0] = new NotificationDrawerSettings();
+            frags[1] = new QSColors();
         }
 
         @Override
@@ -116,10 +114,8 @@ public class CarbonStatusBar extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[] {
-                    getString(R.string.status_bar_title),
-                    getString(R.string.network_traffic_title),
-                    getString(R.string.network_traffic_vector_title),
-                    getString(R.string.carrier_options)};
+                    getString(R.string.notification_drawer_title),
+                    getString(R.string.qs_colors_title)};
         return titleString;
     }
 }
