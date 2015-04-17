@@ -383,13 +383,6 @@
             android:title="@string/show_all_anrs"
             android:summary="@string/show_all_anrs_summary"/>
 
-
-        <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
-            android:key="dev_force_show_navbar"
-            android:title="@string/force_show_navbar_title"
-            android:summary="@string/force_show_navbar_summary"
-            android:defaultValue="true" />
-
         <SwitchPreference
             android:key="kill_app_longpress_back"
             android:title="@string/kill_app_longpress_back"
