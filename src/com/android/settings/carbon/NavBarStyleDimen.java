@@ -29,13 +29,14 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
+import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.android.internal.util.temasek.DeviceUtils;
+import com.android.internal.util.slim.DeviceUtils;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
@@ -82,6 +83,9 @@ public class NavBarStyleDimen extends SettingsPreferenceFragment implements
             mNavigationBarWidth.setOnPreferenceChangeListener(this);
         }
 
+        updateDimensionValues();
+        setHasOptionsMenu(true);
+
         // Navigation bar button color
         mNavbarButtonTint = (ColorPickerPreference) findPreference(NAVIGATION_BAR_TINT);
         mNavbarButtonTint.setOnPreferenceChangeListener(this);
@@ -90,9 +94,6 @@ public class NavBarStyleDimen extends SettingsPreferenceFragment implements
         String hexColor = String.format("#%08x", (0xffffffff & intColor));
         mNavbarButtonTint.setSummary(hexColor);
         mNavbarButtonTint.setNewPreviewColor(intColor);
-
-        updateDimensionValues();
-        setHasOptionsMenu(true);
     }
 
     @Override
@@ -184,8 +185,8 @@ public class NavBarStyleDimen extends SettingsPreferenceFragment implements
             return frag;
         }
 
-        NavBarDimensions getOwner() {
-            return (NavBarDimensions) getTargetFragment();
+        NavBarStyleDimen getOwner() {
+            return (NavBarStyleDimen) getTargetFragment();
         }
 
         @Override
@@ -204,8 +205,6 @@ public class NavBarStyleDimen extends SettingsPreferenceFragment implements
                                     Settings.Secure.NAVIGATION_BAR_HEIGHT, -2);
                             Settings.Secure.putInt(getActivity().getContentResolver(),
                                     Settings.Secure.NAVIGATION_BAR_WIDTH, -2);
-                            Settings.Secure.putInt(getActivity().getContentResolver(),
-                                    Settings.Secure.NAVIGATION_BAR_TINT, #FFFFFF);
                             getOwner().updateDimensionValues();
                         }
                     })
