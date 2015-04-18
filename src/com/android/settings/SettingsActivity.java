@@ -270,6 +270,7 @@ public class SettingsActivity extends Activity
             ActionListViewSettings.class.getName(),
             CarbonSettingsActivity.class.getName(),
             CarbonAboutMe.class.getName(),
+            HeadsUpSettings.class.getName(),
             WirelessSettings.class.getName(),
             WifiSettings.class.getName(),
             AdvancedWifiSettings.class.getName(),

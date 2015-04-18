@@ -95,7 +95,6 @@ public class CarbonStatusBar extends SettingsPreferenceFragment {
             frags[1] = new NetworkTraffic();
             frags[2] = new NetworkTrafficFragment();
             frags[3] = new CarrierLabel();
-            frags[4] = new HeadsUpSettings();
         }
 
         @Override
