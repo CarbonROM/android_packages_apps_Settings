@@ -435,6 +435,7 @@ limitations under the License.
         <item>6000</item>
         <item>8000</item>
         <item>10000</item>
+    </string-array>
 
     <!-- Navigation bar custom dimensions -->
     <string-array name="navigation_bar_width_entries" translatable="false">
