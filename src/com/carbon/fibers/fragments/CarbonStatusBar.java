@@ -119,8 +119,7 @@ public class CarbonStatusBar extends SettingsPreferenceFragment {
                     getString(R.string.status_bar_title),
                     getString(R.string.network_traffic_title),
                     getString(R.string.network_traffic_vector_title),
-                    getString(R.string.carrier_options),
-                    getString(R.string.category_heads_up)};
+                    getString(R.string.carrier_options)};
         return titleString;
     }
 }
