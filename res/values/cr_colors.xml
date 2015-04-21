@@ -19,6 +19,12 @@
     <color name="black">#000</color>
     <color name="red">#F00</color>
 
+    <color name="white">#ffffffff</color>
+
+    <!-- Color picker -->
+    <color name="divider">#1fffffff</color>
+    <color name="ripple_material_dark">#4dffffff</color>
+
     <color name="extension_list_item_color">#ff000000</color>
     <color name="configure_light_background">#00000000</color>
 
