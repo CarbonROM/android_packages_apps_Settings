@@ -58,6 +58,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
 import android.util.Xml;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -81,6 +82,7 @@ import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.carbon.CarbonAboutMe;
+import com.android.settings.cyanogenmod.DisplayRotation;
 import com.android.settings.dashboard.DashboardCategory;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.dashboard.DashboardTile;
@@ -337,7 +339,8 @@ public class SettingsActivity extends Activity
             NotificationManagerSettings.class.getName(),
             LockScreenSettings.class.getName(),
             ExpandedDesktopPreferenceFragment.class.getName(),
-            LiveDisplay.class.getName()
+            LiveDisplay.class.getName(),
+            DisplayRotation.class.getName()
     };
 
 
@@ -1459,6 +1462,16 @@ public class SettingsActivity extends Activity
             return;
         }
         super.onNewIntent(intent);
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_SEARCH:
+                mSearchMenuItem.expandActionView();
+                return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
     /**
