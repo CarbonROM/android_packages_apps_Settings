@@ -16,6 +16,20 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Heads up -->
+    <com.android.settings.cyanogenmod.GlobalSettingSwitchPreference
+            android:key="heads_up_notifications_enabled"
+            android:title="@string/heads_up_notifications"
+            android:summaryOn="@string/summary_heads_up_enabled"
+            android:summaryOff="@string/summary_heads_up_disabled" />
+
+    <!-- Heads-Up notifications -->
+    <PreferenceScreen
+            android:title="@string/category_heads_up"
+            android:summary="@string/category_heads_up_summary"
+            android:fragment="com.android.settings.carbon.HeadsUpSettings"
+            android:dependency="heads_up_notifications_enabled" />
+
     <!-- When device is locked -->
     <com.android.settings.notification.DropDownPreference
             android:key="lock_screen_notifications"
@@ -40,11 +54,5 @@
             android:title="@string/block_notifications_title"
             android:summary="@string/block_notifications_summary"
             android:fragment="com.android.settings.cyanogenmod.SpamList" />
-
-    <!-- Heads-Up notifications -->
-    <PreferenceScreen
-            android:title="@string/category_heads_up"
-            android:summary="@string/category_heads_up_summary"
-            android:fragment="com.android.settings.carbon.HeadsUpSettings" />
 
 </PreferenceScreen>

@@ -865,7 +865,7 @@
         </activity>
 
         <activity android:name="Settings$AppOpsSummaryActivity"
-                android:label="@string/app_ops_settings"
+                android:label="@string/privacy_guard_manager_title"
                 android:taskAffinity=""
                 android:excludeFromRecents="true">
             <intent-filter>
@@ -880,6 +880,30 @@
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/application_settings" />
         </activity>
+
+        <!-- Still need a top-level activity for showing app ops details.  Aliasing
+             trick is so the code that is now a fragment can still be called
+             AppOpsDetails. -->
+        <activity android:name=".applications.AppOpsDetailsTop"
+                  android:label="@string/privacy_guard_manager_title"
+                  android:exported="true"
+                  android:taskAffinity=""
+                  android:excludeFromRecents="true"
+                  android:parentActivityName="Settings$AppOpsSummaryActivity">
+        </activity>
+
+        <!-- Keep compatibility with old shortcuts. -->
+        <activity-alias android:name=".applications.AppOpsDetails"
+                android:label="@string/privacy_guard_manager_title"
+                android:exported="true"
+                android:excludeFromRecents="true"
+                android:targetActivity=".applications.AppOpsDetailsTop">
+            <intent-filter>
+                <action android:name="android.settings.APP_OPS_DETAILS_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </activity-alias>
 
         <activity android:name="Settings$LocationSettingsActivity"
                 android:label="@string/location_settings_title"
@@ -2127,6 +2151,23 @@
                 android:resource="@id/sound_settings" />
         </activity>
 
+        <!-- Notification manager -->
+        <activity android:name="Settings$NotificationManagerActivity"
+                android:label="@string/notification_manager"
+                android:exported="true"
+                android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.settings.NOTIFICATION_MANAGER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.notification.NotificationManagerSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/notification_manager" />
+        </activity>
+
         <!-- Show apps for which application-level notification settings are applicable -->
         <activity android:name="Settings$NotificationAppListActivity"
                 android:label="@string/app_notifications_title"
@@ -2222,6 +2263,23 @@
                 <action android:name="com.cyanogenmod.action.UserChanged" />
             </intent-filter>
         </receiver>
+
+        <!-- Anonymous Statistics -->
+        <receiver android:name=".cmstats.ReportingServiceManager"
+            android:enabled="true"
+            android:exported="false"
+            android:label="ReportingServiceManager">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:label="ReportingService"
+            android:enabled="true"
+            android:exported="false"
+            android:name=".cmstats.ReportingService">
+        </service>
 
         <!-- Watch for ContactsContract.Profile changes and update the user's photo.  -->
         <receiver android:name=".users.ProfileUpdateReceiver">
