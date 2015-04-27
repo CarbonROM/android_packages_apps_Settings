@@ -105,6 +105,7 @@ public class QSColors extends SettingsPreferenceFragment implements
         hexColor = String.format("#%08x", (0xffffffff & intColor));
         mQSIconColor.setSummary(hexColor);
         mQSIconColor.setOnPreferenceChangeListener(this);
+        mQSIconColor.setAlphaSliderEnabled(true);
 
         mQSTextColor =
                 (ColorPickerPreference) findPreference(PREF_QS_TEXT_COLOR);
@@ -114,6 +115,7 @@ public class QSColors extends SettingsPreferenceFragment implements
         hexColor = String.format("#%08x", (0xffffffff & intColor));
         mQSTextColor.setSummary(hexColor);
         mQSTextColor.setOnPreferenceChangeListener(this);
+        mQSTextColor.setAlphaSliderEnabled(true);
 
         mQSShadeTransparency = (SwitchPreference) findPreference(PREF_QS_TRANSPARENT_SHADE);
         mQSShadeTransparency.setChecked((Settings.System.getInt(mResolver,
