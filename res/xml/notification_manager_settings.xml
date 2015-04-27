@@ -20,8 +20,7 @@
     <PreferenceScreen
             android:title="@string/category_heads_up"
             android:summary="@string/category_heads_up_summary"
-            android:fragment="com.android.settings.carbon.HeadsUpSettings"
-            android:dependency="heads_up_notifications_enabled" />
+            android:fragment="com.android.settings.carbon.HeadsUpSettings" />
 
     <!-- When device is locked -->
     <com.android.settings.notification.DropDownPreference
