@@ -93,6 +93,7 @@ public class NetworkTrafficFragment extends SettingsPreferenceFragment implement
         String hexColor = String.format("#%08x", (0xffffffff & intColor));
             mNetTrafficColor.setSummary(hexColor);
             mNetTrafficColor.setNewPreviewColor(intColor);
+            mNetTrafficColor.setAlphaSliderEnabled(true);
 
         mNetTrafficAutohide =
                 (SwitchPreference) prefSet.findPreference(NETWORK_TRAFFIC_AUTOHIDE);
@@ -198,7 +199,7 @@ public class NetworkTrafficFragment extends SettingsPreferenceFragment implement
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.NETWORK_TRAFFIC_VECTOR_COLOR, intHex);
-            return true;  
+            return true;
         } else if (preference == mNetTrafficMonitor) {
             int intState = Integer.valueOf((String)newValue);
             mNetTrafficVal = setBit(mNetTrafficVal, MASK_UP, getBit(intState, MASK_UP));

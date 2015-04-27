@@ -112,6 +112,7 @@ public class StatusBarExpandedHeaderSettings extends SettingsPreferenceFragment 
         hexColor = String.format("#%08x", (0xffffffff & intColor));
         mTextColor.setSummary(hexColor);
         mTextColor.setOnPreferenceChangeListener(this);
+        mTextColor.setAlphaSliderEnabled(true);
 
         mIconColor = (ColorPickerPreference) findPreference(PREF_ICON_COLOR);
         intColor = Settings.System.getInt(mResolver,
@@ -121,6 +122,7 @@ public class StatusBarExpandedHeaderSettings extends SettingsPreferenceFragment 
         hexColor = String.format("#%08x", (0xffffffff & intColor));
         mIconColor.setSummary(hexColor);
         mIconColor.setOnPreferenceChangeListener(this);
+        mIconColor.setAlphaSliderEnabled(true);
 
         setHasOptionsMenu(true);
     }
