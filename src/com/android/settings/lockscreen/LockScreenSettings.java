@@ -76,7 +76,6 @@ public class LockScreenSettings extends SettingsPreferenceFragment
     private static final String KEY_POWER_INSTANTLY_LOCKS = "power_button_instantly_locks";
     private static final String KEY_TRUST_AGENT = "trust_agent";
     private static final String KEY_MANAGE_TRUST_AGENTS = "manage_trust_agents";
-    private static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "quick_unlock_control";
     private static final String KEY_SHOW_VISUALIZER = "lockscreen_visualizer";
     private static final String KEY_MANAGE_FINGERPRINTS = "manage_fingerprints";
 
@@ -89,7 +88,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment
     private static final int CHANGE_TRUST_AGENT_SETTINGS = 126;
 
     private Intent mTrustAgentClickIntent;
-    private SwitchPreference mQuickUnlockScreen;
+
     private boolean mIsPrimary;
 
     private ChooseLockSettingsHelper mChooseLockSettingsHelper;
@@ -234,14 +233,6 @@ public class LockScreenSettings extends SettingsPreferenceFragment
 
         PreferenceGroup generalCategory = (PreferenceGroup)
                 root.findPreference(KEY_GENERAL_CATEGORY);
-
-        // Quick Unlock Screen Control
-        mQuickUnlockScreen = (SwitchPreference) root
-                .findPreference(LOCKSCREEN_QUICK_UNLOCK_CONTROL);
-        if (mQuickUnlockScreen != null) {
-            mQuickUnlockScreen.setChecked(Settings.Secure.getInt(getContentResolver(),
-                    Settings.Secure.LOCKSCREEN_QUICK_UNLOCK_CONTROL, 1) == 1);
-        }
 
         // remove lockscreen visualizer option on low end gfx devices
         if (!ActivityManager.isHighEndGfx() && generalCategory != null) {
@@ -486,10 +477,6 @@ public class LockScreenSettings extends SettingsPreferenceFragment
             }
         } else if (KEY_POWER_INSTANTLY_LOCKS.equals(key)) {
             mLockPatternUtils.setPowerButtonInstantlyLocks((Boolean) value);
-        } else if (preference == mQuickUnlockScreen) {
-            Settings.Secure.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.Secure.LOCKSCREEN_QUICK_UNLOCK_CONTROL,
-                    (Boolean) value ? 1 : 0);
         }
         return result;
     }
