@@ -19,13 +19,13 @@
 
     <PreferenceScreen
         android:key="pie_button_style"
-        android:fragment="com.android.settings.bliss.PieButtonStyleSettings"
+        android:fragment="com.android.settings.carbon.PieButtonStyleSettings"
         android:title="@string/pie_button_style"
         android:summary="@string/pie_button_style_summary" />
 
     <PreferenceScreen
             android:key="pie_button_second_layer"
-            android:fragment="com.android.settings.bliss.dslv.ActionListViewSettings"
+            android:fragment="com.android.settings.slim.dslv.ActionListViewSettings"
             android:title="@string/pie_button_second_layer"
             android:summary="@string/pie_button_second_layer_summary">
         <extra android:name="actionMode" android:value="2" />
