@@ -2491,7 +2491,7 @@
         </activity-alias>
 
         <!-- Buttons options -->
-        <activity android:name="Settings$ButtonSettings"
+        <activity android:name="Settings$ButtonSettingsActivity"
                 android:uiOptions="splitActionBarWhenNarrow"
                 android:label="@string/button_pref_title"
                 android:excludeFromRecents="true">
@@ -2505,10 +2505,10 @@
                 android:resource="@id/security_settings" />
         </activity>
 
-        <activity-alias android:name="com.android.settings.ButtonSettings"
+        <activity-alias android:name=".ButtonSettings"
                 android:taskAffinity="com.android.settings"
                 android:label="@string/button_pref_title"
-                android:targetActivity="Settings$ButtonSettings"
+                android:targetActivity="Settings$ButtonSettingsActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"

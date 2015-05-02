@@ -109,6 +109,7 @@ public class Settings extends SettingsActivity {
     public static class DisplayRotationActivity extends SettingsActivity { /* empty */ }
     public static class AnonymousStatsActivity extends Settings { /* empty */ }
     public static class AppCircleBarActivity extends SettingsActivity { /* empty */ }
+    public static class ButtonSettingsActivity extends SettingsActivity { /* empty */ }
     public static class HeadsUpSettingsActivity extends SettingsActivity { /* empty */ }
     public static class NavBarActivity extends SettingsActivity { /* empty */ }
     public static class NotificationManagerActivity extends SettingsActivity { /* empty */ }
