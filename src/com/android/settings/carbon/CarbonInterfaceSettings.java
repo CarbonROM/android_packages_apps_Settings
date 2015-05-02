@@ -16,7 +16,9 @@
 
 package com.android.settings.carbon;
 
+import android.app.Activity;
 import android.app.ActivityManager;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
@@ -30,6 +32,7 @@ import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.widget.Toast;
 
+import com.android.internal.util.cm.QSUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.util.Helpers;
@@ -40,12 +43,16 @@ public class CarbonInterfaceSettings extends SettingsPreferenceFragment implemen
     private static final String TAG = "CarbonInterfaceSettings";
     private static final String KEY_LOCKCLOCK = "lock_clock";
     private static final String KEY_TOAST_ANIMATION = "toast_animation";
+    private static final String DISABLE_TORCH_ON_SCREEN_OFF = "disable_torch_on_screen_off";
+    private static final String DISABLE_TORCH_ON_SCREEN_OFF_DELAY = "disable_torch_on_screen_off_delay";
 
     // Package name of the cLock app
     public static final String LOCKCLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
 
     private Preference mLockClock;
     private ListPreference mToastAnimation;
+    private SwitchPreference mTorchOff;
+    private ListPreference mTorchOffDelay;
     private Context mContext;
 
     @Override
@@ -53,6 +60,8 @@ public class CarbonInterfaceSettings extends SettingsPreferenceFragment implemen
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.carbon_interface_settings);
+        Activity activity = getActivity();
+        ContentResolver resolver = activity.getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
         mContext = getActivity().getApplicationContext();
         PackageManager pm = getPackageManager();
@@ -70,6 +79,22 @@ public class CarbonInterfaceSettings extends SettingsPreferenceFragment implemen
         mToastAnimation.setValueIndex(CurrentToastAnimation); //set to index of default value
         mToastAnimation.setSummary(mToastAnimation.getEntries()[CurrentToastAnimation]);
         mToastAnimation.setOnPreferenceChangeListener(this);
+
+        mTorchOff = (SwitchPreference) prefSet.findPreference(DISABLE_TORCH_ON_SCREEN_OFF);
+        mTorchOffDelay = (ListPreference) prefSet.findPreference(DISABLE_TORCH_ON_SCREEN_OFF_DELAY);
+        int torchOffDelay = Settings.System.getInt(resolver,
+                Settings.System.DISABLE_TORCH_ON_SCREEN_OFF_DELAY, 10);
+        if (torchOffDelay < 1) {
+          torchOffDelay = 10;
+        }
+        mTorchOffDelay.setValue(String.valueOf(torchOffDelay));
+        mTorchOffDelay.setSummary(mTorchOffDelay.getEntry());
+        mTorchOffDelay.setOnPreferenceChangeListener(this);
+
+        if (!QSUtils.deviceSupportsFlashLight(activity)) {
+            prefSet.removePreference(mTorchOff);
+            prefSet.removePreference(mTorchOffDelay);
+        }
     }
 
     @Override
@@ -84,6 +109,13 @@ public class CarbonInterfaceSettings extends SettingsPreferenceFragment implemen
             mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
             Toast.makeText(mContext, "Toast Test", Toast.LENGTH_SHORT).show();
             return true;
+        } else if (preference == mTorchOffDelay) {
+            int torchOffDelay = Integer.valueOf((String) objValue);
+            int index = mTorchOffDelay.findIndexOfValue((String) objValue);
+            if (index == -1) index = 1;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.DISABLE_TORCH_ON_SCREEN_OFF_DELAY, torchOffDelay);
+            mTorchOffDelay.setSummary(mTorchOffDelay.getEntries()[index]);
         }
         return false;
     }
