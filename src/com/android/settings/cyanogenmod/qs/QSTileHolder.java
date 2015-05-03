@@ -209,10 +209,6 @@ public class QSTileHolder {
                 resourceName = "ic_qs_reboot_recovery";
                 stringId = R.string.qs_tile_slimaction;
                 break;
-            case QSConstants.TILE_HWKEYS:
-                resourceName = "ic_qs_buttons_on";
-                stringId = R.string.qs_hwkeys_tile;
-                break;
             case QSConstants.TILE_AMBIENT_DISPLAY:
                 resourceName = "ic_qs_ambientdisplay_on";
                 stringId = R.string.qs_ambient_display;
