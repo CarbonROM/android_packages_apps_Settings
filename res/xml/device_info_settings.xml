@@ -110,7 +110,7 @@
         <!-- Mod version -->
         <Preference android:key="mod_version"
                 style="?android:preferenceInformationStyle"
-                android:title="@string/stelix_mod_version"
+                android:title="@string/carbon_mod_version"
                 android:summary="@string/mod_version_default" />
 
         <!-- Device firmware version -->

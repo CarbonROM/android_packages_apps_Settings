@@ -236,7 +236,7 @@ public class SettingsActivity extends Activity
 
     // Show only these settings for restricted users
     private int[] SETTINGS_FOR_RESTRICTED = {
-            R.id.stelix_carbon_fibers,
+            R.id.carbon_fibers,
             R.id.wireless_section,
             R.id.wifi_settings,
             R.id.bluetooth_settings,

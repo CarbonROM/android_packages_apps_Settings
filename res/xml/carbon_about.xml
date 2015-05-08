@@ -4,11 +4,11 @@
     xmlns:carbon="http://schemas.android.com/apk/res/com.android.settings">
 
         <com.android.settings.widget.DeveloperPreference
-            carbon:nameDev="STELIX Lollipop"
-            carbon:statusDev="@string/about_stelix_rom"
-            carbon:googleHandle="-eYrCThb3BBk/VNEErBqqNzI/AAAAAAAAPiY/p6YGGK-HyAE/"
+            carbon:nameDev="CarbonROM"
+            carbon:statusDev="@string/about_carbon_rom"
+            carbon:googleHandle="-GumpNwUGksg/UrOc3u1ObiI/AAAAAAAACcg/MysMuK2GRhg/"
             carbon:googleProfile="107337691479996516667"
-            carbon:githubLink="http://github.com/STELIX-LP"
+            carbon:githubLink="http://github.com/CarbonROM"
             carbon:emailDev="ssspinni@gmail.com"
             carbon:twitterLink="stefanomura1973" />
 
