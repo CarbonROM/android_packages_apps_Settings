@@ -130,6 +130,7 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.carbon.*;
 import com.android.settings.slim.*;
 import com.android.settings.slim.dslv.*;
+import com.android.settings.slim.fragments.*;
 
 import com.carbon.fibers.*;
 import com.carbon.fibers.CarbonSettingsActivity;
@@ -275,6 +276,7 @@ public class SettingsActivity extends Activity
             CarbonSettingsActivity.class.getName(),
             CarbonAboutMe.class.getName(),
             HeadsUpSettings.class.getName(),
+            LockscreenShortcutFragment.class.getName(),
             NavBar.class.getName(),
             WirelessSettings.class.getName(),
             WifiSettings.class.getName(),
