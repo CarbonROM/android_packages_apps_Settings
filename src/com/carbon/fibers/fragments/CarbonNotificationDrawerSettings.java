@@ -93,6 +93,7 @@ public class CarbonNotificationDrawerSettings extends SettingsPreferenceFragment
             super(fm);
             frags[0] = new NotificationDrawerSettings();
             frags[1] = new QSColors();
+            frags[2] = new StatusBarExpandedHeaderSettings();
         }
 
         @Override
@@ -115,7 +116,8 @@ public class CarbonNotificationDrawerSettings extends SettingsPreferenceFragment
         String titleString[];
         titleString = new String[] {
                     getString(R.string.notification_drawer_title),
-                    getString(R.string.qs_colors_title)};
+                    getString(R.string.qs_colors_title),
+                    getString(R.string.status_bar_expanded_header_settings_title)};
         return titleString;
     }
 }

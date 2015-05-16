@@ -42,8 +42,10 @@ public class StatusBarNotifSystemIconsSettings extends SettingsPreferenceFragmen
 
     private static final String KEY_CATEGORY_COLORS = "notif_system_icons_category_colors";
     private static final String KEY_COLORIZE_NOTIF_ICONS = "notif_system_icons_colorize_notif_icons";
+    private static final String KEY_SHOW_TICKER = "notif_system_icons_show_ticker";
     private static final String KEY_SHOW_COUNT = "notif_system_icons_show_count";
     private static final String KEY_ICON_COLOR = "notif_system_icons_icon_color";
+    private static final String KEY_NOTIF_TEXT_COLOR = "notif_system_icons_notif_text_color";
     private static final String KEY_COUNT_ICON_COLOR = "notif_system_icons_count_icon_color";
     private static final String KEY_COUNT_TEXT_COLOR = "notif_system_icons_count_text_color";
 
@@ -54,8 +56,10 @@ public class StatusBarNotifSystemIconsSettings extends SettingsPreferenceFragmen
     private static final int DLG_RESET = 0;
 
     private SwitchPreference mColorizeNotifIcons;
+    private SwitchPreference mShowTicker;
     private SwitchPreference mShowCount;
     private ColorPickerPreference mIconColor;
+    private ColorPickerPreference mNotifTextColor;
     private ColorPickerPreference mCountIconColor;
     private ColorPickerPreference mCountTextColor;
 
@@ -79,6 +83,8 @@ public class StatusBarNotifSystemIconsSettings extends SettingsPreferenceFragmen
         int intColor = DEFAULT_COLOR;
         String hexColor = String.format("#%08x", (0xffffffff & intColor));
 
+        boolean showTicker = Settings.System.getInt(mResolver,
+               Settings.System.STATUS_BAR_SHOW_TICKER, 0) == 1;
         boolean showCount = Settings.System.getInt(mResolver,
                Settings.System.STATUS_BAR_SHOW_NOTIF_COUNT, 0) == 1;
 
@@ -89,6 +95,10 @@ public class StatusBarNotifSystemIconsSettings extends SettingsPreferenceFragmen
             mColorizeNotifIcons.setTitle(R.string.notif_system_icons_colorize_notif_icons_title_phone);
         }*/
         mColorizeNotifIcons.setOnPreferenceChangeListener(this);
+
+        mShowTicker = (SwitchPreference) findPreference(KEY_SHOW_TICKER);
+        mShowTicker.setChecked(showTicker);
+        mShowTicker.setOnPreferenceChangeListener(this);
 
         mShowCount = (SwitchPreference) findPreference(KEY_SHOW_COUNT);
         mShowCount.setChecked(showCount);
@@ -104,6 +114,19 @@ public class StatusBarNotifSystemIconsSettings extends SettingsPreferenceFragmen
         mIconColor.setOnPreferenceChangeListener(this);
 
         PreferenceCategory catColors = (PreferenceCategory) findPreference(KEY_CATEGORY_COLORS);
+        mNotifTextColor = (ColorPickerPreference) findPreference(KEY_NOTIF_TEXT_COLOR);
+        if (showTicker) {
+            intColor = Settings.System.getInt(mResolver,
+                    Settings.System.STATUS_BAR_NOTIF_TEXT_COLOR,
+                    DEFAULT_COLOR);
+            mNotifTextColor.setNewPreviewColor(intColor);
+            hexColor = String.format("#%08x", (0xffffffff & intColor));
+            mNotifTextColor.setSummary(hexColor);
+            mNotifTextColor.setOnPreferenceChangeListener(this);
+        } else {
+            // Remove uneeded preferences if ticker is disabled
+            catColors.removePreference(mNotifTextColor);
+        }
 
         mCountIconColor = (ColorPickerPreference) findPreference(KEY_COUNT_ICON_COLOR);
         mCountTextColor = (ColorPickerPreference) findPreference(KEY_COUNT_TEXT_COLOR);
@@ -161,6 +184,12 @@ public class StatusBarNotifSystemIconsSettings extends SettingsPreferenceFragmen
                     Settings.System.STATUS_BAR_COLORIZE_NOTIF_ICONS,
                     value ? 1 : 0);
             return true;
+        } else if (preference == mShowTicker) {
+            value = (Boolean) newValue;
+            Settings.System.putInt(mResolver,
+                    Settings.System.STATUS_BAR_SHOW_TICKER, value ? 1 : 0);
+            refreshSettings();
+            return true;
         } else if (preference == mShowCount) {
             value = (Boolean) newValue;
             Settings.System.putInt(mResolver,
@@ -173,6 +202,14 @@ public class StatusBarNotifSystemIconsSettings extends SettingsPreferenceFragmen
             intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(mResolver,
                     Settings.System.STATUS_BAR_NOTIF_SYSTEM_ICON_COLOR, intHex);
+            preference.setSummary(hex);
+            return true;
+        } else if (preference == mNotifTextColor) {
+            hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(mResolver,
+                    Settings.System.STATUS_BAR_NOTIF_TEXT_COLOR, intHex);
             preference.setSummary(hex);
             return true;
         } else if (preference == mCountIconColor) {
@@ -231,9 +268,14 @@ public class StatusBarNotifSystemIconsSettings extends SettingsPreferenceFragmen
                             Settings.System.putInt(getOwner().mResolver,
                                     Settings.System.STATUS_BAR_COLORIZE_NOTIF_ICONS, 0);
                             Settings.System.putInt(getOwner().mResolver,
+                                    Settings.System.STATUS_BAR_SHOW_TICKER, 0);
+                            Settings.System.putInt(getOwner().mResolver,
                                     Settings.System.STATUS_BAR_SHOW_NOTIF_COUNT, 0);
                             Settings.System.putInt(getOwner().mResolver,
                                     Settings.System.STATUS_BAR_NOTIF_SYSTEM_ICON_COLOR,
+                                    DEFAULT_COLOR);
+                            Settings.System.putInt(getOwner().mResolver,
+                                    Settings.System.STATUS_BAR_NOTIF_TEXT_COLOR,
                                     DEFAULT_COLOR);
                             Settings.System.putInt(getOwner().mResolver,
                                     Settings.System.STATUS_BAR_NOTIF_COUNT_ICON_COLOR,
@@ -244,16 +286,21 @@ public class StatusBarNotifSystemIconsSettings extends SettingsPreferenceFragmen
                             getOwner().refreshSettings();
                         }
                     })
-                    .setPositiveButton(R.string.reset_android,
+                    .setPositiveButton(R.string.reset_carbon,
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             Settings.System.putInt(getOwner().mResolver,
                                     Settings.System.STATUS_BAR_COLORIZE_NOTIF_ICONS, 1);
                             Settings.System.putInt(getOwner().mResolver,
+                                    Settings.System.STATUS_BAR_SHOW_TICKER, 0);
+                            Settings.System.putInt(getOwner().mResolver,
                                     Settings.System.STATUS_BAR_SHOW_NOTIF_COUNT, 1);
                             Settings.System.putInt(getOwner().mResolver,
                                     Settings.System.STATUS_BAR_NOTIF_SYSTEM_ICON_COLOR,
                                     0xff33b5e5);
+                            Settings.System.putInt(getOwner().mResolver,
+                                    Settings.System.STATUS_BAR_NOTIF_TEXT_COLOR,
+                                    0xffff0000);
                             Settings.System.putInt(getOwner().mResolver,
                                     Settings.System.STATUS_BAR_NOTIF_COUNT_ICON_COLOR,
                                     0xff33b5e5);

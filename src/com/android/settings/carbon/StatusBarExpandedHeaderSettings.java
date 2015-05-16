@@ -24,6 +24,7 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
 import android.os.Bundle;
 import android.preference.Preference;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
@@ -36,7 +37,9 @@ import com.android.settings.SettingsPreferenceFragment;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 public class StatusBarExpandedHeaderSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        OnPreferenceChangeListener {
+
+    private static final String TAG = "StatusBarExpandedHeaderSettings";
 
     private static final String PREF_SHOW_WEATHER = "expanded_header_show_weather";
     private static final String PREF_SHOW_LOCATION = "expanded_header_show_weather_location";
