@@ -33,6 +33,7 @@
     <string name="twitter">Twitter</string>
 
     <string name="status_dev">Developer</string>
+    <string name="status_man">Maintainer</string>
     <string name="status_designers">Designer</string>
     <string name="status_pr">Public Relations &amp; Social Media</string>
     <string name="status_gerrit">Gerrit Maintainer</string>

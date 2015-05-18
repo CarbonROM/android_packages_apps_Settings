@@ -14,12 +14,21 @@
 
         <com.android.settings.widget.DeveloperPreference
             carbon:nameDev="Stefano &quot;STELIX PippoX3&quot; Mura"
-            carbon:deviceStat="OnePlus One, Nexus 5, Nexus 7, HTC One M7"
+            carbon:deviceStat="OnePlus One, Nexus 5, Nexus 7, HTC One M7 - M8"
             carbon:statusDev="@string/status_dev"
             carbon:googleHandle="-mfaXGdQoYt8/Um_FfAR_tUI/AAAAAAAAAsQ/HTM1eS556e4/"
             carbon:googleProfile="107337691479996516667"
             carbon:githubLink="http://github.com/STELIX"
             carbon:emailDev="ssspinni@gmail.com"
             carbon:twitterLink="stefanomura1973" />
+
+        <com.android.settings.widget.DeveloperPreference
+            carbon:nameDev="Christian &quot;Myself5&quot; Oder"
+            carbon:deviceStat="Galaxy S2, Sony Xperia Z2, Z3 - Z3C"
+            carbon:statusDev="@string/status_man"
+            carbon:googleHandle="-vWCd8hPoUEM/AAAAAAAAAAI/AAAAAAAADms/oE32Rgt33uA/"
+            carbon:googleProfile="103345265359054633486"
+            carbon:githubLink="http://github.com/Myself5"
+            carbon:emailDev="thchod@gmail.com" />
 
 </PreferenceScreen>
