@@ -32,6 +32,15 @@
             android:summaryOff="@string/animation_no_scroll_summary_off"
             android:summaryOn="@string/animation_no_scroll_summary_on" />
 
+        <ListPreference
+            android:key="pref_scrollingcache"
+            android:dialogTitle="@string/pref_scrollingcache_title"
+            android:title="@string/pref_scrollingcache_title"
+            android:summary="@string/pref_scrollingcache_summary"
+            android:entries="@array/entries_scrollingcache"
+            android:entryValues="@array/values_scrollingcache"
+            android:dependency="animation_no_scroll" />
+
         <com.carbon.fibers.widgets.SeekBarPreference
             android:key="animation_fling_velocity"
             android:persistent="false"

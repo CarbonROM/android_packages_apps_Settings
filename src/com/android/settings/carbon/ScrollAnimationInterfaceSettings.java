@@ -32,6 +32,7 @@ import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
+import android.os.SystemProperties;
 import android.provider.Settings;
 import android.view.ViewConfiguration;
 import android.view.Menu;
@@ -52,6 +53,12 @@ public class ScrollAnimationInterfaceSettings extends SettingsPreferenceFragment
     private static final String ANIMATION_OVERFLING_DISTANCE = "animation_overfling_distance";
     private static final float MULTIPLIER_SCROLL_FRICTION = 10000f;
     private static final String ANIMATION_NO_SCROLL = "animation_no_scroll";
+
+    private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
+    private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
+    private static final String SCROLLINGCACHE_DEFAULT = "1";
+
+    private ListPreference mScrollingCachePref;
 
     private static final int MENU_RESET = Menu.FIRST;
 
@@ -97,6 +104,11 @@ public class ScrollAnimationInterfaceSettings extends SettingsPreferenceFragment
         mAnimationOverFling = (SeekBarPreference) prefSet.findPreference(ANIMATION_OVERFLING_DISTANCE);
         mAnimationOverFling.setValue(defaultOverFling);
         mAnimationOverFling.setOnPreferenceChangeListener(this);
+
+        mScrollingCachePref = (ListPreference) findPreference(SCROLLINGCACHE_PREF);
+        mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
+                SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SCROLLINGCACHE_DEFAULT)));
+        mScrollingCachePref.setOnPreferenceChangeListener(this);
 
         setHasOptionsMenu(true);
 
@@ -182,6 +194,10 @@ public class ScrollAnimationInterfaceSettings extends SettingsPreferenceFragment
             Settings.System.putInt(resolver,
                     Settings.System.CUSTOM_OVERFLING_DISTANCE,
                     val);
+        } else if (preference == mScrollingCachePref) {
+            if (objValue != null) {
+                SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String) objValue);
+            }
         } else {
             return false;
         }
