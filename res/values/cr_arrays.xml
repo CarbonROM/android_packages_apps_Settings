@@ -633,6 +633,7 @@ limitations under the License.
         <item>yyyy-MM-dd</item>
         <item>yyyy-dd-MM</item>
         <item>dd-MM-yyyy</item>
+        <item>dd.MM.yyyy</item>
         <item>MM-dd-yyyy</item>
         <item>MMM dd</item>
         <item>MMM dd, yyyy</item>
@@ -640,11 +641,15 @@ limitations under the License.
         <item>EEE</item>
         <item>EEE dd</item>
         <item>EEE dd/MM</item>
+        <item>EEE dd.MM</item>
         <item>EEE MM/dd</item>
         <item>EEE dd MMM</item>
+        <item>EEE dd.MMM</item>
         <item>EEE MMM dd</item>
         <item>EEE MMMM dd</item>
+        <item>EEE dd.MMMM</item>
         <item>EEEE dd/MM</item>
+        <item>EEEE dd.MM</item>
         <item>EEEE MM/dd</item>
         <item>@string/clock_date_format_custom</item>
     </string-array>
@@ -809,7 +814,7 @@ limitations under the License.
         <item>0</item>
         <item>1</item>
         <item>2</item>
-	 </string-array>
+     </string-array>
 
     <string-array name="lockscreen_shortcuts_launch_type_entries" translatable="false">
         <item>@string/lockscreen_shortcuts_single_tap</item>
@@ -839,10 +844,10 @@ limitations under the License.
     </string-array>
 
  <string-array name="navbar_dialog_entries" translatable="false">
-	 <item>@string/action_short</item>
-	 <item>@string/action_long</item>
-	 <item>@string/action_double</item>
-	 <item>@string/action_icon</item>
+     <item>@string/action_short</item>
+     <item>@string/action_long</item>
+     <item>@string/action_double</item>
+     <item>@string/action_icon</item>
     </string-array>
 
     <string-array name="navbar_dialog_values" translatable="false">
