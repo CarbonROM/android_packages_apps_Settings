@@ -34,6 +34,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.cyanogenmod.qs.QSTiles;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
+import com.android.settings.util.Helpers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,9 +44,11 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
     private static final String QUICK_PULLDOWN = "quick_pulldown";
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
     private static final String STATUS_BAR_POWER_MENU = "status_bar_power_menu";
+    private static final String PREF_ENABLE_TASK_MANAGER = "enable_task_manager";
 
     private ListPreference mQuickPulldown;
     private ListPreference mSmartPulldown;
+    private SwitchPreference mEnableTaskManager;
     private Preference mQSTiles;
     private ListPreference mStatusBarPowerMenu;
 
@@ -92,13 +95,18 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
         mSmartPulldown.setValue(String.valueOf(smartPulldown));
         updateSmartPulldownSummary(smartPulldown);
 
-         // status bar power menu
+        // status bar power menu
         mStatusBarPowerMenu = (ListPreference) findPreference(STATUS_BAR_POWER_MENU);
         mStatusBarPowerMenu.setOnPreferenceChangeListener(this);
-        int statusBarPowerMenu = Settings.System.getInt(getContentResolver(),
+        int statusBarPowerMenu = Settings.System.getInt(resolver,
                 STATUS_BAR_POWER_MENU, 0);
         mStatusBarPowerMenu.setValue(String.valueOf(statusBarPowerMenu));
         mStatusBarPowerMenu.setSummary(mStatusBarPowerMenu.getEntry());
+
+        // Task manager
+        mEnableTaskManager = (SwitchPreference) prefSet.findPreference(PREF_ENABLE_TASK_MANAGER);
+        mEnableTaskManager.setChecked((Settings.System.getInt(resolver,
+                Settings.System.ENABLE_TASK_MANAGER, 0) == 1));
     }
 
     @Override
@@ -141,8 +149,19 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
             mStatusBarPowerMenu
                     .setSummary(mStatusBarPowerMenu.getEntries()[statusBarPowerMenuIndex]);
             return true;
-		}
+        }
         return false;
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+       if  (preference == mEnableTaskManager) {
+            boolean enabled = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.ENABLE_TASK_MANAGER, enabled ? 1:0);
+            Helpers.restartSystemUI();
+        }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     private void updatePulldownSummary(int value) {
