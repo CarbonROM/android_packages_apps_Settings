@@ -126,14 +126,6 @@
                     android:targetClass="com.carbon.fibers.CarbonSettingsActivity" />
         </dashboard-tile>
 
-        <!-- Lock screen -->
-        <dashboard-tile
-                android:id="@+id/lockscreen_settings"
-                android:title="@string/lockscreen_settings"
-                android:fragment="com.android.settings.lockscreen.LockScreenSettings"
-                android:icon="@drawable/ic_settings_security"
-                />
-
         <!-- Notification manager -->
         <dashboard-tile
                 android:id="@+id/notification_manager"
@@ -142,12 +134,20 @@
                 android:icon="@drawable/ic_settings_notifications"
                 />
 
+        <!-- Lock screen -->
+        <dashboard-tile
+                android:id="@+id/lockscreen_settings"
+                android:title="@string/lockscreen_settings"
+                android:fragment="com.android.settings.lockscreen.LockScreenSettings"
+                android:icon="@drawable/ic_settings_lockscreen"
+                />
+
         <!-- Sound -->
         <dashboard-tile
                 android:id="@+id/sound_settings"
                 android:title="@string/category_sounds"
                 android:fragment="com.android.settings.SoundSettings"
-                android:icon="@drawable/ic_settings_notifications"
+                android:icon="@drawable/ic_settings_sounds"
                 />
 
         <!-- Display & lights -->
