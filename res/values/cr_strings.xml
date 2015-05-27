@@ -718,6 +718,7 @@
     <string name="shortcut_action_power_menu">Power menu</string>
     <string name="shortcut_action_recent">Recents</string>
     <string name="shortcut_action_power">Screen Off</string>
+    <string name="shortcut_action_smart">Smart pulldown</string>
     <string name="shortcut_action_search">Search in app</string>
     <string name="shortcut_action_ring_vib">Ring/Vib</string>
     <string name="shortcut_action_ring_silent">Ring/Silent</string>

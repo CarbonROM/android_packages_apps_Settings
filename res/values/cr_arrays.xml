@@ -374,6 +374,7 @@ limitations under the License.
         <item>@string/shortcut_action_power</item>
         <item>@string/shortcut_action_notifications</item>
         <item>@string/shortcut_action_settings_panel</item>
+        <item>@string/shortcut_action_smart</item>
         <item>@string/shortcut_action_recents</item>
         <item>@string/shortcut_action_screenshot</item>
         <item>@string/shortcut_action_ime</item>
@@ -406,6 +407,7 @@ limitations under the License.
         <item>**power**</item>
         <item>**notifications**</item>
         <item>**settings_panel**</item>
+        <item>**smart_pulldown**</item>
         <item>**recents**</item>
         <item>**screenshot**</item>
         <item>**ime**</item>
@@ -748,6 +750,7 @@ limitations under the License.
         <item>@string/shortcut_action_menu</item>
         <item>@string/shortcut_action_ime</item>
         <item>@string/shortcut_action_power_menu</item>
+        <item>@string/shortcut_action_smart</item>
         <item>@string/shortcut_action_recent</item>
         <item>@string/shortcut_action_power</item>
         <item>@string/shortcut_action_search</item>
@@ -761,6 +764,7 @@ limitations under the License.
         <item>**menu_big**</item>
         <item>**ime**</item>
         <item>**power_menu**</item>
+        <item>**smart_pulldown**</item>
         <item>**recents**</item>
         <item>**power**</item>
         <item>**search**</item>
