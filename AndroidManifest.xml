@@ -2431,7 +2431,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.cyanogenmod.NavBar" />
+                android:value="com.android.settings.bliss.NavBarSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/security_settings" />
         </activity>
@@ -2443,7 +2443,7 @@
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.cyanogenmod.NavBar" />
+                       android:value="com.android.settings.bliss.NavBarSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                        android:resource="@id/security_settings" />
         </activity-alias>

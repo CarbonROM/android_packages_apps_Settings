@@ -79,9 +79,9 @@
     <string name="background_title">Background</string>
     <string name="icon_title">Icon</string>
     <string name="reset_message">Reset all entries to default?</string>
-    <string name="reset_option_message">Reset values to\nAndroid- or Bliss default?</string>
+    <string name="reset_option_message">Reset values to\nAndroid- or Carbon default?</string>
     <string name="category_general_title">General options</string>
-    <string name="dlg_reset_values_message">Reset values to\nAndroid- or Bliss default?</string>
+    <string name="dlg_reset_values_message">Reset values to\nAndroid- or Carbon default?</string>
     <string name="dlg_reset_android">Android</string>
     <string name="dlg_reset_carbon">Carbon</string>
     <string name="attention">Attention</string>
