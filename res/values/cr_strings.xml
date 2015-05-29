@@ -242,9 +242,10 @@
     <string name="shortcut_action_media_play_pause">Music - play/pause</string>
     <string name="shortcut_action_media_previous">Music - previous track</string>
     <string name="shortcut_action_wake_device">Wake up device</string>
-    <!--<string name="shortcut_action_navbar">Navigation bar</string>-->
     <string name="shortcut_action_pie">Pie controls</string>
-
+    <string name="shortcut_action_menu_big">Menu Big</string>
+    <string name="shortcut_action_notifications">Notifications</string>
+    <string name="shortcut_action_qs">Quicksettings panel</string>
     <string name="shortcut_action_longpress">Longpress:</string>
     <string name="shortcut_action_select_action_longpress">Choose longpress action:</string>
     <string name="shortcut_action_select_action">Choose action:</string>
@@ -491,6 +492,10 @@
     <string name="task_open_behind_title">Task open behind animation</string>
     <string name="animation_duration_title">Animation duration</string>
     <string name="animation_duration_default">Default</string>
+
+    <!-- Heads Up Status Bar button -->
+    <string name="show_headsup_button_title">Show quick access button</string>
+    <string name="show_headsup_button_summary">Show a quick access button in the status bar</string>
 
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Show CPU info</string>
