@@ -621,6 +621,10 @@
     <string name="expanded_header_show_weather_location_title">Show location</string>
     <string name="expanded_header_show_weather_location_summary">Enable to show the location</string>
 
+    <!-- Status Bar Heads Up button -->
+    <string name="show_headsup_button_title">Show quick access button</string>
+    <string name="show_headsup_button_summary">Show a quick access button in the status bar</string>
+
     <!-- Status bar power menu -->
     <string name="status_bar_power_menu_title">Power menu in expanded status bar</string>
     <string name="status_bar_power_menu_dialog_title">Set tap and long-press actions</string>
