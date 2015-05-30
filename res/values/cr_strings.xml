@@ -817,7 +817,7 @@
     <string name="chamber_toast">The chamber of secrets has opened</string>
 
     <!-- Pie control -->
-    <string name="pie_control_title">Pie control</string>
+    <string name="pie_control_title">SlimPIE</string>
     <string name="pie_control_summary">Enable pie on screen navigation</string>
     <string name="pie_control_size">Navigation size</string>
     <string name="pie_control_trigger_positions">Trigger options</string>
@@ -869,6 +869,14 @@
     <string name="pie_disable_ime_triggers_summary">Reduces left and right trigger size if keyboard is active</string>
     <string name="pie_trigger_sensitivity_title">Trigger sensitivity"</string>
     <string name="pie_trigger_sensitivity_summary">Adjust the pie trigger sensitivity</string>
+    <string name="additional_options_title">Additional options</string>
+
+    <!-- Navigation bar visibility -->
+    <string name="navigation_menu_default_jb_behavior">Show on request (default)</string>
+    <string name="navigation_menu_never_show">Never show</string>
+    <string name="navigation_menu_always_show">Always show</string>
+    <string name="title_pref_menu_display">Menu visibility</string>
+    <string name="summary_pref_menu_display">How and when do you want the menu buttons to appear?</string>
 
     <!-- App sidebar -->
     <string name="app_sidebar_title">Appbar</string>

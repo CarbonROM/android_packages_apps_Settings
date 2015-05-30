@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 Slimroms
+ * Copyright (C) 2013-2015 Slimroms
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -72,7 +72,7 @@ public class PieTriggerSettings extends SettingsPreferenceFragment
 
         mDisableImeTriggers = (SwitchPreference) findPreference(PREF_PIE_DISABLE_IME_TRIGGERS);
         mDisableImeTriggers.setOnPreferenceChangeListener(this);
-        
+
         mSensitivity = (SeekBarPreferenceCham) findPreference(PIE_TRIGGER_SENSITIVITY);
         mSensitivity.setValue(Settings.System.getInt(getContentResolver(),
                 Settings.System.PIE_TRIGGER_SENSITIVITY, 5));
