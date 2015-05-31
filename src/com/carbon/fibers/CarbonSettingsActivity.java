@@ -232,6 +232,7 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         QuickTileFragment.class.getName(),
         QSColors.class.getName(),
         QSTiles.class.getName(),
+        RecentPanel.class.getName(),
         ScrollAnimationInterfaceSettings.class.getName(),
         ShortcutPickerHelper.class.getName(),
         SimpleFloatViewManager.class.getName(),
