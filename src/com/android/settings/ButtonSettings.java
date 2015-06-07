@@ -87,6 +87,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     public static final int KEY_MASK_CAMERA = 0x20;
     public static final int KEY_MASK_VOLUME = 0x40;
 
+    private SwitchPreference mCameraWakeScreen;
+    private SwitchPreference mCameraSleepOnRelease;
+    private SwitchPreference mCameraLaunch;
     private ListPreference mVolumeKeyCursorControl;
     private SwitchPreference mVolumeWakeScreen;
     private SwitchPreference mVolumeMusicControls;
@@ -148,6 +151,18 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }
         }
 
+        mCameraWakeScreen = (SwitchPreference) findPreference(Settings.System.CAMERA_WAKE_SCREEN);
+        mCameraSleepOnRelease =
+                (SwitchPreference) findPreference(Settings.System.CAMERA_SLEEP_ON_RELEASE);
+        mCameraLaunch = (SwitchPreference) findPreference(Settings.System.CAMERA_LAUNCH);
+
+        if (mCameraWakeScreen != null) {
+            if (mCameraSleepOnRelease != null && !getResources().getBoolean(
+                    com.android.internal.R.bool.config_singleStageCameraKey)) {
+                mCameraSleepOnRelease.setDependency(Settings.System.CAMERA_WAKE_SCREEN);
+            }
+        }
+
         mVolumeWakeScreen = (SwitchPreference) findPreference(Settings.System.VOLUME_WAKE_SCREEN);
         mVolumeMusicControls = (SwitchPreference) findPreference(KEY_VOLUME_MUSIC_CONTROLS);
 
@@ -182,12 +197,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 com.android.internal.R.integer.config_deviceHardwareWakeKeys);
 
         final boolean hasPowerKey = KeyCharacterMap.deviceHasKey(KeyEvent.KEYCODE_POWER);
+        final boolean hasCameraKey = (deviceKeys & KEY_MASK_CAMERA) != 0;
 
         final boolean showHomeWake = (deviceWakeKeys & KEY_MASK_HOME) != 0;
         final boolean showBackWake = (deviceWakeKeys & KEY_MASK_BACK) != 0;
         final boolean showMenuWake = (deviceWakeKeys & KEY_MASK_MENU) != 0;
         final boolean showAssistWake = (deviceWakeKeys & KEY_MASK_ASSIST) != 0;
         final boolean showAppSwitchWake = (deviceWakeKeys & KEY_MASK_APP_SWITCH) != 0;
+        final boolean showCameraWake = (deviceWakeKeys & KEY_MASK_CAMERA) != 0;
         final boolean showVolumeWake = (deviceWakeKeys & KEY_MASK_VOLUME) != 0;
 
         final CmHardwareManager cmHardwareManager =
@@ -202,6 +219,18 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }
         } else {
             result.put(CATEGORY_POWER, null);
+        }
+
+        if (hasCameraKey) {
+          if (!showCameraWake) {
+            result.put(Settings.System.CAMERA_WAKE_SCREEN, CATEGORY_CAMERA);
+          }
+          // Only show 'Camera sleep on release' if the device has a focus key
+          if (res.getBoolean(com.android.internal.R.bool.config_singleStageCameraKey)) {
+            result.put(Settings.System.CAMERA_SLEEP_ON_RELEASE, CATEGORY_CAMERA);
+          }
+        } else {
+          result.put(CATEGORY_CAMERA, null);
         }
 
         if (Utils.hasVolumeRocker(context)) {
