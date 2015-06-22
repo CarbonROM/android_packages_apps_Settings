@@ -56,8 +56,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.android.internal.util.temasek.temasekUtils;
-
 public class ButtonSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "SystemSettings";
@@ -73,7 +71,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_APP_SWITCH_LONG_PRESS = "hardware_keys_app_switch_long_press";
     private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
     private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
-    private static final String KEY_ENABLE_NAVIGATION_BAR = "enable_nav_bar";
     private static final String KEY_ENABLE_HW_KEYS = "enable_hw_keys";
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
     private static final String KEY_NAVIGATION_RECENTS_LONG_PRESS = "navigation_recents_long_press";
@@ -155,22 +152,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         mHandler = new Handler();
 
-        // Navigation bar category
-        final PreferenceCategory navBarCategory = (PreferenceCategory) findPreference(CATEGORY_NAVBAR);
-
-        // Navigation bar keys switch
-        mEnableNavigationBar = (SwitchPreference) findPreference(KEY_ENABLE_NAVIGATION_BAR);
-
         // Navigation bar left
         mNavigationBarLeftPref = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_LEFT);
-
-        // Internal bool to check if the device have a navbar by default or not!
-        boolean hasNavBarByDefault = getResources().getBoolean(
-                com.android.internal.R.bool.config_showNavigationBar);
-        boolean enableNavigationBar = Settings.Secure.getInt(getContentResolver(),
-                Settings.Secure.NAVIGATION_BAR_SHOW, hasNavBarByDefault ? 1 : 0) == 1;
-        mEnableNavigationBar.setChecked(enableNavigationBar);
-        mEnableNavigationBar.setOnPreferenceChangeListener(this);
 
         // Enable/disable hw keys
         boolean enableHwKeys = Settings.Secure.getInt(getContentResolver(),
@@ -242,7 +225,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }
 
         updateDisableHwKeysOption();
-        updateNavBarSettings();
     }
 
     private static Map<String, String> getPreferencesToRemove(ButtonSettings settings,
@@ -523,27 +505,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         Settings.System.putInt(getContentResolver(), setting, Integer.valueOf(value));
     }
 
-   private void updateNavBarSettings() {
-        boolean enableNavigationBar = Settings.Secure.getInt(getContentResolver(),
-                Settings.Secure.NAVIGATION_BAR_SHOW,
-                temasekUtils.isNavBarDefault(getActivity()) ? 1 : 0) == 1;
-        mEnableNavigationBar.setChecked(enableNavigationBar);
-
-        updateNavbarPreferences(enableNavigationBar);
-    }
-
-    private void updateNavbarPreferences(boolean show) {
-    }
-
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mEnableNavigationBar) {
-            mEnableNavigationBar.setEnabled(true);
-            Settings.Secure.putInt(getActivity().getContentResolver(),
-                    Settings.Secure.NAVIGATION_BAR_SHOW,
-                        ((Boolean) newValue) ? 1 : 0);
-            return true;
-        } else if (preference == mEnableHwKeys) {
+        if (preference == mEnableHwKeys) {
             boolean hWkeysValue = (Boolean) newValue;
             Settings.Secure.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.Secure.ENABLE_HW_KEYS, hWkeysValue ? 1 : 0);

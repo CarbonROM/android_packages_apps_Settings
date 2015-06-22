@@ -93,10 +93,7 @@ public class CarbonButtons extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new ButtonSettings();
-            frags[1] = new NavBar();
-            frags[2] = new NavBarStyleDimen();
-            frags[3] = new NavRing();
-            frags[4] = new PowerMenuActions();
+            frags[1] = new PowerMenuActions();
         }
 
         @Override
@@ -119,9 +116,6 @@ public class CarbonButtons extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[] {
                     getString(R.string.button_pref_title),
-                    getString(R.string.navigation_bar_title),
-                    getString(R.string.navbar_style_dimen_title),
-                    getString(R.string.navigation_ring_title),
                     getString(R.string.power_menu_title)};
         return titleString;
     }
