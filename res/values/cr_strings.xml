@@ -456,6 +456,7 @@
     <string name="qs_tile_slimaction">SlimAction</string>
     <string name="qs_slim_action_summary">Add and set the order of SlimActions for SlimAction tile</string>
     <string name="qs_slim_action_title">SlimActions</string>
+    <string name="qs_tile_slim_floats">Slim Floats</string>
 
     <!-- QuickSettings collapse panel -->
     <string name="quick_settings_collapse_title">Auto close panel</string>
