@@ -322,7 +322,6 @@ limitations under the License.
         <item>@string/shortcut_action_menu_big</item>
         <item>@string/shortcut_action_notifications</item>
         <item>@string/shortcut_action_ime</item>
-        <item>@string/shortcut_action_pie</item>
         <item>@string/shortcut_action_power_menu</item>
         <item>@string/shortcut_action_qs</item>
         <item>@string/shortcut_action_recent</item>
@@ -343,7 +342,6 @@ limitations under the License.
         <item>**menu_big**</item>
         <item>**notifications**</item>
         <item>**ime**</item>
-        <item>**pie**</item>
         <item>**power_menu**</item>
         <item>**settings_panel**</item>
         <item>**recents**</item>
