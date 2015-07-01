@@ -60,7 +60,6 @@ import com.android.settings.carbon.gestureanywhere.*;
 import com.android.settings.cyanogenmod.*;
 import com.android.settings.cyanogenmod.qs.*;
 import com.android.settings.slim.*;
-import com.android.settings.slim.dslv.*;
 import com.carbon.fibers.fragments.*;
 
 public class CarbonSettingsActivity extends PreferenceActivity implements ButtonBarHandler {

@@ -128,10 +128,6 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.android.settings.carbon.*;
-import com.android.settings.slim.*;
-import com.android.settings.slim.dslv.*;
-import com.android.settings.slim.fragments.*;
-
 import com.carbon.fibers.*;
 import com.carbon.fibers.CarbonSettingsActivity;
 
