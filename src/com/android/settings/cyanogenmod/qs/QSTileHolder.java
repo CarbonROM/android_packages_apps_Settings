@@ -200,10 +200,6 @@ public class QSTileHolder {
                 resourceName = "ic_qs_media_play";
                 stringId = R.string.qs_music_play_tile;
                 break;
-            case QSConstants.TILE_SLIMACTION:
-                resourceName = "ic_qs_reboot_recovery";
-                stringId = R.string.qs_tile_slimaction;
-                break;
             case QSConstants.TILE_AMBIENT_DISPLAY:
                 resourceName = "ic_qs_ambientdisplay_on";
                 stringId = R.string.qs_tile_ambient_display;
@@ -226,7 +222,6 @@ public class QSTileHolder {
                 resourceName = "ic_dynamic_qs_adb";
                 stringId = R.string.qs_dynamic_tile_adb;
                 break;
-
             default:
                 return null;
         }
