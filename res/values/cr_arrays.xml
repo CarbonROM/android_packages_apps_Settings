@@ -297,44 +297,6 @@ limitations under the License.
         <item>@*android:drawable/ic_shortcut_unlock</item>
     </string-array>
 
-    <string-array name="shortcut_action_entries">
-        <item>@string/shortcut_action_kill</item>
-        <item>@string/shortcut_action_lastapp</item>
-        <!--<item>@string/shortcut_action_navbar</item>-->
-        <item>@string/shortcut_action_back</item>-
-        <item>@string/shortcut_action_app</item>-
-        <item>@string/shortcut_action_home</item>-
-        <item>@string/shortcut_action_menu</item>
-        <item>@string/shortcut_action_ime</item>
-        <item>@string/shortcut_action_pie</item>
-        <item>@string/shortcut_action_power_menu</item>
-        <item>@string/shortcut_action_recent</item>
-        <item>@string/shortcut_action_power</item>
-        <item>@string/shortcut_action_search</item>
-        <item>@string/shortcut_action_none</item>
-        <item>@string/shortcut_action_screenshot</item>
-        <item>@string/shortcut_action_torch</item>
-    </string-array>
-
-    <string-array name="shortcut_action_values" translatable="false">
-        <item>**kill**</item>
-        <item>**lastapp**</item>
-        <!--<item>**nav_bar**</item>-->
-        <item>**back**</item>
-        <item>**app**</item>
-        <item>**home**</item>
-        <item>**menu_big**</item>
-        <item>**ime**</item>
-        <item>**pie**</item>
-        <item>**power_menu**</item>
-        <item>**recents**</item>
-        <item>**power**</item>
-        <item>**search**</item>
-        <item>**null**</item>
-        <item>**screenshot**</item>
-        <item>**torch**</item>
-    </string-array>
-
     <!-- Wifi connection notifications -->
     <string-array name="notify_changed_networks_entries" translatable="false">
         <item>@string/notify_changed_networks_default</item>
