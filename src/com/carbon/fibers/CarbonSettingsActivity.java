@@ -61,8 +61,6 @@ import com.android.settings.cyanogenmod.*;
 import com.android.settings.cyanogenmod.qs.*;
 import com.android.settings.slim.*;
 import com.android.settings.slim.dslv.*;
-import com.android.settings.slim.fragments.*;
-import com.android.settings.slim.util.*;
 import com.carbon.fibers.fragments.*;
 
 public class CarbonSettingsActivity extends PreferenceActivity implements ButtonBarHandler {
@@ -233,9 +231,6 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         CarrierLabel.class.getName(),
         DeviceUtils.class.getName(),
         DisplayAnimationsSettings.class.getName(),
-        DragSortController.class.getName(),
-        DragSortItemView.class.getName(),
-        DragSortListView.class.getName(),
         GestureAnywhereSettings.class.getName(),
         LockscreenShortcutFragment.class.getName(),
         NetworkTraffic.class.getName(),
@@ -251,10 +246,6 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         QSColors.class.getName(),
         QSTiles.class.getName(),
         ScrollAnimationInterfaceSettings.class.getName(),
-        SimpleFloatViewManager.class.getName(),
-        ShortcutPickerHelper.class.getName(),
-        SlimActionShortcut.class.getName(),
-        SlimSoundSettings.class.getName(),
         StatusBarBatteryStatusSettings.class.getName(),
         StatusBarClockStyle.class.getName(),
         StatusBarExpandedHeaderSettings.class.getName(),

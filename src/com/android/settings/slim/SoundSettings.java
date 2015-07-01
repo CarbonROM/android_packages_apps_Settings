@@ -34,9 +34,9 @@ import android.util.Log;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class SlimSoundSettings extends SettingsPreferenceFragment implements
+public class SoundSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "SlimSoundSettings";
+    private static final String TAG = "SoundSettings";
 
     private static final int DLG_SAFE_HEADSET_VOLUME = 0;
     private static final int DLG_CAMERA_SOUND = 1;
@@ -128,8 +128,8 @@ public class SlimSoundSettings extends SettingsPreferenceFragment implements
             return frag;
         }
 
-        SlimSoundSettings getOwner() {
-            return (SlimSoundSettings) getTargetFragment();
+        SoundSettings getOwner() {
+            return (SoundSettings) getTargetFragment();
         }
 
         @Override
