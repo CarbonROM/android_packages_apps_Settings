@@ -360,9 +360,9 @@ limitations under the License.
         <!--<item>@string/shortcut_action_navbar</item>-->
         <!--<item>@string/shortcut_action_notifications</item>-->
         <item>@string/shortcut_action_ime</item>
+        <item>@string/shortcut_action_pie</item>
         <!--<item>@string/shortcut_action_power_menu</item>-->
         <!--<item>@string/shortcut_action_qs</item>-->
-        <item>@string/shortcut_action_restartui</item>
         <item>@string/shortcut_action_recent</item>
         <item>@string/shortcut_action_ring_silent</item>
         <item>@string/shortcut_action_ring_vib</item>
@@ -379,9 +379,9 @@ limitations under the License.
         <!--<item>**nav_bar**</item>-->
         <!--<item>**notifications**</item>-->
         <item>**ime**</item>
+        <item>**pie**</item>
         <!--<item>**power_menu**</item>-->
         <!--<item>**quicksettings**</item>-->
-        <item>**restartui**</item>
         <item>**recents**</item>
         <item>**ring_silent**</item>
         <item>**ring_vib**</item>
@@ -390,30 +390,6 @@ limitations under the License.
         <item>**assist**</item>
         <item>**torch**</item>
         <item>**screenshot**</item>
-    </string-array>
-
-    <string-array name="shortcut_action_tile_entries">
-        <item>@string/shortcut_action_back</item>-
-        <item>@string/shortcut_action_home</item>-
-        <item>@string/shortcut_action_menu</item>
-        <item>@string/shortcut_action_ime</item>
-        <item>@string/shortcut_action_power_menu</item>
-        <item>@string/shortcut_action_recent</item>
-        <item>@string/shortcut_action_power</item>
-        <item>@string/shortcut_action_screenshot</item>
-        <item>@string/shortcut_action_search</item>
-    </string-array>
-
-    <string-array name="shortcut_action_tile_values" translatable="false">
-        <item>**back**</item>
-        <item>**home**</item>
-        <item>**menu_big**</item>
-        <item>**ime**</item>
-        <item>**power_menu**</item>
-        <item>**recents**</item>
-        <item>**power**</item>
-        <item>**screenshot**</item>
-        <item>**search**</item>
     </string-array>
 
     <string-array name="shortcut_action_screen_off_entries">

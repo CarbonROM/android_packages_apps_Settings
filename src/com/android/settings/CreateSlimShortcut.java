@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014-2015 SlimRoms
+ * Copyright (C) 2014 SlimRoms
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,7 +26,6 @@ import android.os.Bundle;
 import com.android.internal.util.slim.ActionHelper;
 import com.android.internal.util.slim.DeviceUtils;
 import com.android.internal.util.slim.DeviceUtils.FilteredDeviceFeaturesArray;
-import com.android.internal.util.slim.ImageHelper;
 import com.android.settings.slim.SlimActionShortcut;
 
 import com.android.settings.R;
@@ -68,8 +67,11 @@ public class CreateSlimShortcut extends Activity {
 
                 Drawable icon = ActionHelper.getActionIconImage(
                         CreateSlimShortcut.this, dialogValues[item], null);
+                BitmapDrawable bitmap = (BitmapDrawable) icon;
                 Intent intent = new Intent();
-                intent.putExtra(Intent.EXTRA_SHORTCUT_ICON, ImageHelper.drawableToBitmap(icon));
+                if (bitmap != null) {
+                    intent.putExtra(Intent.EXTRA_SHORTCUT_ICON, bitmap.getBitmap());
+                }
                 intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, dialogEntries[item]);
                 intent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
                 setResult(RESULT_OK, intent);
