@@ -20,7 +20,7 @@ import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.ListPreference;
+import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,10 +33,10 @@ import com.android.settings.SettingsPreferenceFragment;
 public class LockscreenShortcutFragment extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String PREF_LOCKSCREEN_SHORTCUTS_LAUNCH_TYPE =
-            "lockscreen_shortcuts_launch_type";
+    private static final String PREF_LOCKSCREEN_SHORTCUTS_LONGPRESS =
+            "lockscreen_shortcuts_longpress";
 
-    private ListPreference mLockscreenShortcutsLaunchType;
+    private SwitchPreference mLockscreenShortcutsLongpress;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,9 +46,11 @@ public class LockscreenShortcutFragment extends SettingsPreferenceFragment imple
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
-        mLockscreenShortcutsLaunchType = (ListPreference) findPreference(
-                PREF_LOCKSCREEN_SHORTCUTS_LAUNCH_TYPE);
-        mLockscreenShortcutsLaunchType.setOnPreferenceChangeListener(this);
+        mLockscreenShortcutsLongpress = (SwitchPreference) findPreference(
+                PREF_LOCKSCREEN_SHORTCUTS_LONGPRESS);
+        mLockscreenShortcutsLongpress.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.LOCKSCREEN_SHORTCUTS_LONGPRESS, 1) == 1);
+        mLockscreenShortcutsLongpress.setOnPreferenceChangeListener(this);
 
         setHasOptionsMenu(false);
     }
@@ -69,10 +71,10 @@ public class LockscreenShortcutFragment extends SettingsPreferenceFragment imple
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mLockscreenShortcutsLaunchType) {
+        if (preference == mLockscreenShortcutsLongpress) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LOCKSCREEN_SHORTCUTS_LONGPRESS,
-                    Integer.valueOf((String) newValue));
+                    (Boolean) newValue ? 1 : 0);
         }
         return true;
     }
