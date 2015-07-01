@@ -150,8 +150,7 @@ public class ActionListViewSettings extends ListFragment implements
             public void remove(int which) {
                 ActionConfig item = mActionConfigsAdapter.getItem(which);
                 mActionConfigsAdapter.remove(item);
-                if (mDisableDeleteLastEntry && 
-                    (mActionConfigs == null || mActionConfigs.size() == 0)) {
+                if (mDisableDeleteLastEntry && mActionConfigs.size() == 0) {
                     mActionConfigsAdapter.add(item);
                     showDialogInner(DLG_DELETION_NOT_ALLOWED, 0, false, false);
                 } else {
@@ -418,7 +417,6 @@ public class ActionListViewSettings extends ListFragment implements
     }
 
     private boolean checkForDuplicateMainNavActions(String action) {
-        if (mActionConfigs == null) return false;
         ActionConfig actionConfig;
         for (int i = 0; i < mActionConfigs.size(); i++) {
             actionConfig = mActionConfigsAdapter.getItem(i);
@@ -458,7 +456,7 @@ public class ActionListViewSettings extends ListFragment implements
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case MENU_ADD:
-                if (mActionConfigs != null && mActionConfigs.size() == mMaxAllowedActions) {
+                if (mActionConfigs.size() == mMaxAllowedActions) {
                     Toast.makeText(mActivity,
                             getResources().getString(R.string.shortcut_action_max),
                             Toast.LENGTH_LONG).show();
