@@ -267,12 +267,10 @@ public class SettingsActivity extends Activity
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
-            ActionListViewSettings.class.getName(),
             AppCircleBar.class.getName(),
             CarbonSettingsActivity.class.getName(),
             CarbonAboutMe.class.getName(),
             HeadsUpSettings.class.getName(),
-            LockscreenShortcutFragment.class.getName(),
             WirelessSettings.class.getName(),
             WifiSettings.class.getName(),
             AdvancedWifiSettings.class.getName(),

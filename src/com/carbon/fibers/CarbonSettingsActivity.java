@@ -214,7 +214,6 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
     }
 
     private static final String[] ENTRY_FRAGMENTS = {
-        ActionListViewSettings.class.getName(),
         AnimationControls.class.getName(),
         AppCircleBar.class.getName(),
         AppSidebar.class.getName(),
@@ -231,7 +230,6 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         DeviceUtils.class.getName(),
         DisplayAnimationsSettings.class.getName(),
         GestureAnywhereSettings.class.getName(),
-        LockscreenShortcutFragment.class.getName(),
         NetworkTraffic.class.getName(),
         NetworkTrafficFragment.class.getName(),
         NotificationDrawerSettings.class.getName(),
