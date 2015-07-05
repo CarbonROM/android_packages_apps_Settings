@@ -153,7 +153,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         mCmHardwareManager = (CmHardwareManager) activity.getSystemService(Context.CMHW_SERVICE);
 
         addPreferencesFromResource(R.xml.display);
-
+        PreferenceScreen prefSet = getPreferenceScreen();
         PreferenceCategory displayPrefs = (PreferenceCategory)
                 findPreference(KEY_CATEGORY_DISPLAY);
         PreferenceCategory interfacePrefs = (PreferenceCategory)
@@ -241,12 +241,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
 
         mDozeCategory = (PreferenceCategory) findPreference(KEY_DOZE_CATEGORY);
-        if (mDozePreference != null && Utils.isDozeAvailable(activity)) {
+        if (Utils.isDozeAvailable(activity)) {
+            // Doze master switch
+            mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
             mDozePreference.setOnPreferenceChangeListener(this);
         } else {
-            if (displayPrefs != null && mDozePreference != null) {
-                displayPrefs.removePreference(mDozeCategory);
-            }
+            prefSet.removePreference(mDozeCategory);
         }
 
         mTapToWake = (SwitchPreference) findPreference(KEY_TAP_TO_WAKE);

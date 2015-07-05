@@ -60,6 +60,9 @@ import com.android.settings.carbon.gestureanywhere.*;
 import com.android.settings.cyanogenmod.*;
 import com.android.settings.cyanogenmod.qs.*;
 import com.android.settings.slim.*;
+import com.android.settings.slim.dslv.*;
+import com.android.settings.slim.fragments.*;
+import com.android.settings.slim.util.*;
 import com.carbon.fibers.fragments.*;
 
 public class CarbonSettingsActivity extends PreferenceActivity implements ButtonBarHandler {
@@ -214,6 +217,7 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
     }
 
     private static final String[] ENTRY_FRAGMENTS = {
+        ActionListViewSettings.class.getName(),
         AnimationControls.class.getName(),
         AppCircleBar.class.getName(),
         AppSidebar.class.getName(),
@@ -229,8 +233,16 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         CarrierLabel.class.getName(),
         DeviceUtils.class.getName(),
         DisplayAnimationsSettings.class.getName(),
+        DragSortController.class.getName(),
+        DragSortItemView.class.getName(),
+        DragSortListView.class.getName(),
         GestureAnywhereSettings.class.getName(),
-        NavigationSettings.class.getName(),
+        HardwareKeysSettings.class.getName(),
+        InputMethodsSettings.class.getName(),
+        NavBarButtonStyle.class.getName(),
+        NavbarButtonFragment.class.getName(),
+        NavbarStyleDimenSettings.class.getName(),
+        NavbarSettings.class.getName(),
         NetworkTraffic.class.getName(),
         NetworkTrafficFragment.class.getName(),
         NotificationDrawerSettings.class.getName(),
@@ -238,7 +250,10 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         PowerMenuActions.class.getName(),
         QSColors.class.getName(),
         QSTiles.class.getName(),
+        QuickTileFragment.class.getName(),
         ScrollAnimationInterfaceSettings.class.getName(),
+        ShortcutPickerHelper.class.getName(),
+        SimpleFloatViewManager.class.getName(),
         StatusBarBatteryStatusSettings.class.getName(),
         StatusBarClockStyle.class.getName(),
         StatusBarExpandedHeaderSettings.class.getName(),

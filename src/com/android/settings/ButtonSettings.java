@@ -66,22 +66,15 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
     private static final String KEY_ENABLE_HW_KEYS = "enable_hw_keys";
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
-    private static final String KEY_NAVIGATION_RECENTS_LONG_PRESS = "navigation_recents_long_press";
     private static final String KEY_POWER_END_CALL = "power_end_call";
     private static final String KEY_HOME_ANSWER_CALL = "home_answer_call";
     private static final String KEY_VOLUME_MUSIC_CONTROLS = "volbtn_music_controls";
     private static final String KEY_VOLUME_CONTROL_RING_STREAM = "volume_keys_control_ring_stream";
 
     private static final String CATEGORY_POWER = "power_key";
-    private static final String CATEGORY_HOME = "home_key";
-    private static final String CATEGORY_BACK = "back_key";
-    private static final String CATEGORY_MENU = "menu_key";
-    private static final String CATEGORY_ASSIST = "assist_key";
-    private static final String CATEGORY_APPSWITCH = "app_switch_key";
     private static final String CATEGORY_CAMERA = "camera_key";
     private static final String CATEGORY_VOLUME = "volume_keys";
     private static final String CATEGORY_BACKLIGHT = "key_backlight";
-    private static final String CATEGORY_NAVBAR = "navigation_bar";
     private static final String CATEGORY_HW_KEYS = "hw_keys";
 
     // Masks for checking presence of hardware keys.
@@ -347,13 +340,15 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mEnableHwKeys.setChecked(enabled);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        final ButtonBacklightBrightness backlight =
+                (ButtonBacklightBrightness) prefScreen.findPreference(KEY_BUTTON_BACKLIGHT);
 
         /* Toggle backlight control depending on hw keys state, force it to
-           off if enabling
+           off if enabling */
         if (backlight != null) {
             backlight.setEnabled(enabled);
             backlight.updateSummary();
-        } */
+        }
     }
 
     public static void restoreKeyDisabler(Context context) {

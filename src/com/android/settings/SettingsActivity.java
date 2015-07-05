@@ -129,6 +129,10 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.android.settings.carbon.*;
 import com.carbon.fibers.*;
+import com.android.settings.slim.*;
+import com.android.settings.slim.dslv.*;
+import com.android.settings.slim.fragments.*;
+import com.android.settings.slim.util.*;
 import com.carbon.fibers.CarbonSettingsActivity;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -267,10 +271,14 @@ public class SettingsActivity extends Activity
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
+            ActionListViewSettings.class.getName(),
             AppCircleBar.class.getName(),
             CarbonSettingsActivity.class.getName(),
             CarbonAboutMe.class.getName(),
+            DozeSettingsFragment.class.getName(),
             HeadsUpSettings.class.getName(),
+            LockscreenShortcutFragment.class.getName(),
+            ShortcutPickerHelper.class.getName(),
             WirelessSettings.class.getName(),
             WifiSettings.class.getName(),
             AdvancedWifiSettings.class.getName(),
