@@ -28,21 +28,9 @@ import com.android.settings.livedisplay.DisplayGamma;
 public class BootReceiver extends BroadcastReceiver {
 
     private static final String TAG = "BootReceiver";
-    private static final String CHARGE_SETTINGS_PROP = "sys.charge.restored";
 
     @Override
     public void onReceive(Context ctx, Intent intent) {
-
-        /* Performance Misc crDroid */
-        if (PerformanceSettings.FAST_CHARGE_PATH != null) {
-            if (SystemProperties.getBoolean(CHARGE_SETTINGS_PROP, false) == false
-                    && intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
-                SystemProperties.set(CHARGE_SETTINGS_PROP, "true");
-                configureCharge(ctx);
-            } else {
-                SystemProperties.set(CHARGE_SETTINGS_PROP, "false");
-            }
-        }
 
         /* Restore the hardware tunable values */
         DisplaySettings.restore(ctx);
