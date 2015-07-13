@@ -47,7 +47,7 @@ public class ColorPickerPreference extends Preference implements
     int mCarbonColor = mAndroidColor;
     private int mValue = Color.BLACK;
     private float mDensity = 0;
-    private boolean mAlphaSliderEnabled = true;
+    private boolean mAlphaSliderEnabled = false;
 
     private static final String androidns = "http://schemas.android.com/apk/res/android";
 
@@ -91,7 +91,7 @@ public class ColorPickerPreference extends Preference implements
                     mDefaultValue = context.getResources().getInteger(resourceId);
                 }
             }
-            mAlphaSliderEnabled = attrs.getAttributeBooleanValue(null, "alphaSlider", true);
+            mAlphaSliderEnabled = attrs.getAttributeBooleanValue(null, "alphaSlider", false);
         }
         mValue = mDefaultValue;
     }
