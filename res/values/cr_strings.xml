@@ -560,15 +560,6 @@
     <string name="heads_up_dismiss_on_remove_title">Swipe behavior</string>
     <string name="heads_up_dismiss_on_remove_summary_enabled">Hide notification instead of dismiss</string>
     <string name="heads_up_dismiss_on_remove_summary_disabled">Hide and dismiss notification</string>
-    <string name="heads_up_snooze_title">Snooze timer</string>
-    <string name="heads_up_snooze_summary">Swiping up on the heads up notification will snooze it for <xliff:g id="number">%d</xliff:g> minutes</string>
-    <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
-    <string name="heads_up_snooze_1min">1 minute</string>
-    <string name="heads_up_snooze_3min">3 minutes</string>
-    <string name="heads_up_snooze_5min">5 minutes</string>
-    <string name="heads_up_snooze_10min">10 minutes</string>
-    <string name="heads_up_snooze_15min">15 minutes</string>
-    <string name="heads_up_snooze_20min">20 minutes</string>
 
     <!-- Heads up timeout -->
     <string name="heads_up_time_out_title">Time out</string>
