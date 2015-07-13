@@ -396,10 +396,6 @@
     <string name="overscroll_weight_title">Over scrolling weight</string>
     <string name="overscroll_weight_summary">Select the weight of the scrollable objects</string>
 
-    <!-- Heads Up Status Bar button -->
-    <string name="show_headsup_button_title">Show quick access button</string>
-    <string name="show_headsup_button_summary">Show a quick access button in the status bar</string>
-
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Show CPU info</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
