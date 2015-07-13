@@ -463,7 +463,6 @@
     <string name="qs_notifications_tile">Notifications</string>
     <string name="qs_wifi_detail_title">Detailed Wi\u2011Fi view</string>
     <string name="qs_wifi_detail_summary">Enable detailed view for Wi\u2011Fi in Quick Settings</string>
-    <string name="qs_tile_headsup">Heads Up</string>
 
     <!-- Slim Shortcuts Tile -->
     <string name="slim_shortcut_picker">Slim Actions</string>
