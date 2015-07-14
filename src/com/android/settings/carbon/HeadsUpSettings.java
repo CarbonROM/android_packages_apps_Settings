@@ -23,17 +23,13 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.content.res.Resources;
 import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.UserHandle;
-import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceGroup;
-import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.Gravity;
@@ -43,6 +39,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Switch;
+import android.preference.CheckBoxPreference;
 
 import com.android.internal.util.cm.ScreenType;
 import com.android.settings.R;
@@ -59,15 +56,10 @@ import java.util.Map;
 
 public class HeadsUpSettings extends SettingsPreferenceFragment
         implements BaseSystemSettingSwitchBar.SwitchBarChangeCallback,
-                AdapterView.OnItemLongClickListener, Preference.OnPreferenceClickListener,
-                            OnPreferenceChangeListener {
+                AdapterView.OnItemLongClickListener, Preference.OnPreferenceClickListener {
 
     private static final int DIALOG_DND_APPS = 0;
     private static final int DIALOG_BLACKLIST_APPS = 1;
-
-    private static final String PREF_HEADS_UP_TIME_OUT = "heads_up_time_out";
-
-    private ListPreference mHeadsUpTimeOut;
 
     private PackageListAdapter mPackageAdapter;
     private PackageManager mPackageManager;
@@ -94,22 +86,6 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.heads_up_settings);
         mPackageManager = getPackageManager();
         mPackageAdapter = new PackageListAdapter(getActivity());
-
-        Resources systemUiResources;
-        try {
-            systemUiResources = mPackageManager.getResourcesForApplication("com.android.systemui");
-        } catch (Exception e) {
-            return;
-        }
-
-        int defaultTimeOut = systemUiResources.getInteger(systemUiResources.getIdentifier(
-                    "com.android.systemui:integer/heads_up_notification_decay", null, null));
-        mHeadsUpTimeOut = (ListPreference) findPreference(PREF_HEADS_UP_TIME_OUT);
-        mHeadsUpTimeOut.setOnPreferenceChangeListener(this);
-        int headsUpTimeOut = Settings.System.getInt(getContentResolver(),
-                Settings.System.HEADS_UP_NOTIFCATION_DECAY, defaultTimeOut);
-        mHeadsUpTimeOut.setValue(String.valueOf(headsUpTimeOut));
-        updateHeadsUpTimeOutSummary(headsUpTimeOut);
 
         mDndPrefList = (PreferenceGroup) findPreference("dnd_applications_list");
         mDndPrefList.setOrderingAsAdded(false);
@@ -305,19 +281,6 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mHeadsUpTimeOut) {
-            int headsUpTimeOut = Integer.valueOf((String) newValue);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.HEADS_UP_NOTIFCATION_DECAY,
-                    headsUpTimeOut);
-            updateHeadsUpTimeOutSummary(headsUpTimeOut);
-            return true;
-        }
-        return false;
-    }
-
-    @Override
     public boolean onPreferenceClick(Preference preference) {
         if (preference == mAddDndPref) {
             showDialog(DIALOG_DND_APPS);
@@ -466,16 +429,5 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
 
         builder.show();
         return true;
-    }
-
-    private void updateHeadsUpTimeOutSummary(int value) {
-        String summary = getResources().getString(R.string.heads_up_time_out_summary,
-                value / 1000);
-        if (value == 0) {
-            mHeadsUpTimeOut.setSummary(
-                    getResources().getString(R.string.heads_up_time_out_never_summary));
-        } else {
-            mHeadsUpTimeOut.setSummary(summary);
-        }
     }
 }
