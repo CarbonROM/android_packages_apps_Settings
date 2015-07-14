@@ -2430,7 +2430,7 @@
 
         <activity android:name=".carbon.gestureanywhere.GestureAnywhereBuilderActivity" />
         <activity android:name=".carbon.gestureanywhere.GestureAnywhereCreateGestureActivity" />
-        <activity android:name=".carbon.HeadsUpSettings" />
+
         <activity
         android:name="com.carbon.fibers.ShareToClipboard"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
