@@ -16,12 +16,6 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Heads-Up notifications -->
-    <PreferenceScreen
-            android:title="@string/category_heads_up"
-            android:summary="@string/category_heads_up_summary"
-            android:fragment="com.android.settings.carbon.HeadsUpSettings" />
-
     <!-- When device is locked -->
     <com.android.settings.notification.DropDownPreference
             android:key="lock_screen_notifications"

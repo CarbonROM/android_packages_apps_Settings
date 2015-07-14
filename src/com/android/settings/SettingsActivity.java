@@ -278,7 +278,6 @@ public class SettingsActivity extends Activity
             AppCircleBar.class.getName(),
             CarbonSettingsActivity.class.getName(),
             CarbonAboutMe.class.getName(),
-            HeadsUpSettings.class.getName(),
             LockscreenShortcutFragment.class.getName(),
             NavBar.class.getName(),
             WirelessSettings.class.getName(),
