@@ -243,6 +243,7 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         NavbarButtonFragment.class.getName(),
         NavbarStyleDimenSettings.class.getName(),
         NavbarSettings.class.getName(),
+        NavRing.class.getName(),
         NetworkTraffic.class.getName(),
         NetworkTrafficFragment.class.getName(),
         NotificationDrawerSettings.class.getName(),
