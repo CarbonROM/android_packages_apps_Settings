@@ -18,10 +18,13 @@ package com.android.settings.fuelgauge;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.BatteryStats;
 import android.preference.Preference;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.android.settings.R;
 
@@ -33,20 +36,21 @@ import com.android.settings.R;
 public class BatteryHistoryPreference extends Preference {
 
     final private BatteryStats mStats;
-    final private BatteryStats mDockStats;
     final private Intent mBatteryBroadcast;
 
     private boolean mHideLabels;
     private View mLabelHeader;
     private BatteryHistoryChart mChart;
 
-    public BatteryHistoryPreference(Context context, BatteryStats stats, BatteryStats dockStats,
-            Intent batteryBroadcast) {
+    public BatteryHistoryPreference(Context context, BatteryStats stats, Intent batteryBroadcast) {
         super(context);
         setLayoutResource(R.layout.preference_batteryhistory);
         mStats = stats;
-        mDockStats = dockStats;
         mBatteryBroadcast = batteryBroadcast;
+    }
+
+    BatteryStats getStats() {
+        return mStats;
     }
 
     public void setHideLabels(boolean hide) {
@@ -67,7 +71,6 @@ public class BatteryHistoryPreference extends Preference {
         if (mChart == null) {
             // First time: use and initialize this chart.
             chart.setStats(mStats, mBatteryBroadcast);
-            chart.setDockStats(mDockStats, mBatteryBroadcast);
             mChart = chart;
         } else {
             // All future times: forget the newly inflated chart, re-use the
