@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2015 The TeamEos Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,6 +32,7 @@ import com.android.internal.widget.LockPatternUtils;
 import android.provider.SearchIndexableResource;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.cyanogenmod.qs.DraggableGridView;
 import com.android.settings.cyanogenmod.qs.QSTiles;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
@@ -45,6 +47,7 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
     private static final String STATUS_BAR_POWER_MENU = "status_bar_power_menu";
     private static final String PREF_ENABLE_TASK_MANAGER = "enable_task_manager";
 
+    private ListPreference mNumColumns;
     private ListPreference mQuickPulldown;
     private ListPreference mSmartPulldown;
     private SwitchPreference mEnableTaskManager;
@@ -106,6 +109,15 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
         mEnableTaskManager = (SwitchPreference) prefSet.findPreference(PREF_ENABLE_TASK_MANAGER);
         mEnableTaskManager.setChecked((Settings.System.getInt(resolver,
                 Settings.System.ENABLE_TASK_MANAGER, 0) == 1));
+
+        mNumColumns = (ListPreference) findPreference("sysui_qs_num_columns");
+        int numColumns = Settings.Secure.getIntForUser(getContentResolver(),
+                Settings.Secure.QS_NUM_TILE_COLUMNS, getDefaultNumColums(),
+                UserHandle.USER_CURRENT);
+        mNumColumns.setValue(String.valueOf(numColumns));
+        updateNumColumnsSummary(numColumns);
+        mNumColumns.setOnPreferenceChangeListener(this);
+        DraggableGridView.setColumnCount(numColumns);
     }
 
     @Override
@@ -147,6 +159,13 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
                     .findIndexOfValue(statusBarPowerMenu);
             mStatusBarPowerMenu
                     .setSummary(mStatusBarPowerMenu.getEntries()[statusBarPowerMenuIndex]);
+            return true;
+        } else if (preference == mNumColumns) {
+            int numColumns = Integer.valueOf((String) newValue);
+            Settings.Secure.putIntForUser(getContentResolver(), Settings.Secure.QS_NUM_TILE_COLUMNS,
+                    numColumns, UserHandle.USER_CURRENT);
+            updateNumColumnsSummary(numColumns);
+            DraggableGridView.setColumnCount(numColumns);
             return true;
         }
         return false;
@@ -198,6 +217,25 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
             // Remove title capitalized formatting
             type = type.toLowerCase();
             mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_summary, type));
+        }
+    }
+
+    private void updateNumColumnsSummary(int numColumns) {
+        String prefix = (String) mNumColumns.getEntries()[mNumColumns.findIndexOfValue(String
+                .valueOf(numColumns))];
+        mNumColumns.setSummary(getResources().getString(R.string.qs_num_columns_showing, prefix));
+    }
+
+    private int getDefaultNumColums() {
+        try {
+            Resources res = getPackageManager()
+                    .getResourcesForApplication("com.android.systemui");
+            int val = res.getInteger(res.getIdentifier("quick_settings_num_columns", "integer",
+                    "com.android.systemui")); // better not be larger than 5, that's as high as the
+                                              // list goes atm
+            return Math.max(1, val);
+        } catch (Exception e) {
+            return 3;
         }
     }
 
