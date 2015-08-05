@@ -80,6 +80,12 @@
             android:title="@string/lockscreen_targets_message"
             settings:advanced="true"/>
 
+        <PreferenceScreen
+            android:key="lockscreen_wallpaper_changer"
+            android:title="@string/lockscreen_wallpaper_title"
+            android:layout="@layout/preference_lockscreenwp"
+            android:fragment="com.android.settings.carbon.LockscreenSettings" />
+
         <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
             android:key="lockscreen_visualizer"
             android:title="@string/lockscreen_visualizer_title"
