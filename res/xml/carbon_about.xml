@@ -24,8 +24,8 @@
 
         <com.android.settings.widget.DeveloperPreference
             carbon:nameDev="Christian &quot;Myself5&quot; Oder"
-            carbon:deviceStat="Galaxy S2, Sony Xperia Z2, Z3 - Z3C"
-            carbon:statusDev="@string/status_man"
+            carbon:deviceStat="Sony Xperia Z2, Z3, Z3C, Samsung Galaxy S2 (i9100)"
+            carbon:statusDev="@string/status_dev"
             carbon:googleHandle="-vWCd8hPoUEM/AAAAAAAAAAI/AAAAAAAADms/oE32Rgt33uA/"
             carbon:googleProfile="103345265359054633486"
             carbon:githubLink="http://github.com/Myself5"
