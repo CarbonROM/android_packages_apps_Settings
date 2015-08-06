@@ -1374,8 +1374,6 @@ limitations under the License.
         <item>**null**</item>
     </string-array>
 
-  </string-array>
-
 
     <string-array name="lockscreen_shortcuts_launch_type_entries" translatable="false">
         <item>@string/lockscreen_shortcuts_single_tap</item>
