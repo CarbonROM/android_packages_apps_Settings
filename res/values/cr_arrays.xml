@@ -593,6 +593,7 @@ limitations under the License.
         <item>@string/navigation_bar_size_30_dp</item>
         <item>@string/navigation_bar_size_24_dp</item>
         <item>@string/navigation_bar_size_0_dp</item>
+    </string-array>
 
     <!-- LS Weather -->
     <string-array name="weather_condition_icon_entries">
@@ -1372,6 +1373,9 @@ limitations under the License.
         <item>**voice_search**</item>
         <item>**null**</item>
     </string-array>
+
+  </string-array>
+
 
     <string-array name="lockscreen_shortcuts_launch_type_entries" translatable="false">
         <item>@string/lockscreen_shortcuts_single_tap</item>
