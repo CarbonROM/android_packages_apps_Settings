@@ -4,8 +4,8 @@
     xmlns:carbon="http://schemas.android.com/apk/res/com.android.settings">
 
         <com.android.settings.widget.DeveloperPreference
-            carbon:nameDev="CarbonROM"
-            carbon:statusDev="@string/about_carbon_rom"
+            carbon:nameDev="CarbonTEAM"
+            carbon:statusDev="@string/about_carbon_team"
             carbon:googleHandle="-GumpNwUGksg/UrOc3u1ObiI/AAAAAAAACcg/MysMuK2GRhg/"
             carbon:googleProfile="107337691479996516667"
             carbon:githubLink="http://github.com/CarbonROM"
