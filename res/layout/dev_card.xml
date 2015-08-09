@@ -33,12 +33,13 @@
 
         <ImageView
             android:id="@+id/photo"
-            android:layout_width="match_parent"
+            android:layout_width="195dp"
             android:layout_height="195dp"
             android:scaleType="centerCrop"
-            android:layout_marginBottom="5dp"
             android:paddingLeft="3dip"
-            android:paddingRight="3dip" />
+            android:paddingRight="3dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
 
         <LinearLayout
             android:id="@+id/twitter_name"
