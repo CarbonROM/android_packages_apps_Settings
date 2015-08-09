@@ -6,7 +6,7 @@
         <com.android.settings.widget.DeveloperPreference
             carbon:nameDev="CarbonTEAM"
             carbon:statusDev="@string/about_carbon_team"
-            carbon:googleHandle="-GumpNwUGksg/UrOc3u1ObiI/AAAAAAAACcg/MysMuK2GRhg/"
+            carbon:googleHandle="-yphSGV9XezQ/VceQHjp2fVI/AAAAAAAARIE/b17F1VJKoA0/"
             carbon:googleProfile="107337691479996516667"
             carbon:githubLink="http://github.com/CarbonROM"
             carbon:emailDev="ssspinni@gmail.com"
