@@ -111,4 +111,5 @@ public class Settings extends SettingsActivity {
     public static class AppCircleBarActivity extends SettingsActivity { /* empty */ }
     public static class NavBarActivity extends SettingsActivity { /* empty */ }
     public static class NotificationManagerActivity extends SettingsActivity { /* empty */ }
+    public static class ContributorsCloudActivity extends SettingsActivity { /* empty */ }
 }
