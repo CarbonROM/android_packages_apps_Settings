@@ -1178,4 +1178,8 @@
     <string name="qs_num_columns_title">Number of tiles per row</string>
     <string name="qs_num_columns_showing">%1$s tiles per row showing</string>
 
+   <string name="contextual_title">Contextual headers</string>
+   <string name="status_bar_custom_header_title">Custom header image</string>
+   <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
+
 </resources>
