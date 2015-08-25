@@ -35,9 +35,11 @@ public class CarbonRecentsSettings extends SettingsPreferenceFragment implements
     private static final String TAG = "CarbonRecentsSettings";
 
     private static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
+    private static final String RECENTS_FLOATING_WINDOW = "recents_floating";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
 
     private SwitchPreference mRecentsClearAll;
+    private SwitchPreference mRecentsFloatingWindow;
     private ListPreference mRecentsClearAllLocation;
 
     @Override
@@ -52,6 +54,11 @@ public class CarbonRecentsSettings extends SettingsPreferenceFragment implements
         mRecentsClearAll.setChecked(Settings.System.getIntForUser(resolver,
             Settings.System.SHOW_CLEAR_ALL_RECENTS, 1, UserHandle.USER_CURRENT) == 1);
         mRecentsClearAll.setOnPreferenceChangeListener(this);
+
+        mRecentsFloatingWindow = (SwitchPreference) prefSet.findPreference(RECENTS_FLOATING_WINDOW);
+        mRecentsFloatingWindow.setChecked(Settings.System.getIntForUser(resolver,
+            Settings.System.RECENTS_FLOATING_WINDOW, 1, UserHandle.USER_CURRENT) == 1);
+        mRecentsFloatingWindow.setOnPreferenceChangeListener(this);
 
         mRecentsClearAllLocation = (ListPreference) prefSet.findPreference(RECENTS_CLEAR_ALL_LOCATION);
         int location = Settings.System.getIntForUser(resolver,
@@ -71,6 +78,11 @@ public class CarbonRecentsSettings extends SettingsPreferenceFragment implements
             boolean show = (Boolean) objValue;
             Settings.System.putIntForUser(getActivity().getContentResolver(),
                     Settings.System.SHOW_CLEAR_ALL_RECENTS, show ? 1 : 3, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mRecentsFloatingWindow) {
+            boolean show = (Boolean) objValue;
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.RECENTS_FLOATING_WINDOW, show ? 1 : 3, UserHandle.USER_CURRENT);
             return true;
         } else if (preference == mRecentsClearAllLocation) {
             int location = Integer.valueOf((String) objValue);
