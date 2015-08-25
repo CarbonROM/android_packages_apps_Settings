@@ -1328,6 +1328,8 @@
     <string name="heads_up_time_out_8sec">8 seconds</string>
     <string name="heads_up_time_out_10sec">10 seconds</string>
     <string name="heads_up_time_out_never">Never</string>
+    <string name="heads_up_floating_window_title">Launch Heads Up Floating</string>
+    <string name="heads_up_floating_window_summary">Longpress and release to open in float mode when not on home screen</string>
 
     <!-- Performance settings -->
     <string name="title_tile_performance_profile">Performance profile</string>
