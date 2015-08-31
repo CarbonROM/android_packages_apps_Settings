@@ -100,7 +100,7 @@
             android:id="@+id/device_section"
             android:title="@string/header_category_device" >
 
-        <!-- CarbonTEAM Fibers -->
+        <!-- CarbonROM Fibers -->
         <dashboard-tile
                 android:id="@+id/carbon_fibers"
                 android:title="@string/carbon_fibers_title"

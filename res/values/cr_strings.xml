@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2015 The STELIX CarbonTEAM Project
+     Copyright (C) 2015 The CarbonROM Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,14 +16,14 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- CarbonTEAM -->
-    <string name="carbon_mod_version">CarbonTEAM version</string>
-    <string name="carbon_fibers_title">CarbonTEAM Fibers</string>
-    <string name="carbon_about_title">About CarbonTEAM</string>
+    <!-- CarbonROM -->
+    <string name="carbon_mod_version">CarbonROM version</string>
+    <string name="carbon_fibers_title">CarbonROM Fibers</string>
+    <string name="carbon_about_title">About CarbonROM</string>
 
     <!-- CarbonROM Team -->
-    <string name="carbon_title">CarbonTEAM</string>
-    <string name="about_carbon_team">AfterMarket Android ROM</string>
+    <string name="carbon_title">CarbonROM Team</string>
+    <string name="about_carbon_rom">AfterMarket Android ROM</string>
 
     <!-- Layout dev_card strings -->
     <string name="donate">Donate</string>
@@ -32,6 +32,8 @@
     <string name="github">Github</string>
     <string name="twitter">Twitter</string>
 
+    <string name="status_coownerDev">Co-Owner / Developer</string>
+    <string name="status_coownerPR">Co-Owner / Public Relations</string>
     <string name="status_dev">Developer</string>
     <string name="status_man">Maintainer</string>
     <string name="status_designers">Designer</string>

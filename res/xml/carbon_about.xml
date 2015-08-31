@@ -1,25 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 Carbon Development
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:carbon="http://schemas.android.com/apk/res/com.android.settings">
 
         <com.android.settings.widget.DeveloperPreference
-            carbon:nameDev="CarbonTEAM"
-            carbon:statusDev="@string/about_carbon_team"
-            carbon:googleHandle="-yphSGV9XezQ/VceQHjp2fVI/AAAAAAAARIE/b17F1VJKoA0/"
-            carbon:googleProfile="107337691479996516667"
+            carbon:nameDev="CarbonROM"
+            carbon:statusDev="@string/about_carbon_rom"
+            carbon:googleHandle="-GumpNwUGksg/UrOc3u1ObiI/AAAAAAAACcg/MysMuK2GRhg/"
+            carbon:googleProfile="103315278250477995368"
             carbon:githubLink="http://github.com/CarbonROM"
-            carbon:emailDev="ssspinni@gmail.com"
-            carbon:twitterLink="stefanomura1973" />
+            carbon:emailDev="support@carbonrom.org"
+            carbon:twitterLink="CarbonROM" />
 
         <com.android.settings.widget.DeveloperPreference
-            carbon:nameDev="Stefano &quot;STELIX PippoX3&quot; Mura"
-            carbon:deviceStat="OnePlus One, Nexus 5, Nexus 7, HTC One M7 - M8"
-            carbon:statusDev="@string/status_dev"
-            carbon:googleHandle="-mfaXGdQoYt8/Um_FfAR_tUI/AAAAAAAAAsQ/HTM1eS556e4/"
-            carbon:googleProfile="107337691479996516667"
-            carbon:githubLink="http://github.com/STELIX"
-            carbon:emailDev="ssspinni@gmail.com"
-            carbon:twitterLink="stefanomura1973" />
+            carbon:nameDev="Patrick Campanale"
+            carbon:deviceStat="Galaxy Note 3 &quot;SM900T&quot;"
+            carbon:statusDev="@string/status_coownerPR"
+            carbon:googleHandle="-x6CB5Fqi6j0/AAAAAAAAAAI/AAAAAAAA7h8/AMvM2ymdUj0/"
+            carbon:googleProfile="112082828842151104248"
+            carbon:githubLink="http://github.com/pcamp123"
+            carbon:emailDev="patrick@carbonrom.org"
+            carbon:twitterLink="pcamp96" />
+
+        <com.android.settings.widget.DeveloperPreference
+             carbon:nameDev="PB"
+             carbon:deviceStat="OnePlus One, Nexus 6"
+             carbon:statusDev="@string/status_coownerDev"
+             carbon:googleHandle="-_nBG0Cvs-mI/VA2AIsm1AgI/AAAAAAAAp68/XApN90ZbyF0/"
+             carbon:googleProfile="101891874131763807773"
+             carbon:githubLink="http://github.com/phaseburn"
+             carbon:emailDev="phaseburn@carbonrom.org"
+             carbon:twitterLink="PhaseBurn" />
+
+        <com.android.settings.widget.DeveloperPreference
+             carbon:nameDev="Rabih Salamey"
+             carbon:statusDev="@string/status_dev"
+             carbon:googleHandle="-ddYbch6ADPg/AAAAAAAAAAI/AAAAAAAALek/BVx0rWAfJyQ/"
+             carbon:googleProfile="103428140874910659774"
+             carbon:githubLink="http://github.com/somcom3x"
+             carbon:emailDev="somcom3x@carbonrom.org" />
+
+        <com.android.settings.widget.DeveloperPreference
+              carbon:nameDev="Stefano &quot;STELIX PippoX3&quot; Mura"
+              carbon:deviceStat="Nexus 5, Nexus 7, HTC One M8"
+              carbon:statusDev="@string/status_dev"
+              carbon:googleHandle="-mfaXGdQoYt8/Um_FfAR_tUI/AAAAAAAAAsQ/HTM1eS556e4/"
+              carbon:googleProfile="107337691479996516667"
+              carbon:githubLink="http://github.com/STELIX"
+              carbon:emailDev="stelix@carbonrom.org"
+              carbon:twitterLink="stefanomura1973" />
+
+        <com.android.settings.widget.DeveloperPreference
+              carbon:nameDev="Christian &quot;Myself5&quot; Oder"
+              carbon:deviceStat="Sony Xperia Z2, Z3, Z3C, Samsung Galaxy S2 (i9100)"
+              carbon:statusDev="@string/status_dev"
+              carbon:googleHandle="-vWCd8hPoUEM/AAAAAAAAAAI/AAAAAAAADms/oE32Rgt33uA/"
+              carbon:googleProfile="103345265359054633486"
+              carbon:githubLink="http://github.com/Myself5"
+              carbon:emailDev="myself5@carbonrom.org" />
+
+        <com.android.settings.widget.DeveloperPreference
+             carbon:nameDev="Nathan Bass"
+             carbon:statusDev="@string/status_dev"
+             carbon:googleHandle="-oaxnJuXAoXc/AAAAAAAAAAI/AAAAAAAAAL0/aFW-B3I-DWw/"
+             carbon:googleProfile="104316984199094368159"
+             carbon:githubLink="http://github.com/IngCr3at1on"
+             carbon:emailDev="nathan@carbonrom.org " />
+
+        <com.android.settings.widget.DeveloperPreference
+              carbon:nameDev="Drew Walton"
+              carbon:statusDev="@string/status_dev"
+              carbon:googleHandle="-3tb5ZvUuKOY/AAAAAAAAAAI/AAAAAAAAA00/F5VPfmNtbtk/"
+              carbon:googleProfile="109643193860817626489"
+              carbon:githubLink="http://github.com/drewwalton19216801"
+              carbon:emailDev="drew@carbonrom.org" />
+
+        <com.android.settings.widget.DeveloperPreference
+             carbon:nameDev="Cooper Le"
+             carbon:statusDev="@string/status_pr"
+             carbon:googleHandle="-wNgnKNboFkc/AAAAAAAAAAI/AAAAAAAAzZ4/vUnva6QYuWw/"
+             carbon:googleProfile="112365662428104097179"
+             carbon:emailDev="social@carbonrom.org " />
+
+        <com.android.settings.widget.DeveloperPreference
+             carbon:nameDev="Travis Hall"
+             carbon:statusDev="@string/status_designers"
+             carbon:googleHandle="-qcJSZKtqyq0/AAAAAAAAAAI/AAAAAAAAffM/SDGpqpSQMFk/"
+             carbon:googleProfile="103895372610376812100"
+             carbon:emailDev="designers@carbonrom.org " />
 
 </PreferenceScreen>
