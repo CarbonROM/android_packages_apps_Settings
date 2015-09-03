@@ -26,6 +26,12 @@
         android:persistent="false" />
 
     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:title="@string/toast_icon_title"
+            android:summary="@string/toast_icon_summary"
+            android:defaultValue="true" />
+
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="disable_torch_on_screen_off"
         android:title="@string/disable_torch_screen_off_title"
         android:defaultValue="false" />
