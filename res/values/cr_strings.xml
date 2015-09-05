@@ -755,10 +755,6 @@
     <string name="clock_use_second">Use second clock</string>
     <string name="clock_use_second_summary">Show second in clock</string>
 
-    <!-- Instant reboot -->
-    <string name="advanced_reboot_oneclick">One click reboot</string>
-    <string name="advanced_reboot_oneclick_summary">Instantly trigger reboot action</string>
-
     <!-- Chamber of Secrets -->
     <string name="chamber_title">Chamber of secrets</string>
     <string name="chamber_toast">The chamber of secrets has opened</string>
