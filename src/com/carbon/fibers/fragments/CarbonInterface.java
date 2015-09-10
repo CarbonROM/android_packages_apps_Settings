@@ -32,6 +32,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.android.settings.carbon.*;
+import com.android.settings.carbon.gestureanywhere.*;
 import com.android.settings.cyanogenmod.*;
 import com.android.settings.R;
 import com.android.settings.slim.*;

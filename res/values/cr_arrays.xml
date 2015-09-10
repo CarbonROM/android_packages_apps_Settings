@@ -375,7 +375,7 @@ limitations under the License.
         <item>@string/shortcut_action_notifications</item>
         <item>@string/shortcut_action_settings_panel</item>
         <item>@string/shortcut_action_smart</item>
-        <item>@string/shortcut_action_recents</item>
+        <item>@string/shortcut_action_recent</item>
         <item>@string/shortcut_action_screenshot</item>
         <item>@string/shortcut_action_ime</item>
         <item>@string/shortcut_action_lastapp</item>

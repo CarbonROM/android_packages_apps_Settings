@@ -133,6 +133,7 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.android.settings.carbon.*;
+import com.android.settings.slim.*;
 import com.android.settings.slim.dslv.*;
 import com.android.settings.slim.fragments.*;
 import com.android.settings.slim.util.*;
@@ -280,6 +281,7 @@ public class SettingsActivity extends Activity
             AppCircleBar.class.getName(),
             CarbonSettingsActivity.class.getName(),
             CarbonAboutMe.class.getName(),
+            DozeSettingsFragment.class.getName(),
             DragSortController.class.getName(),
             DragSortItemView.class.getName(),
             DragSortListView.class.getName(),

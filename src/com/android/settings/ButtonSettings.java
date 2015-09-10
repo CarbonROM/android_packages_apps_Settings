@@ -660,6 +660,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         hardware.set(CMHardwareManager.FEATURE_KEY_DISABLE, !enabled);
 
         /* Save/restore button timeouts to disable them in softkey mode */
+        Editor editor = prefs.edit();
+
         if (!enabled) {
             int currentBrightness = Settings.Secure.getInt(context.getContentResolver(),
                     Settings.System.BUTTON_BRIGHTNESS, defaultBrightness);

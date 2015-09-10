@@ -1901,6 +1901,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                             .show();
                 }
                 mUpdateRecoveryDialog.setOnDismissListener(this);
+            }
         } else if (preference == mChamber) {
             if (Settings.Secure.getInt(getActivity().getContentResolver(),
                     Settings.Secure.CHAMBER_OF_SECRETS, 0) == 0) {
