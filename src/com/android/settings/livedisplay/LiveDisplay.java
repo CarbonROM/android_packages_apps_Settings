@@ -334,6 +334,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
         } else if (preference == mColorProfile) {
             int id = Integer.valueOf((String)objValue);
             Log.i("LiveDisplay", "Setting mode: " + id);
+            /*
             for (DisplayMode mode : mHardware.getDisplayModes()) {
                 if (mode.id == id) {
                     mHardware.setDisplayMode(mode, true);
@@ -341,6 +342,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
                     break;
                 }
             }
+            */
         }
         return true;
     }

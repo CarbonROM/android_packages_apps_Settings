@@ -269,6 +269,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 }
             }
         }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     private void removePreferenceIfPropertyMissing(PreferenceGroup preferenceGroup,
