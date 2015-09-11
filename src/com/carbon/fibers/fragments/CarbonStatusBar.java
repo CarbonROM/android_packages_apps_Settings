@@ -95,8 +95,7 @@ public class CarbonStatusBar extends SettingsPreferenceFragment {
             frags[1] = new StatusBarClockStyle();
             frags[2] = new NetworkTraffic();
             frags[3] = new NetworkTrafficFragment();
-            frags[4] = new CarrierLabel();
-            frags[5] = new StatusBarExpandedHeaderSettings();
+            frags[4] = new StatusBarExpandedHeaderSettings();
         }
 
         @Override
@@ -122,7 +121,6 @@ public class CarbonStatusBar extends SettingsPreferenceFragment {
                     getString(R.string.status_bar_clock),
                     getString(R.string.network_traffic_title),
                     getString(R.string.network_traffic_vector_title),
-                    getString(R.string.carrier_options),
                     getString(R.string.status_bar_expanded_header_settings_title)};
         return titleString;
     }
