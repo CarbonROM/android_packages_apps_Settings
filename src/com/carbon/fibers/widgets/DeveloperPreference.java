@@ -16,7 +16,7 @@
  */
 
 
-package com.android.settings.widget;
+package com.carbon.fibers.widgets;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;

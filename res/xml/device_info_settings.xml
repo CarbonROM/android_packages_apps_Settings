@@ -17,12 +17,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
-        <PreferenceScreen android:key="carbon_about"
-            android:title="@string/carbon_about_title"
-            android:fragment="com.android.settings.carbon.CarbonAboutMe" >
-
-        </PreferenceScreen>
-
         <!-- Advanced mode -->
         <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
             android:key="advanced_mode"

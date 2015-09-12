@@ -34,7 +34,7 @@ import java.util.Collections;
 
 import com.android.settings.R;
 
-public class CarbonAboutMe extends PreferenceFragment {
+public class CarbonAbout extends PreferenceFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
