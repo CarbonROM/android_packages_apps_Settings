@@ -48,6 +48,7 @@ import com.android.settings.slim.dslv.*;
 import com.android.settings.slim.fragments.*;
 import com.android.settings.slim.util.*;
 import com.carbon.fibers.fragments.*;
+import com.carbon.fibers.widgets.*;
 
 public class CarbonSettingsActivity extends PreferenceActivity implements ButtonBarHandler {
 
@@ -208,12 +209,14 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         BacklightTimeoutSeekBar.class.getName(),
         ButtonBacklightBrightness.class.getName(),
         ButtonSettings.class.getName(),
+        CarbonAbout.class.getName(),
         CarbonButtons.class.getName(),
         CarbonInterface.class.getName(),
         CarbonMoreDeviceSettings.class.getName(),
         CarbonNotificationDrawerSettings.class.getName(),
         CarbonRecentsSettings.class.getName(),
         CarbonStatusBar.class.getName(),
+        DeveloperPreference.class.getName(),
         DeviceUtils.class.getName(),
         DisplayAnimationsSettings.class.getName(),
         DragSortController.class.getName(),

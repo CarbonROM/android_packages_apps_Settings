@@ -62,4 +62,10 @@
             android:icon="@drawable/ic_settings_advanced_teal"
             android:fragment="com.carbon.fibers.fragments.CarbonMoreDeviceSettings" />
 
+        <header
+            android:id="@+id/carbon_about"
+            android:title="@string/carbon_about_title"
+            android:icon="@drawable/ic_settings_carbonfibers_teal"
+            android:fragment="com.android.settings.carbon.CarbonAbout" />
+
 </preference-headers>
