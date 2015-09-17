@@ -22,7 +22,7 @@
     <!-- Wakelock blocker -->
     <PreferenceScreen
         android:key="wakelock_blocker"
-        android:fragment="com.android.settings.aicp.WakeLockBlocker"
+        android:fragment="com.android.settings.carbon.WakeLockBlocker"
         android:title="@string/wakelock_blocker_title" />
 
    <!-- Advanced Settings -->
