@@ -1140,6 +1140,11 @@
    <string name="lockscreen_wallpaper_clear_title">Return to default</string>
    <string name="reset_lockscreen_wallpaper">Lockscreen wallpaper set back to default</string>
 
+    <!-- Lock screen wallpaper see through -->
+    <string name="lockscreen_see_through_title">Lockscreen blur</string>
+    <string name="lockscreen_see_through_summary">Blurs and displays the content behind your lockscreen.</string>
+    <string name="lockscreen_blur_radius">Blur effect intensity</string>
+
     <!-- Navigation Ring Targets -->
     <string name="navigation_ring_title">Navigation ring targets</string>
     <string name="navigation_ring_enable_title">Enable navigation rings</string>
