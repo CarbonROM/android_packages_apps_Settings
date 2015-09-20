@@ -212,6 +212,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_floating_on";
                 stringId = R.string.qs_tile_slim_floats;
                 break;
+            case QSConstants.TILE_SLIM_PIE:
+                resourceName = "ic_qs_pie_global_on";
+                stringId = R.string.qs_slim_pie_tile;
+                break;
 
             // Dynamic tiles
             case QSConstants.DYNAMIC_TILE_NEXT_ALARM:
