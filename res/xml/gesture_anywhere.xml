@@ -28,7 +28,8 @@
         android:key="gesture_anywhere_floating"
         android:title="@string/gesture_anywhere_floating"
         android:summary="@string/gesture_anywhere_floating_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        android:dependency="gesture_anywhere_enabled"/>
 
     <ListPreference
         android:key="gesture_anywhere_position"
