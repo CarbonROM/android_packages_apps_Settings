@@ -1208,4 +1208,8 @@
     <string name="system_app_remover">System App Remover</string>
     <string name="systemappremover_summary">Remove system apps by your own risk</string>
 
+    <!-- Media art -->
+    <string name="media_art_title">Media cover art</string>
+    <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+
 </resources>
