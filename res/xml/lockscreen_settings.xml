@@ -33,12 +33,12 @@
             android:summary="@string/lockscreen_see_through_summary"
             android:defaultValue="false" />
 
-        <com.android.settings.bliss.SeekBarPreference
+        <com.carbon.fibers.widgets.SeekBarPreferenceCham
             android:key="lockscreen_blur_radius"
             android:title="@string/lockscreen_blur_radius"
             android:max="25"
             settings:minimum="0"
-            settings:defaultVal="14"
+            settings:defaultValue="14"
             settings:interval="1" />
 
 </PreferenceScreen>

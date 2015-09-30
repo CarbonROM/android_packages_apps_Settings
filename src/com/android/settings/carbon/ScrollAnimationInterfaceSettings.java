@@ -41,7 +41,7 @@ import android.view.MenuItem;
 import android.util.Log;
 import android.text.TextUtils;
 
-import com.android.settings.widget.SeekBarPreferenceCham;
+import com.carbon.fibers.widgets.SeekBarPreferenceCham;
 
 public class ScrollAnimationInterfaceSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
