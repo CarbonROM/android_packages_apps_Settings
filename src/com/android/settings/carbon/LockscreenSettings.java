@@ -31,7 +31,7 @@ import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.bliss.SeekBarPreference;
+import com.carbon.fibers.widgets.SeekBarPreferenceCham;
 
 public class LockscreenSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -44,7 +44,7 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements On
 
     private Preference mSetWallpaper;
     private Preference mClearWallpaper;
-    private SeekBarPreference mBlurRadius;
+    private SeekBarPreferenceCham mBlurRadius;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -55,7 +55,7 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements On
         mSetWallpaper = (Preference) findPreference(KEY_WALLPAPER_SET);
         mClearWallpaper = (Preference) findPreference(KEY_WALLPAPER_CLEAR);
 
-        mBlurRadius = (SeekBarPreference) findPreference(KEY_LOCKSCREEN_BLUR_RADIUS);
+        mBlurRadius = (SeekBarPreferenceCham) findPreference(KEY_LOCKSCREEN_BLUR_RADIUS);
         mBlurRadius.setValue(Settings.System.getInt(resolver,
                 Settings.System.LOCKSCREEN_BLUR_RADIUS, 14));
         mBlurRadius.setOnPreferenceChangeListener(this);
