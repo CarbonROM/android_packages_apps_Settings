@@ -31,6 +31,7 @@
         android:summary="@string/navigation_bar_width_summary" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
+       android:enabled="false"
        android:key="navigation_bar_tint"
        android:title="@string/navbar_button_tint_title"
        android:defaultValue="#ffffff" />
