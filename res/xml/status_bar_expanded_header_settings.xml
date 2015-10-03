@@ -35,16 +35,19 @@
         android:title="@string/colors_title">
 
          <net.margaritov.preference.colorpicker.ColorPickerPreference
+	    android:enabled="false"
             android:key="expanded_header_background_color"
             android:title="@string/background_title"
             android:defaultValue="0xff384248" />
 
          <net.margaritov.preference.colorpicker.ColorPickerPreference
+	    android:enabled="false"
             android:key="expanded_header_text_color"
             android:title="@string/text_title"
             android:defaultValue="0xffffffff" />
 
          <net.margaritov.preference.colorpicker.ColorPickerPreference
+	    android:enabled="false"
             android:key="expanded_header_icon_color"
             android:title="@string/icons_title"
             android:defaultValue="0xffffffff" />
