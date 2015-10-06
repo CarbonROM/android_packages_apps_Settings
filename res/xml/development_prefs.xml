@@ -38,6 +38,12 @@
         android:summary="@string/advanced_reboot_summary" />
 
     <SwitchPreference
+        android:key="advanced_reboot_oneclick"
+        android:title="@string/advanced_reboot_oneclick"
+        android:summary="@string/advanced_reboot_oneclick_summary"
+        android:dependency="advanced_reboot" />
+
+    <SwitchPreference
         android:key="enable_quickboot"
         android:title="@string/enable_quickboot_title"
         android:summary="@string/enable_quickboot_summary" />
