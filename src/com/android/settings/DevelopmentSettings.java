@@ -189,7 +189,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private static final String DEVELOPMENT_TOOLS = "development_tools";
 
     private static final String ADVANCED_REBOOT_KEY = "advanced_reboot";
-    private static final String ADVANCED_REBOOT_KEY_ONECLICK = "advanced_reboot_oneclick";
 
     private static final String DEVELOPMENT_SHORTCUT_KEY = "development_shortcut";
 
@@ -282,7 +281,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private PreferenceScreen mDevelopmentTools;
 
     private SwitchPreference mAdvancedReboot;
-    private SwitchPreference mAdvancedRebootOneclick;
 
     private SwitchPreference mUpdateRecovery;
 
@@ -367,7 +365,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mPassword = (PreferenceScreen) findPreference(LOCAL_BACKUP_PASSWORD);
         mAllPrefs.add(mPassword);
         mAdvancedReboot = findAndInitSwitchPref(ADVANCED_REBOOT_KEY);
-        mAdvancedRebootOneclick = findAndInitSwitchPref(ADVANCED_REBOOT_KEY_ONECLICK);
         mUpdateRecovery = findAndInitSwitchPref(UPDATE_RECOVERY_KEY);
         mDevelopmentShortcut = findAndInitSwitchPref(DEVELOPMENT_SHORTCUT_KEY);
 
@@ -386,7 +383,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             disableForUser(mEnableTerminal);
             disableForUser(mPassword);
             disableForUser(mAdvancedReboot);
-            disableForUser(mAdvancedRebootOneclick);
             disableForUser(mUpdateRecovery);
             disableForUser(mDevelopmentShortcut);
             disableForUser(mQuickBoot);
@@ -711,7 +707,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         updateUSBAudioOptions();
         updateRootAccessOptions();
         updateAdvancedRebootOptions();
-        updateAdvancedRebootOneclickOptions();
         updateDevelopmentShortcutOptions();
         updateUpdateRecoveryOptions();
         if (mForceHighEndGfx != null) {
@@ -723,26 +718,11 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         Settings.Secure.putInt(getActivity().getContentResolver(),
                 Settings.Secure.ADVANCED_REBOOT,
                 mAdvancedReboot.isChecked() ? 1 : 0);
-
-        Settings.Secure.putInt(getActivity().getContentResolver(),
-                Settings.Secure.ADVANCED_REBOOT_ONECLICK,
-                mAdvancedReboot.isChecked() ? 1 : 0);
     }
 
     private void updateAdvancedRebootOptions() {
         mAdvancedReboot.setChecked(Settings.Secure.getInt(getActivity().getContentResolver(),
                 Settings.Secure.ADVANCED_REBOOT, 0) != 0);
-    }
-
-    private void writeAdvancedRebootOneclickOptions() {
-        Settings.Secure.putInt(getActivity().getContentResolver(),
-                Settings.Secure.ADVANCED_REBOOT_ONECLICK,
-                mAdvancedRebootOneclick.isChecked() ? 1 : 0);
-    }
-
-    private void updateAdvancedRebootOneclickOptions() {
-        mAdvancedRebootOneclick.setChecked(Settings.Secure.getInt(getActivity().getContentResolver(),
-                Settings.Secure.ADVANCED_REBOOT_ONECLICK, 0) != 0);
     }
 
     private void resetDevelopmentShortcutOptions() {
@@ -1896,8 +1876,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             writeUSBAudioOptions();
         } else if (preference == mAdvancedReboot) {
             writeAdvancedRebootOptions();
-        } else if (preference == mAdvancedRebootOneclick) {
-            writeAdvancedRebootOneclickOptions();
         } else if (preference == mDevelopmentShortcut) {
             writeDevelopmentShortcutOptions();
         } else if (preference == mKillAppLongpressBack) {
