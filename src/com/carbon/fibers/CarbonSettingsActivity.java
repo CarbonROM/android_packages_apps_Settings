@@ -238,9 +238,12 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         ScrollAnimationInterfaceSettings.class.getName(),
         ShortcutPickerHelper.class.getName(),
         SimpleFloatViewManager.class.getName(),
+        StatusBarBatteryStatusSettings.class.getName(),
         StatusBarClockStyle.class.getName(),
         StatusBarExpandedHeaderSettings.class.getName(),
+        StatusBarNotifSystemIconsSettings.class.getName(),
         StatusBarSettings.class.getName(),
+        StatusBarSignalSettings.class.getName(),
         SystemappRemover.class.getName(),
         WakeLockBlocker.class.getName()
     };
