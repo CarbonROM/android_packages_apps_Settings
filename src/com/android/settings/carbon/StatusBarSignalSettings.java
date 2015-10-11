@@ -42,12 +42,8 @@ import net.margaritov.preference.colorpicker.ColorPickerPreference;
 public class StatusBarSignalSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String KEY_CATEGORY_ACTIVITY = "signal_wifi_category_network_activity_icons";
-    private static final String KEY_SHOW_ACTIVITY = "signal_wifi_show_network_activity";
     private static final String KEY_NETWORK_NORMAL_COLOR = "signal_wifi_network_icons_normal_color";
     private static final String KEY_NETWORK_FULLY_COLOR = "signal_wifi_network_icons_fully_color";
-    private static final String KEY_ACTIVITY_NORMAL_COLOR = "signal_wifi_network_activity_icons_normal_color";
-    private static final String KEY_ACTIVITY_FULLY_COLOR = "signal_wifi_network_activity_icons_fully_color";
     private static final String KEY_AIRPLANE_COLOR = "signal_wifi_airplane_mode_icon_color";
 
     private static final int DEFAULT_COLOR = 0xffffffff;
@@ -56,7 +52,6 @@ public class StatusBarSignalSettings extends SettingsPreferenceFragment implemen
     private static final int MENU_RESET = Menu.FIRST;
     private static final int DLG_RESET = 0;
 
-    private SwitchPreference mShowNetworkActivity;
     private ColorPickerPreference mNetworkNormalColor;
     private ColorPickerPreference mNetworkFullyColor;
     private ColorPickerPreference mActivityNormalColor;
@@ -86,11 +81,6 @@ public class StatusBarSignalSettings extends SettingsPreferenceFragment implemen
         int intColor;
         String hexColor;
 
-        mShowNetworkActivity = (SwitchPreference) findPreference(
-                    KEY_SHOW_ACTIVITY);
-        mShowNetworkActivity.setChecked(isNetworkActivityEnabled);
-        mShowNetworkActivity.setOnPreferenceChangeListener(this);
-
         mNetworkNormalColor = (ColorPickerPreference) findPreference(
                 KEY_NETWORK_NORMAL_COLOR);
         intColor = Settings.System.getInt(mResolver,
@@ -110,33 +100,6 @@ public class StatusBarSignalSettings extends SettingsPreferenceFragment implemen
         hexColor = String.format("#%08x", (0xffffffff & intColor));
         mNetworkFullyColor.setSummary(hexColor);
         mNetworkFullyColor.setOnPreferenceChangeListener(this);
-
-        PreferenceCategory activityCat = (PreferenceCategory) findPreference(KEY_CATEGORY_ACTIVITY);
-        mActivityNormalColor = (ColorPickerPreference) findPreference(
-                KEY_ACTIVITY_NORMAL_COLOR);
-        mActivityFullyColor = (ColorPickerPreference) findPreference(
-                KEY_ACTIVITY_FULLY_COLOR);
-        if (isNetworkActivityEnabled) {
-            intColor = Settings.System.getInt(mResolver,
-                    Settings.System.STATUS_BAR_NETWORK_ACTIVITY_ICONS_NORMAL_COLOR,
-                    DEFAULT_ACTIVITY_COLOR);
-            mActivityNormalColor.setNewPreviewColor(intColor);
-            hexColor = String.format("#%08x", (0xffffffff & intColor));
-            mActivityNormalColor.setSummary(hexColor);
-            mActivityNormalColor.setOnPreferenceChangeListener(this);
-
-            intColor = Settings.System.getInt(mResolver,
-                    Settings.System.STATUS_BAR_NETWORK_ACTIVITY_ICONS_FULLY_COLOR,
-                    DEFAULT_ACTIVITY_COLOR);
-            mActivityFullyColor.setNewPreviewColor(intColor);
-            hexColor = String.format("#%08x", (0xffffffff & intColor));
-            mActivityFullyColor.setSummary(hexColor);
-            mActivityFullyColor.setOnPreferenceChangeListener(this);
-        } else {
-            activityCat.removePreference(mActivityNormalColor);
-            activityCat.removePreference(mActivityFullyColor);
-            removePreference(KEY_CATEGORY_ACTIVITY);
-        }
 
         mAirplaneColor = (ColorPickerPreference) findPreference(
                 KEY_AIRPLANE_COLOR);
@@ -173,14 +136,7 @@ public class StatusBarSignalSettings extends SettingsPreferenceFragment implemen
         String hex;
         int intHex;
 
-        if (preference == mShowNetworkActivity) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(mResolver,
-                    Settings.System.STATUS_BAR_SHOW_NETWORK_ACTIVITY,
-                    value ? 1 : 0);
-            refreshSettings();
-            return true;
-        } else if (preference == mNetworkNormalColor) {
+        if (preference == mNetworkNormalColor) {
             hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
             intHex = ColorPickerPreference.convertToColorInt(hex);
