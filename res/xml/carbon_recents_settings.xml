@@ -19,7 +19,12 @@
     android:title="@string/recents_panel_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <PreferenceCategory
+      <PreferenceScreen
+        android:key="recent_panel"
+        android:fragment="com.android.settings.slim.RecentPanel"
+        android:title="@string/recent_panel_category" />
+
+      <PreferenceCategory
         android:key="recent_panel"
         android:title="@string/recents_panel_settings" >
 
@@ -66,10 +71,5 @@
                 android:defaultValue="false" />
 
     </PreferenceCategory>
-
-    <PreferenceScreen
-        android:key="recent_panel"
-        android:fragment="com.android.settings.slim.RecentPanel"
-        android:title="@string/recent_panel_category" />
 
 </PreferenceScreen>
