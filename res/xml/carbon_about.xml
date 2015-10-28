@@ -49,8 +49,15 @@
              carbon:twitterLink="PhaseBurn" />
 
         <com.carbon.fibers.widgets.DeveloperPreference
+             carbon:nameDev="Ryan Norris"
+             carbon:statusDev="@string/status_dev"
+             carbon:googleHandle="-Qw8kGLh1a1o/AAAAAAAAAAI/AAAAAAAAeuw/FsBOAw9Q8KE/"
+             carbon:googleProfile="104695050261726198587"
+             carbon:githubLink="http://github.com/TheNameIsNigel"
+             carbon:emailDev="ryan@carbonrom.org " />
+
+        <com.carbon.fibers.widgets.DeveloperPreference
              carbon:nameDev="Rabih Salamey"
-             carbon:deviceStat=" "
              carbon:statusDev="@string/status_dev"
              carbon:googleHandle="-ddYbch6ADPg/AAAAAAAAAAI/AAAAAAAALek/BVx0rWAfJyQ/"
              carbon:googleProfile="103428140874910659774"
@@ -75,8 +82,7 @@
              carbon:googleHandle="-vWCd8hPoUEM/AAAAAAAAAAI/AAAAAAAADms/oE32Rgt33uA/"
              carbon:googleProfile="103345265359054633486"
              carbon:githubLink="http://github.com/Myself5"
-             carbon:emailDev="myself5@carbonrom.org"
-             carbon:twitterLink=" " />
+             carbon:emailDev="myself5@carbonrom.org" />
 
         <com.carbon.fibers.widgets.DeveloperPreference
              carbon:nameDev="Nathan Bass"
@@ -84,8 +90,7 @@
              carbon:googleHandle="-oaxnJuXAoXc/AAAAAAAAAAI/AAAAAAAAAL0/aFW-B3I-DWw/"
              carbon:googleProfile="104316984199094368159"
              carbon:githubLink="http://github.com/IngCr3at1on"
-             carbon:emailDev="nathan@carbonrom.org "
-             carbon:twitterLink=" " />
+             carbon:emailDev="nathan@carbonrom.org " />
 
         <com.carbon.fibers.widgets.DeveloperPreference
              carbon:nameDev="Drew Walton"
@@ -93,23 +98,20 @@
              carbon:googleHandle="-3tb5ZvUuKOY/AAAAAAAAAAI/AAAAAAAAA00/F5VPfmNtbtk/"
              carbon:googleProfile="109643193860817626489"
              carbon:githubLink="http://github.com/drewwalton19216801"
-             carbon:emailDev="drew@carbonrom.org"
-             carbon:twitterLink=" " />
+             carbon:emailDev="drew@carbonrom.org" />
 
         <com.carbon.fibers.widgets.DeveloperPreference
              carbon:nameDev="Cooper Le"
              carbon:statusDev="@string/status_pr"
              carbon:googleHandle="-wNgnKNboFkc/AAAAAAAAAAI/AAAAAAAAzZ4/vUnva6QYuWw/"
              carbon:googleProfile="112365662428104097179"
-             carbon:emailDev="social@carbonrom.org "
-             carbon:twitterLink=" " />
+             carbon:emailDev="social@carbonrom.org " />
 
         <com.carbon.fibers.widgets.DeveloperPreference
              carbon:nameDev="Travis Hall"
              carbon:statusDev="@string/status_designers"
              carbon:googleHandle="-qcJSZKtqyq0/AAAAAAAAAAI/AAAAAAAAffM/SDGpqpSQMFk/"
              carbon:googleProfile="103895372610376812100"
-             carbon:emailDev="designers@carbonrom.org "
-             carbon:twitterLink=" " />
+             carbon:emailDev="designers@carbonrom.org " />
 
 </PreferenceScreen>
