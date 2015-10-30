@@ -2291,6 +2291,9 @@
         <!-- SystemApp Remover -->
         <activity android:name="com.carbon.fibers.fragments.SystemappRemover" />
 
+        <!-- Hide Apps from Recents (HAFR) -->
+        <activity android:name="com.android.settings.carbon.hideappfromrecents.HAFRAppListActivity" />
+
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
                 android:exported="false"

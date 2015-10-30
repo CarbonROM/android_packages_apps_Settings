@@ -24,6 +24,15 @@
         android:fragment="com.android.settings.slim.RecentPanel"
         android:title="@string/recent_panel_category" />
 
+      <!-- Hide Apps from Recents -->
+      <PreferenceScreen
+        android:key="hide_app_from_recents"
+        android:title="@string/hide_apps_from_recents_title" >
+        <intent android:action="android.intent.action.MAIN"
+          android:targetPackage="com.android.settings"
+          android:targetClass="com.android.settings.carbon.hideappfromrecents.HAFRAppListActivity" />
+      </PreferenceScreen>
+
       <PreferenceCategory
         android:key="recent_panel"
         android:title="@string/recents_panel_settings" >

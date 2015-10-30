@@ -41,6 +41,7 @@ import android.widget.TextView;
 import com.android.settings.*;
 import com.android.settings.carbon.*;
 import com.android.settings.carbon.gestureanywhere.*;
+import com.android.settings.carbon.hideappfromrecents.*;
 import com.android.settings.cyanogenmod.*;
 import com.android.settings.cyanogenmod.qs.*;
 import com.android.settings.slim.*;
@@ -223,6 +224,7 @@ public class CarbonSettingsActivity extends PreferenceActivity implements Button
         DragSortItemView.class.getName(),
         DragSortListView.class.getName(),
         GestureAnywhereSettings.class.getName(),
+        HAFRAppListActivity.class.getName(),
         NavBar.class.getName(),
         NavBarStyleDimen.class.getName(),
         NavRing.class.getName(),
