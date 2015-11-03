@@ -37,6 +37,8 @@
         android:textSize="36sp"
         android:ellipsize="marquee"
         android:fadingEdge="horizontal" />
+        android:textColor="@color/storage_summary_title_color"
+        android:textSize="36sp"/>
 
     <TextView
         android:id="@android:id/summary"
