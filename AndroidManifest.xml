@@ -28,7 +28,7 @@
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIMAX_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIMAX_STATE" />y
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="com.android.certinstaller.INSTALL_AS_USER" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
@@ -2444,6 +2444,13 @@
             android:name=".cyanogenmod.LtoService">
         </service>
 
+        <receiver android:name=".cyanogenmod.ShortcutCleanupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package"></data>
+            </intent-filter>
+        </receiver>
+
         <!-- Carbon Application Methods -->
         <activity android:name="com.carbon.fibers.CarbonSettingsActivity" />
         <activity android:name=".carbon.CarbonAboutMe" />
@@ -2527,6 +2534,5 @@
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                        android:resource="@id/security_settings" />
         </activity-alias>
-
     </application>
 </manifest>
