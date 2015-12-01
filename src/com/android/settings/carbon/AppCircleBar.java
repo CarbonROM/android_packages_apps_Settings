@@ -53,7 +53,7 @@ import com.android.settings.Utils;
 import com.android.settings.util.CMDProcessor;
 import com.android.settings.util.Helpers;
 import com.android.settings.util.AppMultiSelectListPreference;
-import com.carbon.fibers.widgets.SeekBarPreferenceCham;
+import com.android.settings.carbon.widgets.SeekBarPreferenceCham;
 
 import java.io.File;
 import java.lang.Thread;

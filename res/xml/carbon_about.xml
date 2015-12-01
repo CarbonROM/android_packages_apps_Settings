@@ -19,7 +19,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:carbon="http://schemas.android.com/apk/res/com.android.settings">
 
-        <com.carbon.fibers.widgets.DeveloperPreference
+        <com.android.settings.carbon.widgets.DeveloperPreference
              carbon:nameDev="CarbonROM"
              carbon:statusDev="@string/about_carbon_rom"
              carbon:googleHandle="-GumpNwUGksg/UrOc3u1ObiI/AAAAAAAACcg/MysMuK2GRhg/"
@@ -28,7 +28,7 @@
              carbon:emailDev="support@carbonrom.org"
              carbon:twitterLink="CarbonROM" />
 
-        <com.carbon.fibers.widgets.DeveloperPreference
+        <com.android.settings.carbon.widgets.DeveloperPreference
              carbon:nameDev="Patrick Campanale"
              carbon:deviceStat="Galaxy Note 3 &quot;SM900T&quot;"
              carbon:statusDev="@string/status_coownerPR"
@@ -38,7 +38,7 @@
              carbon:emailDev="patrick@carbonrom.org"
              carbon:twitterLink="pcamp96" />
 
-        <com.carbon.fibers.widgets.DeveloperPreference
+        <com.android.settings.carbon.widgets.DeveloperPreference
              carbon:nameDev="PB"
              carbon:deviceStat="OnePlus One, Nexus 6"
              carbon:statusDev="@string/status_coownerDev"
@@ -48,7 +48,7 @@
              carbon:emailDev="phaseburn@carbonrom.org"
              carbon:twitterLink="PhaseBurn" />
 
-        <com.carbon.fibers.widgets.DeveloperPreference
+        <com.android.settings.carbon.widgets.DeveloperPreference
              carbon:nameDev="Ryan Norris"
              carbon:statusDev="@string/status_dev"
              carbon:googleHandle="-Qw8kGLh1a1o/AAAAAAAAAAI/AAAAAAAAeuw/FsBOAw9Q8KE/"
@@ -56,7 +56,7 @@
              carbon:githubLink="http://github.com/TheNameIsNigel"
              carbon:emailDev="ryan@carbonrom.org " />
 
-        <com.carbon.fibers.widgets.DeveloperPreference
+        <com.android.settings.carbon.widgets.DeveloperPreference
              carbon:nameDev="Rabih Salamey"
              carbon:statusDev="@string/status_dev"
              carbon:googleHandle="-ddYbch6ADPg/AAAAAAAAAAI/AAAAAAAALek/BVx0rWAfJyQ/"
@@ -65,7 +65,7 @@
              carbon:emailDev="somcom3x@carbonrom.org"
              carbon:twitterLink="RabihSalamey" />
 
-        <com.carbon.fibers.widgets.DeveloperPreference
+        <com.android.settings.carbon.widgets.DeveloperPreference
              carbon:nameDev="Stefano &quot;STELIX PippoX3&quot; Mura"
              carbon:deviceStat="OnePlus 2, Nexus 5, Nexus 7, HTC One M8"
              carbon:statusDev="@string/status_dev"
@@ -75,7 +75,7 @@
              carbon:emailDev="stelix@carbonrom.org"
              carbon:twitterLink="stefanomura1973" />
 
-        <com.carbon.fibers.widgets.DeveloperPreference
+        <com.android.settings.carbon.widgets.DeveloperPreference
              carbon:nameDev="Christian &quot;Myself5&quot; Oder"
              carbon:deviceStat="Sony Xperia Z2, Z3, Z3C, Samsung Galaxy S2 (i9100)"
              carbon:statusDev="@string/status_dev"
@@ -84,7 +84,7 @@
              carbon:githubLink="http://github.com/Myself5"
              carbon:emailDev="myself5@carbonrom.org" />
 
-        <com.carbon.fibers.widgets.DeveloperPreference
+        <com.android.settings.carbon.widgets.DeveloperPreference
              carbon:nameDev="Nathan Bass"
              carbon:statusDev="@string/status_dev"
              carbon:googleHandle="-oaxnJuXAoXc/AAAAAAAAAAI/AAAAAAAAAL0/aFW-B3I-DWw/"
@@ -92,7 +92,7 @@
              carbon:githubLink="http://github.com/IngCr3at1on"
              carbon:emailDev="nathan@carbonrom.org " />
 
-        <com.carbon.fibers.widgets.DeveloperPreference
+        <com.android.settings.carbon.widgets.DeveloperPreference
              carbon:nameDev="Drew Walton"
              carbon:statusDev="@string/status_dev"
              carbon:googleHandle="-3tb5ZvUuKOY/AAAAAAAAAAI/AAAAAAAAA00/F5VPfmNtbtk/"
@@ -100,14 +100,14 @@
              carbon:githubLink="http://github.com/drewwalton19216801"
              carbon:emailDev="drew@carbonrom.org" />
 
-        <com.carbon.fibers.widgets.DeveloperPreference
+        <com.android.settings.carbon.widgets.DeveloperPreference
              carbon:nameDev="Cooper Le"
              carbon:statusDev="@string/status_pr"
              carbon:googleHandle="-wNgnKNboFkc/AAAAAAAAAAI/AAAAAAAAzZ4/vUnva6QYuWw/"
              carbon:googleProfile="112365662428104097179"
              carbon:emailDev="social@carbonrom.org " />
 
-        <com.carbon.fibers.widgets.DeveloperPreference
+        <com.android.settings.carbon.widgets.DeveloperPreference
              carbon:nameDev="Travis Hall"
              carbon:statusDev="@string/status_designers"
              carbon:googleHandle="-qcJSZKtqyq0/AAAAAAAAAAI/AAAAAAAAffM/SDGpqpSQMFk/"

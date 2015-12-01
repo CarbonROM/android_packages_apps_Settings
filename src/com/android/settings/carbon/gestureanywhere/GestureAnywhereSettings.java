@@ -28,7 +28,7 @@ import android.provider.Settings;
 import android.view.Gravity;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.carbon.fibers.widgets.SeekBarPreferenceCham;
+import com.android.settings.carbon.widgets.SeekBarPreferenceCham;
 
 public class GestureAnywhereSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {

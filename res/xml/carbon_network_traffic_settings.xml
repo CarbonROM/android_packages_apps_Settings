@@ -44,7 +44,7 @@
                 android:summary="@string/network_traffic_autohide_summary"
                 android:defaultValue="false" />
 
-        <com.carbon.fibers.widgets.SeekBarPreferenceCham
+        <com.android.settings.carbon.widgets.SeekBarPreferenceCham
                 android:key="network_traffic_autohide_threshold"
                 android:title="@string/network_traffic_autohide_threshold"
                 android:max="100"
