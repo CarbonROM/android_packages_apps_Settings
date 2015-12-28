@@ -88,6 +88,12 @@
                 android:title="@string/firmware_version"
                 android:summary="@string/device_info_default"/>
 
+        <!-- CarbonROM version -->
+        <Preference android:key="carbon_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/carbon_version"
+                android:summary="@string/carbon_version_default" />
+
         <!-- Security patch level -->
         <PreferenceScreen android:key="security_patch"
                 android:title="@string/security_patch"
