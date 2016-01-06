@@ -19,4 +19,7 @@
     <!-- CarbonROM version -->
     <string name="carbon_version">CarbonROM version</string>
     <string name="carbon_version_default">Unknown</string>
+
+    <!-- CarbonFibers header name -->
+    <string name="carbonfibers_title">CarbonFibers</string>
 </resources>

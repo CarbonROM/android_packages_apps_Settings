@@ -1299,6 +1299,13 @@ public class SettingsActivity extends Activity
                             UserManager.DISALLOW_DEBUGGING_FEATURES)) {
                         removeTile = true;
                     }
+                } else if (id == R.id.carbonfiber_settings) {
+                    boolean supported = false;
+                    try {
+                            pm.getPackageInfo("org.carbonrom.carbonfibers", PackageManager.GET_ACTIVITIES);
+                    } catch (PackageManager.NameNotFoundException e) {
+                            removeTile = true;
+                    }
                 }
 
                 if (UserHandle.MU_ENABLED && UserHandle.myUserId() != 0
