@@ -30,7 +30,7 @@
         android:key="system_app_remover"
         android:title="@string/system_app_remover"
         android:summary="@string/systemappremover_summary"
-        android:fragment="com.carbon.fibers.fragments.SystemappRemover" />
+        android:fragment="com.android.settings.carbon.SystemappRemover" />
 
    <!-- Advanced Settings -->
     <PreferenceScreen

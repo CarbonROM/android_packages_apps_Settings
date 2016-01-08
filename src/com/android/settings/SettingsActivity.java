@@ -138,8 +138,7 @@ import com.android.settings.slim.dslv.*;
 import com.android.settings.slim.fragments.*;
 import com.android.settings.slim.util.*;
 
-import com.carbon.fibers.*;
-import com.carbon.fibers.CarbonSettingsActivity;
+import com.android.settings.carbon.CarbonSettingsActivity;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -243,7 +242,11 @@ public class SettingsActivity extends Activity
 
     // Show only these settings for restricted users
     private int[] SETTINGS_FOR_RESTRICTED = {
-            R.id.carbon_fibers,
+            // Carbon-specific
+            R.id.carbon_settings,
+            R.id.button_settings,
+            R.id.status_bar_settings,
+            // Original CyanogenMod
             R.id.wireless_section,
             R.id.wifi_settings,
             R.id.bluetooth_settings,
@@ -255,7 +258,6 @@ public class SettingsActivity extends Activity
             R.id.display_and_lights_settings,
             R.id.lockscreen_settings,
             R.id.notification_manager,
-            R.id.button_settings,
             R.id.storage_settings,
             R.id.application_settings,
             R.id.battery_settings,
@@ -271,12 +273,12 @@ public class SettingsActivity extends Activity
             R.id.accessibility_settings,
             R.id.print_settings,
             R.id.home_settings,
-            R.id.status_bar_settings,
             R.id.dashboard,
             R.id.privacy_settings_cyanogenmod
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
+            // Carbon-specific
             ActionListViewSettings.class.getName(),
             AppCircleBar.class.getName(),
             CarbonSettingsActivity.class.getName(),
@@ -286,9 +288,10 @@ public class SettingsActivity extends Activity
             DragSortListView.class.getName(),
             LockscreenShortcutFragment.class.getName(),
             LockScreenWeatherSettings.class.getName(),
+            ShortcutPickerHelper.class.getName(),
+            // Original CyanogenMod
             NavBar.class.getName(),
             QuickTileFragment.class.getName(),
-            ShortcutPickerHelper.class.getName(),
             SimpleFloatViewManager.class.getName(),
             WirelessSettings.class.getName(),
             WifiSettings.class.getName(),

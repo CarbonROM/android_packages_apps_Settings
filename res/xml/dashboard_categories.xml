@@ -102,13 +102,11 @@
 
         <!-- CarbonROM Fibers -->
         <dashboard-tile
-                android:id="@+id/carbon_fibers"
+                android:id="@+id/carbon_settings"
                 android:title="@string/carbon_fibers_title"
-                android:icon="@drawable/ic_settings_carbonfibers_teal">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.settings"
-                    android:targetClass="com.carbon.fibers.CarbonSettingsActivity" />
-        </dashboard-tile>
+                android:icon="@drawable/ic_settings_carbonfibers_teal"
+                android:fragment="com.android.settings.CarbonSettings"
+                />
 
         <!-- Lock screen -->
         <dashboard-tile
