@@ -81,7 +81,7 @@
         <!-- CarbonFibers -->
         <dashboard-tile
                 android:id="@+id/carbonfiber_settings"
-                android:icon="@drawable/ic_settings_carbon_fibers"
+                android:icon="@drawable/ic_settings_carbon_fibers_teal"
                 android:title="@string/carbonfibers_title">
                 <intent
                         android:action="android.intent.action.MAIN"
