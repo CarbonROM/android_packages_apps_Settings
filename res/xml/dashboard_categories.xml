@@ -203,6 +203,14 @@
         <!-- Marker for where to place external tiles in this category -->
         <external-tiles />
 
+        <!-- Privacy -->
+        <dashboard-tile
+                android:id="@+id/cr_privacy_settings"
+                android:title="@string/cr_privacy_settings_title"
+                android:fragment="com.android.settings.carbon.CRPrivacySettings"
+                android:icon="@drawable/ic_settings_privacy"
+                />
+
         <!-- Language -->
         <dashboard-tile
                 android:id="@+id/language_settings"

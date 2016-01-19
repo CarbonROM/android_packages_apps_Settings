@@ -36,6 +36,7 @@ import com.android.settings.accessibility.AccessibilitySettings;
 import com.android.settings.applications.AdvancedAppSettings;
 import com.android.settings.applications.ManageDefaultApps;
 import com.android.settings.bluetooth.BluetoothSettings;
+import com.android.settings.carbon.CRPrivacySettings;
 import com.android.settings.deviceinfo.StorageSettings;
 import com.android.settings.fuelgauge.BatterySaverSettings;
 import com.android.settings.fuelgauge.PowerUsageSummary;
@@ -302,6 +303,13 @@ public final class SearchIndexableResources {
                         R.xml.wifi_calling_settings,
                         WifiCallingSettings.class.getName(),
                         R.drawable.ic_settings_wireless));
+
+        sResMap.put(CRPrivacySettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(CRPrivacySettings.class.getName()),
+                        NO_DATA_RES_ID,
+                        CRPrivacySettings.class.getName(),
+                        R.drawable.ic_settings_privacy));
     }
 
     private SearchIndexableResources() {

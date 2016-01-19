@@ -2575,5 +2575,8 @@
                 android:value="com.android.settings.applications.WriteSettingsDetails" />
         </activity>
 
+        <!-- Hide Apps from Recents (HAFR) -->
+        <activity android:name=".carbon.hideappfromrecents.HAFRAppListActivity" />
+
     </application>
 </manifest>

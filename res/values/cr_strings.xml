@@ -25,4 +25,14 @@
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
+
+    <!--Carbon Extra Topics -->
+    <string name="cr_privacy_settings_title">Privacy</string>
+
+
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Hide apps from recents</string>
+    <string name="hide_from_recents_add_app">Add App</string>
+    <string name="title_activity_carbon_recents_settings">Recents</string>
+
 </resources>
