@@ -168,4 +168,6 @@ public class Settings extends SettingsActivity {
     public static class MagiskActivity extends SettingsActivity { /* empty */ }
     public static class DeltaActivity extends SettingsActivity { /* empty */ }
 
+    // Aospa additions
+    public static class GesturesSettingsActivity extends SettingsActivity { /* empty */ }
 }
