@@ -167,4 +167,7 @@ public class Settings extends SettingsActivity {
     public static class SubstratumActivity extends SettingsActivity { /* empty */ }
     public static class MagiskActivity extends SettingsActivity { /* empty */ }
 
+    // Aospa additions
+    public static class ButtonsSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class GesturesSettingsActivity extends SettingsActivity { /* empty */ }
 }
