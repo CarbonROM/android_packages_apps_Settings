@@ -22,4 +22,7 @@
 
     <string name="gesture_double_tap_power_torch_toast">Screen off torch gesture is now disabled</string>
 
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+
 </resources>
