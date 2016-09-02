@@ -31,6 +31,8 @@
     <string name="title_activity_carbon_recents_settings">Recents</string>
 
     <!-- tap-to-sleep -->
-    <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
-    <string name="double_tap_to_sleep_summary">Double tap status bar or lock screen slider to put the device to sleep</string>
+    <string name="double_tap_to_sleep_title">Double-tap statusbar to sleep</string>
+    <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
+    <string name="double_tap_to_sleep_anywhere_title">Double-tap lock screen to sleep</string>
+    <string name="double_tap_to_sleep_anywhere_summary">Double tap lock screen to put the device to sleep</string>
 </resources>
