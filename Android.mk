@@ -2,7 +2,8 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
-        $(call all-logtags-files-under, src)
+        $(call all-logtags-files-under, src)\
+        $(call all-java-files-under, ../CarbonFibers/src)
 
 LOCAL_MODULE := settings-logtags
 
@@ -10,6 +11,11 @@ include $(BUILD_STATIC_JAVA_LIBRARY)
 
 # Build the Settings APK
 include $(CLEAR_VARS)
+
+LOCAL_RESOURCE_DIR += packages/apps/CarbonFibers/res
+
+LOCAL_AAPT_FLAGS := --auto-add-overlay \
+      --extra-packages org.carbonrom.carbonfibers
 
 LOCAL_PACKAGE_NAME := Settings
 LOCAL_CERTIFICATE := platform
