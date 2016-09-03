@@ -129,6 +129,8 @@ import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 
+import org.carbonrom.carbonfibers.CarbonFibers;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -348,6 +350,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             TestingSettings.class.getName(),
             WifiAPITest.class.getName(),
             WifiInfo.class.getName(),
+            CarbonFibers.class.getName(),
     };
 
 

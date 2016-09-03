@@ -20,6 +20,9 @@
 -keep class com.android.settings.accessibility.*FragmentForSetupWizard
 -keep class com.android.settings.display.*FragmentForSetupWizard
 
+# CarbonFibers
+-keep class org.carbonrom.carbonfibers.**
+
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {
   *** onClick*(...);
