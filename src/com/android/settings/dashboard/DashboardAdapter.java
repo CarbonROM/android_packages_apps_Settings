@@ -363,6 +363,13 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
                 } else {
                     holder.summary.setSingleLine(true);
                 }
+           if ((Settings.System.getInt(mContext.getContentResolver(),
+                    Settings.System.REMOVE_TILE_SUMMARY, 0) == 1)) {
+                holder.summary.setVisibility(View.GONE);
+            } else {
+                holder.summary.setText(tile.summary);
+                holder.summary.setVisibility(View.VISIBLE);
+            }
         } else {
             holder.summary.setVisibility(View.GONE);
         }
