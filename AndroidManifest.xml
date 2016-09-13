@@ -957,7 +957,7 @@
                 <action android:name="com.android.settings.action.SETTINGS" />
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
-                android:value="com.android.settings.category.CarbonFibers" />
+                android:value="com.android.settings.category.carbonfibers" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="org.carbonrom.carbonfibers.CarbonFibers" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
