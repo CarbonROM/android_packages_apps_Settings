@@ -70,7 +70,6 @@ import com.android.settings.applications.UsageAccessDetails;
 import com.android.settings.applications.WriteSettingsDetails;
 import com.android.settings.applications.VrListenerSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
-import com.android.settings.carbon.CRPrivacySettings;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.dashboard.SearchResultsSummary;
 import com.android.settings.datausage.DataUsageSummary;
@@ -248,7 +247,6 @@ public class SettingsActivity extends SettingsDrawerActivity
             Settings.InputMethodAndLanguageSettingsActivity.class.getName(),
             Settings.UserSettingsActivity.class.getName(),
             Settings.AccountSettingsActivity.class.getName(),
-            Settings.CRPrivacySettingsActivity.class.getName(),
             //system_section
             Settings.DateTimeSettingsActivity.class.getName(),
             Settings.DeviceInfoSettingsActivity.class.getName(),
@@ -302,7 +300,6 @@ public class SettingsActivity extends SettingsDrawerActivity
             PowerUsageSummary.class.getName(),
             AccountSyncSettings.class.getName(),
             AccountSettings.class.getName(),
-            CRPrivacySettings.class.getName(),
             CryptKeeperSettings.class.getName(),
             DataUsageSummary.class.getName(),
             DreamSettings.class.getName(),
