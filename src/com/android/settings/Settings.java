@@ -160,7 +160,5 @@ public class Settings extends SettingsActivity {
     public static class SystemSettings extends SettingsActivity { /* empty */ }
 
     // CarbonROM Additions
-    public static class CRPrivacySettings extends SettingsActivity { /* empty */ }
-    public static class CRPrivacySettingsActivity extends SettingsActivity { /* empty */ }
     public static class CarbonFibersActivity extends SettingsActivity { /* empty */ }
 }
