@@ -78,4 +78,5 @@
 
    <!-- Root in Settings -->
    <string name="supersu_title">SuperSU</string>
+   <string name="superuser_title">Superuser</string>
 </resources>
