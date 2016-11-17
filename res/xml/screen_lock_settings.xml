@@ -36,6 +36,12 @@
         android:title="@string/lockpattern_settings_enable_dots_title"/>
 
     <!-- available in pin/pattern/password -->
+    <SwitchPreference
+        android:key="lock_pass_to_security_view"
+        android:title="@string/directly_show_lock"
+        android:summary="@string/directly_show_lock_summary" />
+
+    <!-- available in pin/pattern/password -->
     <com.android.settings.display.TimeoutListPreference
         android:key="lock_after_timeout"
         android:title="@string/lock_after_timeout"
