@@ -116,4 +116,8 @@
     <!-- Backup Transport selection settings menu and activity title -->
     <string name="backup_transport_setting_label">Change backup provider</string>
     <string name="backup_transport_title">Select backup provider</string>
+
+    <!-- Whether the keyguard will directly show the lock entry -->
+    <string name="directly_show_lock">Direct unlock</string>
+    <string name="directly_show_lock_summary">Skip the swipe to unlock screen and immediately begin key entry</string>
 </resources>
