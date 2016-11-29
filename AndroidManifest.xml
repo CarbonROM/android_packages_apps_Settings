@@ -2026,8 +2026,8 @@
                 android:value="com.android.settings.category.system" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.SuperSU" />
-            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
-                android:value="true" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/su_dashboard_summary" />
         </activity>
 
         <activity android:name="Settings$SuperUserActivity"
@@ -2047,8 +2047,8 @@
                 android:value="com.android.settings.category.system" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.SuperUser" />
-            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
-                android:value="true" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/su_dashboard_summary" />
         </activity>
 
         <activity android:name="Settings$PrintSettingsActivity"
