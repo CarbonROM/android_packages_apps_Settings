@@ -28,8 +28,9 @@
     <string name="custom_encryption_and_credential_settings_summary_on">Device is encrypted</string>
     <string name="custom_encryption_and_credential_settings_summary_off">Device is decrypted</string>
 
-   <!-- Root in Settings -->
-   <string name="supersu_title">SuperSU</string>
-   <string name="superuser_title">Superuser</string>
+    <!-- Root in Settings -->
+    <string name="supersu_title">SuperSU</string>
+    <string name="superuser_title">Superuser</string>
+    <string name="su_dashboard_summary">Manage root access</string>
 </resources>
 
