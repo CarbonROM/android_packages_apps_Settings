@@ -66,17 +66,18 @@
     <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
     <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
 
-   <!-- Manage applications: show substratum overlays -->
-   <string name="filter_substratum_apps">Substratum overlays</string>
-   <string name="menu_show_substratum">Show overlays</string>
-   <string name="menu_hide_substratum">Hide overlays</string>
+     <!-- Manage applications: show substratum overlays -->
+     <string name="filter_substratum_apps">Substratum overlays</string>
+     <string name="menu_show_substratum">Show overlays</string>
+     <string name="menu_hide_substratum">Hide overlays</string>
 
-   <!-- Manage applications: show substratum icon overlays -->
-   <string name="filter_substratum_icons">Substratum icon overlays</string>
-   <string name="menu_show_substratum_icons">Show icon overlays</string>
-   <string name="menu_hide_substratum_icons">Hide icon overlays</string>
+     <!-- Manage applications: show substratum icon overlays -->
+     <string name="filter_substratum_icons">Substratum icon overlays</string>
+     <string name="menu_show_substratum_icons">Show icon overlays</string>
+     <string name="menu_hide_substratum_icons">Hide icon overlays</string>
 
-   <!-- Root in Settings -->
-   <string name="supersu_title">SuperSU</string>
-   <string name="superuser_title">Superuser</string>
+     <!-- Root in Settings -->
+     <string name="supersu_title">SuperSU</string>
+     <string name="superuser_title">Superuser</string>
+     <string name="su_dashboard_summary">Manage root access</string>
 </resources>
