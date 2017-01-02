@@ -938,7 +938,7 @@
 
         <activity android:name="Settings$CarbonFibersActivity"
             android:label="@string/carbonfibers_title"
-            android:icon="@drawable/ic_settings_carbon_fibers_teal"
+            android:icon="@drawable/ic_settings_carbon_fibers_tint"
             android:taskAffinity="">
             <intent-filter android:priority="1">
                 <action android:name="carbonrom.carbonfibers.CarbonFibers" />
