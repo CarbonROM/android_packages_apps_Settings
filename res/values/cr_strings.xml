@@ -27,12 +27,6 @@
     <!--Carbon Extra Topics -->
     <string name="cr_privacy_settings_title">Privacy</string>
 
-    <!-- tap-to-sleep -->
-    <string name="double_tap_to_sleep_title">Double-tap statusbar to sleep</string>
-    <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
-    <string name="double_tap_to_sleep_anywhere_title">Double-tap lock screen to sleep</string>
-    <string name="double_tap_to_sleep_anywhere_summary">Double tap lock screen to put the device to sleep</string>
-
     <!-- ADB debugging notifications -->
     <string name="enable_adb_custom">Android debugging</string>
     <string name="enable_adb_summary_custom">Enable the Android Debug Bridge (adb) interface</string>

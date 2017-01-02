@@ -117,18 +117,6 @@
                 android:summary="%s"
                 android:title="@string/display_vr_pref_title" />
 
-        <com.android.settings.carbon.SystemSettingSwitchPreference
-                android:key="double_tap_sleep_gesture"
-                android:title="@string/double_tap_to_sleep_title"
-                android:summary="@string/double_tap_to_sleep_summary"
-                android:defaultValue="true" />
-
-        <com.android.settings.carbon.SystemSettingSwitchPreference
-                android:key="double_tap_sleep_anywhere"
-                android:title="@string/double_tap_to_sleep_anywhere_title"
-                android:summary="@string/double_tap_to_sleep_anywhere_summary"
-                android:defaultValue="false" />
-
         <PreferenceCategory
                 android:key="rotation_category"
                 android:title="@string/display_rotation_category_title">
