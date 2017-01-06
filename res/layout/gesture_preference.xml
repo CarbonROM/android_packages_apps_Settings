@@ -30,8 +30,7 @@
         android:paddingTop="24dp"
         android:paddingBottom="16dp"
         android:paddingStart="?android:attr/listPreferredItemPaddingStart"
-        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
-        android:background="@color/gestures_switchbar_color">
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
 
         <TextView
             android:id="@android:id/title"
@@ -54,7 +53,6 @@
         android:id="@+id/gesture_animation_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/gestures_setting_background_color"
         android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
         android:orientation="horizontal">
 
@@ -74,8 +72,7 @@
                 android:id="@+id/gesture_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="fitXY"
-                android:background="@color/gestures_setting_background_color"/>
+                android:scaleType="fitXY"/>
 
             <ImageView
                 android:id="@+id/gesture_play_button"
