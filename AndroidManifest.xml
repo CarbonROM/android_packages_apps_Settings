@@ -3343,6 +3343,28 @@
         <service android:name=".fuelgauge.batterytip.AnomalyDetectionJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE" />
 
+        <!-- Anonymous Statistics -->
+        <receiver android:name="org.carbonrom.carbonfibers.crstats.ReportingServiceManager"
+            android:enabled="true"
+            android:exported="false"
+            android:label="ReportingServiceManager">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="org.carbonrom.carbonfibers.action.TRIGGER_REPORT_METRICS" />
+            </intent-filter>
+        </receiver>
+         <service android:label="ReportingService"
+            android:enabled="true"
+            android:exported="false"
+            android:name=".crstats.ReportingService">
+        </service>
+         <service android:name="org.carbonrom.carbonfibers.crstats.StatsUploadJobService"
+                 android:permission="android.permission.BIND_JOB_SERVICE" />
+         <service android:name="org.carbonrom.carbonfibers.crstats.ReportingService"
+                 android:label="ReportingService"
+                 android:enabled="true"
+                 android:exported="false" />
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
