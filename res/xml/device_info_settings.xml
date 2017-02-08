@@ -79,6 +79,13 @@
                 android:title="@string/carbon_version"
                 android:summary="@string/carbon_version_default" />
 
+        <!-- XenonHD Maintainer -->
+        <Preference android:key="carbon_maintainer"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/carbon_maintainer"
+                android:summary="@string/carbon_maintainer_default"/>
+
         <!-- Security patch level -->
         <PreferenceScreen android:key="security_patch"
                 android:title="@string/security_patch"
