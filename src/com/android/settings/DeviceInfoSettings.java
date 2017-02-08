@@ -70,6 +70,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
     private static final String KEY_CARBON_VERSION = "carbon_version";
+    private static final String KEY_CARBON_MAINTAINER = "carbon_maintainer";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -121,6 +122,11 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_KERNEL_VERSION).setSummary(DeviceInfoUtils.getFormattedKernelVersion());
         setValueSummary(KEY_CARBON_VERSION, "ro.carbon.version");
         findPreference(KEY_CARBON_VERSION).setEnabled(true);
+
+        if (System.getProperty("ro.carbon.maintainer") != null) {
+            setValueSummary(KEY_CARBON_MAINTAINER, "ro.carbon.maintainer");
+            findPreference(KEY_CARBON_MAINTAINER).setEnabled(true);
+        }
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
