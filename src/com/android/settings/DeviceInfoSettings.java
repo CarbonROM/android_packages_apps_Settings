@@ -44,6 +44,8 @@ import com.android.settings.search.Indexable;
 import com.android.settingslib.DeviceInfoUtils;
 import com.android.settingslib.RestrictedLockUtils;
 
+import java.lang.System;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -70,6 +72,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
     private static final String KEY_CARBON_VERSION = "carbon_version";
+    private static final String KEY_CARBON_MAINTAINER = "carbon_maintainer";
+    private static final String PROPERTY_CARBON_MAINTAINER = "ro.carbon.maintainer";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -121,6 +125,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_KERNEL_VERSION).setSummary(DeviceInfoUtils.getFormattedKernelVersion());
         setValueSummary(KEY_CARBON_VERSION, "ro.carbon.version");
         findPreference(KEY_CARBON_VERSION).setEnabled(true);
+        setValueSummary(KEY_CARBON_MAINTAINER, PROPERTY_CARBON_MAINTAINER);
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
@@ -141,6 +146,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         // Remove Equipment id preference if FCC ID is not set by RIL
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_EQUIPMENT_ID,
                 PROPERTY_EQUIPMENT_ID);
+
+        // Remove Maintainers preference if KEY_CARBON_MAINTAINER is unset
+        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_CARBON_MAINTAINER,
+                PROPERTY_CARBON_MAINTAINER);
 
         // Remove Baseband version if wifi-only device
         if (Utils.isWifiOnly(getActivity())) {

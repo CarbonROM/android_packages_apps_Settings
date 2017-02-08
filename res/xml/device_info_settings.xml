@@ -79,6 +79,17 @@
                 android:title="@string/carbon_version"
                 android:summary="@string/carbon_version_default" />
 
+        <!-- CarbonROM Maintainer -->
+        <com.android.settings.DividerPreference
+                android:key="carbon_maintainer"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:selectable="false"
+                android:title="@string/carbon_maintainer"
+                android:summary="@string/carbon_maintainer_default"
+                settings:allowDividerAbove="true"
+                settings:allowDividerBelow="true"/>
+
         <!-- Security patch level -->
         <PreferenceScreen android:key="security_patch"
                 android:title="@string/security_patch"
