@@ -34,6 +34,23 @@
       "revId": "03456463ccb40304e6a6ad88b6f173d919ad6f22",
       "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baf0414d_a0739a14",
+        "filename": "src/com/android/settings/DeviceInfoSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2017-02-11T01:09:28Z",
+      "side": 1,
+      "message": "re slack: Check if the preference is empty, if yes, setEnable(false)",
+      "revId": "03456463ccb40304e6a6ad88b6f173d919ad6f22",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
     }
   ]
 }
