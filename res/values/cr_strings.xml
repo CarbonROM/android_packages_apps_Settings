@@ -93,4 +93,11 @@
     <string name="substratum_title">Themes</string>
     <string name="substratum_summary">Manage substratum themes</string>
 
+    <!-- Image helper and dialog-->
+    <string name="choose_action_title">Choose action</string>
+    <string name="action_entry_default_action">Default settings</string>
+    <string name="action_entry_select_app">Select application</string>
+    <string name="action_entry_custom_action">Select custom action</string>
+    <string name="icon_pack_picker_dialog_title">Icon packs</string>
+    <string name="invalid_icon_from_uri">Unable to load image from content provider</string>
 </resources>
