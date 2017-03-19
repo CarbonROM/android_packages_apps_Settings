@@ -13,4 +13,11 @@
 -->
 <resources>
     <dimen name="dashboard_category_padding_bottom">8dip</dimen>
+
+    <dimen name="drag_grip_ridge_size">6dp</dimen>
+    <dimen name="drag_grip_ridge_gap">4dp</dimen>
+    <!-- Icon pack picker -->
+    <dimen name="alert_dialog_padding_material">20dp</dimen>
+    <!-- Shortcut picker -->
+    <dimen name="shortcut_picker_left_padding">70dip</dimen>
 </resources>
