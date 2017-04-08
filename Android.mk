@@ -25,13 +25,20 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := \
-        $(call all-java-files-under, src)
+        $(call all-java-files-under, src) \
+        $(call all-java-files-under, ../CarbonFibers/src) \
+        src/com/android/settings/EventLogTags.logtags
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/v7/preference/res \
     frameworks/support/v14/preference/res \
     frameworks/support/v7/appcompat/res \
     frameworks/support/v7/recyclerview/res
+
+LOCAL_RESOURCE_DIR += packages/apps/CarbonFibers/res
+
+LOCAL_AAPT_FLAGS := --auto-add-overlay \
+      --extra-packages org.carbonrom.carbonfibers
 
 LOCAL_PACKAGE_NAME := Settings
 LOCAL_CERTIFICATE := platform

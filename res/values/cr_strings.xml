@@ -20,6 +20,9 @@
     <string name="carbon_version">CarbonROM version</string>
     <string name="carbon_version_default">Unknown</string>
 
+    <!-- DU Tweaks -->
+    <string name="carbonfibers_title">CarbonFibers</string>
+    <string name="header_category_carbonfibers">Customization</string>
 
     <!--Carbon Extra Topics -->
     <string name="cr_privacy_settings_title">Privacy</string>
