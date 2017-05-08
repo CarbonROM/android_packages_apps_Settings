@@ -50,6 +50,7 @@ import android.util.Log;
 import com.android.internal.app.NightDisplayController;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
+import com.android.internal.util.cr.CrUtils;
 import com.android.internal.view.RotationPolicy;
 import com.android.settings.accessibility.ToggleFontSizePreferenceFragment;
 import com.android.settings.dashboard.SummaryLoader;
@@ -171,11 +172,17 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
 
         if (isDozeAvailable(activity)) {
+        	if (CrUtils.isPackageInstalled(getContext(), "com.cyanogenmod.settings.doze", false)) {
+
             mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
             mDozePreference.setOnPreferenceChangeListener(this);
+            }
+
         } else {
             removePreference(KEY_DOZE);
         }
+ 
+        
 
         if (isTapToWakeAvailable(getResources())) {
             mTapToWakePreference = (SwitchPreference) findPreference(KEY_TAP_TO_WAKE);
