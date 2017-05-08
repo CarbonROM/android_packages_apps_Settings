@@ -50,6 +50,7 @@ import android.util.Log;
 import com.android.internal.app.NightDisplayController;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
+import com.android.internal.util.cr.CrUtils;
 import com.android.internal.view.RotationPolicy;
 import com.android.settings.accessibility.ToggleFontSizePreferenceFragment;
 import com.android.settings.dashboard.SummaryLoader;
@@ -170,9 +171,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             removePreference(KEY_LIFT_TO_WAKE);
         }
 
-        if (isDozeAvailable(activity)) {
-            mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
-            mDozePreference.setOnPreferenceChangeListener(this);
+        if (isDozeAvailable(activity) && isDozeInstalled == false) {
+
+
+                mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
+                mDozePreference.setOnPreferenceChangeListener(this);
+
+
         } else {
             removePreference(KEY_DOZE);
         }
@@ -266,6 +271,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         return !TextUtils.isEmpty(name);
     }
 
+    private static boolean isDozeInstalled = CrUtils.isPackageInstalled(getActivity(), "org.carbonrom.settings.doze");
+                                                                        
     private static boolean isTapToWakeAvailable(Resources res) {
         return res.getBoolean(com.android.internal.R.bool.config_supportDoubleTapWake);
     }
