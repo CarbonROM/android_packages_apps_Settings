@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a045101_36034875",
+        "filename": "src/com/android/settings/DisplaySettings.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 22
+      },
+      "writtenOn": "2017-05-09T15:16:22Z",
+      "side": 1,
+      "message": "\u0026\u0026 !isDozeInstalled",
+      "range": {
+        "startLine": 174,
+        "startChar": 41,
+        "endLine": 174,
+        "endChar": 65
+      },
+      "revId": "b8e5ef6f04af5aa61fc93e8d394c5a584694bbbe",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    }
+  ]
+}
