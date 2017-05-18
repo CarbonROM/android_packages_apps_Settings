@@ -100,4 +100,8 @@
     <string name="action_entry_custom_action">Select custom action</string>
     <string name="icon_pack_picker_dialog_title">Icon packs</string>
     <string name="invalid_icon_from_uri">Unable to load image from content provider</string>
+
+    <!-- Magisk Manager tile in Dashboard -->
+    <string name="magisk_title">Magisk Manager</string>
+    <string name="magisk_summary">Control root and module settings</string>
 </resources>
