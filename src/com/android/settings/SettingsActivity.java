@@ -158,6 +158,7 @@ public class SettingsActivity extends SettingsDrawerActivity
     private int mInitialTitleResId;
 
     private static final String ROOT_MANAGER_FRAGMENT = "com.android.settings.RootManagement";
+    private static final String DELTA_FRAGMENT = "com.android.settings.CarbonDelta";
 
     private boolean mRootSupport;
     private String mRootPackage;
@@ -729,6 +730,15 @@ public class SettingsActivity extends SettingsDrawerActivity
                 return null;
             }
         }
+        if (DELTA_FRAGMENT.equals(fragmentName)) {
+            if (isRootAvailable()) {
+                Intent deltaIntent = new Intent();
+                deltaIntent.setClassName("org.carbonrom.carbondelta", "org.carbonrom.carbondelta.MainActivity");
+                startActivity(deltaIntent);
+                finish();
+                return null;
+            }
+        }
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
                     + fragmentName);
@@ -865,6 +875,11 @@ public class SettingsActivity extends SettingsDrawerActivity
                         Settings.RootManagementActivity.class.getName()),
                 isRootAvailable(), isAdmin);
 
+        // CarbonDelta
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.DeltaActivity.class.getName()),
+                isDeltaAvailable(), isAdmin);
+
         if (UserHandle.MU_ENABLED && !isAdmin) {
 
             // When on restricted users, disable all extra categories (but only the settings ones).
@@ -929,6 +944,17 @@ public class SettingsActivity extends SettingsDrawerActivity
                 if (mRootSupport) return true;
             } catch (PackageManager.NameNotFoundException e) {
             }
+        }
+        return false;
+    }
+
+    private boolean isDeltaAvailable() {
+        boolean mDeltaSupport = false;
+        try {
+            mDeltaSupport = getPackageManager().getPackageInfo("org.carbonrom.carbondelta", 0).versionCode >= 0;
+            if (mDeltaSupport)
+                return true;
+        } catch (PackageManager.NameNotFoundException e) {
         }
         return false;
     }
