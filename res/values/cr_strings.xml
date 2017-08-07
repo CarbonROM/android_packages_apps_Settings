@@ -174,4 +174,8 @@
     <string name="app_ops_get_accounts">device accounts</string>
     <string name="app_ops_run_in_background">run in background</string>
 
+    <!-- CarbonDelta tile in Dashboard -->
+    <string name="delta_title">System Updates</string>
+    <string name="delta_summary">Update to the latest CarbonROM</string>
+
 </resources>
