@@ -231,6 +231,7 @@ public class SettingsActivity extends SettingsDrawerActivity
     private static final String SUPERUSER_FRAGMENT = "com.android.settings.SuperUser";
     private static final String SUBSTRATUM_FRAGMENT = "com.android.settings.Substratum";
     private static final String MAGISK_FRAGMENT = "com.android.settings.MagiskManager";
+    private static final String DELTA_FRAGMENT = "com.android.settings.CarbonDelta";
 
     private String mFragmentClass;
 
@@ -1046,6 +1047,13 @@ public class SettingsActivity extends SettingsDrawerActivity
             finish();
             return null;
         }
+        if (DELTA_FRAGMENT.equals(fragmentName)) {
+            Intent deltaIntent = new Intent();
+            deltaIntent.setClassName("org.carbonrom.carbondelta", "org.carbonrom.carbondelta.MainActivity");
+            startActivity(deltaIntent);
+            finish();
+            return null;
+        }
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
                     + fragmentName);
@@ -1175,6 +1183,11 @@ public class SettingsActivity extends SettingsDrawerActivity
         setTileEnabled(new ComponentName(packageName,
                         Settings.MagiskActivity.class.getName()),
                 magiskSupported, isAdmin, pm);
+
+        // CarbonDelta
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.DeltaActivity.class.getName()),
+                true, isAdmin, pm);
 
         // Reveal development-only quick settings tiles
         DevelopmentTiles.setTilesEnabled(this, showDev);

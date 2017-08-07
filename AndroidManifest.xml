@@ -1070,6 +1070,27 @@
                 android:value="true" />
         </activity>
 
+        <activity android:name="Settings$DeltaActivity"
+            android:label="@string/delta_title"
+            android:icon="@drawable/ic_settings_carbon_fibers_tint"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <intent-filter android:priority="-1">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.system" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.CarbonDelta" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/delta_summary" />
+        </activity>
+
         <activity android:name="SettingsLicenseActivity"
                 android:label="@string/settings_license_activity_title"
                 android:theme="@style/Theme.SettingsLicenseActivity"
