@@ -37,5 +37,10 @@
 
     <!-- ThemePreference -->
     <string name="invalid_theme">Theme set by third party service</string>
+
+    <!-- CarbonDelta tile in Dashboard -->
+    <string name="delta_title">System Updates</string>
+    <string name="delta_summary">Update to the latest CarbonROM</string>
+
 </resources>
 
