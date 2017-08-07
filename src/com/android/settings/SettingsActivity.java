@@ -158,6 +158,7 @@ public class SettingsActivity extends SettingsDrawerActivity
     private int mInitialTitleResId;
 
     private static final String ROOT_MANAGER_FRAGMENT = "com.android.settings.RootManagement";
+    private static final String DELTA_FRAGMENT = "com.android.settings.CarbonDelta";
 
     private boolean mRootSupport;
     private String mRootPackage;
@@ -729,6 +730,13 @@ public class SettingsActivity extends SettingsDrawerActivity
                 return null;
             }
         }
+        if (DELTA_FRAGMENT.equals(fragmentName)) {
+            Intent deltaIntent = new Intent();
+            deltaIntent.setClassName("org.carbonrom.carbondelta", "org.carbonrom.carbondelta.MainActivity");
+            startActivity(deltaIntent);
+            finish();
+            return null;
+        }
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
                     + fragmentName);
@@ -864,6 +872,11 @@ public class SettingsActivity extends SettingsDrawerActivity
         setTileEnabled(new ComponentName(packageName,
                         Settings.RootManagementActivity.class.getName()),
                 isRootAvailable(), isAdmin);
+
+        // CarbonDelta
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.DeltaActivity.class.getName()),
+                true, isAdmin);
 
         if (UserHandle.MU_ENABLED && !isAdmin) {
 
