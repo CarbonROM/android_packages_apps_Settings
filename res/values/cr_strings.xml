@@ -26,4 +26,7 @@
     <string name="theme_customization_font_title">Headline / Body font</string>
     <!-- [CHAR_LIMIT=NONE] Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
     <string name="theme_customization_icon_shape_title">Icon shape</string>
+
+    <string name="gesture_double_tap_power_torch_toast">Screen off torch gesture is now disabled</string>
+
 </resources>
