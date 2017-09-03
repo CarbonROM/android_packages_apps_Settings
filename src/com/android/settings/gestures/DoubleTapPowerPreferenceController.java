@@ -24,6 +24,7 @@ import android.provider.Settings;
 import android.text.TextUtils;
 
 import androidx.annotation.VisibleForTesting;
+import androidx.preference.Preference;
 
 public class DoubleTapPowerPreferenceController extends GesturePreferenceController {
 
@@ -76,5 +77,21 @@ public class DoubleTapPowerPreferenceController extends GesturePreferenceControl
     public boolean setChecked(boolean isChecked) {
         return Settings.Secure.putInt(mContext.getContentResolver(), SECURE_KEY,
                 isChecked ? ON : OFF);
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        boolean enabled = (boolean) newValue;
+        Settings.Secure.putInt(mContext.getContentResolver(),
+                Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED, enabled ? 0 : 1);
+        int previousTorchPref = Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.TORCH_POWER_BUTTON_GESTURE, 0);
+        if (enabled && (previousTorchPref == 1)) {
+            //if double tap for torch was active and we enable here double tap for camera,
+            //set torch action to long press mode
+            Settings.Secure.putInt(mContext.getContentResolver(),
+                    Settings.Secure.TORCH_POWER_BUTTON_GESTURE, 2);
+        }
+        return true;
     }
 }
