@@ -263,6 +263,8 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
                 new ScreenshotSoundPreferenceController(context, fragment, lifecycle);
 	final NotificationSoundTogglePreferenceController notificationSoundTogglePreferenceController =
                 new NotificationSoundTogglePreferenceController(context, fragment, lifecycle);
+	final IncallFeedbackPreferenceController incallFeedbackPreferenceController =
+                new IncallFeedbackPreferenceController(context, fragment, lifecycle);
 
         controllers.add(dialPadTonePreferenceController);
         controllers.add(screenLockSoundPreferenceController);
@@ -275,6 +277,7 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
         controllers.add(emergencyTonePreferenceController);
         controllers.add(screenshotSoundPreferenceController);
 	controllers.add(notificationSoundTogglePreferenceController);
+        controllers.add(incallFeedbackPreferenceController);
         controllers.add(new PreferenceCategoryController(context,
                 "other_sounds_and_vibrations_category").setChildren(
                 Arrays.asList(dialPadTonePreferenceController,

@@ -211,6 +211,11 @@
           android:title="@string/notification_sound_vib_screen_on_title"
           android:summary="@string/notification_sound_vib_screen_on_summary" />
 
+        <!-- In-call feedback -->
+        <SwitchPreference
+          android:key="incall_feeedback_vibrate"
+          android:title="@string/incall_feeedback_vibrate_title" />
+
         <!-- Emergency tone -->
         <DropDownPreference
           android:key="emergency_tone"
