@@ -168,6 +168,8 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
+import org.carbonrom.carbonfibers.CarbonFibers;
+
 public class SettingsGateway {
 
     /**
@@ -323,7 +325,8 @@ public class SettingsGateway {
             NetworkProviderSettings.class.getName(),
             NetworkSelectSettings.class.getName(),
             AlarmsAndRemindersDetails.class.getName(),
-            MediaManagementAppsDetails.class.getName()
+            MediaManagementAppsDetails.class.getName(),
+            CarbonFibers.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -364,6 +367,7 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
+            Settings.CarbonFibersActivity.class.getName(),
             Settings.SystemNavActivity.class.getName(),
     };
 }

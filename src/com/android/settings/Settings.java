@@ -324,5 +324,10 @@ public class Settings extends SettingsActivity {
      * Activity for AppDashboard.
      */
     public static class AppDashboardActivity extends SettingsActivity {}
+
+    /**
+     * Activity for CarbonFibers
+     */
+    public static class CarbonFibersActivity extends SettingsActivity { /* empty */ }
     public static class SystemNavActivity extends SettingsActivity { /* empty */ }
 }
