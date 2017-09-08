@@ -176,6 +176,15 @@
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
+        android:fragment="org.carbonrom.carbonfibers.CarbonFibers"
+        android:icon="@drawable/ic_homepage_cf"
+        android:key="top_level_system"
+        android:order="5"
+        android:title="@string/cf_settings_title"
+        android:summary="@string/cf_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_system"/>
+
+    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.system.SystemDashboardFragment"
         android:icon="@drawable/ic_settings_system_dashboard_white"
         android:key="top_level_system"
@@ -193,7 +202,7 @@
         android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_about_device"
         settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
-
+about_settings
     <com.android.settings.widget.HomepagePreference
         android:icon="@drawable/ic_help"
         android:key="top_level_support"
