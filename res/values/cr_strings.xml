@@ -19,4 +19,8 @@
     <!-- CarbonROM version -->
     <string name="carbon_version">CarbonROM version</string>
     <string name="carbon_version_default">Unknown</string>
+
+    <!-- CarbonFibers -->
+    <string name="cf_settings_title">Fibers</string>
+    <string name="cf_dashboard_summary">A healthy source of your daily fiber</string>
 </resources>
