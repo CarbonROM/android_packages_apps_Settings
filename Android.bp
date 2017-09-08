@@ -44,7 +44,14 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: ["src/**/*.java", "src/**/*.kt",
+        "CarbonFibers/src/**/*.java"],
+
+    aaptflags: ["--extra-packages org.carbonrom.carbonfibers"],
+
+    resource_dirs: ["res",
+                    "CarbonFibers/res"
+    ],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
@@ -84,6 +91,9 @@ android_library {
         "ims-common",
         "app-compat-annotations",
     ],
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    }
 }
 
 platform_compat_config {

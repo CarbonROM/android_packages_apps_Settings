@@ -4535,5 +4535,20 @@
                  android:enabled="true"
                  android:exported="false" />
 
+        <!-- CarbonFibers -->
+        <activity android:name=".Settings$CarbonFibersActivity"
+            android:label="@string/cf_settings_title"
+            android:exported="true"
+            android:icon="@drawable/ic_settings_cf" >
+            <intent-filter android:priority="60">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="org.carbonrom.carbonfibers.CarbonFibers" />
+            <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
+                       android:value="@string/menu_key_system"/>
+        </activity>
+
     </application>
 </manifest>
