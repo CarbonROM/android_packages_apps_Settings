@@ -178,4 +178,6 @@ public class Settings extends SettingsActivity {
     public static class SystemDashboardActivity extends SettingsActivity {}
     public static class SupportDashboardActivity extends SettingsActivity {}
 
+    // CarbonROM Additions
+    public static class CarbonFibersActivity extends SettingsActivity { /* empty */ }
 }

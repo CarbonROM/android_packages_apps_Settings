@@ -853,6 +853,31 @@
                 android:value="true" />
         </activity>
 
+        <activity android:name="Settings$CarbonFibersActivity"
+            android:label="@string/carbonfibers_title"
+            android:icon="@drawable/ic_settings_carbon_fibers_teal"
+            android:taskAffinity="">
+            <intent-filter android:priority="1">
+                <action android:name="carbonrom.carbonfibers.CarbonFibers" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <intent-filter android:priority="9">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.CarbonFibers" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="org.carbonrom.carbonfibers.CarbonFibers" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+        </activity>
+
         <activity android:name="Settings$DisplaySettingsActivity"
                 android:label="@string/display_settings"
                 android:icon="@drawable/ic_settings_display"
@@ -3103,6 +3128,14 @@
                 <action android:name="android.settings.REQUEST_SET_AUTOFILL_SERVICE" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:scheme="package" />
+            </intent-filter>
+        </activity>
+
+         <activity android:name=".Settings$CarbonFibers"
+            android:label="@string/header_category_carbonfibers">
+            <intent-filter android:priority="4">
+                <action android:name="com.android.settings.category.carbonfibers" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
