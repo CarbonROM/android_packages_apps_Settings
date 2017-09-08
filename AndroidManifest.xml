@@ -1072,7 +1072,7 @@
 
         <activity android:name="Settings$DeltaActivity"
             android:label="@string/delta_title"
-            android:icon="@drawable/ic_settings_delta"
+            android:icon="@drawable/ic_settings_carbon_fibers"
             android:taskAffinity="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
