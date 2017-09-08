@@ -51,6 +51,8 @@ import com.android.settingslib.drawer.CategoryKey;
 
 import java.util.Map;
 
+import org.carbonrom.carbonfibers.CarbonFibers;
+
 /**
  * A registry to keep track of which page hosts which category.
  */
@@ -128,6 +130,8 @@ public class DashboardFragmentRegistry {
                 CategoryKey.CATEGORY_SMART_BATTERY_SETTINGS);
         PARENT_TO_CATEGORY_KEY_MAP.put(CommunalDashboardFragment.class.getName(),
                 CategoryKey.CATEGORY_COMMUNAL_SETTINGS);
+        PARENT_TO_CATEGORY_KEY_MAP.put(CarbonFibers.class.getName(),
+                CategoryKey.CATEGORY_CARBONFIBERS);
 
         CATEGORY_KEY_TO_PARENT_MAP = new ArrayMap<>(PARENT_TO_CATEGORY_KEY_MAP.size());
 
