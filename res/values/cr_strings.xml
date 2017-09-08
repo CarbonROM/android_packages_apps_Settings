@@ -21,6 +21,10 @@
     <string name="summary_placeholder">N/A</string>
     <string name="carbon_vendor_security_patch">Vendor security patch level</string>
 
+    <!-- Carbon Fibers -->
+    <string name="cf_settings_title">Carbon Fibers</string>
+    <string name="cf_dashboard_summary">A healthy source of your daily fiber</string>
+
     <!-- Black theme -->
     <string name="darker_theme_enable">Enable black theme</string>
 	    
@@ -76,4 +80,5 @@
 
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Saved Earbuds</string>
+
 </resources>
