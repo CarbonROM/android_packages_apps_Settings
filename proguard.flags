@@ -18,6 +18,9 @@
 
     void set*(***);
     *** get*();
+
+# CarbonFibers
+-keep class org.carbonrom.carbonfibers.**
 }
 
 # Keep classes that may be inflated from XML.
