@@ -33,6 +33,9 @@
     <string name="summary_placeholder">N/A</string>
     <string name="carbon_vendor_security_patch">Vendor security patch level</string>
 
-    <!-- Battery temperature -->
     <string name="battery_temp">Battery temperature</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
+
 </resources>
