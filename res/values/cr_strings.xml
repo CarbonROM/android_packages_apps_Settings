@@ -31,4 +31,8 @@
     <string name="carbon_version">CarbonROM version</string>
     <string name="summary_placeholder">N/A</string>
     <string name="carbon_vendor_security_patch">Vendor security patch level</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
+
 </resources>
