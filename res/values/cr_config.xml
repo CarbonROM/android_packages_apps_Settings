@@ -27,4 +27,8 @@
 
     <!-- Whether to show min refresh rate in display settings -->
     <bool name="config_show_min_refresh_rate_switch">false</bool>
+
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage" translatable="false"></string>
+
 </resources>
