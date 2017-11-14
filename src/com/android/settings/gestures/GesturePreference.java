@@ -44,7 +44,7 @@ public final class GesturePreference extends SwitchPreference {
     private MediaPlayer mMediaPlayer;
     private boolean mAnimationAvailable;
     private boolean mVideoReady;
-    private boolean mScrolling;
+    public boolean mScrolling;
     private int mPreviewResource;
 
     public GesturePreference(Context context, AttributeSet attrs) {
@@ -169,17 +169,17 @@ public final class GesturePreference extends SwitchPreference {
         super.onDetached();
     }
 
-    void setScrolling(boolean scrolling) {
+    public void setScrolling(boolean scrolling) {
         mScrolling = scrolling;
     }
 
-    void onViewVisible() {
+    public void onViewVisible() {
         if (mVideoReady && mMediaPlayer != null && !mMediaPlayer.isPlaying()) {
             mMediaPlayer.seekTo(0);
         }
     }
 
-    void onViewInvisible() {
+    public void onViewInvisible() {
         if (mMediaPlayer != null && mMediaPlayer.isPlaying()) {
             mMediaPlayer.pause();
         }
