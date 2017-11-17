@@ -29,6 +29,7 @@ import android.text.BidiFormatter;
 import android.text.TextUtils;
 import android.util.Pair;
 import android.widget.Toast;
+import java.util.Random;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -63,6 +64,24 @@ public class BuildNumberPreferenceController extends AbstractPreferenceControlle
     private boolean mDebuggingFeaturesDisallowedBySystem;
     private int mDevHitCountdown;
     private boolean mProcessingLastDevHit;
+
+    public final static java.lang.String[] insults = {
+            "Hahaha, n00b!",
+            "What are you doing??",
+            "n00b alert!",
+            "What is this...? Amateur hour!?",
+            "This is not Windows",
+            "Please step away from the device!",
+            "error code: 1D10T",
+            "Go outside",
+            "¯\\_(ツ)_/¯",
+            "Pro tip: Stop doing this!",
+            "Y u no speak computer???",
+            "Why are you so stupid?!",
+            "Perhaps this Android thing is not for you...",
+            "Don't you have anything better to do?!",
+            "This is why nobody likes you...",
+            "Are you even trying?!",};
 
     public BuildNumberPreferenceController(Context context, Activity activity, Fragment fragment,
             Lifecycle lifecycle) {
@@ -182,7 +201,9 @@ public class BuildNumberPreferenceController extends AbstractPreferenceControlle
             if (mDevHitToast != null) {
                 mDevHitToast.cancel();
             }
-            mDevHitToast = Toast.makeText(mContext, R.string.show_dev_already,
+            Random randomInsult = new Random();
+            final int toasts = randomInsult.nextInt(insults.length);
+            mDevHitToast = Toast.makeText(mContext, insults[toasts],
                     Toast.LENGTH_LONG);
             mDevHitToast.show();
             mMetricsFeatureProvider.action(
