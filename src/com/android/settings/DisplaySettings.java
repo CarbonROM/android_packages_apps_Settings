@@ -49,6 +49,8 @@ import java.util.List;
 public class DisplaySettings extends DashboardFragment {
     private static final String TAG = "DisplaySettings";
 
+    public static final String KEY_PROXIMITY_ON_WAKE = "proximity_on_wake";
+
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
 
     private IntentFilter mIntentFilter;
@@ -84,6 +86,16 @@ public class DisplaySettings extends DashboardFragment {
         super.onCreate(icicle);
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction("com.android.server.ACTION_FONT_CHANGED");
+
+
+        final PreferenceCategory proximityWakePreference =
+                (PreferenceCategory) getPreferenceScreen().findPreference(KEY_PROXIMITY_ON_WAKE);
+        final boolean enableProximityOnWake =
+                getResources().getBoolean(com.android.internal.R.bool.config_proximityCheckOnWake);
+
+        if (!enableProximityOnWake && proximityWakePreference != null){
+            getPreferenceScreen().removePreference(proximityWakePreference);
+        }
     }
 
     @Override
@@ -132,6 +144,16 @@ public class DisplaySettings extends DashboardFragment {
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider(R.xml.display_settings) {
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+                    if (!context.getResources().getBoolean(
+                            com.android.internal.R.bool.config_proximityCheckOnWake)) {
+                        keys.add(KEY_PROXIMITY_ON_WAKE);
+                    }
+                    return keys;
+                }
 
                 @Override
                 public List<AbstractPreferenceController> createPreferenceControllers(
