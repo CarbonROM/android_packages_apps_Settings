@@ -41,4 +41,12 @@
     <!-- ColorControl -->
     <string name="colorcontrol_title">Display ColorControl</string>
     <string name="colorcontrol_summary">Customize Display Calibration</string>
+
+    <!-- Charging Alerts -->
+    <string name="alert_on_charged_level_title">Charging alert</string>
+    <string name="alert_on_charged_level_summary">Send an alert, when the desired charging level is reached</string>
+    <string name="alert_on_charged_level_dis">Disabled</string>
+    <string name="alert_on_charged_level_80">"80%"</string>
+    <string name="alert_on_charged_level_90">"90%"</string>
+    <string name="alert_on_charged_level_99">"99%"</string>
 </resources>
