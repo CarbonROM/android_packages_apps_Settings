@@ -20,4 +20,6 @@
         <attr name="units" format="string|reference" />
         <attr name="defaultText" format="string|reference" />
     </declare-styleable>
+    
+    <attr name="batteryLightPreference" format="reference" />
 </resources>

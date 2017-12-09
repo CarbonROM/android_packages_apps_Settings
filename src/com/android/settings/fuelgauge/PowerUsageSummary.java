@@ -344,8 +344,8 @@ public class PowerUsageSummary extends PowerUsageBase implements
                 context,
                 new AmbientDisplayConfiguration(context),
                 KEY_AMBIENT_DISPLAY));
+        controllers.add(new BatteryLightPreferenceController(context, getLifecycle()));
         controllers.add(new BatteryChargeAlertPreferenceController(context));
-		controllers.add(new BatteryLightPreferenceController(context));
         return controllers;
     }
 
