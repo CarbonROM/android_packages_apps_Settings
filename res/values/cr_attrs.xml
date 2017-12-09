@@ -29,4 +29,5 @@
         <attr name="digits" format="integer" />
     </declare-styleable>
 
+    <attr name="batteryLightPreference" format="reference" />
 </resources>
