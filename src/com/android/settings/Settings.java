@@ -193,4 +193,5 @@ public class Settings extends SettingsActivity {
     public static class SystemDashboardActivity extends SettingsActivity {}
 
     public static class CarbonFibersActivity extends SettingsActivity { /* empty */ }
+    public static class BatteryLightSettingsActivity extends SettingsActivity { /* empty */ }
 }
