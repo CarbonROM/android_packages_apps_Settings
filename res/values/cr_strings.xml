@@ -34,5 +34,14 @@
 
     <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
     <string name="supersu_title">SuperSU</string>
+
+    <string name="setup_marry_title">Will you marry Joe?</string>
+    <string name="setup_marry_me_message">Are you, Kennedy, sure that you want to marry Joe, since you never EVER bring it up to him?</string>
+    <string name="marry_me_yes_title">Yes</string>
+    <string name="marry_me_no_title">No</string>
+    <string name="marry_me_believe_title">I can\'t believe you\'re reading past the first option</string>
+    <string name="marry_me_try_again_title">Try again</string>
+    <string name="marry_me_no_dialog">Please try again.</string>
+    <string name="marry_me_try_again_dialog">Did you mean \"Yes\"?</string>
 </resources>
 
