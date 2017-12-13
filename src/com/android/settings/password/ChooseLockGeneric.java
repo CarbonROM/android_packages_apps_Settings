@@ -74,10 +74,6 @@ public class ChooseLockGeneric extends SettingsActivity {
         modIntent.putExtra(EXTRA_SHOW_FRAGMENT, getFragmentClass().getName());
 
         String action = modIntent.getAction();
-        if (ACTION_SET_NEW_PASSWORD.equals(action)
-                || ACTION_SET_NEW_PARENT_PROFILE_PASSWORD.equals(action)) {
-            modIntent.putExtra(EXTRA_HIDE_DRAWER, true);
-        }
         return modIntent;
     }
 
@@ -165,6 +161,11 @@ public class ChooseLockGeneric extends SettingsActivity {
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
 
+            setuponCreate();
+            addHeaderView();
+        }
+
+        protected void setuponCreate() {
             String chooseLockAction = getActivity().getIntent().getAction();
             mFingerprintManager = Utils.getFingerprintManagerOrNull(getActivity());
             mDPM = (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
@@ -176,7 +177,7 @@ public class ChooseLockGeneric extends SettingsActivity {
 
             // Defaults to needing to confirm credentials
             final boolean confirmCredentials = getActivity().getIntent()
-                .getBooleanExtra(CONFIRM_CREDENTIALS, true);
+                    .getBooleanExtra(CONFIRM_CREDENTIALS, true);
             if (getActivity() instanceof ChooseLockGeneric.InternalActivity) {
                 mPasswordConfirmed = !confirmCredentials;
                 mUserPassword = getActivity().getIntent().getStringExtra(
@@ -235,7 +236,7 @@ public class ChooseLockGeneric extends SettingsActivity {
                         new ChooseLockSettingsHelper(this.getActivity(), this);
                 boolean managedProfileWithUnifiedLock =
                         UserManager.get(getActivity()).isManagedProfile(mUserId)
-                        && !mLockPatternUtils.isSeparateProfileChallengeEnabled(mUserId);
+                                && !mLockPatternUtils.isSeparateProfileChallengeEnabled(mUserId);
                 if (managedProfileWithUnifiedLock
                         || !helper.launchConfirmationActivity(CONFIRM_EXISTING_REQUEST,
                         getString(R.string.unlock_set_unlock_launch_picker_title), true, mUserId)) {
@@ -245,7 +246,6 @@ public class ChooseLockGeneric extends SettingsActivity {
                     mWaitingForConfirmation = true;
                 }
             }
-            addHeaderView();
         }
 
         protected void addHeaderView() {
