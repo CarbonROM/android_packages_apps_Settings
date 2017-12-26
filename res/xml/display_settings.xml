@@ -101,6 +101,15 @@
         android:title="@string/ambient_display_screen_title"
         android:fragment="com.android.settings.display.AmbientDisplaySettings" />
 
+    <Preference
+        android:key="ambient_display_custom"
+        android:title="@string/ambient_display_screen_title" >
+        <intent
+            android:action="com.android.settings.action.EXTRA_SETTINGS"
+            android:targetPackage="org.carbonrom.settings.doze"
+            android:targetClass="org.carbonrom.settings.doze.DozeSettings" />
+    </Preference>
+
     <!-- Hide night mode for now
     <ListPreference
         android:key="night_mode"
