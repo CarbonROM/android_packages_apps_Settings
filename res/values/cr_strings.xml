@@ -61,4 +61,8 @@
     <string name="led_color_green">Green</string>
     <string name="led_color_red">Red</string>
     <string name="led_color_blue">Blue</string>
+
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
 </resources>
