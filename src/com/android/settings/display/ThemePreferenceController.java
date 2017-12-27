@@ -106,6 +106,7 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
 
         pref.setSummary(themeLabel);
         pref.setValue(theme);
+        validateCurrentTheme(theme, pref);
     }
 
     @Override
@@ -120,6 +121,14 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
             return false;
         }
         return true;
+    }
+
+    private void validateCurrentTheme(String theme, ListPreference pref) {
+        if (!isCarbonTheme(theme)){
+            pref.setSummary(R.string.invalid_theme);
+            pref.setEnabled(false);
+        } else
+            pref.setEnabled(true);
     }
 
     private boolean isChangeableOverlay(String packageName) {
