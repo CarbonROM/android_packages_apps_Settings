@@ -36,5 +36,8 @@
     <string name="supersu_title">SuperSU</string>
 
     <string name="screenshot_shutter_sound_title">Screenshot shutter sound</string>
+
+    <!-- ThemePreference -->
+    <string name="invalid_theme">Theme set by third party service</string>
 </resources>
 
