@@ -106,6 +106,7 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
 
         pref.setSummary(themeLabel);
         pref.setValue(theme);
+        validateCurrentTheme(pref);
     }
 
     @Override
@@ -120,6 +121,40 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
             return false;
         }
         return true;
+    }
+
+    private void validateCurrentTheme(ListPreference pref) {
+        // Get all enabled themes in one string
+        String str;
+        try {
+            List<OverlayInfo> infos = mOverlayService.getOverlayInfosForTarget("android",
+                    UserHandle.myUserId());
+            for (int i = 0, size = infos.size(); i < size; i++) {
+                if (infos.get(i).isEnabled() &&
+                        isChangeableOverlay(infos.get(i).packageName)) {
+                    enabledThemes += infos.get(i).packageName ",";
+                }
+            }
+        } catch (RemoteException e) {
+        }
+
+        // Split enabled themes into an array
+        String enabledThemes = str.split(",");
+
+        // Check to make sure all themes are valid
+        for (int i = 0, size = enabledThemes.size(); i < size; i++) {
+            if (!isCarbonTheme(enabledThemes[i])){
+                pref.setSummary(R.string.invalid_theme);
+                pref.setEnabled(false);
+                // Disable valid theme to prevent conflict with invalid
+                for (int i = 0, size = enabledThemes.size(); i < size; i++) {
+                    if (isCarbonTheme(enabledThemes[i]))
+                        mOverlayService.setEnabled((String) enabledThemes[i], true, UserHandle.myUserId());
+                    return;
+                }
+            }
+        }
+        pref.setEnabled(true);
     }
 
     private boolean isChangeableOverlay(String packageName) {
@@ -191,6 +226,11 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
         public void setEnabledExclusive(String pkg, boolean enabled, int userId)
                 throws RemoteException {
             mService.setEnabledExclusive(pkg, enabled, userId);
+        }
+
+        public void setEnabled(String pkg, boolean enabled, int userId)
+                throws RemoteException {
+            mService.setEnabled(pkg, enabled, userId);
         }
 
         public List<OverlayInfo> getOverlayInfosForTarget(String target, int userId)
