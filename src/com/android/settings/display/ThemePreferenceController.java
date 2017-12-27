@@ -131,6 +131,10 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
         }
     }
 
+    private boolean isCarbonTheme(String packageName) {
+        return packageName.contains("org.carbonrom");
+    }
+
     private String getTheme() {
         try {
             List<OverlayInfo> infos = mOverlayService.getOverlayInfosForTarget("android",
@@ -166,7 +170,7 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
                     UserHandle.myUserId());
             List<String> pkgs = new ArrayList(infos.size());
             for (int i = 0, size = infos.size(); i < size; i++) {
-                if (isChangeableOverlay(infos.get(i).packageName)) {
+                if (isChangeableOverlay(infos.get(i).packageName) && isCarbonTheme(infos.get(i).packageName)) {
                     pkgs.add(infos.get(i).packageName);
                 }
             }
