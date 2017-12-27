@@ -131,6 +131,12 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
         }
     }
 
+    private boolean isChangeableOverlay(String packageName) {
+        return packageName.equals("org.carbonrom.lux") ||
+            packageName.equals("org.carbonrom.neutrum") ||
+            packageName.equals("org.carbonrom.noct");
+    }
+
     private String getTheme() {
         try {
             List<OverlayInfo> infos = mOverlayService.getOverlayInfosForTarget("android",
@@ -166,7 +172,7 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
                     UserHandle.myUserId());
             List<String> pkgs = new ArrayList(infos.size());
             for (int i = 0, size = infos.size(); i < size; i++) {
-                if (isChangeableOverlay(infos.get(i).packageName)) {
+                if (isChangeableOverlay(infos.get(i).packageName) && isValidCarbonTheme()) {
                     pkgs.add(infos.get(i).packageName);
                 }
             }
