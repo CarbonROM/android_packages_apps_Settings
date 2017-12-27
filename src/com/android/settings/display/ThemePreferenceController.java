@@ -13,7 +13,12 @@
  */
 package com.android.settings.display;
 
+import android.app.ActivityManager;
+import android.app.ActivityManagerNative;
+import android.content.ComponentName;
 import android.content.Context;
+import static android.content.Context.ACTIVITY_SERVICE;
+import android.content.Intent;
 import android.content.om.IOverlayManager;
 import android.content.om.OverlayInfo;
 import android.content.pm.PackageInfo;
@@ -35,6 +40,7 @@ import com.android.settingslib.core.AbstractPreferenceController;
 
 import libcore.util.Objects;
 
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -117,6 +123,7 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
         }
         try {
             mOverlayService.setEnabledExclusive((String) newValue, true, UserHandle.myUserId());
+            restartUi();
         } catch (RemoteException e) {
             return false;
         }
@@ -213,6 +220,29 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
         } catch (RemoteException e) {
         }
         return new String[0];
+    }
+
+    private void restartUi() {
+        try {
+            ActivityManager am = (ActivityManager) mContext.getSystemService(ACTIVITY_SERVICE);
+            Class ActivityManagerNative = Class.forName("android.app.ActivityManagerNative");
+            Method getDefault = ActivityManagerNative.getDeclaredMethod("getDefault", null);
+            Object amn = getDefault.invoke(null, null);
+            Method killApplicationProcess = amn.getClass().getDeclaredMethod
+                    ("killApplicationProcess", String.class, int.class);
+
+            mContext.stopService(new Intent().setComponent(new ComponentName("com.android.systemui", "com" +
+                    ".android.systemui.SystemUIService")));
+            am.killBackgroundProcesses("com.android.systemui");
+
+            for (ActivityManager.RunningAppProcessInfo app : am.getRunningAppProcesses()) {
+                if ("com.android.systemui".equals(app.processName)) {
+                    killApplicationProcess.invoke(amn, app.processName, app.uid);
+                    break;
+                }
+            }
+        } catch (Exception e) {
+        }
     }
 
     public static class OverlayManager {
