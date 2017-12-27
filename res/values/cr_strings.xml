@@ -65,4 +65,8 @@
     <string name="screenshot_shutter_sound_title">Screenshot shutter sound</string>
 
     <string name="link_volume_option_title">Link ring and notification volume</string>
+    
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
 </resources>
