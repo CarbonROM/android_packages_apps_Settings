@@ -1,4 +1,22 @@
 {
   "pushCert": "certificate version 0.1\npusher CBF54FB8 1514852292 -0500\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_packages_apps_Settings\nnonce 1514852294-8FD6311EDB2EA44A1868B8F5694AE0556C9F65A7\n\n0000000000000000000000000000000000000000 888f90beca5ac253f8628edb3788093742790074 refs/for/cr-6.1\n-----BEGIN PGP SIGNATURE-----\n\niQEzBAABCAAdFiEEes0mZaC+fYIfHOUlT7Va2cv1T7gFAlpKz8QACgkQT7Va2cv1\nT7hSUgf/UFq/sAhbbtUqqYaV5e1aEJqqXXdEOcovPOjc1jh225/6CX9y7SlTaOa4\nnWzEZFzjHkhjMSZN/dvKl4tjCBqABn0bfE5aFG49+NdJar2nrArOwDiOZjK8mfMP\n8eYf7DT5tqc34rDaeMDs4otlEnZShVRf2FwyJhEMkQBekySNqzy+NHdEqrRQAFtI\nRkvkZV3uXba0+/2lp5GINRYxDFK14RjvGDy4hFTokdxO0N56PUXJsH88kmkrDs38\naMDo8oqi8UJxaQyvgmx5f/ia8RDnTOm0YcAUHOJk7eL7OyWD6DPdt4y+E2H8t9hz\nbCAnF3RtVg015DIiJif6z+96kEvycw\u003d\u003d\n\u003d6loi\n-----END PGP SIGNATURE-----\n",
-  "comments": []
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a1d315d_28e2d303",
+        "filename": "src/com/android/settings/SettingsActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 734,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-01-02T22:16:51Z",
+      "side": 1,
+      "message": "isDeltaAvailable()",
+      "revId": "888f90beca5ac253f8628edb3788093742790074",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    }
+  ]
 }
