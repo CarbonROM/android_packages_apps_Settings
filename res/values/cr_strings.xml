@@ -37,4 +37,8 @@
     
     <!-- Vibrate on plug -->
     <string name="vibrate_on_plug_title">Vibrate on plug</string>
+    
+    <!-- ColorControl -->
+    <string name="colorcontrol_title">Display ColorControl</string>
+    <string name="colorcontrol_summary">Customize Display Calibration</string>
 </resources>
