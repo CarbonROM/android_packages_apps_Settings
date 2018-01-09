@@ -34,5 +34,9 @@
 
     <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
     <string name="supersu_title">SuperSU</string>
+    
+    <!-- ColorControl -->
+    <string name="colorcontrol_title">Display Color Control</string>
+    <string name="colorcontrol_summary">Customize Display Calibration</string>
 </resources>
 
