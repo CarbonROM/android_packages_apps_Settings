@@ -163,6 +163,9 @@ public class SettingsActivity extends SettingsDrawerActivity
     private String mRootPackage;
     private String mRootClass;
 
+
+    private static final String COLORCONTROL_FRAGMENT = "com.android.settings.ColorControl";
+
     private static final String[] LIKE_SHORTCUT_INTENT_ACTION_ARRAY = {
             "android.settings.APPLICATION_DETAILS_SETTINGS"
     };
@@ -728,7 +731,16 @@ public class SettingsActivity extends SettingsDrawerActivity
                 finish();
                 return null;
             }
+            
+            
         }
+        if (COLORCONTROL_FRAGMENT.equals(fragmentName)) {
+				Intent kcalIntent = new Intent();
+				kcalIntent.setClassName("re.codefi.savoca.kcal", "re.codefi.savoca.kcal.MainActivity");
+				startActivity(kcalIntent);
+				finish();
+				return null;
+         }
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
                     + fragmentName);
@@ -864,6 +876,16 @@ public class SettingsActivity extends SettingsDrawerActivity
         setTileEnabled(new ComponentName(packageName,
                         Settings.RootManagementActivity.class.getName()),
                 isRootAvailable(), isAdmin);
+
+	    // Color Control
+         boolean kcalSupported = false;
+         try {
+             kcalSupported = (getPackageManager().getPackageInfo("re.codefi.savoca.kcal", 0).versionCode > 0);
+         } catch (PackageManager.NameNotFoundException e) {
+         }
+          setTileEnabled(new ComponentName(packageName,
+                        Settings.ColorControlActivity.class.getName()),
+                 kcalSupported && isRootAvailable() , isAdmin);
 
         if (UserHandle.MU_ENABLED && !isAdmin) {
 
