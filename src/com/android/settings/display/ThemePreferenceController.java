@@ -155,7 +155,7 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
 
             // Check to make sure all themes are valid
             for (int i = 0, size = enabledThemes.length; i < size; i++) {
-                if (!isCarbonTheme(enabledThemes[i])){
+                if (!isCarbonTheme(enabledThemes[i]) && !isGoogleTheme(enabledThemes[i])){
                     pref.setSummary(R.string.invalid_theme);
                     pref.setEnabled(false);
                     // Disable valid theme to prevent conflict with invalid
@@ -182,6 +182,10 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
 
     private boolean isCarbonTheme(String packageName) {
         return packageName.contains("org.carbonrom");
+    }
+
+    private boolean isGoogleTheme(String packageName) {
+        return packageName.contains("com.google");
     }
 
     private String getTheme() {
