@@ -21,6 +21,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
+import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.search.DatabaseIndexingUtils;
@@ -81,7 +82,10 @@ public class DoubleTapPowerPreferenceController extends GesturePreferenceControl
             //if double tap for torch was active and we enable here double tap for camera,
             //set torch action to long press mode
             Settings.Secure.putInt(mContext.getContentResolver(),
-                    Settings.Secure.TORCH_POWER_BUTTON_GESTURE, 2);
+                    Settings.Secure.TORCH_POWER_BUTTON_GESTURE, 0);
+            Toast.makeText(getActivity(),
+                    (R.string.torch_power_button_gesture_disable_toast),
+                    Toast.LENGTH_SHORT).show();
         }
         return true;
     }

@@ -9052,4 +9052,6 @@
 
     <!-- Note displayed when certain features are not available on low ram devices. [CHAR LIMIT=NONE] -->
     <string name="disabled_low_ram_device">This feature is not available on this device</string>
+
+    <string name="torch_power_button_gesture_disable_toast">Double tap power button for torch is now disabled</string>
 </resources>
