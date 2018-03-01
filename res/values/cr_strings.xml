@@ -105,4 +105,10 @@
     <string name="show_light_on_zen_title">Blink during Do Not Disturb</string>
 
     <string name="link_volume_option_title">Link ring and notification volume</string>
+
+    <!-- Font picker -->
+    <string name="font_picker_title">Font</string>
+    <string name="font_picker_disabled_summary">Uninstall Substratum to use font picker</string>
+    <string name="font_picker_reboot_recommended">Reboot your device for optimal experience</string>
+
 </resources>
