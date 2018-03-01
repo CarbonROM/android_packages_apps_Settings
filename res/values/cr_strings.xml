@@ -105,4 +105,10 @@
     <string name="show_light_on_zen_title">Blink during Do Not Disturb</string>
 
     <string name="link_volume_option_title">Link ring and notification volume</string>
+
+    <!-- Font picker -->
+    <string name="font_picker_title">Font</string>
+    <string name="font_subs_info">Please make sure to disable every Font Overlay in Substratum before using this.\nIf you want to go back to using Substratum, make sure to select the Default Font (Roboto) here.</string>
+    <string name="font_picker_reboot_recommended">For optimal experience,\nreboot your device</string>
+
 </resources>
