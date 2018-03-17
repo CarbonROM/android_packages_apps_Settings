@@ -64,4 +64,7 @@ public class SecureCheckBoxPreference extends CheckBoxPreference {
         // instead of catching an exception. (All values are stored as strings.)
         return Settings.Secure.getString(getContext().getContentResolver(), getKey()) != null;
     }
+    public void setPersistedBoolean(boolean value) {
+        persistBoolean(value);
+    }
 }
