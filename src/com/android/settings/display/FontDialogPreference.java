@@ -15,10 +15,11 @@
  *
  * preference for managing custom fonts
  */
+
 package com.android.settings.display;
 
-import com.android.settingslib.CustomDialogPreferenceCompat;
 import androidx.appcompat.app.AlertDialog.Builder;
+import androidx.appcompat.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.FontInfo;
@@ -26,13 +27,15 @@ import android.content.IFontService;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.util.AttributeSet;
-import android.widget.ListView;
-import com.android.settings.R;
 
-public class FontDialogPreference extends CustomDialogPreferenceCompat {
+import com.android.settings.R;
+import com.android.settingslib.CustomDialogPreferenceCompat;
+
+public class FontDialogPreference extends CustomDialogPreference {
     private static final String TAG = "FontDialogPreference";
     private Context mContext;
     private IFontService mFontService;
+    private ProgressDialog mProgressDialog;
 
     public FontDialogPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -43,7 +46,7 @@ public class FontDialogPreference extends CustomDialogPreferenceCompat {
 
     @Override
     protected void onPrepareDialogBuilder(Builder builder,
-            DialogInterface.OnClickListener listener) {
+                                          DialogInterface.OnClickListener listener) {
         super.onPrepareDialogBuilder(builder, listener);
         FontListAdapter adapter = new FontListAdapter(mContext);
         DialogInterface.OnClickListener l = new DialogInterface.OnClickListener() {
@@ -51,8 +54,10 @@ public class FontDialogPreference extends CustomDialogPreferenceCompat {
             public void onClick(DialogInterface dialog, int which) {
                 FontInfo info = adapter.getItem(which);
                 try {
+                    startProgress();
                     mFontService.applyFont(info);
                 } catch (RemoteException e) {
+                    stopProgress();
                 }
             }
         };
@@ -67,6 +72,26 @@ public class FontDialogPreference extends CustomDialogPreferenceCompat {
     protected void onClick(DialogInterface dialog, int which) {
         if (which == DialogInterface.BUTTON_NEGATIVE) {
             dialog.dismiss();
+        }
+    }
+
+    private void startProgress() {
+        if(mProgressDialog != null) {
+            stopProgress();
+        }
+        mProgressDialog = new ProgressDialog(mContext);
+        mProgressDialog.setIndeterminate(true);
+        mProgressDialog.setTitle(mContext.getString(R.string.font_picker_title));
+        mProgressDialog.setMessage(mContext.getString(R.string.font_picker_progress));
+        mProgressDialog.setCancelable(false);
+        mProgressDialog.setCanceledOnTouchOutside(false);
+        mProgressDialog.show();
+    }
+
+    public void stopProgress() {
+        if (mProgressDialog != null) {
+            mProgressDialog.dismiss();
+            mProgressDialog = null;
         }
     }
 }
