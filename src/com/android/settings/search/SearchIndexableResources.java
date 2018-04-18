@@ -60,7 +60,17 @@ import com.android.settings.gestures.AssistGestureSettings;
 import com.android.settings.gestures.DoubleTapPowerSettings;
 import com.android.settings.gestures.DoubleTapScreenSettings;
 import com.android.settings.gestures.DoubleTwistGestureSettings;
+import org.carbonrom.carbonfibers.fragments.buttons.AdvancedOptions;
+import org.carbonrom.carbonfibers.fragments.buttons.Buttons;
+import org.carbonrom.carbonfibers.fragments.gestures.CarbonGesturesSettings;
 import org.carbonrom.carbonfibers.fragments.gestures.GestureSettings;
+import org.carbonrom.carbonfibers.fragments.lockscreen.Lockscreen;
+import org.carbonrom.carbonfibers.fragments.privacy.Privacy;
+import org.carbonrom.carbonfibers.fragments.statusbar.ClockDateSettings;
+import org.carbonrom.carbonfibers.fragments.statusbar.Statusbar;
+import org.carbonrom.carbonfibers.fragments.system.GlobalActionsSettings;
+import org.carbonrom.carbonfibers.fragments.system.SmartPixels;
+import org.carbonrom.carbonfibers.fragments.system.System;
 import com.android.settings.gestures.PickupGestureSettings;
 import com.android.settings.gestures.SwipeToNotificationSettings;
 import com.android.settings.inputmethod.AvailableVirtualKeyboardFragment;
@@ -219,6 +229,16 @@ public final class SearchIndexableResources {
                 R.drawable.ic_settings_storage);
         addIndex(BatteryLightSettings.class,
                 R.xml.battery_light_settings, R.drawable.ic_settings_battery);
+        addIndex(AdvancedOptions.class, R.xml.advancedoptions, R.drawable.ic_buttons);
+        addIndex(Buttons.class, R.xml.buttons, R.drawable.ic_buttons);
+        addIndex(CarbonGesturesSettings.class, R.xml.carbongestures, R.drawable.ic_gestures);
+        addIndex(Lockscreen.class, R.xml.lockscreen, R.drawable.ic_lockscreen);
+        addIndex(Privacy.class, R.xml.privacy, R.drawable.ic_privacy);
+        addIndex(ClockDateSettings.class, R.xml.clock_date_settings, R.drawable.ic_statusbar);
+        addIndex(Statusbar.class, R.xml.statusbar, R.drawable.ic_statusbar);
+        addIndex(GlobalActionsSettings.class, R.xml.global_actions, R.drawable.ic_system);
+        addIndex(SmartPixels.class, R.xml.smart_pixels, R.drawable.ic_system);
+        addIndex(System.class, R.xml.system, R.drawable.ic_system);
     }
 
     private SearchIndexableResources() {
