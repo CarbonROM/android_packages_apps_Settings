@@ -47,9 +47,9 @@
                 android:key="font_size_preference_screen"
                 android:title="@string/title_font_size"/-->
 
-        <com.android.settings.display.ScreenZoomPreference
+        <!--com.android.settings.display.ScreenZoomPreference
                 android:key="screen_zoom"
-                android:title="@string/screen_zoom_title"/>
+                android:title="@string/screen_zoom_title"/-->
 
         <Preference
             android:fragment="com.android.settings.accessibility.MagnificationPreferenceFragment"
