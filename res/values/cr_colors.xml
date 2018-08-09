@@ -18,5 +18,7 @@
 
     <color name="homepage_cf_background">#424242</color>
 
+    <!-- App ops -->
+    <color name="switch_accent_color">@*android:color/accent_device_default_light</color>
 </resources>
 
