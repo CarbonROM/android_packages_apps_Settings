@@ -244,4 +244,5 @@ public class Settings extends SettingsActivity {
      * Activity for CarbonFibers
      */
     public static class CarbonFibersActivity extends SettingsActivity { /* empty */ }
+    public static class SmartPixelsActivity extends SettingsActivity { /* empty */ }
 }
