@@ -139,6 +139,7 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import org.carbonrom.carbonfibers.CarbonFibers;
+import org.carbonrom.carbonfibers.fragments.system.SmartPixels;
 
 public class SettingsGateway {
 
@@ -266,6 +267,7 @@ public class SettingsGateway {
             ToggleBackupSettingFragment.class.getName(),
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
             CarbonFibers.class.getName(),
+            SmartPixels.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -305,5 +307,6 @@ public class SettingsGateway {
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.CarbonFibersActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName(),
     };
 }
