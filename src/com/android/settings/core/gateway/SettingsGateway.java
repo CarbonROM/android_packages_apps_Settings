@@ -161,6 +161,7 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import org.carbonrom.carbonfibers.CarbonFibers;
+import org.carbonrom.carbonfibers.fragments.system.SmartPixels;
 
 public class SettingsGateway {
 
@@ -311,6 +312,7 @@ public class SettingsGateway {
             InteractAcrossProfilesDetails.class.getName(),
             MediaControlsSettings.class.getName(),
             CarbonFibers.class.getName(),
+            SmartPixels.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -351,5 +353,6 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.CarbonFibersActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName(),
     };
 }
