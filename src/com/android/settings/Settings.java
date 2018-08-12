@@ -167,4 +167,5 @@ public class Settings extends SettingsActivity {
     public static class SystemDashboardActivity extends SettingsActivity {}
 
     public static class CarbonFibersActivity extends SettingsActivity { /* empty */ }
+    public static class SmartPixelsActivity extends SettingsActivity { /* empty */ }
 }
