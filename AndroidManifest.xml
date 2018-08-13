@@ -3404,6 +3404,17 @@
                 android:value="org.carbonrom.carbonfibers.fragments.system.SmartPixels" />
         </activity>
 
+        <!-- Miscellaneous -->
+        <activity android:name=".Settings$CarbonFibersSystemActivity"
+                android:label="@string/system_category">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="org.carbonrom.carbonfibers.fragments.system.System" />
+        </activity>
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
