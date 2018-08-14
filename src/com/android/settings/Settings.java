@@ -240,4 +240,10 @@ public class Settings extends SettingsActivity {
      */
     public static class MediaControlsSettingsActivity extends SettingsActivity {}
 
+    // Carbon additions start
+    public static class CarbonFibersActivity extends SettingsActivity {}
+    public static class MiscActivity extends SettingsActivity { /* empty */ }
+    public static class PrivacyActivity extends SettingsActivity { /* empty */ }
+    public static class SystemActivity extends SettingsActivity { /* empty */ }
+
 }

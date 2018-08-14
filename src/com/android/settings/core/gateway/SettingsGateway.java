@@ -160,6 +160,11 @@ import com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings
 import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
+import org.carbonrom.carbonfibers.CarbonFibers;
+import org.carbonrom.carbonfibers.fragments.misc.Misc;
+import org.carbonrom.carbonfibers.fragments.privacy.Privacy;
+import org.carbonrom.carbonfibers.fragments.system.System;
+
 public class SettingsGateway {
 
     /**
@@ -307,7 +312,12 @@ public class SettingsGateway {
             GestureNavigationSettingsFragment.class.getName(),
             InteractAcrossProfilesSettings.class.getName(),
             InteractAcrossProfilesDetails.class.getName(),
-            MediaControlsSettings.class.getName()
+            MediaControlsSettings.class.getName(),
+            // carbon additions start
+            CarbonFibers.class.getName(),
+            Misc.class.getName(),
+            Privacy.class.getName(),
+            System.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -347,5 +357,9 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
+            // Home page > CarbonFibers
+            Settings.Misc.class.getName(),
+            Settings.Privacy.class.getName(),
+            Settings.System.class.getName(),
     };
 }

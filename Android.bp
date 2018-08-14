@@ -27,7 +27,15 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java"],
+    srcs: ["src/**/*.java",
+           "CarbonFibers/src/**/*.java",
+    ],
+
+    aaptflags: ["--extra-packages org.carbonrom.carbonfibers"],
+
+    resource_dirs: ["res",
+                    "CarbonFibers/res"
+    ],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
