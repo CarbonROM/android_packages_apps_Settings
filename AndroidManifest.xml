@@ -3482,5 +3482,9 @@
                 android:resource="@string/cf_dashboard_summary"/>
         </activity>
 
+        <!-- So why not make it longer and add Carbon Features? -->
+        <!-- Hide Apps from Recents (HAFR) -->
+        <activity android:name="org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents.HAFRAppListActivity" />
+
     </application>
 </manifest>
