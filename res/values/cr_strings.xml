@@ -24,4 +24,6 @@
     <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">A healthy source of your daily fiber</string>
 
+    <string name="gesture_double_tap_power_torch_toast">Screen off torch gesture is now disabled</string>
+
 </resources>
