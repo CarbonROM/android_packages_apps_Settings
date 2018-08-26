@@ -29,4 +29,8 @@
 
     <string name="gesture_double_tap_power_torch_toast">Screen off torch gesture is now disabled</string>
 
+    <!-- CarbonROM version -->
+    <string name="carbon_version">CarbonROM version</string>
+    <string name="summary_placeholder">N/A</string>
+    <string name="carbon_vendor_security_patch">Vendor security patch level</string>
 </resources>
