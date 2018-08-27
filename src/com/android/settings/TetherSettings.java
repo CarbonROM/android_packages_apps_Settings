@@ -35,6 +35,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.UserManager;
+import android.provider.Settings.Secure;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
 import android.util.Log;
@@ -65,6 +66,7 @@ public class TetherSettings extends RestrictedSettingsFragment
     private static final String USB_TETHER_SETTINGS = "usb_tether_settings";
     private static final String ENABLE_WIFI_AP = "enable_wifi_ap";
     private static final String ENABLE_BLUETOOTH_TETHERING = "enable_bluetooth_tethering";
+    private static final String ENABLE_WEAR_BLUETOOTH_TETHERING = "enable_wear_bluetooth_tethering";
     private static final String DATA_SAVER_FOOTER = "disabled_on_data_saver";
 
     private static final int DIALOG_AP_SETTINGS = 1;
@@ -77,6 +79,7 @@ public class TetherSettings extends RestrictedSettingsFragment
     private SwitchPreference mEnableWifiAp;
 
     private SwitchPreference mBluetoothTether;
+    private SwitchPreference mWearBluetoothTether;
 
     private BroadcastReceiver mTetherChangeReceiver;
 
@@ -109,11 +112,14 @@ public class TetherSettings extends RestrictedSettingsFragment
     private boolean mMassStorageActive;
 
     private boolean mBluetoothEnableForTether;
+    private boolean mWearBluetoothTetherEnabled;
     private boolean mUnavailable;
 
     private DataSaverBackend mDataSaverBackend;
     private boolean mDataSaverEnabled;
     private Preference mDataSaverFooter;
+
+    private Context mContext;
 
     @Override
     public int getMetricsCategory() {
@@ -127,6 +133,7 @@ public class TetherSettings extends RestrictedSettingsFragment
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+        mContext = context;
         mWifiTetherPreferenceController =
                 new WifiTetherPreferenceController(context, getLifecycle());
     }
@@ -163,6 +170,7 @@ public class TetherSettings extends RestrictedSettingsFragment
         Preference wifiApSettings = findPreference(WIFI_AP_SSID_AND_SECURITY);
         mUsbTether = (SwitchPreference) findPreference(USB_TETHER_SETTINGS);
         mBluetoothTether = (SwitchPreference) findPreference(ENABLE_BLUETOOTH_TETHERING);
+        mWearBluetoothTether = (SwitchPreference) findPreference(ENABLE_BLUETOOTH_TETHERING);
 
         mDataSaverBackend.addListener(this);
 
@@ -197,6 +205,7 @@ public class TetherSettings extends RestrictedSettingsFragment
 
         if (!bluetoothAvailable) {
             getPreferenceScreen().removePreference(mBluetoothTether);
+            getPreferenceScreen().removePreference(mWearBluetoothTether);
         } else {
             BluetoothPan pan = mBluetoothPan.get();
             if (pan != null && pan.isTetheringOn()) {
@@ -227,7 +236,8 @@ public class TetherSettings extends RestrictedSettingsFragment
         mDataSaverEnabled = isDataSaving;
         mEnableWifiAp.setEnabled(!mDataSaverEnabled);
         mUsbTether.setEnabled(!mDataSaverEnabled);
-        mBluetoothTether.setEnabled(!mDataSaverEnabled);
+        mBluetoothTether.setEnabled(!(mDataSaverEnabled || mWearBluetoothTetherEnabled));
+        mWearBluetoothTether.setEnabled(!mDataSaverEnabled);
         mDataSaverFooter.setVisible(mDataSaverEnabled);
     }
 
@@ -337,6 +347,10 @@ public class TetherSettings extends RestrictedSettingsFragment
                     }
                 }
                 updateState();
+            } else if (action.equals(Intent.ACTION_BOOT_COMPLETED)) {
+                if (Settings.Secure.putInt(mContext.getContentResolver(), Settings.Secure.WEAR_BLUETOOTH_TETHERING, 0) != 0) {
+                    startTethering(TETHERING_BLUETOOTH);
+                }
             }
         }
     }
@@ -462,16 +476,20 @@ public class TetherSettings extends RestrictedSettingsFragment
         int btState = adapter.getState();
         if (btState == BluetoothAdapter.STATE_TURNING_OFF) {
             mBluetoothTether.setEnabled(false);
+            mWearBluetoothTether.setEnabled(false);
         } else if (btState == BluetoothAdapter.STATE_TURNING_ON) {
             mBluetoothTether.setEnabled(false);
+            mWearBluetoothTether.setEnabled(false);
         } else {
             BluetoothPan bluetoothPan = mBluetoothPan.get();
             if (btState == BluetoothAdapter.STATE_ON && bluetoothPan != null
                     && bluetoothPan.isTetheringOn()) {
                 mBluetoothTether.setChecked(true);
-                mBluetoothTether.setEnabled(!mDataSaverEnabled);
+                mBluetoothTether.setEnabled(!(mDataSaverEnabled || mWearBluetoothTetherEnabled));
+                mWearBluetoothTether.setEnabled(!mDataSaverEnabled);
             } else {
-                mBluetoothTether.setEnabled(!mDataSaverEnabled);
+                mBluetoothTether.setEnabled(!(mDataSaverEnabled || mWearBluetoothTetherEnabled));
+                mWearBluetoothTether.setEnabled(!mDataSaverEnabled);
                 mBluetoothTether.setChecked(false);
             }
         }
@@ -517,6 +535,8 @@ public class TetherSettings extends RestrictedSettingsFragment
                 adapter.enable();
                 mBluetoothTether.setSummary(R.string.bluetooth_turning_on);
                 mBluetoothTether.setEnabled(false);
+                mWearBluetoothTether.setSummary(R.string.bluetooth_turning_on);
+                mWearBluetoothTether.setEnabled(false);
                 return;
             }
         }
@@ -543,6 +563,18 @@ public class TetherSettings extends RestrictedSettingsFragment
             }
         } else if (preference == mCreateNetwork) {
             showDialog(DIALOG_AP_SETTINGS);
+        } else if (preference == mWearBluetoothTether) {
+            if (mWearBluetoothTether.isChecked()) {
+                mBluetoothTether.setChecked(true);
+                mBluetoothTether.setEnabled(false);
+                startTethering(TETHERING_BLUETOOTH);
+                mWearBluetoothTetherEnabled = true;
+                Settings.Secure.putInt(mContext.getContentResolver(), Settings.Secure.WEAR_BLUETOOTH_TETHERING, 1);
+            } else {
+                mBluetoothTether.setEnabled(true);
+                mWearBluetoothTetherEnabled = false;
+                Settings.Secure.putInt(mContext.getContentResolver(), Settings.Secure.WEAR_BLUETOOTH_TETHERING, 0);
+            }
         }
 
         return super.onPreferenceTreeClick(preference);
