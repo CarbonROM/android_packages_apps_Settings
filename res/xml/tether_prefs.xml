@@ -43,6 +43,11 @@
         android:title="@string/bluetooth_tether_checkbox_text"
         android:summary="@string/bluetooth_tethering_subtext" />
 
+    <SwitchPreference
+        android:key="enable_wear_bluetooth_tethering"
+        android:title="@string/wear_bluetooth_tether_checkbox_text"
+        android:summary="@string/wear_bluetooth_tethering_subtext" />
+
     <Preference
         android:key="disabled_on_data_saver"
         android:summary="@string/tether_settings_disabled_on_data_saver"
