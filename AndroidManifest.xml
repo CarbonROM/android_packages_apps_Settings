@@ -466,6 +466,12 @@
                 android:value="com.android.settings.TetherSettings" />
         </activity-alias>
 
+        <receiver android:name=".TetherSettings$TetherBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
         <activity android:name="Settings$WifiP2pSettingsActivity"
                 android:taskAffinity="com.android.settings"
                 android:parentActivityName="Settings$WifiSettingsActivity">

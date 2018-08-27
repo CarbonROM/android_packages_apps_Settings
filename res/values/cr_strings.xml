@@ -111,4 +111,7 @@
     <string name="font_subs_info">Please make sure to disable every Font Overlay in Substratum before using this.\nIf you want to go back to using Substratum, make sure to select the Default Font (Roboto) here.</string>
     <string name="font_picker_reboot_recommended">For optimal experience,\nreboot your device</string>
 
+    <string name="wear_bluetooth_tether_checkbox_text">Wear Bluetooth Tethering Mode</string>
+    <string name="wear_bluetooth_tethering_subtext" product="tablet">Always share tablet\u2019s Internet connection via Bluetooth and hide Notification</string>
+    <string name="wear_bluetooth_tethering_subtext" product="default">Always share phone\u2019s Internet connection via Bluetooth and hide Notification</string>
 </resources>
