@@ -1724,6 +1724,17 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".password.SetupPrivacyPolicy"
+                  android:theme="@style/GlifTheme.Light"
+                  android:label="@string/suw_privacy_policy_title">
+            <intent-filter android:priority="2">
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.DEVICE_INITIALIZATION_WIZARD" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".password.ChooseLockGeneric"
             android:label="@string/lockpassword_choose_lock_generic_header"
             android:excludeFromRecents="true"
