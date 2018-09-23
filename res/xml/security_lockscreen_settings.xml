@@ -66,6 +66,14 @@
             settings:userRestriction="no_ambient_display" />
 
         <Preference
+            android:key="ambient_display_carbon"
+            android:title="@string/ambient_display_screen_title" >
+            <intent
+                android:action="org.carbonrom.settings.device.DOZE_SETTINGS"
+                android:targetPackage="org.carbonrom.settings.doze" />
+        </Preference>
+
+        <Preference
             android:key="ambient_display_tap"
             android:title="@string/ambient_display_tap_screen_title"
             android:fragment="com.android.settings.gestures.TapScreenGestureSettings"

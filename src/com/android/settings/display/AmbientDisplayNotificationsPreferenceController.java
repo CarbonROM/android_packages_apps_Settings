@@ -18,12 +18,15 @@ import static android.provider.Settings.Secure.DOZE_ENABLED;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.hardware.display.AmbientDisplayConfiguration;
+import com.android.internal.util.cr.CrUtils;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.TextUtils;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
+
+import com.android.internal.util.cr.CrUtils;
 
 import com.android.settings.core.TogglePreferenceController;
 import com.android.settings.overlay.FeatureFactory;
@@ -38,6 +41,7 @@ public class AmbientDisplayNotificationsPreferenceController extends
     @VisibleForTesting
     static final String KEY_AMBIENT_DISPLAY_NOTIFICATIONS = "ambient_display_notification";
     private static final int MY_USER = UserHandle.myUserId();
+    private static final String PACKAGE_CUSTOM_DOZE = "org.carbonrom.settings.doze";
 
     private final MetricsFeatureProvider mMetricsFeatureProvider;
     private AmbientDisplayConfiguration mConfig;
@@ -79,8 +83,9 @@ public class AmbientDisplayNotificationsPreferenceController extends
 
     @Override
     public int getAvailabilityStatus() {
-        return getAmbientConfig().pulseOnNotificationAvailable()
-                ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return !CrUtils.hasAltAmbientDisplay(mContext.getApplicationContext()) &&
+               getAmbientConfig().pulseOnNotificationAvailable()
+               ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
