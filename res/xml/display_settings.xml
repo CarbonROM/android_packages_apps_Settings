@@ -109,7 +109,15 @@
         android:key="ambient_display"
         android:title="@string/ambient_display_screen_title"
         android:fragment="com.android.settings.display.AmbientDisplaySettings"
-        settings:userRestriction="no_ambient_display" />
+	settings:userRestriction="no_ambient_display" />
+
+    <Preference
+        android:key="ambient_display_carbon"
+        android:title="@string/ambient_display_screen_title" >
+        <intent
+            android:action="org.carbonrom.settings.device.DOZE_SETTINGS"
+            android:targetPackage="org.carbonrom.settings.doze" />
+    </Preference>
 
     <!-- Hide night mode for now
     <ListPreference
@@ -133,7 +141,7 @@
         android:key="tap_to_wake"
         android:title="@string/tap_to_wake"
         android:summary="@string/tap_to_wake_summary" />
-
+   
     <ListPreference
         android:key="theme"
         android:title="@string/color_theme"
