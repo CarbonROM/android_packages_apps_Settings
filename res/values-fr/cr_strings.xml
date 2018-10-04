@@ -17,7 +17,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- CarbonROM version -->
+  <string name="carbon_version">Version CarbonROM</string>
+  <string name="carbon_version_default">Inconnu</string>
   <!-- CarbonFibers -->
+  <string name="cf_settings_title">Fibres</string>
   <!-- Encryption and credential -->
   <!-- Root Management -->
   <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->

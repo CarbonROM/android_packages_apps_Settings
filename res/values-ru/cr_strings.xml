@@ -21,6 +21,7 @@
   <string name="carbon_version_default">Неизвестно</string>
   <!-- CarbonFibers -->
   <string name="cf_settings_title">Волокна</string>
+  <string name="cf_dashboard_summary">Источник качественной клетчатки на каждый день</string>
   <!-- Encryption and credential -->
   <string name="custom_encryption_and_credential_settings_summary_on">Устройство зашифровано</string>
   <string name="custom_encryption_and_credential_settings_summary_off">Устройство расшифровано</string>
@@ -31,6 +32,7 @@
   <string name="supersu_title">SuperSU</string>
   <string name="screenshot_shutter_sound_title">Звук скриншота</string>
   <!-- Manual provisioning support -->
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
   <string name="sim_disabled">выкл</string>
   <string name="sim_missing">отсутствует или неисправна</string>
   <string name="sim_enabler_need_disable_sim">SIM-карта будет деактивирована. Вы хотите продолжить?</string>

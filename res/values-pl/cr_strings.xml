@@ -21,6 +21,7 @@
   <string name="carbon_version_default">Nieznane</string>
   <!-- CarbonFibers -->
   <string name="cf_settings_title">Ustawienia CarbonRom</string>
+  <string name="cf_dashboard_summary">Dostosuj swojego CarbonRoma</string>
   <!-- Encryption and credential -->
   <string name="custom_encryption_and_credential_settings_summary_on">Urządzenie jest zaszyfrowane</string>
   <string name="custom_encryption_and_credential_settings_summary_off">Urządzenie nie jest zaszyfrowane</string>
@@ -33,6 +34,7 @@
   <!-- Manual provisioning support -->
   <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> jest <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
   <string name="sim_disabled">wyłączone</string>
+  <string name="sim_missing">brakujący lub uszkodzony</string>
   <string name="sim_enabler_need_disable_sim">Karta SIM zostanie dezaktywowana. Czy chcesz kontynuować?</string>
   <string name="sim_enabler_will_disable_sim_title">Uwaga</string>
   <string name="sim_enabler_need_switch_data_service">Ta karta SIM zostanie wyłączona i karta SIM <xliff:g id="slotid">%1$s</xliff:g> będzie używana dla usługi danych. Czy na pewno chcesz kontynuować?</string>
@@ -86,9 +88,12 @@
   <string name="custom_light_title">Kolor światła</string>
   <string name="custom_light_on_time_title">"Czas włączenia diody w trybie pulsacji (ms)"</string>
   <string name="custom_light_off_time_title">"Czas wyłączenia diody w trybie pulsacji (ms)"</string>
+  <string name="app_notifications_info_desc">Stuknij w jeden z powyższych kanałów, aby skonfigurować kolory i inne opcje</string>
+  <string name="value_equals_default">Domyślne</string>
   <string name="show_light_on_zen_title">Pulsuj podczas \"Nie przeszkadzać\"</string>
   <string name="link_volume_option_title">Połącz głośność dzwonka i powiadomień</string>
   <!-- Font picker -->
   <string name="font_picker_title">Czcionka</string>
+  <string name="font_subs_info">Przed użyciem tego upewnij się, że wszystkie nakładki czcionek w Substratum są wyłączone.\n Jeżeli chcesz wrócić do używania Substratum, pamiętaj aby wybrać domyślną czcionkę (Roboto).</string>
   <string name="font_picker_reboot_recommended">Dla pełni wrażeń, \nuruchom ponownie urządzenie</string>
 </resources>

@@ -60,6 +60,13 @@
   <string name="vibrate_on_plug_title">Vibrar ao conectar</string>
   <!-- Battery Light -->
   <string name="battery_light_title">Luz de bateria</string>
+  <string name="battery_light_title_summary_on">Ligado / Indicará o nível da bateria</string>
+  <string name="battery_light_title_summary_off">Desligado / Não indicará o nível da bateria</string>
+  <string name="battery_light_description">Ligar/desligar o indicador luminoso de bateria ou mudar de comportamento</string>
+  <string name="battery_low_pulse_title">Vibrar quando baixo</string>
+  <string name="battery_low_pulse_title_summary">Virar quando o nível da bateria estiver baixo</string>
+  <string name="battery_light_only_full_charge_title">Indicação de totalmente carregada</string>
+  <string name="battery_light_only_full_charge_title_summary">Mostrar a luz de bateria somente quando o dispositivo estiver totalmente carregado</string>
   <string name="battery_light_list_title">Cores</string>
   <string name="battery_light_low_color_title">Bateria fraca</string>
   <string name="battery_light_medium_color_title">Carregando</string>
@@ -67,7 +74,9 @@
   <string name="battery_light_really_full_color_title">Carregada (100%)</string>
   <string name="fast_color_cat_title">Carregamento rápido</string>
   <string name="fast_charging_led_enabled_title">Ativar cor de carregamento rápido</string>
+  <string name="fast_charging_led_enabled_summary">Durante o carregamento rápido, usar uma cor diferente até atingir 90% de carga</string>
   <string name="fast_charging_light_color_title">Cor</string>
+  <string name="edit_battery_settings">Editar configurações de bateria</string>
   <string name="led_color_green">Verde</string>
   <string name="led_color_red">Vermelho</string>
   <string name="led_color_blue">Azul</string>
@@ -77,5 +86,14 @@
   <!-- Custom light color -->
   <string name="light_customization">Luz de notificação</string>
   <string name="custom_light_title">Cor da luz</string>
+  <string name="custom_light_on_time_title">"Duração da luz quando LIGADA (ms)"</string>
+  <string name="custom_light_off_time_title">"Duração da luz quando DESLIGADA (ms)"</string>
+  <string name="app_notifications_info_desc">Toque numa das categorias acima para configurar as cores das luzes e outras opções</string>
+  <string name="value_equals_default">Padrão</string>
+  <string name="show_light_on_zen_title">Piscar durante o modo Não Incomodar</string>
+  <string name="link_volume_option_title">Mesclar volume das notificações com toque</string>
   <!-- Font picker -->
+  <string name="font_picker_title">Fonte</string>
+  <string name="font_subs_info">Por favor, certifique-se de desativar cada fonte Overlay no Substrato antes de usar este. Você deseja voltar a usar o Substrato, certifique-se de selecionar a fonte padrão (robô) aqui.</string>
+  <string name="font_picker_reboot_recommended">Para uma ótima experiência, \nreinicie seu dispositivo</string>
 </resources>

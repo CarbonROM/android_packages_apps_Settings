@@ -21,7 +21,7 @@
   <string name="carbon_version_default">不明</string>
   <!-- CarbonFibers -->
   <string name="cf_settings_title">Fibers</string>
-  <string name="cf_dashboard_summary">A healthy source of your daily fiber</string>
+  <string name="cf_dashboard_summary">貴方の日々のファイバーに健康の源を</string>
   <!-- Encryption and credential -->
   <string name="custom_encryption_and_credential_settings_summary_on">端末は暗号化されています</string>
   <string name="custom_encryption_and_credential_settings_summary_off">端末は暗号化されていません</string>
@@ -60,9 +60,9 @@
   <string name="vibrate_on_plug_title">接続時に振動</string>
   <!-- Battery Light -->
   <string name="battery_light_title">バッテリーLED</string>
-  <string name="battery_light_title_summary_on">オン / バッテリー残量が表示されます</string>
-  <string name="battery_light_title_summary_off">オフ / バッテリー残量は表示されません</string>
-  <string name="battery_light_description">バッテリーライト表示のオン/オフや動作の変更</string>
+  <string name="battery_light_title_summary_on">オン: バッテリー残量が表示されます</string>
+  <string name="battery_light_title_summary_off">オフ: バッテリー残量が表示されません</string>
+  <string name="battery_light_description">バッテリーライト表示の切替えや動作の変更</string>
   <string name="battery_low_pulse_title">低バッテリー時に点滅</string>
   <string name="battery_low_pulse_title_summary">バッテリー残量が低い時に点滅させる</string>
   <string name="battery_light_only_full_charge_title">充電完了表示</string>
