@@ -132,6 +132,8 @@
     <string name="system_theme_wallpaper">Automatic (based on time of day)</string>
     <string name="system_theme_light">Light</string>
     <string name="system_theme_dark">Dark</string>
+    <string name="black_theme_title">Use black theme</string>
+    <string name="black_theme_summary">Use black theme in place of dark</string>
 
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
