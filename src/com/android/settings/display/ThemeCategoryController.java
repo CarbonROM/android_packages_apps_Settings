@@ -29,7 +29,6 @@ public class ThemeCategoryController extends AbstractPreferenceController
         implements Preference.OnPreferenceChangeListener, PreferenceControllerMixin {
 
     private static final String THEME_CATEGORY_KEY = "theme_category";
-    private static final String SUBS_PACKAGE = "projekt.substratum";
 
     public ThemeCategoryController(Context context) {
         super(context);
@@ -37,7 +36,7 @@ public class ThemeCategoryController extends AbstractPreferenceController
 
     @Override
     public boolean isAvailable() {
-        return !CrUtils.isPackageInstalled(mContext, SUBS_PACKAGE);
+        return true;
     }
 
     @Override
