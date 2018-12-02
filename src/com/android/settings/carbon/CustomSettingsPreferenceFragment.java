@@ -18,6 +18,7 @@
 package com.android.settings.carbon;
 
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.TwoStatePreference;
@@ -40,6 +41,8 @@ public abstract class CustomSettingsPreferenceFragment extends SettingsPreferenc
     protected static final int SYSTEM_TWO_STATE = 0;
     protected static final int SECURE_TWO_STATE = 1;
     protected static final int GLOBAL_TWO_STATE = 2;
+    protected static final int SYSTEM_USER_TWO_STATE = 3;
+    protected static final int SECURE_USER_TWO_STATE = 4;
 
     /*
      * ArrayList holds preferenceType and defaultValue
@@ -79,8 +82,7 @@ public abstract class CustomSettingsPreferenceFragment extends SettingsPreferenc
     protected boolean updateCustomPreference(Preference preference, boolean clicked) {
         if (mCustomPreferences.containsKey(preference)) {
             int preferenceType = mCustomPreferences.get(preference).get(0).intValue();
-            if (preferenceType == SYSTEM_TWO_STATE || preferenceType == SECURE_TWO_STATE
-                    || preferenceType == GLOBAL_TWO_STATE) {
+            if (preferenceType >= SYSTEM_TWO_STATE && preferenceType <= SECURE_USER_TWO_STATE) {
                 updateTwoStatePreference(preference, preferenceType, clicked);
                 return true;
             }
@@ -113,6 +115,22 @@ public abstract class CustomSettingsPreferenceFragment extends SettingsPreferenc
             }
             isEnable = (Settings.Global.getInt(
                     getActivity().getContentResolver(), switchPreference.getKey(), defaultValue) == 1);
+        } else if (switchType == SYSTEM_USER_TWO_STATE) {
+            if (clicked) {
+                Settings.System.putIntForUser(getActivity().getContentResolver(), switchPreference.getKey(),
+                        (switchPreference.isChecked() ? STATE_ON : STATE_OFF), UserHandle.USER_CURRENT);
+            }
+            isEnable = (Settings.System.getIntForUser(
+                    getActivity().getContentResolver(), switchPreference.getKey(), defaultValue,
+                    UserHandle.USER_CURRENT) == 1);
+        } else if (switchType == SECURE_USER_TWO_STATE) {
+            if (clicked) {
+                Settings.Secure.putIntForUser(getActivity().getContentResolver(), switchPreference.getKey(),
+                        (switchPreference.isChecked() ? STATE_ON : STATE_OFF), UserHandle.USER_CURRENT);
+            }
+            isEnable = (Settings.Secure.getIntForUser(
+                    getActivity().getContentResolver(), switchPreference.getKey(), defaultValue,
+                    UserHandle.USER_CURRENT) == 1);
         }
         switchPreference.setChecked(isEnable);
     }
