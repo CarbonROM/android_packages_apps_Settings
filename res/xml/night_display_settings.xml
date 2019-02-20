@@ -37,6 +37,11 @@
         android:title="@string/night_display_end_time_title"
         settings:controller="com.android.settings.display.NightDisplayCustomEndTimePreferenceController" />
 
+    <com.android.settings.carbon.SchedulePreference
+        android:key="night_display_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <com.android.settings.widget.SeekBarPreference
         android:key="night_display_temperature"
         android:title="@string/night_display_temperature_title"

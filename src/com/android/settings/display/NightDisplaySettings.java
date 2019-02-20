@@ -26,6 +26,7 @@ import android.support.v7.preference.Preference;
 import com.android.internal.app.ColorDisplayController;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
+import com.android.settings.carbon.SchedulePreference;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
@@ -48,12 +49,16 @@ public class NightDisplaySettings extends DashboardFragment
 
     private ColorDisplayController mController;
 
+    private SchedulePreference mSchedule;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         final Context context = getContext();
         mController = new ColorDisplayController(context);
+        mSchedule = (SchedulePreference) findPreference("night_display_schedule");
+
     }
 
     @Override
@@ -62,6 +67,10 @@ public class NightDisplaySettings extends DashboardFragment
 
         // Listen for changes only while visible.
         mController.setListener(this);
+
+        // Update schedule.
+        //mSchedule.setSunset(mController.getCustomStartTime().toSecondOfDay() * 1000);
+        //mSchedule.setSunrise(mController.getCustomEndTime().toSecondOfDay() * 1000);
     }
 
     @Override
@@ -130,6 +139,10 @@ public class NightDisplaySettings extends DashboardFragment
     public void onAutoModeChanged(int autoMode) {
         // Update auto mode, start time, and end time preferences.
         updatePreferenceStates();
+
+        // Update schedule.
+        if (autoMode == ColorDisplayController.AUTO_MODE_TWILIGHT)
+            mSchedule.useAutoTimes();
     }
 
     @Override
@@ -142,12 +155,18 @@ public class NightDisplaySettings extends DashboardFragment
     public void onCustomStartTimeChanged(LocalTime startTime) {
         // Update start time preference.
         updatePreferenceStates();
+
+        // Update schedule.
+        mSchedule.setSunset(startTime.toSecondOfDay() * 1000);
     }
 
     @Override
     public void onCustomEndTimeChanged(LocalTime endTime) {
         // Update end time preference.
         updatePreferenceStates();
+
+        // Update schedule.
+        mSchedule.setSunrise(endTime.toSecondOfDay() * 1000);
     }
 
     @Override

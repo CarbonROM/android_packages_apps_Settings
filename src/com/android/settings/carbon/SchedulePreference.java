@@ -18,6 +18,10 @@ package com.android.settings.carbon;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.icu.impl.CalendarAstronomer;
+import android.icu.util.Calendar;
+import android.location.Location;
+import android.location.LocationManager;
 import android.util.AttributeSet;
 import android.view.View;
 import android.support.v7.preference.Preference;
@@ -26,7 +30,11 @@ import android.widget.TextView;
 
 import com.android.settings.R;
 
+import java.util.concurrent.TimeUnit;
+import java.util.Locale;
+
 public class SchedulePreference extends Preference {
+    private LocationManager mLocationManager;
     private SunriseSunsetView mSunriseSunsetView;
     private TextView mSunriseView;
     private TextView mSunsetView;
@@ -36,6 +44,7 @@ public class SchedulePreference extends Preference {
     public SchedulePreference(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr, 0);
         setLayoutResource(R.layout.schedule);
+        mLocationManager = (LocationManager) context.getSystemService(context.LOCATION_SERVICE);
     }
 
     public SchedulePreference(Context context, AttributeSet attrs) {
@@ -61,6 +70,12 @@ public class SchedulePreference extends Preference {
         this.setShouldDisableView(true);
         if (mSunriseSunsetView != null)
             mSunriseSunsetView.setEnabled(!disableDependent);
+
+        if (mSunriseView != null)
+            mSunriseView.setEnabled(!disableDependent);
+
+        if (mSunsetView != null)
+            mSunsetView.setEnabled(!disableDependent);
     }
 
     @Override
@@ -181,6 +196,11 @@ public class SchedulePreference extends Preference {
      */
     public void setSunrise(long dayStartMillis, boolean animate) {
         mSunriseSunsetView.setSunrise(dayStartMillis, animate);
+        mSunriseView.setText(formatMillis(dayStartMillis));
+    }
+
+    public void setSunrise(String text) {
+        mSunriseView.setText(text);
     }
 
     /**
@@ -215,6 +235,11 @@ public class SchedulePreference extends Preference {
      */
     public void setSunset(long dayEndMillis, boolean animate) {
         mSunriseSunsetView.setSunset(dayEndMillis, animate);
+        mSunsetView.setText(formatMillis(dayEndMillis));
+    }
+
+    public void setSunset(String text) {
+        mSunsetView.setText(text);
     }
 
     /**
@@ -227,4 +252,52 @@ public class SchedulePreference extends Preference {
         return mSunriseSunsetView.getSunset();
     }
 
+    public void useAutoTimes() {
+        Location lastLocation = mLocationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+
+        if (lastLocation == null)
+            lastLocation = mLocationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
+        if (lastLocation != null) {
+            final CalendarAstronomer ca = new CalendarAstronomer(
+                    lastLocation.getLongitude(), lastLocation.getLatitude());
+
+            final Calendar noon = Calendar.getInstance();
+            final long timeMillis = noon.get(Calendar.ZONE_OFFSET);
+            noon.setTimeInMillis(timeMillis);
+            noon.set(Calendar.HOUR_OF_DAY, 12);
+            noon.set(Calendar.MINUTE, 0);
+            noon.set(Calendar.SECOND, 0);
+            noon.set(Calendar.MILLISECOND, 0);
+            ca.setTime(noon.getTimeInMillis());
+
+            long sunriseTimeMillis = ca.getSunRiseSet(true /* rise */);
+            long sunsetTimeMillis = ca.getSunRiseSet(false /* rise */);
+
+            if (sunsetTimeMillis < timeMillis) {
+                noon.add(Calendar.DATE, 1);
+                ca.setTime(noon.getTimeInMillis());
+                sunriseTimeMillis = ca.getSunRiseSet(true /* rise */);
+            } else if (sunriseTimeMillis > timeMillis) {
+                noon.add(Calendar.DATE, -1);
+                ca.setTime(noon.getTimeInMillis());
+                sunsetTimeMillis = ca.getSunRiseSet(false /* rise */);
+            }
+
+            setSunrise(sunriseTimeMillis, true);
+            setSunset(sunsetTimeMillis, true);
+        } else {
+            setSunrise("Auto");
+            setSunset("Auto");
+        }
+    }
+
+    public static String formatMillis(long millis) {
+        long hours = TimeUnit.MILLISECONDS.toHours(millis);
+        long minutes = TimeUnit.MILLISECONDS.toMinutes(millis) % TimeUnit.HOURS.toMinutes(1);
+        long seconds = TimeUnit.MILLISECONDS.toSeconds(millis) % TimeUnit.MINUTES.toSeconds(1);
+        long micros = TimeUnit.MILLISECONDS.toMicros(millis) % TimeUnit.SECONDS.toMicros(1) / 10000;
+
+        return String.format(Locale.getDefault(), "%dh %02dm", hours, minutes);
+    }
 }

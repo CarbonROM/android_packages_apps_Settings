@@ -14,6 +14,8 @@ import java.util.Calendar;
 import android.annotation.ColorInt;
 import android.annotation.Nullable;
 
+import com.android.settings.R;
+
 public class SunriseSunsetView extends View implements View.OnTouchListener {
 
     private static final float DAY_START = 0f;
@@ -53,26 +55,27 @@ public class SunriseSunsetView extends View implements View.OnTouchListener {
     private void init() {
         dayStart = new AnimatedFloat(0.25f);
         dayEnd = new AnimatedFloat(0.75f);
+        int accent = getResources().getColor(R.color.switch_accent_color);
 
         sunrisePaint = new Paint();
         sunrisePaint.setAntiAlias(true);
         sunrisePaint.setStyle(Paint.Style.FILL);
-        sunrisePaint.setColor(Color.BLACK);
+        sunrisePaint.setColor(accent);
 
         sunsetPaint = new Paint();
         sunsetPaint.setAntiAlias(true);
         sunsetPaint.setStyle(Paint.Style.FILL);
-        sunsetPaint.setColor(Color.BLACK);
+        sunsetPaint.setColor(accent);
 
         linePaint = new Paint();
         linePaint.setAntiAlias(true);
         linePaint.setStyle(Paint.Style.FILL);
-        linePaint.setColor(Color.BLACK);
+        linePaint.setColor(accent);
         linePaint.setAlpha(20);
 
-        setOnTouchListener(this);
-        setClickable(true);
-        setFocusable(true);
+        //setOnTouchListener(this);
+        //setClickable(true);
+        //setFocusable(true);
     }
 
     /**
