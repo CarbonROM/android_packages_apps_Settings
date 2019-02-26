@@ -3440,6 +3440,7 @@
         <!-- So why not make it longer and add Carbon Features? -->
         <!-- Hide Apps from Recents (HAFR) -->
         <activity android:name="org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents.HAFRAppListActivity" />
+        <activity android:name="org.carbonrom.carbonfibers.WelcomeActivity" />
 
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
