@@ -107,6 +107,10 @@
     <string name="app_ops_bluetooth_scan">Сканирование BT</string>
     <string name="app_ops_boot_completed">Автозагрузка</string>
 
+    <!-- App ops menu options -->
+    <string name="app_ops_show_user_apps">Показать пользовательские программы</string>
+    <string name="app_ops_show_system_apps">Показать встроенные программы</string>
+
     <!-- System theme -->
     <string name="system_theme_wallpaper">Автоматический (основан на времени дня)</string>
     <string name="system_theme_light">Светлый</string>
