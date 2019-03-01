@@ -110,6 +110,9 @@
     <!-- App ops menu options -->
     <string name="app_ops_show_user_apps">Показать пользовательские программы</string>
     <string name="app_ops_show_system_apps">Показать встроенные программы</string>
+    <string name="app_ops_reset_counters">Сбросить счётчики</string>
+    <string name="app_ops_reset_confirm_title">Подтвердите сброс счетчиков</string>
+    <string name="app_ops_reset_confirm_mesg">Вы уверены, что хотите сбросить счетчики?</string>
 
     <!-- System theme -->
     <string name="system_theme_wallpaper">Автоматический (основан на времени дня)</string>
