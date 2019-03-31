@@ -97,7 +97,17 @@ import com.android.settings.wallpaper.WallpaperTypeSettings;
 import com.android.settings.wfd.WifiDisplaySettings;
 import com.android.settings.wifi.ConfigureWifiSettings;
 import com.android.settings.wifi.WifiSettings;
-import org.carbonrom.carbonfibers.fragments.gestures.Gestures;
+
+import org.carbonrom.carbonfibers.CarbonFibers;
+import org.carbonrom.carbonfibers.crstats.AnonymousStats;
+import org.carbonrom.carbonfibers.fragments.buttons.*;
+import org.carbonrom.carbonfibers.fragments.gestures.*;
+import org.carbonrom.carbonfibers.fragments.lock_screen.LockScreen;
+import org.carbonrom.carbonfibers.fragments.privacy.Privacy;
+import org.carbonrom.carbonfibers.fragments.status_bar.StatusBar;
+import org.carbonrom.carbonfibers.fragments.system.GlobalActionsSettings;
+import org.carbonrom.carbonfibers.fragments.system.SmartPixels;
+import org.carbonrom.carbonfibers.fragments.system.System;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -193,6 +203,19 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(RecentLocationRequestSeeAllFragment.class);
         addIndex(PreviouslyConnectedDeviceDashboardFragment.class);
         addIndex(BluetoothDashboardFragment.class);
+        addIndex(CarbonFibers.class);
+        addIndex(AnonymousStats.class);
+        addIndex(Buttons.class);
+        addIndex(ButtonBrightnessSettings.class);
+        addIndex(ButtonsHWSettings.class);
+        addIndex(ActiveEdge.class);
+        addIndex(CarbonGesturesSettings.class);
+        addIndex(LockScreen.class);
+        addIndex(Privacy.class);
+        addIndex(StatusBar.class);
+        addIndex(GlobalActionsSettings.class);
+        addIndex(SmartPixels.class);
+        addIndex(System.class);
     }
 
     @Override
