@@ -16,84 +16,84 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- CarbonROM version -->
-  <string name="carbon_version">Verze CarbonROM</string>
-  <string name="carbon_version_default">Neznámá</string>
-  <!-- CarbonFibers -->
-  <string name="cf_settings_title">Fibers</string>
-  <string name="cf_dashboard_summary">Přizpůsobení Carbon Fibres</string>
-  <!-- Encryption and credential -->
-  <string name="custom_encryption_and_credential_settings_summary_on">Zařízení je šifrováno</string>
-  <string name="custom_encryption_and_credential_settings_summary_off">Zařízení je dešifrováno</string>
-  <!-- Root Management -->
-  <string name="rootmanagement_title">Správa přístupu root</string>
-  <string name="rootmanagement_dashboard_summary">Spravovat přístup uživatele root</string>
-  <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
-  <string name="supersu_title">SuperSU</string>
-  <string name="screenshot_shutter_sound_title">Zvuk závěrky snímku obrazovky</string>
-  <!-- Manual provisioning support -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> je <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_disabled">zakázáno</string>
-  <string name="sim_missing">chybějící nebo vadná</string>
-  <string name="sim_enabler_need_disable_sim">SIM karta bude deaktivována. Chcete pokračovat?</string>
-  <string name="sim_enabler_will_disable_sim_title">Varování</string>
-  <string name="sim_enabler_need_switch_data_service">Tato SIM karta bude deaktivována a SIM karta <xliff:g id="slotid">%1$s</xliff:g> bude použita pro datové služby. Jste si jisti, že chcete pokračovat?</string>
-  <string name="sim_enabler_airplane_on">Nelze provést operaci během režimu Letadlo.</string>
-  <string name="sim_enabler_in_call">Nelze provést operaci během režimu volání.</string>
-  <string name="sim_enabler_both_inactive">Nelze zakázat všechny SIM karty</string>
-  <string name="sim_enabler_enabling">Aktivace\u2026</string>
-  <string name="sim_enabler_disabling">Deaktivace\u2026</string>
-  <string name="sub_activate_success">SIM karta aktivována.</string>
-  <string name="sub_activate_failed">Aktivace se nezdařila.</string>
-  <string name="sub_deactivate_success">SIM karta deaktivována.</string>
-  <string name="sub_deactivate_failed">Deaktivace se nezdařila.</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Výběr barvy</string>
-  <string name="press_color_to_apply">Klepněte na barvu, kterou chcete použít</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Nastavit</string>
-  <string name="color_default">Výchozí</string>
-  <!-- Vibrate on plug -->
-  <string name="vibrate_on_plug_title">Vibrovat při připojení</string>
-  <!-- Battery Light -->
-  <string name="battery_light_title">LED kontrolka baterie</string>
-  <string name="battery_light_title_summary_on">Zap. / Úroveň baterie se bude zobrazovat</string>
-  <string name="battery_light_title_summary_off">Vyp. / Úroveň baterie se nebude zobrazovat</string>
-  <string name="battery_light_description">Zapnutí/vypnutí LED kontrolky baterie a změna jejího chování</string>
-  <string name="battery_low_pulse_title">Blikat při nízkém stavu</string>
-  <string name="battery_low_pulse_title_summary">Blikat při nízké úrovni nabití baterie</string>
-  <string name="battery_light_only_full_charge_title">Blikat při plném nabití</string>
-  <string name="battery_light_only_full_charge_title_summary">Rozsvítit LED po úplném nabití baterie</string>
-  <string name="battery_light_list_title">Barvy</string>
-  <string name="battery_light_low_color_title">Vybitá baterie</string>
-  <string name="battery_light_medium_color_title">Nabíjení</string>
-  <string name="battery_light_full_color_title">Nabito (90%)</string>
-  <string name="battery_light_really_full_color_title">Nabito (100%)</string>
-  <string name="fast_color_cat_title">Rychlé nabíjení</string>
-  <string name="fast_charging_led_enabled_title">Povolit barvu rychlého nabíjení</string>
-  <string name="fast_charging_led_enabled_summary">Při rychlém nabíjení použít jinou barvu až do nabití na 90%</string>
-  <string name="fast_charging_light_color_title">Barva</string>
-  <string name="edit_battery_settings">Upravit nastavení baterie</string>
-  <string name="led_color_green">Zelená</string>
-  <string name="led_color_red">Červená</string>
-  <string name="led_color_blue">Modrá</string>
-  <!-- General strings -->
-  <string name="ok">OK</string>
-  <string name="reset">Obnovit</string>
-  <!-- Custom light color -->
-  <string name="light_customization">Oznámení LED kontrolky</string>
-  <string name="custom_light_title">Barva LED</string>
-  <string name="custom_light_on_time_title">"Čas. interval kdy LED svítí (ms)"</string>
-  <string name="custom_light_off_time_title">"Čas. interval kdy LED nesvítí (ms)"</string>
-  <string name="app_notifications_info_desc">Klepnutím na jeden z výše uvedených kanálů můžete konfigurovat barvy světla a další možnosti</string>
-  <string name="value_equals_default">Výchozí</string>
-  <string name="show_light_on_zen_title">Blikat během režimu Nerušit</string>
-  <string name="link_volume_option_title">Spojit hlasitost oznámení a vyzvánění</string>
-  <!-- Font picker -->
-  <string name="font_picker_title">Písmo</string>
-  <string name="font_subs_info">Před použitím nezapomeňte zakázat všechny překrytí písma v Substratum.\nPokud se chcete vrátit k používání Substratum, ujistěte se, že jste zde zvolili výchozí písmo (Roboto).</string>
-  <string name="font_picker_reboot_recommended">Pro optimální zážitek,\nrestartujte zařízení</string>
+    <!-- CarbonROM version -->
+    <string name="carbon_version">Verze CarbonROM</string>
+    <string name="carbon_version_default">Neznámá</string>
+    <!-- CarbonFibers -->
+    <string name="cf_settings_title">Fibers</string>
+    <string name="cf_dashboard_summary">Přizpůsobení Carbon Fibres</string>
+    <!-- Encryption and credential -->
+    <string name="custom_encryption_and_credential_settings_summary_on">Zařízení je šifrováno</string>
+    <string name="custom_encryption_and_credential_settings_summary_off">Zařízení je dešifrováno</string>
+    <!-- Root Management -->
+    <string name="rootmanagement_title">Správa přístupu root</string>
+    <string name="rootmanagement_dashboard_summary">Spravovat přístup uživatele root</string>
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <string name="supersu_title">SuperSU</string>
+    <string name="screenshot_shutter_sound_title">Zvuk závěrky snímku obrazovky</string>
+    <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> je <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">zakázáno</string>
+    <string name="sim_missing">chybějící nebo vadná</string>
+    <string name="sim_enabler_need_disable_sim">SIM karta bude deaktivována. Chcete pokračovat?</string>
+    <string name="sim_enabler_will_disable_sim_title">Varování</string>
+    <string name="sim_enabler_need_switch_data_service">Tato SIM karta bude deaktivována a SIM karta <xliff:g id="slotid">%1$s</xliff:g> bude použita pro datové služby. Jste si jisti, že chcete pokračovat?</string>
+    <string name="sim_enabler_airplane_on">Nelze provést operaci během režimu Letadlo.</string>
+    <string name="sim_enabler_in_call">Nelze provést operaci během režimu volání.</string>
+    <string name="sim_enabler_both_inactive">Nelze zakázat všechny SIM karty</string>
+    <string name="sim_enabler_enabling">Aktivace\u2026</string>
+    <string name="sim_enabler_disabling">Deaktivace\u2026</string>
+    <string name="sub_activate_success">SIM karta aktivována.</string>
+    <string name="sub_activate_failed">Aktivace se nezdařila.</string>
+    <string name="sub_deactivate_success">SIM karta deaktivována.</string>
+    <string name="sub_deactivate_failed">Deaktivace se nezdařila.</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Výběr barvy</string>
+    <string name="press_color_to_apply">Klepněte na barvu, kterou chcete použít</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Nastavit</string>
+    <string name="color_default">Výchozí</string>
+    <!-- Vibrate on plug -->
+    <string name="vibrate_on_plug_title">Vibrovat při připojení</string>
+    <!-- Battery Light -->
+    <string name="battery_light_title">LED kontrolka baterie</string>
+    <string name="battery_light_title_summary_on">Zap. / Úroveň baterie se bude zobrazovat</string>
+    <string name="battery_light_title_summary_off">Vyp. / Úroveň baterie se nebude zobrazovat</string>
+    <string name="battery_light_description">Zapnutí/vypnutí LED kontrolky baterie a změna jejího chování</string>
+    <string name="battery_low_pulse_title">Blikat při nízkém stavu</string>
+    <string name="battery_low_pulse_title_summary">Blikat při nízké úrovni nabití baterie</string>
+    <string name="battery_light_only_full_charge_title">Blikat při plném nabití</string>
+    <string name="battery_light_only_full_charge_title_summary">Rozsvítit LED po úplném nabití baterie</string>
+    <string name="battery_light_list_title">Barvy</string>
+    <string name="battery_light_low_color_title">Vybitá baterie</string>
+    <string name="battery_light_medium_color_title">Nabíjení</string>
+    <string name="battery_light_full_color_title">Nabito (90%)</string>
+    <string name="battery_light_really_full_color_title">Nabito (100%)</string>
+    <string name="fast_color_cat_title">Rychlé nabíjení</string>
+    <string name="fast_charging_led_enabled_title">Povolit barvu rychlého nabíjení</string>
+    <string name="fast_charging_led_enabled_summary">Při rychlém nabíjení použít jinou barvu až do nabití na 90%</string>
+    <string name="fast_charging_light_color_title">Barva</string>
+    <string name="edit_battery_settings">Upravit nastavení baterie</string>
+    <string name="led_color_green">Zelená</string>
+    <string name="led_color_red">Červená</string>
+    <string name="led_color_blue">Modrá</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Obnovit</string>
+    <!-- Custom light color -->
+    <string name="light_customization">Oznámení LED kontrolky</string>
+    <string name="custom_light_title">Barva LED</string>
+    <string name="custom_light_on_time_title">"Čas. interval kdy LED svítí (ms)"</string>
+    <string name="custom_light_off_time_title">"Čas. interval kdy LED nesvítí (ms)"</string>
+    <string name="app_notifications_info_desc">Klepnutím na jeden z výše uvedených kanálů můžete konfigurovat barvy světla a další možnosti</string>
+    <string name="value_equals_default">Výchozí</string>
+    <string name="show_light_on_zen_title">Blikat během režimu Nerušit</string>
+    <string name="link_volume_option_title">Spojit hlasitost oznámení a vyzvánění</string>
+    <!-- Font picker -->
+    <string name="font_picker_title">Písmo</string>
+    <string name="font_subs_info">Před použitím nezapomeňte zakázat všechny překrytí písma v Substratum.\nPokud se chcete vrátit k používání Substratum, ujistěte se, že jste zde zvolili výchozí písmo (Roboto).</string>
+    <string name="font_picker_reboot_recommended">Pro optimální zážitek,\nrestartujte zařízení</string>
 </resources>

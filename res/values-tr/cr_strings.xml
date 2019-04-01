@@ -16,84 +16,84 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- CarbonROM version -->
-  <string name="carbon_version">CarbonROM sürümü</string>
-  <string name="carbon_version_default">Bilinmiyor</string>
-  <!-- CarbonFibers -->
-  <string name="cf_settings_title">Lifler</string>
-  <string name="cf_dashboard_summary">Günlük lifinizin sağlıklı bir kaynağı</string>
-  <!-- Encryption and credential -->
-  <string name="custom_encryption_and_credential_settings_summary_on">Telefon şifreli</string>
-  <string name="custom_encryption_and_credential_settings_summary_off">Telefon şifreli değil</string>
-  <!-- Root Management -->
-  <string name="rootmanagement_title">Root yönetimi</string>
-  <string name="rootmanagement_dashboard_summary">Root erişimini yönetin</string>
-  <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
-  <string name="supersu_title">SuperSU</string>
-  <string name="screenshot_shutter_sound_title">Ekran görüntüsü sesi</string>
-  <!-- Manual provisioning support -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_disabled">devre dışı</string>
-  <string name="sim_missing">eksik veya hatalı</string>
-  <string name="sim_enabler_need_disable_sim">SIM kart devre dışı bırakılacak. Devam etmek istiyor musunuz?</string>
-  <string name="sim_enabler_will_disable_sim_title">Dikkat</string>
-  <string name="sim_enabler_need_switch_data_service">Bu SIM devre dışı bırakılacak ve veri hizmetleri için SIM <xliff:g id="slotid">%1$s</xliff:g> kullanılacak. Devam etmek istediğinizden emin misiniz?</string>
-  <string name="sim_enabler_airplane_on">Uçak modu açıkken işlem yapılamıyor.</string>
-  <string name="sim_enabler_in_call">Arama sırasında işlem yapılamıyor.</string>
-  <string name="sim_enabler_both_inactive">Tüm SIM kartlar devre dışı bırakılamıyor</string>
-  <string name="sim_enabler_enabling">Etkinleştiriliyor\u2026</string>
-  <string name="sim_enabler_disabling">Devre dışı bırakılıyor\u2026</string>
-  <string name="sub_activate_success">SIM etkin.</string>
-  <string name="sub_activate_failed">Etkinleştirme başarısız.</string>
-  <string name="sub_deactivate_success">SIM devre dışı bırakıldı.</string>
-  <string name="sub_deactivate_failed">Devre dışı bırakma başarısız.</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Renk seçin</string>
-  <string name="press_color_to_apply">Uygulamak için rengin üzerine dokunun</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Ayarla</string>
-  <string name="color_default">Varsayılan</string>
-  <!-- Vibrate on plug -->
-  <string name="vibrate_on_plug_title">Şarj titreşimi</string>
-  <!-- Battery Light -->
-  <string name="battery_light_title">Pil ışığı</string>
-  <string name="battery_light_title_summary_on">Açık / Pil seviyesi gösteriliyor</string>
-  <string name="battery_light_title_summary_off">Kapalı / Pil seviyesi gösterilmiyor</string>
-  <string name="battery_light_description">Pil ışığı göstergesini açın/kapatın veya davranışını değiştirin</string>
-  <string name="battery_low_pulse_title">Düşük pil</string>
-  <string name="battery_low_pulse_title_summary">Pil seviyesi düşük olduğunda ışığı yak söndür</string>
-  <string name="battery_light_only_full_charge_title">Tam şarj göstergesi</string>
-  <string name="battery_light_only_full_charge_title_summary">Sadece cihaz tam şarj olduğunda pil ışığını göster</string>
-  <string name="battery_light_list_title">Renkler</string>
-  <string name="battery_light_low_color_title">Düşük pil</string>
-  <string name="battery_light_medium_color_title">Şarj oluyor</string>
-  <string name="battery_light_full_color_title">Şarj oluyor (90%)</string>
-  <string name="battery_light_really_full_color_title">Şarj oldu (100%)</string>
-  <string name="fast_color_cat_title">Hızlı şarj</string>
-  <string name="fast_charging_led_enabled_title">Hızlı şarj rengini etkinleştir</string>
-  <string name="fast_charging_led_enabled_summary">Hızlı şarj ederken 90% şarj oluncaya kadar farklı renk kullanın</string>
-  <string name="fast_charging_light_color_title">Renk</string>
-  <string name="edit_battery_settings">Pil ayarlarını düzenle</string>
-  <string name="led_color_green">Yeşil</string>
-  <string name="led_color_red">Kırmızı</string>
-  <string name="led_color_blue">Mavi</string>
-  <!-- General strings -->
-  <string name="ok">Tamam</string>
-  <string name="reset">Sıfırla</string>
-  <!-- Custom light color -->
-  <string name="light_customization">Led ışık bildirimi</string>
-  <string name="custom_light_title">Işık rengi</string>
-  <string name="custom_light_on_time_title">"Işık açıkken yanıp sönme hızı (ms)"</string>
-  <string name="custom_light_off_time_title">"Işık kapalıyken yanıp sönme hızı (ms)"</string>
-  <string name="app_notifications_info_desc">Işık renklerini ve diğer tercihlerini ayarlamak için yukarıdaki kanallardan birine dokunun</string>
-  <string name="value_equals_default">Varsayılan</string>
-  <string name="show_light_on_zen_title">Rahatsız etmeyinde yak söndür</string>
-  <string name="link_volume_option_title">Zil sesi ve bildirim sesini bağla</string>
-  <!-- Font picker -->
-  <string name="font_picker_title">Yazı tipi</string>
-  <string name="font_subs_info">Lütfen bunu kullanmadan önce Substratum\'daki tüm yazı tiplerini devre dışı bıraktığınızdan emin olun.\nSubstratum\'u kullanmaya devam etmek isterseniz burada varsayılan yazı tipini (Roboto) seçtiğinizden emin olun.</string>
-  <string name="font_picker_reboot_recommended">En iyi deneyim için,\ncihazınızı yeniden başlatın</string>
+    <!-- CarbonROM version -->
+    <string name="carbon_version">CarbonROM sürümü</string>
+    <string name="carbon_version_default">Bilinmiyor</string>
+    <!-- CarbonFibers -->
+    <string name="cf_settings_title">Lifler</string>
+    <string name="cf_dashboard_summary">Günlük lifinizin sağlıklı bir kaynağı</string>
+    <!-- Encryption and credential -->
+    <string name="custom_encryption_and_credential_settings_summary_on">Telefon şifreli</string>
+    <string name="custom_encryption_and_credential_settings_summary_off">Telefon şifreli değil</string>
+    <!-- Root Management -->
+    <string name="rootmanagement_title">Root yönetimi</string>
+    <string name="rootmanagement_dashboard_summary">Root erişimini yönetin</string>
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <string name="supersu_title">SuperSU</string>
+    <string name="screenshot_shutter_sound_title">Ekran görüntüsü sesi</string>
+    <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">devre dışı</string>
+    <string name="sim_missing">eksik veya hatalı</string>
+    <string name="sim_enabler_need_disable_sim">SIM kart devre dışı bırakılacak. Devam etmek istiyor musunuz?</string>
+    <string name="sim_enabler_will_disable_sim_title">Dikkat</string>
+    <string name="sim_enabler_need_switch_data_service">Bu SIM devre dışı bırakılacak ve veri hizmetleri için SIM <xliff:g id="slotid">%1$s</xliff:g> kullanılacak. Devam etmek istediğinizden emin misiniz?</string>
+    <string name="sim_enabler_airplane_on">Uçak modu açıkken işlem yapılamıyor.</string>
+    <string name="sim_enabler_in_call">Arama sırasında işlem yapılamıyor.</string>
+    <string name="sim_enabler_both_inactive">Tüm SIM kartlar devre dışı bırakılamıyor</string>
+    <string name="sim_enabler_enabling">Etkinleştiriliyor\u2026</string>
+    <string name="sim_enabler_disabling">Devre dışı bırakılıyor\u2026</string>
+    <string name="sub_activate_success">SIM etkin.</string>
+    <string name="sub_activate_failed">Etkinleştirme başarısız.</string>
+    <string name="sub_deactivate_success">SIM devre dışı bırakıldı.</string>
+    <string name="sub_deactivate_failed">Devre dışı bırakma başarısız.</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Renk seçin</string>
+    <string name="press_color_to_apply">Uygulamak için rengin üzerine dokunun</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Ayarla</string>
+    <string name="color_default">Varsayılan</string>
+    <!-- Vibrate on plug -->
+    <string name="vibrate_on_plug_title">Şarj titreşimi</string>
+    <!-- Battery Light -->
+    <string name="battery_light_title">Pil ışığı</string>
+    <string name="battery_light_title_summary_on">Açık / Pil seviyesi gösteriliyor</string>
+    <string name="battery_light_title_summary_off">Kapalı / Pil seviyesi gösterilmiyor</string>
+    <string name="battery_light_description">Pil ışığı göstergesini açın/kapatın veya davranışını değiştirin</string>
+    <string name="battery_low_pulse_title">Düşük pil</string>
+    <string name="battery_low_pulse_title_summary">Pil seviyesi düşük olduğunda ışığı yak söndür</string>
+    <string name="battery_light_only_full_charge_title">Tam şarj göstergesi</string>
+    <string name="battery_light_only_full_charge_title_summary">Sadece cihaz tam şarj olduğunda pil ışığını göster</string>
+    <string name="battery_light_list_title">Renkler</string>
+    <string name="battery_light_low_color_title">Düşük pil</string>
+    <string name="battery_light_medium_color_title">Şarj oluyor</string>
+    <string name="battery_light_full_color_title">Şarj oluyor (90%)</string>
+    <string name="battery_light_really_full_color_title">Şarj oldu (100%)</string>
+    <string name="fast_color_cat_title">Hızlı şarj</string>
+    <string name="fast_charging_led_enabled_title">Hızlı şarj rengini etkinleştir</string>
+    <string name="fast_charging_led_enabled_summary">Hızlı şarj ederken 90% şarj oluncaya kadar farklı renk kullanın</string>
+    <string name="fast_charging_light_color_title">Renk</string>
+    <string name="edit_battery_settings">Pil ayarlarını düzenle</string>
+    <string name="led_color_green">Yeşil</string>
+    <string name="led_color_red">Kırmızı</string>
+    <string name="led_color_blue">Mavi</string>
+    <!-- General strings -->
+    <string name="ok">Tamam</string>
+    <string name="reset">Sıfırla</string>
+    <!-- Custom light color -->
+    <string name="light_customization">Led ışık bildirimi</string>
+    <string name="custom_light_title">Işık rengi</string>
+    <string name="custom_light_on_time_title">"Işık açıkken yanıp sönme hızı (ms)"</string>
+    <string name="custom_light_off_time_title">"Işık kapalıyken yanıp sönme hızı (ms)"</string>
+    <string name="app_notifications_info_desc">Işık renklerini ve diğer tercihlerini ayarlamak için yukarıdaki kanallardan birine dokunun</string>
+    <string name="value_equals_default">Varsayılan</string>
+    <string name="show_light_on_zen_title">Rahatsız etmeyinde yak söndür</string>
+    <string name="link_volume_option_title">Zil sesi ve bildirim sesini bağla</string>
+    <!-- Font picker -->
+    <string name="font_picker_title">Yazı tipi</string>
+    <string name="font_subs_info">Lütfen bunu kullanmadan önce Substratum\'daki tüm yazı tiplerini devre dışı bıraktığınızdan emin olun.\nSubstratum\'u kullanmaya devam etmek isterseniz burada varsayılan yazı tipini (Roboto) seçtiğinizden emin olun.</string>
+    <string name="font_picker_reboot_recommended">En iyi deneyim için,\ncihazınızı yeniden başlatın</string>
 </resources>

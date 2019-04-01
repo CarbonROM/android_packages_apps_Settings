@@ -16,84 +16,84 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- CarbonROM version -->
-  <string name="carbon_version">Versão CarbonROM</string>
-  <string name="carbon_version_default">Desconhecido</string>
-  <!-- CarbonFibers -->
-  <string name="cf_settings_title">Configurações Carbon</string>
-  <string name="cf_dashboard_summary">Uma fonte saudável de sua fibra diária</string>
-  <!-- Encryption and credential -->
-  <string name="custom_encryption_and_credential_settings_summary_on">O dispositivo está criptografado</string>
-  <string name="custom_encryption_and_credential_settings_summary_off">O dispositivo está descriptografado</string>
-  <!-- Root Management -->
-  <string name="rootmanagement_title">Gerenciamento de root</string>
-  <string name="rootmanagement_dashboard_summary">Gerenciar acesso root</string>
-  <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
-  <string name="supersu_title">Super usuário</string>
-  <string name="screenshot_shutter_sound_title">Tocar som quando capturar tela</string>
-  <!-- Manual provisioning support -->
-  <string name="sim_enabler_summary"><xliff:g id="text">%1$s</xliff:g>, <xliff:g id="size" example="230 kB">%2$s</xliff:g>/s</string>
-  <string name="sim_disabled">desabilitado</string>
-  <string name="sim_missing">em falta ou com defeito</string>
-  <string name="sim_enabler_need_disable_sim">O cartão SIM será desativado. Deseja continuar?</string>
-  <string name="sim_enabler_will_disable_sim_title">Atenção</string>
-  <string name="sim_enabler_need_switch_data_service">Este cartão SIM será desativado e o cartão SIM será usado para serviços de dados. Tem a certeza de que deseja continuar?</string>
-  <string name="sim_enabler_airplane_on">Não é possível executar a operação enquanto o modo de avião estiver ativado.</string>
-  <string name="sim_enabler_in_call">Não é possível executar a operação durante uma chamada.</string>
-  <string name="sim_enabler_both_inactive">Não é possível desativar todos os cartões SIM</string>
-  <string name="sim_enabler_enabling">Ativando</string>
-  <string name="sim_enabler_disabling">Desativando</string>
-  <string name="sub_activate_success">Cartão SIM ativado.</string>
-  <string name="sub_activate_failed">Falha ao ativar.</string>
-  <string name="sub_deactivate_success">Cartão SIM desativado.</string>
-  <string name="sub_deactivate_failed">Falha ao desativar.</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Seletor de cores</string>
-  <string name="press_color_to_apply">Pressione na cor para aplicar</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Definir</string>
-  <string name="color_default">Padrão</string>
-  <!-- Vibrate on plug -->
-  <string name="vibrate_on_plug_title">Vibrar ao conectar</string>
-  <!-- Battery Light -->
-  <string name="battery_light_title">Luz de bateria</string>
-  <string name="battery_light_title_summary_on">Ligado / Indicará o nível da bateria</string>
-  <string name="battery_light_title_summary_off">Desligado / Não indicará o nível da bateria</string>
-  <string name="battery_light_description">Ligar/desligar o indicador luminoso de bateria ou mudar de comportamento</string>
-  <string name="battery_low_pulse_title">Vibrar quando baixo</string>
-  <string name="battery_low_pulse_title_summary">Virar quando o nível da bateria estiver baixo</string>
-  <string name="battery_light_only_full_charge_title">Indicação de totalmente carregada</string>
-  <string name="battery_light_only_full_charge_title_summary">Mostrar a luz de bateria somente quando o dispositivo estiver totalmente carregado</string>
-  <string name="battery_light_list_title">Cores</string>
-  <string name="battery_light_low_color_title">Bateria fraca</string>
-  <string name="battery_light_medium_color_title">Carregando</string>
-  <string name="battery_light_full_color_title">Carregada (90%)</string>
-  <string name="battery_light_really_full_color_title">Carregada (100%)</string>
-  <string name="fast_color_cat_title">Carregamento rápido</string>
-  <string name="fast_charging_led_enabled_title">Ativar cor de carregamento rápido</string>
-  <string name="fast_charging_led_enabled_summary">Durante o carregamento rápido, usar uma cor diferente até atingir 90% de carga</string>
-  <string name="fast_charging_light_color_title">Cor</string>
-  <string name="edit_battery_settings">Editar configurações de bateria</string>
-  <string name="led_color_green">Verde</string>
-  <string name="led_color_red">Vermelho</string>
-  <string name="led_color_blue">Azul</string>
-  <!-- General strings -->
-  <string name="ok">OK</string>
-  <string name="reset">Redefinir</string>
-  <!-- Custom light color -->
-  <string name="light_customization">Luz de notificação</string>
-  <string name="custom_light_title">Cor da luz</string>
-  <string name="custom_light_on_time_title">"Duração da luz quando LIGADA (ms)"</string>
-  <string name="custom_light_off_time_title">"Duração da luz quando DESLIGADA (ms)"</string>
-  <string name="app_notifications_info_desc">Toque numa das categorias acima para configurar as cores das luzes e outras opções</string>
-  <string name="value_equals_default">Padrão</string>
-  <string name="show_light_on_zen_title">Piscar durante o modo Não Incomodar</string>
-  <string name="link_volume_option_title">Mesclar volume das notificações com toque</string>
-  <!-- Font picker -->
-  <string name="font_picker_title">Fonte</string>
-  <string name="font_subs_info">Por favor, certifique-se de desativar cada fonte Overlay no Substrato antes de usar este. Você deseja voltar a usar o Substrato, certifique-se de selecionar a fonte padrão (robô) aqui.</string>
-  <string name="font_picker_reboot_recommended">Para uma ótima experiência, \nreinicie seu dispositivo</string>
+    <!-- CarbonROM version -->
+    <string name="carbon_version">Versão CarbonROM</string>
+    <string name="carbon_version_default">Desconhecido</string>
+    <!-- CarbonFibers -->
+    <string name="cf_settings_title">Configurações Carbon</string>
+    <string name="cf_dashboard_summary">Uma fonte saudável de sua fibra diária</string>
+    <!-- Encryption and credential -->
+    <string name="custom_encryption_and_credential_settings_summary_on">O dispositivo está criptografado</string>
+    <string name="custom_encryption_and_credential_settings_summary_off">O dispositivo está descriptografado</string>
+    <!-- Root Management -->
+    <string name="rootmanagement_title">Gerenciamento de root</string>
+    <string name="rootmanagement_dashboard_summary">Gerenciar acesso root</string>
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <string name="supersu_title">Super usuário</string>
+    <string name="screenshot_shutter_sound_title">Tocar som quando capturar tela</string>
+    <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="text">%1$s</xliff:g>, <xliff:g id="size" example="230 kB">%2$s</xliff:g>/s</string>
+    <string name="sim_disabled">desabilitado</string>
+    <string name="sim_missing">em falta ou com defeito</string>
+    <string name="sim_enabler_need_disable_sim">O cartão SIM será desativado. Deseja continuar?</string>
+    <string name="sim_enabler_will_disable_sim_title">Atenção</string>
+    <string name="sim_enabler_need_switch_data_service">Este cartão SIM será desativado e o cartão SIM será usado para serviços de dados. Tem a certeza de que deseja continuar?</string>
+    <string name="sim_enabler_airplane_on">Não é possível executar a operação enquanto o modo de avião estiver ativado.</string>
+    <string name="sim_enabler_in_call">Não é possível executar a operação durante uma chamada.</string>
+    <string name="sim_enabler_both_inactive">Não é possível desativar todos os cartões SIM</string>
+    <string name="sim_enabler_enabling">Ativando</string>
+    <string name="sim_enabler_disabling">Desativando</string>
+    <string name="sub_activate_success">Cartão SIM ativado.</string>
+    <string name="sub_activate_failed">Falha ao ativar.</string>
+    <string name="sub_deactivate_success">Cartão SIM desativado.</string>
+    <string name="sub_deactivate_failed">Falha ao desativar.</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Seletor de cores</string>
+    <string name="press_color_to_apply">Pressione na cor para aplicar</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Definir</string>
+    <string name="color_default">Padrão</string>
+    <!-- Vibrate on plug -->
+    <string name="vibrate_on_plug_title">Vibrar ao conectar</string>
+    <!-- Battery Light -->
+    <string name="battery_light_title">Luz de bateria</string>
+    <string name="battery_light_title_summary_on">Ligado / Indicará o nível da bateria</string>
+    <string name="battery_light_title_summary_off">Desligado / Não indicará o nível da bateria</string>
+    <string name="battery_light_description">Ligar/desligar o indicador luminoso de bateria ou mudar de comportamento</string>
+    <string name="battery_low_pulse_title">Vibrar quando baixo</string>
+    <string name="battery_low_pulse_title_summary">Virar quando o nível da bateria estiver baixo</string>
+    <string name="battery_light_only_full_charge_title">Indicação de totalmente carregada</string>
+    <string name="battery_light_only_full_charge_title_summary">Mostrar a luz de bateria somente quando o dispositivo estiver totalmente carregado</string>
+    <string name="battery_light_list_title">Cores</string>
+    <string name="battery_light_low_color_title">Bateria fraca</string>
+    <string name="battery_light_medium_color_title">Carregando</string>
+    <string name="battery_light_full_color_title">Carregada (90%)</string>
+    <string name="battery_light_really_full_color_title">Carregada (100%)</string>
+    <string name="fast_color_cat_title">Carregamento rápido</string>
+    <string name="fast_charging_led_enabled_title">Ativar cor de carregamento rápido</string>
+    <string name="fast_charging_led_enabled_summary">Durante o carregamento rápido, usar uma cor diferente até atingir 90% de carga</string>
+    <string name="fast_charging_light_color_title">Cor</string>
+    <string name="edit_battery_settings">Editar configurações de bateria</string>
+    <string name="led_color_green">Verde</string>
+    <string name="led_color_red">Vermelho</string>
+    <string name="led_color_blue">Azul</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Redefinir</string>
+    <!-- Custom light color -->
+    <string name="light_customization">Luz de notificação</string>
+    <string name="custom_light_title">Cor da luz</string>
+    <string name="custom_light_on_time_title">"Duração da luz quando LIGADA (ms)"</string>
+    <string name="custom_light_off_time_title">"Duração da luz quando DESLIGADA (ms)"</string>
+    <string name="app_notifications_info_desc">Toque numa das categorias acima para configurar as cores das luzes e outras opções</string>
+    <string name="value_equals_default">Padrão</string>
+    <string name="show_light_on_zen_title">Piscar durante o modo Não Incomodar</string>
+    <string name="link_volume_option_title">Mesclar volume das notificações com toque</string>
+    <!-- Font picker -->
+    <string name="font_picker_title">Fonte</string>
+    <string name="font_subs_info">Por favor, certifique-se de desativar cada fonte Overlay no Substrato antes de usar este. Você deseja voltar a usar o Substrato, certifique-se de selecionar a fonte padrão (robô) aqui.</string>
+    <string name="font_picker_reboot_recommended">Para uma ótima experiência, \nreinicie seu dispositivo</string>
 </resources>

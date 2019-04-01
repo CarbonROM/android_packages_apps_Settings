@@ -16,84 +16,84 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- CarbonROM version -->
-  <string name="carbon_version">Wersja CarbonROM</string>
-  <string name="carbon_version_default">Nieznane</string>
-  <!-- CarbonFibers -->
-  <string name="cf_settings_title">Ustawienia CarbonRom</string>
-  <string name="cf_dashboard_summary">Dostosuj swojego CarbonRoma</string>
-  <!-- Encryption and credential -->
-  <string name="custom_encryption_and_credential_settings_summary_on">Urządzenie jest zaszyfrowane</string>
-  <string name="custom_encryption_and_credential_settings_summary_off">Urządzenie nie jest zaszyfrowane</string>
-  <!-- Root Management -->
-  <string name="rootmanagement_title">Zarządzanie root</string>
-  <string name="rootmanagement_dashboard_summary">Zarządzaj dostępem do root</string>
-  <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
-  <string name="supersu_title">SuperSU</string>
-  <string name="screenshot_shutter_sound_title">Dźwięk zrzutu ekranu</string>
-  <!-- Manual provisioning support -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> jest <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_disabled">wyłączone</string>
-  <string name="sim_missing">brakujący lub uszkodzony</string>
-  <string name="sim_enabler_need_disable_sim">Karta SIM zostanie dezaktywowana. Czy chcesz kontynuować?</string>
-  <string name="sim_enabler_will_disable_sim_title">Uwaga</string>
-  <string name="sim_enabler_need_switch_data_service">Ta karta SIM zostanie wyłączona i karta SIM <xliff:g id="slotid">%1$s</xliff:g> będzie używana dla usługi danych. Czy na pewno chcesz kontynuować?</string>
-  <string name="sim_enabler_airplane_on">Nie można wykonać operacji dopóki tryb samolotowy jest włączony.</string>
-  <string name="sim_enabler_in_call">Nie można wykonać operacji podczas połączenia.</string>
-  <string name="sim_enabler_both_inactive">Nie można wyłączyć wszystkich kart SIM</string>
-  <string name="sim_enabler_enabling">Aktywacja\u2026</string>
-  <string name="sim_enabler_disabling">Dezaktywacja\u2026</string>
-  <string name="sub_activate_success">Karta SIM aktywowana.</string>
-  <string name="sub_activate_failed">Aktywacja się nie powiodła.</string>
-  <string name="sub_deactivate_success">Karta SIM dezaktywowana.</string>
-  <string name="sub_deactivate_failed">Dezaktywacja nie powiodła się.</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Próbnik kolorów</string>
-  <string name="press_color_to_apply">Naciśnij na kolor poniżej aby zastosować</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Ustaw</string>
-  <string name="color_default">Domyślny</string>
-  <!-- Vibrate on plug -->
-  <string name="vibrate_on_plug_title">Wibruj przy podłączeniu</string>
-  <!-- Battery Light -->
-  <string name="battery_light_title">Dioda baterii</string>
-  <string name="battery_light_title_summary_on">Włączone / Pokaże poziom naładowania baterii</string>
-  <string name="battery_light_title_summary_off">Wyłączone /Nie pokaże poziomu naładowania baterii</string>
-  <string name="battery_light_description">Włączenie/Wyłączenie diody poziomu naładowania baterii lub zmiana zachowania diody</string>
-  <string name="battery_low_pulse_title">Pulsowanie diody, gdy bateria jest rozładowana</string>
-  <string name="battery_low_pulse_title_summary">Pulsowanie diody, gdy jest niski poziom naładowania baterii</string>
-  <string name="battery_light_only_full_charge_title">Wskazanie diodą pełnego naładowania baterii</string>
-  <string name="battery_light_only_full_charge_title_summary">Zaświeć diodę tylko, gdy urządzenie jest w pełni naładowane</string>
-  <string name="battery_light_list_title">Kolory</string>
-  <string name="battery_light_low_color_title">Niski poziom baterii</string>
-  <string name="battery_light_medium_color_title">Ładowanie</string>
-  <string name="battery_light_full_color_title">Naładowane (90%)</string>
-  <string name="battery_light_really_full_color_title">Naładowane (100%)</string>
-  <string name="fast_color_cat_title">Szybkie ładowanie</string>
-  <string name="fast_charging_led_enabled_title">Włącz kolor diody dla szybkiego ładowania</string>
-  <string name="fast_charging_led_enabled_summary">Podczas szybkiego ładowania używaj innego koloru do 90% naładowania</string>
-  <string name="fast_charging_light_color_title">Kolor</string>
-  <string name="edit_battery_settings">Edytuj ustawienia baterii</string>
-  <string name="led_color_green">Zielony</string>
-  <string name="led_color_red">Czerwony</string>
-  <string name="led_color_blue">Niebieski</string>
-  <!-- General strings -->
-  <string name="ok">OK</string>
-  <string name="reset">Resetuj</string>
-  <!-- Custom light color -->
-  <string name="light_customization">Powiadomienie LED</string>
-  <string name="custom_light_title">Kolor światła</string>
-  <string name="custom_light_on_time_title">"Czas włączenia diody w trybie pulsacji (ms)"</string>
-  <string name="custom_light_off_time_title">"Czas wyłączenia diody w trybie pulsacji (ms)"</string>
-  <string name="app_notifications_info_desc">Stuknij w jeden z powyższych kanałów, aby skonfigurować kolory i inne opcje</string>
-  <string name="value_equals_default">Domyślne</string>
-  <string name="show_light_on_zen_title">Pulsuj podczas \"Nie przeszkadzać\"</string>
-  <string name="link_volume_option_title">Połącz głośność dzwonka i powiadomień</string>
-  <!-- Font picker -->
-  <string name="font_picker_title">Czcionka</string>
-  <string name="font_subs_info">Przed użyciem tego upewnij się, że wszystkie nakładki czcionek w Substratum są wyłączone.\n Jeżeli chcesz wrócić do używania Substratum, pamiętaj aby wybrać domyślną czcionkę (Roboto).</string>
-  <string name="font_picker_reboot_recommended">Dla pełni wrażeń, \nuruchom ponownie urządzenie</string>
+    <!-- CarbonROM version -->
+    <string name="carbon_version">Wersja CarbonROM</string>
+    <string name="carbon_version_default">Nieznane</string>
+    <!-- CarbonFibers -->
+    <string name="cf_settings_title">Ustawienia CarbonRom</string>
+    <string name="cf_dashboard_summary">Dostosuj swojego CarbonRoma</string>
+    <!-- Encryption and credential -->
+    <string name="custom_encryption_and_credential_settings_summary_on">Urządzenie jest zaszyfrowane</string>
+    <string name="custom_encryption_and_credential_settings_summary_off">Urządzenie nie jest zaszyfrowane</string>
+    <!-- Root Management -->
+    <string name="rootmanagement_title">Zarządzanie root</string>
+    <string name="rootmanagement_dashboard_summary">Zarządzaj dostępem do root</string>
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <string name="supersu_title">SuperSU</string>
+    <string name="screenshot_shutter_sound_title">Dźwięk zrzutu ekranu</string>
+    <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> jest <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">wyłączone</string>
+    <string name="sim_missing">brakujący lub uszkodzony</string>
+    <string name="sim_enabler_need_disable_sim">Karta SIM zostanie dezaktywowana. Czy chcesz kontynuować?</string>
+    <string name="sim_enabler_will_disable_sim_title">Uwaga</string>
+    <string name="sim_enabler_need_switch_data_service">Ta karta SIM zostanie wyłączona i karta SIM <xliff:g id="slotid">%1$s</xliff:g> będzie używana dla usługi danych. Czy na pewno chcesz kontynuować?</string>
+    <string name="sim_enabler_airplane_on">Nie można wykonać operacji dopóki tryb samolotowy jest włączony.</string>
+    <string name="sim_enabler_in_call">Nie można wykonać operacji podczas połączenia.</string>
+    <string name="sim_enabler_both_inactive">Nie można wyłączyć wszystkich kart SIM</string>
+    <string name="sim_enabler_enabling">Aktywacja\u2026</string>
+    <string name="sim_enabler_disabling">Dezaktywacja\u2026</string>
+    <string name="sub_activate_success">Karta SIM aktywowana.</string>
+    <string name="sub_activate_failed">Aktywacja się nie powiodła.</string>
+    <string name="sub_deactivate_success">Karta SIM dezaktywowana.</string>
+    <string name="sub_deactivate_failed">Dezaktywacja nie powiodła się.</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Próbnik kolorów</string>
+    <string name="press_color_to_apply">Naciśnij na kolor poniżej aby zastosować</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Ustaw</string>
+    <string name="color_default">Domyślny</string>
+    <!-- Vibrate on plug -->
+    <string name="vibrate_on_plug_title">Wibruj przy podłączeniu</string>
+    <!-- Battery Light -->
+    <string name="battery_light_title">Dioda baterii</string>
+    <string name="battery_light_title_summary_on">Włączone / Pokaże poziom naładowania baterii</string>
+    <string name="battery_light_title_summary_off">Wyłączone /Nie pokaże poziomu naładowania baterii</string>
+    <string name="battery_light_description">Włączenie/Wyłączenie diody poziomu naładowania baterii lub zmiana zachowania diody</string>
+    <string name="battery_low_pulse_title">Pulsowanie diody, gdy bateria jest rozładowana</string>
+    <string name="battery_low_pulse_title_summary">Pulsowanie diody, gdy jest niski poziom naładowania baterii</string>
+    <string name="battery_light_only_full_charge_title">Wskazanie diodą pełnego naładowania baterii</string>
+    <string name="battery_light_only_full_charge_title_summary">Zaświeć diodę tylko, gdy urządzenie jest w pełni naładowane</string>
+    <string name="battery_light_list_title">Kolory</string>
+    <string name="battery_light_low_color_title">Niski poziom baterii</string>
+    <string name="battery_light_medium_color_title">Ładowanie</string>
+    <string name="battery_light_full_color_title">Naładowane (90%)</string>
+    <string name="battery_light_really_full_color_title">Naładowane (100%)</string>
+    <string name="fast_color_cat_title">Szybkie ładowanie</string>
+    <string name="fast_charging_led_enabled_title">Włącz kolor diody dla szybkiego ładowania</string>
+    <string name="fast_charging_led_enabled_summary">Podczas szybkiego ładowania używaj innego koloru do 90% naładowania</string>
+    <string name="fast_charging_light_color_title">Kolor</string>
+    <string name="edit_battery_settings">Edytuj ustawienia baterii</string>
+    <string name="led_color_green">Zielony</string>
+    <string name="led_color_red">Czerwony</string>
+    <string name="led_color_blue">Niebieski</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Resetuj</string>
+    <!-- Custom light color -->
+    <string name="light_customization">Powiadomienie LED</string>
+    <string name="custom_light_title">Kolor światła</string>
+    <string name="custom_light_on_time_title">"Czas włączenia diody w trybie pulsacji (ms)"</string>
+    <string name="custom_light_off_time_title">"Czas wyłączenia diody w trybie pulsacji (ms)"</string>
+    <string name="app_notifications_info_desc">Stuknij w jeden z powyższych kanałów, aby skonfigurować kolory i inne opcje</string>
+    <string name="value_equals_default">Domyślne</string>
+    <string name="show_light_on_zen_title">Pulsuj podczas \"Nie przeszkadzać\"</string>
+    <string name="link_volume_option_title">Połącz głośność dzwonka i powiadomień</string>
+    <!-- Font picker -->
+    <string name="font_picker_title">Czcionka</string>
+    <string name="font_subs_info">Przed użyciem tego upewnij się, że wszystkie nakładki czcionek w Substratum są wyłączone.\n Jeżeli chcesz wrócić do używania Substratum, pamiętaj aby wybrać domyślną czcionkę (Roboto).</string>
+    <string name="font_picker_reboot_recommended">Dla pełni wrażeń, \nuruchom ponownie urządzenie</string>
 </resources>

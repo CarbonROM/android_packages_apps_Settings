@@ -16,84 +16,84 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- CarbonROM version -->
-  <string name="carbon_version">Phiên bản CarbonROM</string>
-  <string name="carbon_version_default">Không xác định</string>
-  <!-- CarbonFibers -->
-  <string name="cf_settings_title">Fibers</string>
-  <string name="cf_dashboard_summary">Chất xơ là một trong những nguồn sức khỏe của bạn</string>
-  <!-- Encryption and credential -->
-  <string name="custom_encryption_and_credential_settings_summary_on">Thiết bị đã được mã hóa</string>
-  <string name="custom_encryption_and_credential_settings_summary_off">Thiết bị đã được giải mã</string>
-  <!-- Root Management -->
-  <string name="rootmanagement_title">Quản lí root</string>
-  <string name="rootmanagement_dashboard_summary">Quản lý quyền truy cập root</string>
-  <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
-  <string name="supersu_title">SuperSU</string>
-  <string name="screenshot_shutter_sound_title">Âm thanh chụp ảnh màn hình</string>
-  <!-- Manual provisioning support -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_disabled">vô hiệu hoá</string>
-  <string name="sim_missing">thiếu hoặc bị lỗi</string>
-  <string name="sim_enabler_need_disable_sim">Thẻ SIM sẽ bị vô hiệu hóa. Bạn có muốn tiếp tục?</string>
-  <string name="sim_enabler_will_disable_sim_title">Chú ý</string>
-  <string name="sim_enabler_need_switch_data_service">SIM này sẽ bị vô hiệu hóa và SIM <xliff:g id="slotid">%1$s</xliff:g> sẽ được sử dụng cho dịch vụ dữ liệu. Bạn có chắc bạn muốn tiếp tục không?</string>
-  <string name="sim_enabler_airplane_on">Không thể thực hiện hoạt động khi chế độ máy bay đang bật.</string>
-  <string name="sim_enabler_in_call">Không thể thực hiện hoạt động khi đang trong cuộc gọi.</string>
-  <string name="sim_enabler_both_inactive">Không thể vô hiệu hóa tất cả thẻ SIM</string>
-  <string name="sim_enabler_enabling">Đang kích hoạt\u2026</string>
-  <string name="sim_enabler_disabling">Đang vô hiệu hóa\u2026</string>
-  <string name="sub_activate_success">SIM được kích hoạt.</string>
-  <string name="sub_activate_failed">Kích hoạt đã thất bại.</string>
-  <string name="sub_deactivate_success">SIM đã vô hiệu hóa.</string>
-  <string name="sub_deactivate_failed">Vô hiệu hóa đã thất bại.</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Chọn màu</string>
-  <string name="press_color_to_apply">Bấm vào màu sắc dưới đây để áp dụng</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Đặt</string>
-  <string name="color_default">Mặc định</string>
-  <!-- Vibrate on plug -->
-  <string name="vibrate_on_plug_title">Rung khi cắm</string>
-  <!-- Battery Light -->
-  <string name="battery_light_title">Đèn báo pin</string>
-  <string name="battery_light_title_summary_on">Bật / Phần trăm pin sẽ hiển thị</string>
-  <string name="battery_light_title_summary_off">Tắt / Phần trăm pin sẽ không hiển thị</string>
-  <string name="battery_light_description">Bật/tắt đèn báo hoặc thay đổi hành vi của nó</string>
-  <string name="battery_low_pulse_title">Nhấp nháy khi pin yếu</string>
-  <string name="battery_low_pulse_title_summary">Nhấp nháy khi phần trăm pin thấp</string>
-  <string name="battery_light_only_full_charge_title">Hiển thị khi sạc đầy</string>
-  <string name="battery_light_only_full_charge_title_summary">Chỉ hiển thị đèn báo khi thiết bị được sạc đầy</string>
-  <string name="battery_light_list_title">Màu sắc</string>
-  <string name="battery_light_low_color_title">Pin yếu</string>
-  <string name="battery_light_medium_color_title">Đang sạc</string>
-  <string name="battery_light_full_color_title">Đã sạc (90%)</string>
-  <string name="battery_light_really_full_color_title">Đã sạc (100%)</string>
-  <string name="fast_color_cat_title">Sạc nhanh</string>
-  <string name="fast_charging_led_enabled_title">Sử dụng màu sắc khi sạc nhanh</string>
-  <string name="fast_charging_led_enabled_summary">Khi sạc nhanh, sử dụng màu sắc khác cho đến khi sạc được 90%</string>
-  <string name="fast_charging_light_color_title">Màu sắc</string>
-  <string name="edit_battery_settings">Chỉnh sửa cài đặt pin</string>
-  <string name="led_color_green">Xanh lá cây</string>
-  <string name="led_color_red">Đỏ</string>
-  <string name="led_color_blue">Xanh dương</string>
-  <!-- General strings -->
-  <string name="ok">OK</string>
-  <string name="reset">Thiết lập lại</string>
-  <!-- Custom light color -->
-  <string name="light_customization">Đèn Led thông báo</string>
-  <string name="custom_light_title">Màu đèn</string>
-  <string name="custom_light_on_time_title">"Thời gian BẬT đèn khi đền led nhấp nháy (ms)"</string>
-  <string name="custom_light_off_time_title">"Thời gian TẮT đèn khi đền led nhấp nháy (ms)"</string>
-  <string name="app_notifications_info_desc">Chạm vào một trong những kênh ở trên để cấu hình màu sắc của đèn báo và những tùy chọn khác</string>
-  <string name="value_equals_default">Def</string>
-  <string name="show_light_on_zen_title">Nhấp nháy trong khi Không Làm Phiền</string>
-  <string name="link_volume_option_title">Liên kết âm lượng chuông và thông báo</string>
-  <!-- Font picker -->
-  <string name="font_picker_title">Phông chữ</string>
-  <string name="font_subs_info">Hãy chắc chắn rằng để vô hiệu hoá tất cả Lớp phủ Phông chữ trong Substratum trước khi sử dụng. \nNếu bạn muốn quay trở lại sử dụng Substratum, hãy chắc chắn để chọn phông chữ mặc định (Roboto) ở đây.</string>
-  <string name="font_picker_reboot_recommended">Để tối ưu hóa trải nghiệm,\nkhởi động lại thiết bị của bạn</string>
+    <!-- CarbonROM version -->
+    <string name="carbon_version">Phiên bản CarbonROM</string>
+    <string name="carbon_version_default">Không xác định</string>
+    <!-- CarbonFibers -->
+    <string name="cf_settings_title">Fibers</string>
+    <string name="cf_dashboard_summary">Chất xơ là một trong những nguồn sức khỏe của bạn</string>
+    <!-- Encryption and credential -->
+    <string name="custom_encryption_and_credential_settings_summary_on">Thiết bị đã được mã hóa</string>
+    <string name="custom_encryption_and_credential_settings_summary_off">Thiết bị đã được giải mã</string>
+    <!-- Root Management -->
+    <string name="rootmanagement_title">Quản lí root</string>
+    <string name="rootmanagement_dashboard_summary">Quản lý quyền truy cập root</string>
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <string name="supersu_title">SuperSU</string>
+    <string name="screenshot_shutter_sound_title">Âm thanh chụp ảnh màn hình</string>
+    <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">vô hiệu hoá</string>
+    <string name="sim_missing">thiếu hoặc bị lỗi</string>
+    <string name="sim_enabler_need_disable_sim">Thẻ SIM sẽ bị vô hiệu hóa. Bạn có muốn tiếp tục?</string>
+    <string name="sim_enabler_will_disable_sim_title">Chú ý</string>
+    <string name="sim_enabler_need_switch_data_service">SIM này sẽ bị vô hiệu hóa và SIM <xliff:g id="slotid">%1$s</xliff:g> sẽ được sử dụng cho dịch vụ dữ liệu. Bạn có chắc bạn muốn tiếp tục không?</string>
+    <string name="sim_enabler_airplane_on">Không thể thực hiện hoạt động khi chế độ máy bay đang bật.</string>
+    <string name="sim_enabler_in_call">Không thể thực hiện hoạt động khi đang trong cuộc gọi.</string>
+    <string name="sim_enabler_both_inactive">Không thể vô hiệu hóa tất cả thẻ SIM</string>
+    <string name="sim_enabler_enabling">Đang kích hoạt\u2026</string>
+    <string name="sim_enabler_disabling">Đang vô hiệu hóa\u2026</string>
+    <string name="sub_activate_success">SIM được kích hoạt.</string>
+    <string name="sub_activate_failed">Kích hoạt đã thất bại.</string>
+    <string name="sub_deactivate_success">SIM đã vô hiệu hóa.</string>
+    <string name="sub_deactivate_failed">Vô hiệu hóa đã thất bại.</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Chọn màu</string>
+    <string name="press_color_to_apply">Bấm vào màu sắc dưới đây để áp dụng</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Đặt</string>
+    <string name="color_default">Mặc định</string>
+    <!-- Vibrate on plug -->
+    <string name="vibrate_on_plug_title">Rung khi cắm</string>
+    <!-- Battery Light -->
+    <string name="battery_light_title">Đèn báo pin</string>
+    <string name="battery_light_title_summary_on">Bật / Phần trăm pin sẽ hiển thị</string>
+    <string name="battery_light_title_summary_off">Tắt / Phần trăm pin sẽ không hiển thị</string>
+    <string name="battery_light_description">Bật/tắt đèn báo hoặc thay đổi hành vi của nó</string>
+    <string name="battery_low_pulse_title">Nhấp nháy khi pin yếu</string>
+    <string name="battery_low_pulse_title_summary">Nhấp nháy khi phần trăm pin thấp</string>
+    <string name="battery_light_only_full_charge_title">Hiển thị khi sạc đầy</string>
+    <string name="battery_light_only_full_charge_title_summary">Chỉ hiển thị đèn báo khi thiết bị được sạc đầy</string>
+    <string name="battery_light_list_title">Màu sắc</string>
+    <string name="battery_light_low_color_title">Pin yếu</string>
+    <string name="battery_light_medium_color_title">Đang sạc</string>
+    <string name="battery_light_full_color_title">Đã sạc (90%)</string>
+    <string name="battery_light_really_full_color_title">Đã sạc (100%)</string>
+    <string name="fast_color_cat_title">Sạc nhanh</string>
+    <string name="fast_charging_led_enabled_title">Sử dụng màu sắc khi sạc nhanh</string>
+    <string name="fast_charging_led_enabled_summary">Khi sạc nhanh, sử dụng màu sắc khác cho đến khi sạc được 90%</string>
+    <string name="fast_charging_light_color_title">Màu sắc</string>
+    <string name="edit_battery_settings">Chỉnh sửa cài đặt pin</string>
+    <string name="led_color_green">Xanh lá cây</string>
+    <string name="led_color_red">Đỏ</string>
+    <string name="led_color_blue">Xanh dương</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Thiết lập lại</string>
+    <!-- Custom light color -->
+    <string name="light_customization">Đèn Led thông báo</string>
+    <string name="custom_light_title">Màu đèn</string>
+    <string name="custom_light_on_time_title">"Thời gian BẬT đèn khi đền led nhấp nháy (ms)"</string>
+    <string name="custom_light_off_time_title">"Thời gian TẮT đèn khi đền led nhấp nháy (ms)"</string>
+    <string name="app_notifications_info_desc">Chạm vào một trong những kênh ở trên để cấu hình màu sắc của đèn báo và những tùy chọn khác</string>
+    <string name="value_equals_default">Def</string>
+    <string name="show_light_on_zen_title">Nhấp nháy trong khi Không Làm Phiền</string>
+    <string name="link_volume_option_title">Liên kết âm lượng chuông và thông báo</string>
+    <!-- Font picker -->
+    <string name="font_picker_title">Phông chữ</string>
+    <string name="font_subs_info">Hãy chắc chắn rằng để vô hiệu hoá tất cả Lớp phủ Phông chữ trong Substratum trước khi sử dụng. \nNếu bạn muốn quay trở lại sử dụng Substratum, hãy chắc chắn để chọn phông chữ mặc định (Roboto) ở đây.</string>
+    <string name="font_picker_reboot_recommended">Để tối ưu hóa trải nghiệm,\nkhởi động lại thiết bị của bạn</string>
 </resources>

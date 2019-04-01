@@ -16,53 +16,53 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- CarbonROM version -->
-  <string name="carbon_version">Version CarbonROM</string>
-  <string name="carbon_version_default">Inconnu</string>
-  <!-- CarbonFibers -->
-  <string name="cf_settings_title">Fibres</string>
-  <!-- Encryption and credential -->
-  <!-- Root Management -->
-  <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
-  <!-- Manual provisioning support -->
-  <string name="sim_enabler_both_inactive">Impossible de désactiver toutes les cartes SIM</string>
-  <string name="sim_enabler_enabling">Activation\u2026</string>
-  <string name="sim_enabler_disabling">Désactivation\u2026</string>
-  <string name="sub_activate_success">Carte SIM désactivée.</string>
-  <string name="sub_activate_failed">Activation échouée.</string>
-  <string name="sub_deactivate_success">Carte SIM désactivée.</string>
-  <string name="sub_deactivate_failed">Désactivation échouée.</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Sélecteur de couleurs</string>
-  <string name="press_color_to_apply">Appuyez sur la couleur ci-dessous pour l\'appliquer</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Définir</string>
-  <string name="color_default">Défault</string>
-  <!-- Vibrate on plug -->
-  <string name="vibrate_on_plug_title">Vibrer au branchement</string>
-  <!-- Battery Light -->
-  <string name="battery_light_title">LED de la batterie</string>
-  <string name="battery_light_title_summary_on">ON / indique le niveau de batterie</string>
-  <string name="battery_light_title_summary_off">OFF / n’indique pas le niveau de batterie</string>
-  <string name="battery_light_description">Activer/désactiver le voyant de batterie ou de modifier son comportement</string>
-  <string name="battery_low_pulse_title">Pulsations sur batterie faible</string>
-  <string name="battery_low_pulse_title_summary">Pulsations de la LED sur batterie faible</string>
-  <string name="battery_light_only_full_charge_title">Indicateur de charge complète</string>
-  <string name="battery_light_only_full_charge_title_summary">Afficher uniquement la LED de la batterie lorsque l’appareil est complètement chargé</string>
-  <string name="battery_light_list_title">Couleurs</string>
-  <string name="battery_light_low_color_title">Batterie faible</string>
-  <string name="battery_light_medium_color_title">En charge</string>
-  <string name="battery_light_full_color_title">Chargée (90%)</string>
-  <string name="battery_light_really_full_color_title">Chargée (100%)</string>
-  <string name="fast_color_cat_title">Charge rapide</string>
-  <string name="fast_charging_led_enabled_title">Activer la couleur pour le chargement rapide</string>
-  <string name="fast_charging_led_enabled_summary">En charge rapide, utiliser une couleur différente jusqu\'à 90% de charge</string>
-  <string name="fast_charging_light_color_title">Couleur</string>
-  <string name="edit_battery_settings">Modifier les paramètres de la batterie</string>
-  <!-- General strings -->
-  <!-- Custom light color -->
-  <!-- Font picker -->
+    <!-- CarbonROM version -->
+    <string name="carbon_version">Version CarbonROM</string>
+    <string name="carbon_version_default">Inconnu</string>
+    <!-- CarbonFibers -->
+    <string name="cf_settings_title">Fibres</string>
+    <!-- Encryption and credential -->
+    <!-- Root Management -->
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <!-- Manual provisioning support -->
+    <string name="sim_enabler_both_inactive">Impossible de désactiver toutes les cartes SIM</string>
+    <string name="sim_enabler_enabling">Activation\u2026</string>
+    <string name="sim_enabler_disabling">Désactivation\u2026</string>
+    <string name="sub_activate_success">Carte SIM désactivée.</string>
+    <string name="sub_activate_failed">Activation échouée.</string>
+    <string name="sub_deactivate_success">Carte SIM désactivée.</string>
+    <string name="sub_deactivate_failed">Désactivation échouée.</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Sélecteur de couleurs</string>
+    <string name="press_color_to_apply">Appuyez sur la couleur ci-dessous pour l\'appliquer</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Définir</string>
+    <string name="color_default">Défault</string>
+    <!-- Vibrate on plug -->
+    <string name="vibrate_on_plug_title">Vibrer au branchement</string>
+    <!-- Battery Light -->
+    <string name="battery_light_title">LED de la batterie</string>
+    <string name="battery_light_title_summary_on">ON / indique le niveau de batterie</string>
+    <string name="battery_light_title_summary_off">OFF / n’indique pas le niveau de batterie</string>
+    <string name="battery_light_description">Activer/désactiver le voyant de batterie ou de modifier son comportement</string>
+    <string name="battery_low_pulse_title">Pulsations sur batterie faible</string>
+    <string name="battery_low_pulse_title_summary">Pulsations de la LED sur batterie faible</string>
+    <string name="battery_light_only_full_charge_title">Indicateur de charge complète</string>
+    <string name="battery_light_only_full_charge_title_summary">Afficher uniquement la LED de la batterie lorsque l’appareil est complètement chargé</string>
+    <string name="battery_light_list_title">Couleurs</string>
+    <string name="battery_light_low_color_title">Batterie faible</string>
+    <string name="battery_light_medium_color_title">En charge</string>
+    <string name="battery_light_full_color_title">Chargée (90%)</string>
+    <string name="battery_light_really_full_color_title">Chargée (100%)</string>
+    <string name="fast_color_cat_title">Charge rapide</string>
+    <string name="fast_charging_led_enabled_title">Activer la couleur pour le chargement rapide</string>
+    <string name="fast_charging_led_enabled_summary">En charge rapide, utiliser une couleur différente jusqu\'à 90% de charge</string>
+    <string name="fast_charging_light_color_title">Couleur</string>
+    <string name="edit_battery_settings">Modifier les paramètres de la batterie</string>
+    <!-- General strings -->
+    <!-- Custom light color -->
+    <!-- Font picker -->
 </resources>

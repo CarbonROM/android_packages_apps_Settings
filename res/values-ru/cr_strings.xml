@@ -16,83 +16,84 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- CarbonROM version -->
-  <string name="carbon_version">Версия CarbonROM</string>
-  <string name="carbon_version_default">Неизвестно</string>
-  <!-- CarbonFibers -->
-  <string name="cf_settings_title">Волокна</string>
-  <string name="cf_dashboard_summary">Источник качественной клетчатки на каждый день</string>
-  <!-- Encryption and credential -->
-  <string name="custom_encryption_and_credential_settings_summary_on">Устройство зашифровано</string>
-  <string name="custom_encryption_and_credential_settings_summary_off">Устройство расшифровано</string>
-  <!-- Root Management -->
-  <string name="rootmanagement_title">Управление Root</string>
-  <string name="rootmanagement_dashboard_summary">Управление root правами</string>
-  <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
-  <string name="supersu_title">SuperSU</string>
-  <string name="screenshot_shutter_sound_title">Звук скриншота</string>
-  <!-- Manual provisioning support -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_disabled">выкл</string>
-  <string name="sim_missing">отсутствует или неисправна</string>
-  <string name="sim_enabler_need_disable_sim">SIM-карта будет деактивирована. Вы хотите продолжить?</string>
-  <string name="sim_enabler_will_disable_sim_title">Внимание</string>
-  <string name="sim_enabler_need_switch_data_service">Эта SIM будет отключена, и SIM <xliff:g id="slotid">%1$s</xliff:g> будет использоваться для передачи данных. Вы уверены, что вы хотите продолжить?</string>
-  <string name="sim_enabler_airplane_on">Не возможно выполнить операцию, пока включен режим полета.</string>
-  <string name="sim_enabler_in_call">Не возможно выполнить операцию при звонке.</string>
-  <string name="sim_enabler_both_inactive">Невозможно отключить все SIM-карты</string>
-  <string name="sim_enabler_enabling">Активация\u2026</string>
-  <string name="sim_enabler_disabling">Деактивация\u2026</string>
-  <string name="sub_activate_success">SIM-карта активирована.</string>
-  <string name="sub_activate_failed">Ошибка активации.</string>
-  <string name="sub_deactivate_success">SIM-карта деактивирована.</string>
-  <string name="sub_deactivate_failed">Ошибка деактивации.</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Выбор цвета</string>
-  <string name="press_color_to_apply">Нажмите на цвет, чтобы применить</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Установить</string>
-  <string name="color_default">По умолчанию</string>
-  <!-- Vibrate on plug -->
-  <string name="vibrate_on_plug_title">Вибрировать при подключении</string>
-  <!-- Battery Light -->
-  <string name="battery_light_title">Индикатор заряда батареи</string>
-  <string name="battery_light_title_summary_on">Вкл / Уровень заряда батареи показывается</string>
-  <string name="battery_light_title_summary_off">Выкл / Уровень заряда батареи не показывается</string>
-  <string name="battery_light_description">Вкл/Выкл индикатор заряда батареи, или изменение его поведения</string>
-  <string name="battery_low_pulse_title">Мигать при низком заряде</string>
-  <string name="battery_low_pulse_title_summary">Мигать при низком заряде батареи</string>
-  <string name="battery_light_only_full_charge_title">Индикация полного заряда батареи</string>
-  <string name="battery_light_only_full_charge_title_summary">Показывать только при полном заряде батареи</string>
-  <string name="battery_light_list_title">Цвета</string>
-  <string name="battery_light_low_color_title">Низкий заряд батареи</string>
-  <string name="battery_light_medium_color_title">Заряжается</string>
-  <string name="battery_light_full_color_title">Заряжено (90%)</string>
-  <string name="battery_light_really_full_color_title">Заряжено (100%)</string>
-  <string name="fast_color_cat_title">Быстрая зарядка</string>
-  <string name="fast_charging_led_enabled_title">Включить цвет быстрой зарядки</string>
-  <string name="fast_charging_led_enabled_summary">Использовать другой цвет до 90% при быстрой зарядке</string>
-  <string name="fast_charging_light_color_title">Цвет</string>
-  <string name="edit_battery_settings">Изменить настройки батареи</string>
-  <string name="led_color_green">Зеленый</string>
-  <string name="led_color_red">Красный</string>
-  <string name="led_color_blue">Синий</string>
-  <!-- General strings -->
-  <string name="ok">OK</string>
-  <string name="reset">Сброс</string>
-  <!-- Custom light color -->
-  <string name="light_customization">Уведомление светодиодом</string>
-  <string name="custom_light_title">Цвет светодиода</string>
-  <string name="custom_light_on_time_title">"Время включения подсветки во время импульса (мс)"</string>
-  <string name="custom_light_off_time_title">"Время выключения подсветки во время импульса (мс)"</string>
-  <string name="app_notifications_info_desc">Нажмите на один из вышеуказанных каналов, чтобы настроить их цвета и другие параметры</string>
-  <string name="show_light_on_zen_title">Мигать во время режима \"Не беспокоить\"</string>
-  <string name="link_volume_option_title">Связать громкость звонка и уведомлений</string>
-  <!-- Font picker -->
-  <string name="font_picker_title">Шрифт</string>
-  <string name="font_subs_info">Пожалуйста выключите все переопределения шрифтов в Substratum до того как использовать это.\n Выберите шрифт по умолчанию (Roboto), для того чтобы снова использовать шрифты Substratum.</string>
-  <string name="font_picker_reboot_recommended">Для применения всех настроек\nперезагрузите устройство</string>
+    <!-- CarbonROM version -->
+    <string name="carbon_version">Версия CarbonROM</string>
+    <string name="carbon_version_default">Неизвестно</string>
+    <!-- CarbonFibers -->
+    <string name="cf_settings_title">Волокна</string>
+    <string name="cf_dashboard_summary">Источник качественной клетчатки на каждый день</string>
+    <!-- Encryption and credential -->
+    <string name="custom_encryption_and_credential_settings_summary_on">Устройство зашифровано</string>
+    <string name="custom_encryption_and_credential_settings_summary_off">Устройство расшифровано</string>
+    <!-- Root Management -->
+    <string name="rootmanagement_title">Управление Root</string>
+    <string name="rootmanagement_dashboard_summary">Управление root правами</string>
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <string name="supersu_title">SuperSU</string>
+    <string name="screenshot_shutter_sound_title">Звук скриншота</string>
+    <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">выкл</string>
+    <string name="sim_missing">отсутствует или неисправна</string>
+    <string name="sim_enabler_need_disable_sim">SIM-карта будет деактивирована. Вы хотите продолжить?</string>
+    <string name="sim_enabler_will_disable_sim_title">Внимание</string>
+    <string name="sim_enabler_need_switch_data_service">Эта SIM будет отключена, и SIM <xliff:g id="slotid">%1$s</xliff:g> будет использоваться для передачи данных. Вы уверены, что вы хотите продолжить?</string>
+    <string name="sim_enabler_airplane_on">Не возможно выполнить операцию, пока включен режим полета.</string>
+    <string name="sim_enabler_in_call">Не возможно выполнить операцию при звонке.</string>
+    <string name="sim_enabler_both_inactive">Невозможно отключить все SIM-карты</string>
+    <string name="sim_enabler_enabling">Активация\u2026</string>
+    <string name="sim_enabler_disabling">Деактивация\u2026</string>
+    <string name="sub_activate_success">SIM-карта активирована.</string>
+    <string name="sub_activate_failed">Ошибка активации.</string>
+    <string name="sub_deactivate_success">SIM-карта деактивирована.</string>
+    <string name="sub_deactivate_failed">Ошибка деактивации.</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Выбор цвета</string>
+    <string name="press_color_to_apply">Нажмите на цвет, чтобы применить</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Установить</string>
+    <string name="color_default">По умолчанию</string>
+    <!-- Vibrate on plug -->
+    <string name="vibrate_on_plug_title">Вибрировать при подключении</string>
+    <!-- Battery Light -->
+    <string name="battery_light_title">Индикатор заряда батареи</string>
+    <string name="battery_light_title_summary_on">Вкл / Уровень заряда батареи показывается</string>
+    <string name="battery_light_title_summary_off">Выкл / Уровень заряда батареи не показывается</string>
+    <string name="battery_light_description">Вкл/Выкл индикатор заряда батареи, или изменение его поведения</string>
+    <string name="battery_low_pulse_title">Мигать при низком заряде</string>
+    <string name="battery_low_pulse_title_summary">Мигать при низком заряде батареи</string>
+    <string name="battery_light_only_full_charge_title">Индикация полного заряда батареи</string>
+    <string name="battery_light_only_full_charge_title_summary">Показывать только при полном заряде батареи</string>
+    <string name="battery_light_list_title">Цвета</string>
+    <string name="battery_light_low_color_title">Низкий заряд батареи</string>
+    <string name="battery_light_medium_color_title">Заряжается</string>
+    <string name="battery_light_full_color_title">Заряжено (90%)</string>
+    <string name="battery_light_really_full_color_title">Заряжено (100%)</string>
+    <string name="fast_color_cat_title">Быстрая зарядка</string>
+    <string name="fast_charging_led_enabled_title">Включить цвет быстрой зарядки</string>
+    <string name="fast_charging_led_enabled_summary">Использовать другой цвет до 90% при быстрой зарядке</string>
+    <string name="fast_charging_light_color_title">Цвет</string>
+    <string name="edit_battery_settings">Изменить настройки батареи</string>
+    <string name="led_color_green">Зеленый</string>
+    <string name="led_color_red">Красный</string>
+    <string name="led_color_blue">Синий</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Сброс</string>
+    <!-- Custom light color -->
+    <string name="light_customization">Уведомление светодиодом</string>
+    <string name="custom_light_title">Цвет светодиода</string>
+    <string name="custom_light_on_time_title">"Время включения подсветки во время импульса (мс)"</string>
+    <string name="custom_light_off_time_title">"Время выключения подсветки во время импульса (мс)"</string>
+    <string name="app_notifications_info_desc">Нажмите на один из вышеуказанных каналов, чтобы настроить их цвета и другие параметры</string>
+    <string name="value_equals_default">По умолчанию</string>
+    <string name="show_light_on_zen_title">Мигать во время режима \"Не беспокоить\"</string>
+    <string name="link_volume_option_title">Связать громкость звонка и уведомлений</string>
+    <!-- Font picker -->
+    <string name="font_picker_title">Шрифт</string>
+    <string name="font_subs_info">Пожалуйста выключите все переопределения шрифтов в Substratum до того как использовать это.\n Выберите шрифт по умолчанию (Roboto), для того чтобы снова использовать шрифты Substratum.</string>
+    <string name="font_picker_reboot_recommended">Для применения всех настроек\nперезагрузите устройство</string>
 </resources>

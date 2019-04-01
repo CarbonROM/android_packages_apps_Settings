@@ -16,84 +16,84 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- CarbonROM version -->
-  <string name="carbon_version">CarbonROM 版本</string>
-  <string name="carbon_version_default">未知</string>
-  <!-- CarbonFibers -->
-  <string name="cf_settings_title">纤维</string>
-  <string name="cf_dashboard_summary">纤维是你健康的来源之一</string>
-  <!-- Encryption and credential -->
-  <string name="custom_encryption_and_credential_settings_summary_on">设备已加密</string>
-  <string name="custom_encryption_and_credential_settings_summary_off">设备已解密</string>
-  <!-- Root Management -->
-  <string name="rootmanagement_title">Root管理</string>
-  <string name="rootmanagement_dashboard_summary">管理Root权限</string>
-  <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
-  <string name="supersu_title">超级用户</string>
-  <string name="screenshot_shutter_sound_title">屏幕截图音效</string>
-  <!-- Manual provisioning support -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_disabled">已停用</string>
-  <string name="sim_missing">缺少或有缺陷</string>
-  <string name="sim_enabler_need_disable_sim">SIM卡将被禁用。 你想继续吗？</string>
-  <string name="sim_enabler_will_disable_sim_title">注意</string>
-  <string name="sim_enabler_need_switch_data_service">SIM卡将被禁用，SIM卡将被用于数据服务。 你确定你要继续吗？</string>
-  <string name="sim_enabler_airplane_on">无法在飞行模式打开时执行操作。</string>
-  <string name="sim_enabler_in_call">无法在通话过程中执行操作。</string>
-  <string name="sim_enabler_both_inactive">无法禁用所有SIM卡</string>
-  <string name="sim_enabler_enabling">激活\ U2026</string>
-  <string name="sim_enabler_disabling">停用\ U2026</string>
-  <string name="sub_activate_success">SIM激活。</string>
-  <string name="sub_activate_failed">激活失败。</string>
-  <string name="sub_deactivate_success">SIM已禁用。</string>
-  <string name="sub_deactivate_failed">取消激活失败。</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">颜色选择器</string>
-  <string name="press_color_to_apply">点击选择颜色</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">十六进制：</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">设置</string>
-  <string name="color_default">默认​​​​​</string>
-  <!-- Vibrate on plug -->
-  <string name="vibrate_on_plug_title">触摸时振动</string>
-  <!-- Battery Light -->
-  <string name="battery_light_title">电量指示灯</string>
-  <string name="battery_light_title_summary_on">开/电池电量将会显示</string>
-  <string name="battery_light_title_summary_off">关/电池电量不会显示</string>
-  <string name="battery_light_description">打开/关闭电池指示灯或改变它的行为</string>
-  <string name="battery_low_pulse_title">跳动低时</string>
-  <string name="battery_low_pulse_title_summary">电池电量低时跳动</string>
-  <string name="battery_light_only_full_charge_title">电量已充满的指示</string>
-  <string name="battery_light_only_full_charge_title_summary">设备已充满电时，仅显示电池指示灯</string>
-  <string name="battery_light_list_title">颜色</string>
-  <string name="battery_light_low_color_title">低电量</string>
-  <string name="battery_light_medium_color_title">正在充电</string>
-  <string name="battery_light_full_color_title">充电完成 (90%)</string>
-  <string name="battery_light_really_full_color_title">充电完成 (100%)</string>
-  <string name="fast_color_cat_title">快速充电</string>
-  <string name="fast_charging_led_enabled_title">启用快速充电颜色</string>
-  <string name="fast_charging_led_enabled_summary">当快速充电时, 当电量达到90%时使用不同的颜色</string>
-  <string name="fast_charging_light_color_title">颜色</string>
-  <string name="edit_battery_settings">编辑电池设置</string>
-  <string name="led_color_green">绿色</string>
-  <string name="led_color_red">红色</string>
-  <string name="led_color_blue">蓝色</string>
-  <!-- General strings -->
-  <string name="ok">确定</string>
-  <string name="reset">重置</string>
-  <!-- Custom light color -->
-  <string name="light_customization">呼吸灯通知</string>
-  <string name="custom_light_title">浅色</string>
-  <string name="custom_light_on_time_title">"呼吸灯亮起持续时间(毫秒)"</string>
-  <string name="custom_light_off_time_title">"呼吸灯熄灭持续时间(毫秒)"</string>
-  <string name="app_notifications_info_desc">点击以上选项之一来配置灯光颜色和其他选项</string>
-  <string name="value_equals_default">默认</string>
-  <string name="show_light_on_zen_title">勿扰模式时闪烁</string>
-  <string name="link_volume_option_title">关联铃声和通知音量</string>
-  <!-- Font picker -->
-  <string name="font_picker_title">字体</string>
-  <string name="font_subs_info">在使用之前，请确保禁用Substratum中的每个字体叠加。\如果要返回使用Substratum，请确保在此处选择默认字体（Roboto）。</string>
-  <string name="font_picker_reboot_recommended">为获得最佳体验，\ n重新启动您的设备</string>
+    <!-- CarbonROM version -->
+    <string name="carbon_version">CarbonROM 版本</string>
+    <string name="carbon_version_default">未知</string>
+    <!-- CarbonFibers -->
+    <string name="cf_settings_title">纤维</string>
+    <string name="cf_dashboard_summary">纤维是你健康的来源之一</string>
+    <!-- Encryption and credential -->
+    <string name="custom_encryption_and_credential_settings_summary_on">设备已加密</string>
+    <string name="custom_encryption_and_credential_settings_summary_off">设备已解密</string>
+    <!-- Root Management -->
+    <string name="rootmanagement_title">Root管理</string>
+    <string name="rootmanagement_dashboard_summary">管理Root权限</string>
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <string name="supersu_title">超级用户</string>
+    <string name="screenshot_shutter_sound_title">屏幕截图音效</string>
+    <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">已停用</string>
+    <string name="sim_missing">缺少或有缺陷</string>
+    <string name="sim_enabler_need_disable_sim">SIM卡将被禁用。 你想继续吗？</string>
+    <string name="sim_enabler_will_disable_sim_title">注意</string>
+    <string name="sim_enabler_need_switch_data_service">SIM卡将被禁用，SIM卡将被用于数据服务。 你确定你要继续吗？</string>
+    <string name="sim_enabler_airplane_on">无法在飞行模式打开时执行操作。</string>
+    <string name="sim_enabler_in_call">无法在通话过程中执行操作。</string>
+    <string name="sim_enabler_both_inactive">无法禁用所有SIM卡</string>
+    <string name="sim_enabler_enabling">激活\ U2026</string>
+    <string name="sim_enabler_disabling">停用\ U2026</string>
+    <string name="sub_activate_success">SIM卡已激活。</string>
+    <string name="sub_activate_failed">激活失败。</string>
+    <string name="sub_deactivate_success">SIM已禁用。</string>
+    <string name="sub_deactivate_failed">取消激活失败。</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">颜色选择器</string>
+    <string name="press_color_to_apply">点击选择颜色</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">十六进制：</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">设置</string>
+    <string name="color_default">默认​​​​​</string>
+    <!-- Vibrate on plug -->
+    <string name="vibrate_on_plug_title">触摸时振动</string>
+    <!-- Battery Light -->
+    <string name="battery_light_title">电量指示灯</string>
+    <string name="battery_light_title_summary_on">开/电池电量将会显示</string>
+    <string name="battery_light_title_summary_off">关/电池电量不会显示</string>
+    <string name="battery_light_description">打开/关闭电池指示灯或改变它的行为</string>
+    <string name="battery_low_pulse_title">跳动低时</string>
+    <string name="battery_low_pulse_title_summary">电池电量低时跳动</string>
+    <string name="battery_light_only_full_charge_title">电量已充满的指示</string>
+    <string name="battery_light_only_full_charge_title_summary">设备已充满电时，仅显示电池指示灯</string>
+    <string name="battery_light_list_title">颜色</string>
+    <string name="battery_light_low_color_title">低电量</string>
+    <string name="battery_light_medium_color_title">正在充电</string>
+    <string name="battery_light_full_color_title">充电完成 (90%)</string>
+    <string name="battery_light_really_full_color_title">充电完成 (100%)</string>
+    <string name="fast_color_cat_title">快速充电</string>
+    <string name="fast_charging_led_enabled_title">启用快速充电颜色</string>
+    <string name="fast_charging_led_enabled_summary">当快速充电时, 当电量达到90%时使用不同的颜色</string>
+    <string name="fast_charging_light_color_title">颜色</string>
+    <string name="edit_battery_settings">编辑电池设置</string>
+    <string name="led_color_green">绿色</string>
+    <string name="led_color_red">红色</string>
+    <string name="led_color_blue">蓝色</string>
+    <!-- General strings -->
+    <string name="ok">确定</string>
+    <string name="reset">重置</string>
+    <!-- Custom light color -->
+    <string name="light_customization">呼吸灯通知</string>
+    <string name="custom_light_title">浅色</string>
+    <string name="custom_light_on_time_title">"呼吸灯亮起持续时间(毫秒)"</string>
+    <string name="custom_light_off_time_title">"呼吸灯熄灭持续时间(毫秒)"</string>
+    <string name="app_notifications_info_desc">点击以上选项之一来配置灯光颜色和其他选项</string>
+    <string name="value_equals_default">默认</string>
+    <string name="show_light_on_zen_title">勿扰模式时闪烁</string>
+    <string name="link_volume_option_title">关联铃声和通知音量</string>
+    <!-- Font picker -->
+    <string name="font_picker_title">字体</string>
+    <string name="font_subs_info">在使用之前，请确保禁用Substratum中的每个字体叠加。\如果要返回使用Substratum，请确保在此处选择默认字体（Roboto）。</string>
+    <string name="font_picker_reboot_recommended">为获得最佳体验，\ n重新启动您的设备</string>
 </resources>

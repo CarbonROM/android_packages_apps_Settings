@@ -16,84 +16,84 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- CarbonROM version -->
-  <string name="carbon_version">CarbonROM različica</string>
-  <string name="carbon_version_default">Neznano</string>
-  <!-- CarbonFibers -->
-  <string name="cf_settings_title">Fibers</string>
-  <string name="cf_dashboard_summary">Zdrav vir vaših vlaknin</string>
-  <!-- Encryption and credential -->
-  <string name="custom_encryption_and_credential_settings_summary_on">Naprava je šifrirana</string>
-  <string name="custom_encryption_and_credential_settings_summary_off">Naprava je dešifrirana</string>
-  <!-- Root Management -->
-  <string name="rootmanagement_title">Korenski dostop</string>
-  <string name="rootmanagement_dashboard_summary">Upravljanje korenskega dostopa</string>
-  <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
-  <string name="supersu_title">SuperSU</string>
-  <string name="screenshot_shutter_sound_title">Zvok sprožilca zaslonske slike</string>
-  <!-- Manual provisioning support -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> je <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_disabled">onemogočeno</string>
-  <string name="sim_missing">manjkajoča ali pokvarjena</string>
-  <string name="sim_enabler_need_disable_sim">Kartica SIM bo deaktivirana. Želite nadaljevati?</string>
-  <string name="sim_enabler_will_disable_sim_title">Pozor</string>
-  <string name="sim_enabler_need_switch_data_service">Ta kartica SIM bo onemogočena in kartica SIM <xliff:g id="slotid">%1$s</xliff:g> bo uporabljena za podatkovne storitve. Ste prepričani, da želite nadaljevati?</string>
-  <string name="sim_enabler_airplane_on">Dejanja ni mogoče izvesti medtem ko je način za letalo vklopljen.</string>
-  <string name="sim_enabler_in_call">Dejanja ni mogoče izvesti med klicem.</string>
-  <string name="sim_enabler_both_inactive">Ni mogoče onemogočiti obeh kartic SIM</string>
-  <string name="sim_enabler_enabling">Aktiviranje\u2026</string>
-  <string name="sim_enabler_disabling">Deaktiviranje\u2026</string>
-  <string name="sub_activate_success">Kartica SIM aktivirana.</string>
-  <string name="sub_activate_failed">Aktivacija neuspešna.</string>
-  <string name="sub_deactivate_success">Kartica SIM deaktivirana.</string>
-  <string name="sub_deactivate_failed">Deaktivacija neuspešna.</string>
-  <!-- Color Picker -->
-  <string name="dialog_color_picker">Izbira barv</string>
-  <string name="press_color_to_apply">Za izbor se dotaknite barve spodaj</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Nastavi</string>
-  <string name="color_default">Privzeto</string>
-  <!-- Vibrate on plug -->
-  <string name="vibrate_on_plug_title">Vibriraj ob priklopu</string>
-  <!-- Battery Light -->
-  <string name="battery_light_title">LED indikator baterije</string>
-  <string name="battery_light_title_summary_on">Vklopljeno / stanje baterije bo prikazano</string>
-  <string name="battery_light_title_summary_off">Izklopljeno / stanje baterije ne bo prikazano</string>
-  <string name="battery_light_description">Vklop/izklop LED indikatorja baterije ali spremeni nastavitve</string>
-  <string name="battery_low_pulse_title">Utripanje ob prazni bateriji</string>
-  <string name="battery_low_pulse_title_summary">Utripaj ko je baterija prazna</string>
-  <string name="battery_light_only_full_charge_title">Indikator polne napolnjenosti</string>
-  <string name="battery_light_only_full_charge_title_summary">Pokaži LED indikator samo, ko je baterija napolnjena</string>
-  <string name="battery_light_list_title">Barve</string>
-  <string name="battery_light_low_color_title">Prazna baterija</string>
-  <string name="battery_light_medium_color_title">Polnjenje</string>
-  <string name="battery_light_full_color_title">Napolnjeno (90%)</string>
-  <string name="battery_light_really_full_color_title">Napolnjeno (100 %)</string>
-  <string name="fast_color_cat_title">Hitro polnjenje</string>
-  <string name="fast_charging_led_enabled_title">Omogoči barvo hitrega polnjenja</string>
-  <string name="fast_charging_led_enabled_summary">Med hitrim polnjenjem uporabi drugo barvo do 90% napolnjenosti</string>
-  <string name="fast_charging_light_color_title">Barva</string>
-  <string name="edit_battery_settings">Uredi nastavitve baterije</string>
-  <string name="led_color_green">Zelena</string>
-  <string name="led_color_red">Rdeča</string>
-  <string name="led_color_blue">Modra</string>
-  <!-- General strings -->
-  <string name="ok">Ok</string>
-  <string name="reset">Ponastavi</string>
-  <!-- Custom light color -->
-  <string name="light_customization">LED obvestilna lučka</string>
-  <string name="custom_light_title">Barva lučke</string>
-  <string name="custom_light_on_time_title">"Čas vklopljene lučke med utripanjem (ms)"</string>
-  <string name="custom_light_off_time_title">"Čas izklopljene lučke med utripanjem (ms)"</string>
-  <string name="app_notifications_info_desc">Dotaknite se zgornjih kanalov, da spremenite njihovo barvo in druge nastavitve</string>
-  <string name="value_equals_default">Privzeto</string>
-  <string name="show_light_on_zen_title">Utripaj med načinom Ne moti</string>
-  <string name="link_volume_option_title">Združi glasnost zvonjenja in obvestil</string>
-  <!-- Font picker -->
-  <string name="font_picker_title">Pisava</string>
-  <string name="font_subs_info">Onemogočite vsa prekrivanja pisav v Substratum.\nČe želite ponovno uporabljati Substratum izberite Privzeto pisavo (Roboto).</string>
-  <string name="font_picker_reboot_recommended">Za optimalno izkušnjo\nznova zaženite napravo</string>
+    <!-- CarbonROM version -->
+    <string name="carbon_version">CarbonROM različica</string>
+    <string name="carbon_version_default">Neznano</string>
+    <!-- CarbonFibers -->
+    <string name="cf_settings_title">Fibers</string>
+    <string name="cf_dashboard_summary">Zdrav vir vaših vlaknin</string>
+    <!-- Encryption and credential -->
+    <string name="custom_encryption_and_credential_settings_summary_on">Naprava je šifrirana</string>
+    <string name="custom_encryption_and_credential_settings_summary_off">Naprava je dešifrirana</string>
+    <!-- Root Management -->
+    <string name="rootmanagement_title">Korenski dostop</string>
+    <string name="rootmanagement_dashboard_summary">Upravljanje korenskega dostopa</string>
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <string name="supersu_title">SuperSU</string>
+    <string name="screenshot_shutter_sound_title">Zvok sprožilca zaslonske slike</string>
+    <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> je <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">onemogočeno</string>
+    <string name="sim_missing">manjkajoča ali pokvarjena</string>
+    <string name="sim_enabler_need_disable_sim">Kartica SIM bo deaktivirana. Želite nadaljevati?</string>
+    <string name="sim_enabler_will_disable_sim_title">Pozor</string>
+    <string name="sim_enabler_need_switch_data_service">Ta kartica SIM bo onemogočena in kartica SIM <xliff:g id="slotid">%1$s</xliff:g> bo uporabljena za podatkovne storitve. Ste prepričani, da želite nadaljevati?</string>
+    <string name="sim_enabler_airplane_on">Dejanja ni mogoče izvesti medtem ko je način za letalo vklopljen.</string>
+    <string name="sim_enabler_in_call">Dejanja ni mogoče izvesti med klicem.</string>
+    <string name="sim_enabler_both_inactive">Ni mogoče onemogočiti obeh kartic SIM</string>
+    <string name="sim_enabler_enabling">Aktiviranje\u2026</string>
+    <string name="sim_enabler_disabling">Deaktiviranje\u2026</string>
+    <string name="sub_activate_success">Kartica SIM aktivirana.</string>
+    <string name="sub_activate_failed">Aktivacija neuspešna.</string>
+    <string name="sub_deactivate_success">Kartica SIM deaktivirana.</string>
+    <string name="sub_deactivate_failed">Deaktivacija neuspešna.</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Izbira barv</string>
+    <string name="press_color_to_apply">Za izbor se dotaknite barve spodaj</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Nastavi</string>
+    <string name="color_default">Privzeto</string>
+    <!-- Vibrate on plug -->
+    <string name="vibrate_on_plug_title">Vibriraj ob priklopu</string>
+    <!-- Battery Light -->
+    <string name="battery_light_title">LED indikator baterije</string>
+    <string name="battery_light_title_summary_on">Vklopljeno / stanje baterije bo prikazano</string>
+    <string name="battery_light_title_summary_off">Izklopljeno / stanje baterije ne bo prikazano</string>
+    <string name="battery_light_description">Vklop/izklop LED indikatorja baterije ali spremeni nastavitve</string>
+    <string name="battery_low_pulse_title">Utripanje ob prazni bateriji</string>
+    <string name="battery_low_pulse_title_summary">Utripaj ko je baterija prazna</string>
+    <string name="battery_light_only_full_charge_title">Indikator polne napolnjenosti</string>
+    <string name="battery_light_only_full_charge_title_summary">Pokaži LED indikator samo, ko je baterija napolnjena</string>
+    <string name="battery_light_list_title">Barve</string>
+    <string name="battery_light_low_color_title">Prazna baterija</string>
+    <string name="battery_light_medium_color_title">Polnjenje</string>
+    <string name="battery_light_full_color_title">Napolnjeno (90%)</string>
+    <string name="battery_light_really_full_color_title">Napolnjeno (100 %)</string>
+    <string name="fast_color_cat_title">Hitro polnjenje</string>
+    <string name="fast_charging_led_enabled_title">Omogoči barvo hitrega polnjenja</string>
+    <string name="fast_charging_led_enabled_summary">Med hitrim polnjenjem uporabi drugo barvo do 90% napolnjenosti</string>
+    <string name="fast_charging_light_color_title">Barva</string>
+    <string name="edit_battery_settings">Uredi nastavitve baterije</string>
+    <string name="led_color_green">Zelena</string>
+    <string name="led_color_red">Rdeča</string>
+    <string name="led_color_blue">Modra</string>
+    <!-- General strings -->
+    <string name="ok">Ok</string>
+    <string name="reset">Ponastavi</string>
+    <!-- Custom light color -->
+    <string name="light_customization">LED obvestilna lučka</string>
+    <string name="custom_light_title">Barva lučke</string>
+    <string name="custom_light_on_time_title">"Čas vklopljene lučke med utripanjem (ms)"</string>
+    <string name="custom_light_off_time_title">"Čas izklopljene lučke med utripanjem (ms)"</string>
+    <string name="app_notifications_info_desc">Dotaknite se zgornjih kanalov, da spremenite njihovo barvo in druge nastavitve</string>
+    <string name="value_equals_default">Privzeto</string>
+    <string name="show_light_on_zen_title">Utripaj med načinom Ne moti</string>
+    <string name="link_volume_option_title">Združi glasnost zvonjenja in obvestil</string>
+    <!-- Font picker -->
+    <string name="font_picker_title">Pisava</string>
+    <string name="font_subs_info">Onemogočite vsa prekrivanja pisav v Substratum.\nČe želite ponovno uporabljati Substratum izberite Privzeto pisavo (Roboto).</string>
+    <string name="font_picker_reboot_recommended">Za optimalno izkušnjo\nznova zaženite napravo</string>
 </resources>
