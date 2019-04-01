@@ -42,6 +42,8 @@ import java.util.List;
 public class AmbientDisplaySettings extends DashboardFragment {
 
     public static final String KEY_AMBIENT_DISPLAY_ALWAYS_ON = "ambient_display_always_on";
+    public static final String KEY_AMBIENT_DISPLAY_DOUBLE_TAP = "ambient_display_double_tap";
+    public static final String KEY_AMBIENT_DISPLAY_PICK_UP = "ambient_display_pick_up";
 
     private static final String TAG = "AmbientDisplaySettings";
 
@@ -84,6 +86,15 @@ public class AmbientDisplaySettings extends DashboardFragment {
                     sir.xmlResId = R.xml.ambient_display_settings;
                     result.add(sir);
                     return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+                    // Duplicates in summary and details pages.
+                    keys.add(KEY_AMBIENT_DISPLAY_DOUBLE_TAP);
+                    keys.add(KEY_AMBIENT_DISPLAY_PICK_UP);
+                    return keys;
                 }
             };
 
