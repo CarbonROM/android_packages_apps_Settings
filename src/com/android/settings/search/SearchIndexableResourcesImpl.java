@@ -105,6 +105,7 @@ import org.carbonrom.carbonfibers.fragments.gestures.*;
 import org.carbonrom.carbonfibers.fragments.lock_screen.LockScreen;
 import org.carbonrom.carbonfibers.fragments.privacy.Privacy;
 import org.carbonrom.carbonfibers.fragments.status_bar.StatusBar;
+import org.carbonrom.carbonfibers.fragments.system.AggressiveBattery;
 import org.carbonrom.carbonfibers.fragments.system.GlobalActionsSettings;
 import org.carbonrom.carbonfibers.fragments.system.SmartPixels;
 import org.carbonrom.carbonfibers.fragments.system.System;
@@ -213,6 +214,7 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(LockScreen.class);
         addIndex(Privacy.class);
         addIndex(StatusBar.class);
+        addIndex(AggressiveBattery.class);
         addIndex(GlobalActionsSettings.class);
         addIndex(SmartPixels.class);
         addIndex(System.class);
