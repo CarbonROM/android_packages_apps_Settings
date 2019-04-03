@@ -17,16 +17,69 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- CarbonROM version -->
+    <string name="carbon_version">Versione ROM</string>
     <string name="carbon_version_default">Sconosciuta</string>
     <!-- Carbon Fibers -->
+    <string name="cf_settings_title">Fibre di carbonio</string>
     <string name="cf_dashboard_summary">Una sana fonte di fibre quotidiane</string>
+    <string name="gesture_double_tap_power_torch_toast">Il gesto a schermo spento della torcia è ora disattivato</string>
     <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">Posizione</string>
+    <string name="app_ops_cat_personal">Personale</string>
+    <string name="app_ops_cat_messaging">Messaggi</string>
+    <string name="app_ops_cat_media">Media</string>
+    <string name="app_ops_cat_device">Dispositivo</string>
+    <string name="app_ops_cat_bootup">Avvio</string>
     <!-- App ops labels -->
+    <string name="app_ops_access_camera">Fotocamera</string>
+    <string name="app_ops_access_location">Posizione</string>
+    <string name="app_ops_access_notifications">Notifiche</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">Esegui all\'avvio</string>
+    <string name="app_ops_delete_call_log">Elimina registro chiamate</string>
+    <string name="app_ops_delete_contacts">Elimina contatti</string>
+    <string name="app_ops_delete_mms">Elimina MMS</string>
+    <string name="app_ops_delete_sms">Elimina SMS</string>
+    <string name="app_ops_draw_on_top">Disegna sopra altre app</string>
+    <string name="app_ops_get_usage_stats">Ottenere statistiche di utilizzo</string>
+    <string name="app_ops_keep_device_awake">Mantenere sveglio il dispositivo</string>
+    <string name="app_ops_make_phone_call">Fare una chiamata</string>
+    <string name="app_ops_modify_calendar">Modificare calendario</string>
+    <string name="app_ops_modify_call_log">Modificare registro chiamate</string>
+    <string name="app_ops_modify_clipboard">Modificare appunti</string>
+    <string name="app_ops_modify_contacts">Modificare contatti</string>
+    <string name="app_ops_modify_settings">Modificare Impostazioni</string>
+    <string name="app_ops_mute_unmute_microphone">Disattivare/Attivare microfono</string>
+    <string name="app_ops_play_audio">Riprodurre audio</string>
+    <string name="app_ops_post_notification">Invia notifica</string>
+    <string name="app_ops_project_media">Progetto multimediale</string>
+    <string name="app_ops_manage_ipsec_tunnels">Gestisci tunnel IP</string>
+    <string name="app_ops_bluetooth_scan">Scansione Bluetooth</string>
+    <string name="app_ops_boot_completed">Eseguire all\'avvio</string>
     <!-- App ops detail -->
+    <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (utilizzato <xliff:g id="count">%2$s</xliff:g>)</string>
+    <string name="app_ops_allowed_count">Consentito <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_ignored_count">Negato <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_both_count">Consentito <xliff:g id="count">%1$s</xliff:g>, negato <xliff:g id="count">%2$s</xliff:g></string>
     <!-- App ops menu options -->
+    <string name="app_ops_show_user_apps">Mostra app utente</string>
+    <string name="app_ops_show_system_apps">Mostra le app di sistema</string>
+    <string name="app_ops_reset_counters">Reimposta contatori consenti/nega</string>
+    <string name="app_ops_reset_confirm_title">Conferma reset contatori</string>
+    <string name="app_ops_reset_confirm_mesg">Sei sicuro di voler resettare i contatori?</string>
     <!-- FontEngine -->
     <string name="font_picker_title">Carattere</string>
+    <string name="disable_fonts_installed_title">La selezione del carattere non è disponibile per evitare conflitti con Substratum. Disinstallarlo se si desidera utilizzare la selezione del tipo di carattere.</string>
+    <string name="font_picker_progress">Applicando il nuovo font\u2026</string>
     <!-- System theme -->
+    <string name="system_theme_wallpaper">Automatico (basato sull\'ora del giorno)</string>
+    <string name="system_theme_light">Chiaro</string>
+    <string name="system_theme_dark">Scuro</string>
+    <string name="black_theme_title">Usa tema nero</string>
+    <string name="black_theme_summary">Usa il tema nero al posto del tema scuro</string>
     <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Battery temp -->
+    <string name="battery_temp_title">Temperatura batteria</string>
+    <!-- Screenshot sound -->
 </resources>

@@ -17,11 +17,38 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- CarbonROM version -->
+    <string name="carbon_version">CarbonROM版本</string>
     <string name="carbon_version_default">未知</string>
     <!-- Carbon Fibers -->
+    <string name="cf_settings_title">Carbon自定义设置</string>
     <string name="cf_dashboard_summary">纤维是你健康的来源之一</string>
+    <string name="gesture_double_tap_power_torch_toast">屏幕关闭手势已经禁用</string>
     <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">应用权限分布</string>
+    <string name="app_ops_cat_personal">默认应用权限</string>
+    <string name="app_ops_cat_messaging">短信</string>
+    <string name="app_ops_cat_media">媒体</string>
+    <string name="app_ops_cat_device">设备</string>
+    <string name="app_ops_cat_bootup">启动</string>
     <!-- App ops labels -->
+    <string name="app_ops_access_camera">相机</string>
+    <string name="app_ops_access_location">位置</string>
+    <string name="app_ops_access_notifications">申请</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">在开机时启动</string>
+    <string name="app_ops_delete_call_log">删除通话记录</string>
+    <string name="app_ops_delete_contacts">删除联系人</string>
+    <string name="app_ops_delete_mms">删除彩信</string>
+    <string name="app_ops_delete_sms">删除短信</string>
+    <string name="app_ops_draw_on_top">在其他应用的基础上绘制</string>
+    <string name="app_ops_get_usage_stats">获取使用情况统计数据</string>
+    <string name="app_ops_keep_device_awake">阻止设备休眠</string>
+    <string name="app_ops_make_phone_call">拨打电话</string>
+    <string name="app_ops_modify_calendar">修改日历</string>
+    <string name="app_ops_modify_call_log">修改通话记录</string>
+    <string name="app_ops_modify_clipboard">修改剪切板</string>
+    <string name="app_ops_modify_contacts">修改通讯录</string>
+    <string name="app_ops_modify_settings">修改设置</string>
     <!-- App ops detail -->
     <!-- App ops menu options -->
     <!-- FontEngine -->
@@ -29,4 +56,5 @@
     <!-- System theme -->
     <!-- Manage applications, package string displayed in app snippet -->
     <!-- Battery temp -->
+    <!-- Screenshot sound -->
 </resources>

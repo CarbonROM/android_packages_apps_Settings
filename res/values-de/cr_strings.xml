@@ -17,11 +17,85 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- CarbonROM version -->
+    <string name="carbon_version">ROM-Version</string>
     <string name="carbon_version_default">Unbekannt</string>
     <!-- Carbon Fibers -->
+    <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">Eine Gesunde Quelle für deine täglichen Ballaststoff</string>
+    <string name="gesture_double_tap_power_torch_toast">Taschenlampen Geste beim ausgeschalteten Bildschirm ist jetzt deaktiviert</string>
     <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">Standort</string>
+    <string name="app_ops_cat_personal">Persönlich</string>
+    <string name="app_ops_cat_messaging">Mitteilungen</string>
+    <string name="app_ops_cat_media">Medien</string>
+    <string name="app_ops_cat_device">Gerät</string>
+    <string name="app_ops_cat_bootup">Bootvorgang</string>
     <!-- App ops labels -->
+    <string name="app_ops_access_camera">Kamera</string>
+    <string name="app_ops_access_location">Standort</string>
+    <string name="app_ops_access_notifications">Änderungen</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">Beim Booten starten</string>
+    <string name="app_ops_delete_call_log">Anrufprotokoll löschen</string>
+    <string name="app_ops_delete_contacts">Kontakte löschen</string>
+    <string name="app_ops_delete_mms">MMS-Nachricht löschen</string>
+    <string name="app_ops_delete_sms">SMS-Nachricht löschen</string>
+    <string name="app_ops_draw_on_top">Zeichnen Sie auf andere Apps</string>
+    <string name="app_ops_keep_device_awake">Gerät wach halten</string>
+    <string name="app_ops_make_phone_call">Anruf tätigen</string>
+    <string name="app_ops_modify_calendar">Kalender ändern</string>
+    <string name="app_ops_modify_call_log">Anrufprotokoll ändern</string>
+    <string name="app_ops_modify_clipboard">Zwischenablage ändern</string>
+    <string name="app_ops_modify_contacts">Kontakte ändern</string>
+    <string name="app_ops_modify_settings">Einstellungen ändern</string>
+    <string name="app_ops_mute_unmute_microphone">Mikrofon ein-/ausschalten</string>
+    <string name="app_ops_play_audio">Audio abspielen</string>
+    <string name="app_ops_post_notification">Benachrichtung senden</string>
+    <string name="app_ops_project_media">Projekt Medien</string>
+    <string name="app_ops_read_calendar">Kalendereinträge lesen</string>
+    <string name="app_ops_read_call_log">Anrufprotokoll lesen</string>
+    <string name="app_ops_read_clipboard">Zwischenablage lesen</string>
+    <string name="app_ops_read_contacts">Kontakte lesen</string>
+    <string name="app_ops_read_mms">MMS-Nachrichten lesen</string>
+    <string name="app_ops_read_sms">SMS-Nachrichten lesen</string>
+    <string name="app_ops_receive_sms">SMS-Nachricht empfangen</string>
+    <string name="app_ops_record_audio">Ton aufzeichnen</string>
+    <string name="app_ops_send_mms">Senden Sie eine MMS</string>
+    <string name="app_ops_send_sms">SMS-Nachricht senden</string>
+    <string name="app_ops_use_alarm_volume">Alarmlautstärke verwenden</string>
+    <string name="app_ops_use_audio_focus">Audiofokus ändern</string>
+    <string name="app_ops_use_bluetooth_volume">Bluetooth-Lautstärke verwenden</string>
+    <string name="app_ops_use_master_volume">Haupt-Lautstärke verwenden</string>
+    <string name="app_ops_use_media_buttons">Medien-Tasten verwenden</string>
+    <string name="app_ops_use_media_volume">Medien-Lautstärke verwenden</string>
+    <string name="app_ops_use_notification_volume">Benachrichtigungs-Lautstärke verwenden</string>
+    <string name="app_ops_use_ring_volume">Klingelton-Lautstärke verwenden</string>
+    <string name="app_ops_use_vibrate">Vibration steuern</string>
+    <string name="app_ops_use_voice_volume">Anruflautstärke verwenden</string>
+    <string name="app_ops_write_mms">MMS-Nachricht schreiben</string>
+    <string name="app_ops_write_sms">SMS-Nachricht schreiben</string>
+    <string name="app_ops_use_fingerprint">Fingerabdruck verwenden</string>
+    <string name="app_ops_add_voicemail">Mailbox-Nachricht hinzufügen</string>
+    <string name="app_ops_read_phone_state">Auf Telefonstatus zugreifen</string>
+    <string name="app_ops_scan_wifi">WLAN-Netzwerke suchen</string>
+    <string name="app_ops_change_wallpaper">Hintergrundbild ändern</string>
+    <string name="app_ops_assist_structure">Struktur unterstützen</string>
+    <string name="app_ops_assist_screenshot">Bildschirmfoto</string>
+    <string name="app_ops_use_body_sensors">Körper-Sensoren verwenden</string>
+    <string name="app_ops_read_cell_broadcasts">Cell Broadcast-Nachrichten lesen</string>
+    <string name="app_ops_mock_location">Standort simulieren</string>
+    <string name="app_ops_read_external_storage">Benutzer-Speicher lesen</string>
+    <string name="app_ops_turn_on_screen">Bildschirm einschalten</string>
+    <string name="app_ops_get_accounts">Gerätekonten lesen</string>
+    <string name="app_ops_run_in_background">Im Hintergrund ausführen</string>
+    <string name="app_ops_read_phone_numbers">Telefonnummer lesen</string>
+    <string name="app_ops_request_install_packages">Apps installieren</string>
+    <string name="app_ops_picture_in_picture">Bild in Bild Modus verwenden</string>
+    <string name="app_ops_answer_phone_calls">Anrufe beantworten</string>
+    <string name="app_ops_request_delete_packages">Apps deinstallieren</string>
+    <string name="app_ops_manage_ipsec_tunnels">IP-Tunnel verwalten</string>
+    <string name="app_ops_bluetooth_scan">Bluetooth-Suche</string>
+    <string name="app_ops_boot_completed">Beim Booten starten</string>
     <!-- App ops detail -->
     <!-- App ops menu options -->
     <!-- FontEngine -->
@@ -29,4 +103,5 @@
     <!-- System theme -->
     <!-- Manage applications, package string displayed in app snippet -->
     <!-- Battery temp -->
+    <!-- Screenshot sound -->
 </resources>

@@ -125,4 +125,5 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <!-- Battery temp -->
     <string name="battery_temp_title">Температура батареи</string>
+    <!-- Screenshot sound -->
 </resources>
