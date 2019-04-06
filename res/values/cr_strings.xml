@@ -37,7 +37,7 @@
     <!-- App ops labels -->
     <string name="app_ops_access_camera">Camera</string>
     <string name="app_ops_access_location">Location</string>
-    <string name="app_ops_access_notifications">Motifications</string>
+    <string name="app_ops_access_notifications">Notifications</string>
     <string name="app_ops_activate_vpn">VPN</string>
     <string name="app_ops_auto_start">Start at boot</string>
     <string name="app_ops_delete_call_log">Delete call log</string>
