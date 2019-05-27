@@ -30,6 +30,7 @@
     <string name="app_ops_cat_bootup">Автозагрузка</string>
     <!-- App ops labels -->
     <string name="app_ops_access_camera">Камера</string>
+    <string name="app_ops_access_location">Доступ к геоданным</string>
     <string name="app_ops_access_notifications">Уведомления</string>
     <string name="app_ops_activate_vpn">VPN</string>
     <string name="app_ops_auto_start">Автозапуск</string>
@@ -122,8 +123,12 @@
     <string name="system_theme_wallpaper">Автоматический (основан на времени дня)</string>
     <string name="system_theme_light">Светлый</string>
     <string name="system_theme_dark">Темный</string>
+    <string name="black_theme_title">Использовать черную тему</string>
+    <string name="black_theme_summary">Использовать черную тему вместо темной</string>
     <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="client_name">%1$s</xliff:g></string>
     <!-- Battery temp -->
     <string name="battery_temp_title">Температура батареи</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Звук скриншота</string>
 </resources>

@@ -17,17 +17,120 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- CarbonROM version -->
+    <string name="carbon_version">Rom sürümü</string>
     <string name="carbon_version_default">Bilinmiyor</string>
     <!-- Carbon Fibers -->
+    <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">Günlük lifinizin sağlıklı bir kaynağı</string>
+    <string name="gesture_double_tap_power_torch_toast">El feneri hareketi şimdi devre dışı</string>
     <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">Konum</string>
+    <string name="app_ops_cat_personal">Kişisel</string>
+    <string name="app_ops_cat_messaging">Mesajlaşma</string>
+    <string name="app_ops_cat_media">Medya</string>
+    <string name="app_ops_cat_device">Cihaz</string>
+    <string name="app_ops_cat_bootup">Açılış</string>
     <!-- App ops labels -->
+    <string name="app_ops_access_camera">Kamera</string>
+    <string name="app_ops_access_location">Konum</string>
+    <string name="app_ops_access_notifications">Bildirimler</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">Açılışta başlat</string>
+    <string name="app_ops_delete_call_log">Çağrı kaydını sil</string>
+    <string name="app_ops_delete_contacts">Kişileri sil</string>
+    <string name="app_ops_delete_mms">MMS sil</string>
+    <string name="app_ops_delete_sms">SMS sil</string>
+    <string name="app_ops_draw_on_top">Diğer uygulamaların üstüne çiz</string>
+    <string name="app_ops_get_usage_stats">Kullanım istatistiklerini al</string>
+    <string name="app_ops_keep_device_awake">Cihazı uyanık tut</string>
+    <string name="app_ops_make_phone_call">Bir arama yap</string>
+    <string name="app_ops_modify_calendar">Takvimi değiştir</string>
+    <string name="app_ops_modify_call_log">Arama günlüğünü değiştir</string>
+    <string name="app_ops_modify_clipboard">Panoyu değiştir</string>
+    <string name="app_ops_modify_contacts">Kişileri değiştir</string>
+    <string name="app_ops_modify_settings">Ayarları değiştir</string>
+    <string name="app_ops_mute_unmute_microphone">Mikrofonun sesini kapat/aç</string>
+    <string name="app_ops_play_audio">Sesi oynat</string>
+    <string name="app_ops_post_notification">Bildirim gönder</string>
+    <string name="app_ops_project_media">Medya projesi</string>
+    <string name="app_ops_read_calendar">Takvimi oku</string>
+    <string name="app_ops_read_call_log">Çağrı kaydını oku</string>
+    <string name="app_ops_read_clipboard">Panoyu oku</string>
+    <string name="app_ops_read_contacts">Kişileri oku</string>
+    <string name="app_ops_read_mms">MMS oku</string>
+    <string name="app_ops_read_sms">SMS oku</string>
+    <string name="app_ops_receive_sms">SMS al</string>
+    <string name="app_ops_record_audio">Ses kaydet</string>
+    <string name="app_ops_send_mms">MMS gönder</string>
+    <string name="app_ops_send_sms">SMS gönder</string>
+    <string name="app_ops_toast_window">Tost mesajları gönder</string>
+    <string name="app_ops_use_alarm_volume">Alarm sesini kullan</string>
+    <string name="app_ops_use_audio_focus">Ses odağını değiştir</string>
+    <string name="app_ops_use_bluetooth_volume">Bluetooth sesini kullan</string>
+    <string name="app_ops_use_master_volume">Ana sesi kulan</string>
+    <string name="app_ops_use_media_buttons">Medya tuşlarını kullan</string>
+    <string name="app_ops_use_media_volume">Medya sesini kullan</string>
+    <string name="app_ops_use_notification_volume">Bildirim sesini kullan</string>
+    <string name="app_ops_use_ring_volume">Zil sesini kullan</string>
+    <string name="app_ops_use_vibrate">Titreşim kontrolü</string>
+    <string name="app_ops_use_voice_volume">Arama sesini kullan</string>
+    <string name="app_ops_write_mms">MMS yaz</string>
+    <string name="app_ops_write_sms">Mesaj yaz</string>
+    <string name="app_ops_use_fingerprint">Parmak izi kullan</string>
+    <string name="app_ops_add_voicemail">Sesli mesaj ekle</string>
+    <string name="app_ops_read_phone_state">Telefon durumuna eriş</string>
+    <string name="app_ops_scan_wifi">Kablosuz ağlarını tara</string>
+    <string name="app_ops_change_wallpaper">Duvar kağıdını değiştir</string>
+    <string name="app_ops_assist_structure">Yardımcı yapısı</string>
+    <string name="app_ops_assist_screenshot">Ekran görüntüsü</string>
+    <string name="app_ops_use_body_sensors">Vücut sensörü kullan</string>
+    <string name="app_ops_read_cell_broadcasts">Hücre yayınları oku</string>
+    <string name="app_ops_mock_location">Sahte konum</string>
+    <string name="app_ops_read_external_storage">Kullanıcı depolamasını oku</string>
+    <string name="app_ops_write_external_storage">Kullanıcı depolamasına yaz</string>
+    <string name="app_ops_turn_on_screen">Ekranı aç</string>
+    <string name="app_ops_get_accounts">Cihaz hesaplarını oku</string>
+    <string name="app_ops_run_in_background">Arka planda çalıştır</string>
+    <string name="app_ops_accessibility_volume">Erişilebilirlik sesini kullan</string>
+    <string name="app_ops_read_phone_numbers">Telefon numarasını oku</string>
+    <string name="app_ops_request_install_packages">Uygulamalar yükle</string>
+    <string name="app_ops_picture_in_picture">Resim modunda Resim kullan</string>
+    <string name="app_ops_app_start_foreground">Ön plana başlat</string>
+    <string name="app_ops_answer_phone_calls">Aramalara cevap ver</string>
+    <string name="app_ops_run_any_in_background">Görevleri arka planda çalıştır</string>
+    <string name="app_ops_change_wifi_state">Kablosuz durumunu değiştir</string>
+    <string name="app_ops_request_delete_packages">Uygulamalar kaldır</string>
+    <string name="app_ops_bind_accessibility_service">Erişilebilirlik servisini kullan</string>
+    <string name="app_ops_accept_handover">Teslimini kabul et</string>
+    <string name="app_ops_manage_ipsec_tunnels">IP tünellerini yönet</string>
+    <string name="app_ops_start_foreground">Ön plana başlat</string>
+    <string name="app_ops_bluetooth_scan">Bluetooth taraması</string>
+    <string name="app_ops_boot_completed">Açılışta başlat</string>
     <!-- App ops detail -->
+    <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (kullanılmış <xliff:g id="count">%2$s</xliff:g>)</string>
+    <string name="app_ops_allowed_count">İzin verilen <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_ignored_count">Reddedildi <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_both_count">İzin verildi <xliff:g id="count">%1$s</xliff:g>, reddedildi <xliff:g id="count">%2$s</xliff:g></string>
     <!-- App ops menu options -->
+    <string name="app_ops_show_user_apps">Kullanıcı uygulamalarını göster</string>
+    <string name="app_ops_show_system_apps">Dahili uygulamaları göster</string>
+    <string name="app_ops_reset_counters">Sayaçlara izin ver/reddet sayaçları sıfırla</string>
+    <string name="app_ops_reset_confirm_title">Sayaçları sıfırlandığını onayla</string>
+    <string name="app_ops_reset_confirm_mesg">Sayaçları sıfırlamak istediğinize emin misiniz?</string>
     <!-- FontEngine -->
     <string name="font_picker_title">Yazı tipi</string>
+    <string name="disable_fonts_installed_title">Substratum ile çakışmaları önlemek için yazı tipi seçici kullanılmıyor. Yazı tipi seçiciyi kullanmak istiyorsanız kaldırın.</string>
+    <string name="font_picker_progress">Yeni yazı tipi uygulanıyor\u2026</string>
     <!-- System theme -->
+    <string name="system_theme_wallpaper">Otomatik (gün saatine göre)</string>
+    <string name="system_theme_light">Aydınlık</string>
+    <string name="system_theme_dark">Karanlık</string>
+    <string name="black_theme_title">Siyah tema kullan</string>
+    <string name="black_theme_summary">Karanlık yerine siyah temayı kullan</string>
     <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Battery temp -->
+    <string name="battery_temp_title">Pil sıcaklığı</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Ekran görüntüsü sesi</string>
 </resources>

@@ -17,17 +17,16 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- CarbonROM version -->
-    <string name="carbon_version_default">Onbekend</string>
     <!-- Carbon Fibers -->
-    <string name="cf_dashboard_summary">Een gezonde bron voor uw dagelijkse vezels</string>
     <!-- App Ops Categories -->
     <!-- App ops labels -->
     <!-- App ops detail -->
     <!-- App ops menu options -->
     <!-- FontEngine -->
-    <string name="font_picker_title">Lettertype</string>
+    <string name="font_picker_title">Fontti</string>
     <!-- System theme -->
     <!-- Manage applications, package string displayed in app snippet -->
     <!-- Battery temp -->
+    <string name="battery_temp_title">Akun lämpötila</string>
     <!-- Screenshot sound -->
 </resources>

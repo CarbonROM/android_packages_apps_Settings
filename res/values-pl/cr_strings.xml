@@ -17,11 +17,28 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- CarbonROM version -->
+    <string name="carbon_version">Wersja systemu</string>
     <string name="carbon_version_default">Nieznane</string>
     <!-- Carbon Fibers -->
+    <string name="cf_settings_title">Ustawienia Carbon ROM</string>
     <string name="cf_dashboard_summary">Dostosuj swojego CarbonRoma</string>
     <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">Lokalizacja</string>
+    <string name="app_ops_cat_personal">Osobiste</string>
+    <string name="app_ops_cat_media">Multimedia</string>
+    <string name="app_ops_cat_device">Urządzenie</string>
+    <string name="app_ops_cat_bootup">Start</string>
     <!-- App ops labels -->
+    <string name="app_ops_access_camera">Aparat</string>
+    <string name="app_ops_access_location">Lokalizacja</string>
+    <string name="app_ops_access_notifications">Powiadomienia</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">Uruchom przy starcie</string>
+    <string name="app_ops_delete_call_log">Wyczyść rejestr połączeń</string>
+    <string name="app_ops_mute_unmute_microphone">Wycisz/włącz mikrofon</string>
+    <string name="app_ops_record_audio">Nagraj dźwięk</string>
+    <string name="app_ops_send_mms">Wyślij MMS</string>
+    <string name="app_ops_send_sms">Wyślij SMS</string>
     <!-- App ops detail -->
     <!-- App ops menu options -->
     <!-- FontEngine -->

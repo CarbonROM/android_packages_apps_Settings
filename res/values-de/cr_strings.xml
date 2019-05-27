@@ -33,7 +33,7 @@
     <!-- App ops labels -->
     <string name="app_ops_access_camera">Kamera</string>
     <string name="app_ops_access_location">Standort</string>
-    <string name="app_ops_access_notifications">Änderungen</string>
+    <string name="app_ops_access_notifications">Benachrichtigungen</string>
     <string name="app_ops_activate_vpn">VPN</string>
     <string name="app_ops_auto_start">Beim Booten starten</string>
     <string name="app_ops_delete_call_log">Anrufprotokoll löschen</string>
@@ -41,6 +41,7 @@
     <string name="app_ops_delete_mms">MMS-Nachricht löschen</string>
     <string name="app_ops_delete_sms">SMS-Nachricht löschen</string>
     <string name="app_ops_draw_on_top">Zeichnen Sie auf andere Apps</string>
+    <string name="app_ops_get_usage_stats">Nutzungsstatistiken abrufen</string>
     <string name="app_ops_keep_device_awake">Gerät wach halten</string>
     <string name="app_ops_make_phone_call">Anruf tätigen</string>
     <string name="app_ops_modify_calendar">Kalender ändern</string>
@@ -62,6 +63,7 @@
     <string name="app_ops_record_audio">Ton aufzeichnen</string>
     <string name="app_ops_send_mms">Senden Sie eine MMS</string>
     <string name="app_ops_send_sms">SMS-Nachricht senden</string>
+    <string name="app_ops_toast_window">Toast Nachricht senden</string>
     <string name="app_ops_use_alarm_volume">Alarmlautstärke verwenden</string>
     <string name="app_ops_use_audio_focus">Audiofokus ändern</string>
     <string name="app_ops_use_bluetooth_volume">Bluetooth-Lautstärke verwenden</string>
@@ -85,23 +87,50 @@
     <string name="app_ops_read_cell_broadcasts">Cell Broadcast-Nachrichten lesen</string>
     <string name="app_ops_mock_location">Standort simulieren</string>
     <string name="app_ops_read_external_storage">Benutzer-Speicher lesen</string>
+    <string name="app_ops_write_external_storage">Schreiben auf Speicher erlauben</string>
     <string name="app_ops_turn_on_screen">Bildschirm einschalten</string>
     <string name="app_ops_get_accounts">Gerätekonten lesen</string>
     <string name="app_ops_run_in_background">Im Hintergrund ausführen</string>
+    <string name="app_ops_accessibility_volume">Nutze die Lautstärke der Barrierefreiheit</string>
     <string name="app_ops_read_phone_numbers">Telefonnummer lesen</string>
     <string name="app_ops_request_install_packages">Apps installieren</string>
     <string name="app_ops_picture_in_picture">Bild in Bild Modus verwenden</string>
+    <string name="app_ops_app_start_foreground">Im Vordergrund starten</string>
     <string name="app_ops_answer_phone_calls">Anrufe beantworten</string>
+    <string name="app_ops_run_any_in_background">Im Hintergrund ausführen</string>
+    <string name="app_ops_change_wifi_state">WiFi-Status ändern</string>
     <string name="app_ops_request_delete_packages">Apps deinstallieren</string>
+    <string name="app_ops_bind_accessibility_service">Nutze den Barrierefreiheit Service</string>
+    <string name="app_ops_accept_handover">Übergabe akzeptieren</string>
     <string name="app_ops_manage_ipsec_tunnels">IP-Tunnel verwalten</string>
+    <string name="app_ops_start_foreground">Im Vordergrund starten</string>
     <string name="app_ops_bluetooth_scan">Bluetooth-Suche</string>
     <string name="app_ops_boot_completed">Beim Booten starten</string>
     <!-- App ops detail -->
+    <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (benutzt <xliff:g id="count">%2$s</xliff:g>)</string>
+    <string name="app_ops_allowed_count">Erlaubt <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_ignored_count">Abgelehnt <xliff:g id="count" example="2 times">%s </xliff:g></string>
+    <string name="app_ops_both_count">Erlaubt <xliff:g id="count">%1$s</xliff:g>, verweigert <xliff:g id="count">%2$s</xliff:g></string>
     <!-- App ops menu options -->
+    <string name="app_ops_show_user_apps">Benutzer Apps anzeigen</string>
+    <string name="app_ops_show_system_apps">Zeige vorinstallierte Apps</string>
+    <string name="app_ops_reset_counters">Zulassen/verweigern Zähler zurücksetzen</string>
+    <string name="app_ops_reset_confirm_title">Zähler zurücksetzen bestätigen</string>
+    <string name="app_ops_reset_confirm_mesg">Sind Sie sicher, dass Sie die Zähler zurücksetzen möchten?</string>
     <!-- FontEngine -->
     <string name="font_picker_title">Schriftart</string>
+    <string name="disable_fonts_installed_title">Schriftauswahl ist nicht verfügbar, um Konflikte mit Substratum zu vermeiden. Deinstallieren Sie Substratum, wenn Sie die Schriftauswahl verwenden möchten.</string>
+    <string name="font_picker_progress">Die neue Schriftart\u2026 wird angewendet</string>
     <!-- System theme -->
+    <string name="system_theme_wallpaper">Automatisch (basierend auf Tageszeit)</string>
+    <string name="system_theme_light">Hell</string>
+    <string name="system_theme_dark">Dunkel</string>
+    <string name="black_theme_title">Schwarzes Theme verwenden</string>
+    <string name="black_theme_summary">Schwarzes Theme anstelle des dunklen Themes verwenden</string>
     <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Battery temp -->
+    <string name="battery_temp_title">Batterietemperatur</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Ton bei Bildschirmfoto</string>
 </resources>
