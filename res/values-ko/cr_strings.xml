@@ -19,14 +19,23 @@
     <!-- CarbonROM version -->
     <string name="carbon_version_default">알 수 없음</string>
     <!-- Carbon Fibers -->
+    <string name="cf_settings_title">Carbon Fibers</string>
     <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">위치</string>
     <!-- App ops labels -->
+    <string name="app_ops_activate_vpn">VPN</string>
     <!-- App ops detail -->
     <!-- App ops menu options -->
     <!-- FontEngine -->
     <string name="font_picker_title">글꼴</string>
     <!-- System theme -->
+    <string name="system_theme_wallpaper">시간에 따라 자동으로 변경</string>
+    <string name="system_theme_light">밝은 테마</string>
+    <string name="system_theme_dark">어두운 테마</string>
+    <string name="black_theme_title">검은 색 테마 사용</string>
     <!-- Manage applications, package string displayed in app snippet -->
     <!-- Battery temp -->
+    <string name="battery_temp_title">배터리 온도</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">스크린샷 촬영음</string>
 </resources>

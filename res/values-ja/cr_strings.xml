@@ -17,17 +17,120 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- CarbonROM version -->
+    <string name="carbon_version">ROM バージョン</string>
     <string name="carbon_version_default">不明</string>
     <!-- Carbon Fibers -->
+    <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">貴方の日々のファイバーに健康の源を</string>
+    <string name="gesture_double_tap_power_torch_toast">画面消灯トーチジェスチャーは現在無効です</string>
     <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">位置情報</string>
+    <string name="app_ops_cat_personal">個人情報</string>
+    <string name="app_ops_cat_messaging">メッセージ</string>
+    <string name="app_ops_cat_media">メディア</string>
+    <string name="app_ops_cat_device">端末</string>
+    <string name="app_ops_cat_bootup">起動</string>
     <!-- App ops labels -->
+    <string name="app_ops_access_camera">カメラ</string>
+    <string name="app_ops_access_location">位置情報</string>
+    <string name="app_ops_access_notifications">通知</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">端末起動時にアプリ開始</string>
+    <string name="app_ops_delete_call_log">通話記録の削除</string>
+    <string name="app_ops_delete_contacts">連絡先の削除</string>
+    <string name="app_ops_delete_mms">MMS の削除</string>
+    <string name="app_ops_delete_sms">SMS の削除</string>
+    <string name="app_ops_draw_on_top">他アプリ上に描画</string>
+    <string name="app_ops_get_usage_stats">使用統計の取得</string>
+    <string name="app_ops_keep_device_awake">スリープの無効化</string>
+    <string name="app_ops_make_phone_call">発信</string>
+    <string name="app_ops_modify_calendar">カレンダーの変更</string>
+    <string name="app_ops_modify_call_log">通話履歴の変更</string>
+    <string name="app_ops_modify_clipboard">クリップボードの変更</string>
+    <string name="app_ops_modify_contacts">連絡先の変更</string>
+    <string name="app_ops_modify_settings">設定の変更</string>
+    <string name="app_ops_mute_unmute_microphone">マイクの切換え</string>
+    <string name="app_ops_play_audio">オーディオの再生</string>
+    <string name="app_ops_post_notification">通知の送信</string>
+    <string name="app_ops_project_media">メディアの表示</string>
+    <string name="app_ops_read_calendar">カレンダーの読取</string>
+    <string name="app_ops_read_call_log">通話履歴の読取</string>
+    <string name="app_ops_read_clipboard">クリップボードの読取</string>
+    <string name="app_ops_read_contacts">連絡先の読取</string>
+    <string name="app_ops_read_mms">MMS の読み取り</string>
+    <string name="app_ops_read_sms">SMS の読取</string>
+    <string name="app_ops_receive_sms">SMS の受信</string>
+    <string name="app_ops_record_audio">音声の録音</string>
+    <string name="app_ops_send_mms">MMS の送信</string>
+    <string name="app_ops_send_sms">SMS の送信</string>
+    <string name="app_ops_toast_window">トーストメッセージの送信</string>
+    <string name="app_ops_use_alarm_volume">アラームの音量の使用</string>
+    <string name="app_ops_use_audio_focus">オーディオフォーカスの変更</string>
+    <string name="app_ops_use_bluetooth_volume">Bluetooth 音量の使用</string>
+    <string name="app_ops_use_master_volume">マスター音量の使用</string>
+    <string name="app_ops_use_media_buttons">メディアボタンの使用</string>
+    <string name="app_ops_use_media_volume">メディア音量の使用</string>
+    <string name="app_ops_use_notification_volume">通知音量の使用</string>
+    <string name="app_ops_use_ring_volume">着信音量の使用</string>
+    <string name="app_ops_use_vibrate">バイブレーションの制御</string>
+    <string name="app_ops_use_voice_volume">通話音量の使用</string>
+    <string name="app_ops_write_mms">MMS の書込</string>
+    <string name="app_ops_write_sms">SMS の書込</string>
+    <string name="app_ops_use_fingerprint">指紋認証の使用</string>
+    <string name="app_ops_add_voicemail">ボイスメールの追加</string>
+    <string name="app_ops_read_phone_state">端末状態の取得</string>
+    <string name="app_ops_scan_wifi">Wi-Fi ネットワークのスキャン</string>
+    <string name="app_ops_change_wallpaper">壁紙の変更</string>
+    <string name="app_ops_assist_structure">アシスト構造</string>
+    <string name="app_ops_assist_screenshot">スクリーンショット</string>
+    <string name="app_ops_use_body_sensors">ボディセンサーの使用</string>
+    <string name="app_ops_read_cell_broadcasts">エリアメール SMS の読取</string>
+    <string name="app_ops_mock_location">位置情報の偽装</string>
+    <string name="app_ops_read_external_storage">外部ストレージの読取</string>
+    <string name="app_ops_write_external_storage">外部ストレージの書込</string>
+    <string name="app_ops_turn_on_screen">画面の点灯</string>
+    <string name="app_ops_get_accounts">端末アカウントの取得</string>
+    <string name="app_ops_run_in_background">バックグラウンドで実行</string>
+    <string name="app_ops_accessibility_volume">アクセシビリティ音量の使用</string>
+    <string name="app_ops_read_phone_numbers">電話番号の読取</string>
+    <string name="app_ops_request_install_packages">アプリのインストール</string>
+    <string name="app_ops_picture_in_picture">Picture in Picture モードの使用</string>
+    <string name="app_ops_app_start_foreground">フォアグラウンドで開始</string>
+    <string name="app_ops_answer_phone_calls">着信に応答</string>
+    <string name="app_ops_run_any_in_background">タスクのバックグラウンド実行</string>
+    <string name="app_ops_change_wifi_state">Wi-Fi 状態の変更</string>
+    <string name="app_ops_request_delete_packages">アプリのアンインストール</string>
+    <string name="app_ops_bind_accessibility_service">アクセシビリティサービスの使用</string>
+    <string name="app_ops_accept_handover">ハンドオーバーを受容</string>
+    <string name="app_ops_manage_ipsec_tunnels">IP トンネルの管理</string>
+    <string name="app_ops_start_foreground">フォアグラウンドで開始</string>
+    <string name="app_ops_bluetooth_scan">Bluetooth スキャン</string>
+    <string name="app_ops_boot_completed">端末起動時にアプリ開始</string>
     <!-- App ops detail -->
+    <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (<xliff:g id="count">%2$s</xliff:g> 使用)</string>
+    <string name="app_ops_allowed_count"><xliff:g id="count" example="2 times">%s</xliff:g> を許可</string>
+    <string name="app_ops_ignored_count"><xliff:g id="count" example="2 times">%s</xliff:g> を拒否</string>
+    <string name="app_ops_both_count"><xliff:g id="count">%1$s</xliff:g> を許可, <xliff:g id="count">%2$s</xliff:g> を拒否</string>
     <!-- App ops menu options -->
+    <string name="app_ops_show_user_apps">ユーザーアプリを表示</string>
+    <string name="app_ops_show_system_apps">ビルドインアプリを表示</string>
+    <string name="app_ops_reset_counters">許可/拒否 カウンターを初期化</string>
+    <string name="app_ops_reset_confirm_title">カウンターリセットの確認</string>
+    <string name="app_ops_reset_confirm_mesg">カウンターを初期化してもよろしいですか？</string>
     <!-- FontEngine -->
     <string name="font_picker_title">フォント</string>
+    <string name="disable_fonts_installed_title">フォントピッカーは Substratum との競合のために使用できません。フォントピッカーを使用する場合は Substratum をアンインストールして下さい。</string>
+    <string name="font_picker_progress">新しいフォントを適用しています\u2026</string>
     <!-- System theme -->
+    <string name="system_theme_wallpaper">自動 (時間帯ベース)</string>
+    <string name="system_theme_light">ライト</string>
+    <string name="system_theme_dark">ダーク</string>
+    <string name="black_theme_title">ブラックテーマを使用</string>
+    <string name="black_theme_summary">ダークの代わりにブラックテーマを使う</string>
     <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Battery temp -->
+    <string name="battery_temp_title">バッテリー温度</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">スクリーンショットの音</string>
 </resources>

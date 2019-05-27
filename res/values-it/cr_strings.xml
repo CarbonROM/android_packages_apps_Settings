@@ -53,7 +53,55 @@
     <string name="app_ops_play_audio">Riprodurre audio</string>
     <string name="app_ops_post_notification">Invia notifica</string>
     <string name="app_ops_project_media">Progetto multimediale</string>
+    <string name="app_ops_read_calendar">Leggi il calendario</string>
+    <string name="app_ops_read_call_log">Leggi il log delle chiamate</string>
+    <string name="app_ops_read_clipboard">Lettura appunti</string>
+    <string name="app_ops_read_contacts">Leggi i contatti</string>
+    <string name="app_ops_read_mms">Leggi MMS</string>
+    <string name="app_ops_read_sms">Leggi SMS</string>
+    <string name="app_ops_receive_sms">Ricevi SMS</string>
+    <string name="app_ops_record_audio">Registra audio</string>
+    <string name="app_ops_send_mms">Invia MMS</string>
+    <string name="app_ops_send_sms">Invia SMS</string>
+    <string name="app_ops_toast_window">Invia un toast message</string>
+    <string name="app_ops_use_alarm_volume">Utilizza volume allarme</string>
+    <string name="app_ops_use_audio_focus">Cambia il focus dell\'audio</string>
+    <string name="app_ops_use_bluetooth_volume">Utilizza volume bluetooth</string>
+    <string name="app_ops_use_master_volume">Utilizza volume principale</string>
+    <string name="app_ops_use_media_buttons">Utilizza i pulsanti multimediali</string>
+    <string name="app_ops_use_media_volume">Utilizza volume contenuti multimediali</string>
+    <string name="app_ops_use_notification_volume">Utilizza volume notifiche</string>
+    <string name="app_ops_use_ring_volume">Utilizza volume suoneria</string>
+    <string name="app_ops_use_vibrate">Controllo vibrazione</string>
+    <string name="app_ops_use_voice_volume">Utilizza volume chiamata</string>
+    <string name="app_ops_write_mms">Scrivi MMS</string>
+    <string name="app_ops_write_sms">Scrivi SMS</string>
+    <string name="app_ops_use_fingerprint">Usa l\'importe digitale</string>
+    <string name="app_ops_add_voicemail">Aggiunta messaggio vocale</string>
+    <string name="app_ops_read_phone_state">Accedi allo stato del telefono</string>
+    <string name="app_ops_scan_wifi">Trova reti WiFi</string>
+    <string name="app_ops_change_wallpaper">Cambia sfondo</string>
+    <string name="app_ops_assist_structure">Struttura di assistenza</string>
+    <string name="app_ops_assist_screenshot">Screenshot</string>
+    <string name="app_ops_use_body_sensors">Utilizza i sensori del corpo</string>
+    <string name="app_ops_read_cell_broadcasts">Lettura cella di trasmissione</string>
+    <string name="app_ops_mock_location">Posizione fittizia</string>
+    <string name="app_ops_read_external_storage">Lettura memoria esterna</string>
+    <string name="app_ops_write_external_storage">Scrittura memoria esterna</string>
+    <string name="app_ops_turn_on_screen">Accendi lo schermo</string>
+    <string name="app_ops_get_accounts">Leggi account dispositivo</string>
+    <string name="app_ops_run_in_background">Esegui in background</string>
+    <string name="app_ops_read_phone_numbers">Leggi il numero di telefono</string>
+    <string name="app_ops_request_install_packages">Installa le applicazioni</string>
+    <string name="app_ops_picture_in_picture">Uso modalità Picture in Picture</string>
+    <string name="app_ops_app_start_foreground">Inizia in primo piano</string>
+    <string name="app_ops_answer_phone_calls">Rispondi alle chiamate</string>
+    <string name="app_ops_run_any_in_background">Esegui attività in background</string>
+    <string name="app_ops_change_wifi_state">Modifica stato Wi-Fi</string>
+    <string name="app_ops_request_delete_packages">Disinstalla applicazione</string>
+    <string name="app_ops_bind_accessibility_service">Utilizza servizio di accessibilità</string>
     <string name="app_ops_manage_ipsec_tunnels">Gestisci tunnel IP</string>
+    <string name="app_ops_start_foreground">Inizia in primo piano</string>
     <string name="app_ops_bluetooth_scan">Scansione Bluetooth</string>
     <string name="app_ops_boot_completed">Eseguire all\'avvio</string>
     <!-- App ops detail -->
@@ -82,4 +130,5 @@
     <!-- Battery temp -->
     <string name="battery_temp_title">Temperatura batteria</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Suono screenshot</string>
 </resources>

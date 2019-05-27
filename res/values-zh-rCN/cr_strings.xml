@@ -33,7 +33,6 @@
     <!-- App ops labels -->
     <string name="app_ops_access_camera">相机</string>
     <string name="app_ops_access_location">位置</string>
-    <string name="app_ops_access_notifications">申请</string>
     <string name="app_ops_activate_vpn">VPN</string>
     <string name="app_ops_auto_start">在开机时启动</string>
     <string name="app_ops_delete_call_log">删除通话记录</string>
