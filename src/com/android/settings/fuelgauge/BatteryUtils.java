@@ -30,6 +30,7 @@ import android.os.Process;
 import android.os.SystemClock;
 import android.os.UserHandle;
 import android.os.UserManager;
+import android.provider.Settings;
 import android.support.annotation.IntDef;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
@@ -499,7 +500,14 @@ public class BatteryUtils {
         return 0;
     }
 
+    public boolean isAggressiveStandby() {
+        return Settings.System.getInt("aggressive_standby_enabled", defaultValue) == 1;
+    }
+
     public boolean isPreOApp(final String packageName) {
+        if (isAggressiveStandby())
+            return false;
+
         try {
             ApplicationInfo info = mPackageManager.getApplicationInfo(packageName,
                     PackageManager.GET_META_DATA);
@@ -516,6 +524,9 @@ public class BatteryUtils {
         if (ArrayUtils.isEmpty(packageNames)) {
             return false;
         }
+
+        if (isAggressiveStandby())
+            return false;
 
         for (String packageName : packageNames) {
             if (isPreOApp(packageName)) {
