@@ -17,7 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- CarbonROM version -->
-    <string name="carbon_version">CarbonROM バージョン</string>
+    <string name="carbon_version">CarbonROMバージョン</string>
     <string name="carbon_version_default">不明</string>
     <!-- CarbonFibers -->
     <string name="cf_settings_title">Fibers</string>
@@ -30,14 +30,14 @@
     <string name="rootmanagement_dashboard_summary">ルートアクセスを管理する</string>
     <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
     <string name="supersu_title">SuperSU</string>
-    <string name="screenshot_shutter_sound_title">スクリーンショットのシャッター音</string>
+    <string name="screenshot_shutter_sound_title">スクリーンショットの音</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="status" example="disabled">%2$s</xliff:g>は<xliff:g id="displayName">%1$s</xliff:g>です</string>
     <string name="sim_disabled">無効</string>
     <string name="sim_missing">挿入されていないか、問題があります。</string>
     <string name="sim_enabler_need_disable_sim">SIM カードはアクティベート解除されます。続けますか?</string>
     <string name="sim_enabler_will_disable_sim_title">注意</string>
-    <string name="sim_enabler_need_switch_data_service">このSIM は無効になり、SIM <xliff:g id="slotid">%1$s</xliff:g> がデータサービスに使用されます。続けますか?</string>
+    <string name="sim_enabler_need_switch_data_service">この SIM は無効になり、SIM <xliff:g id="slotid">%1$s</xliff:g> がデータサービスに使用されます。続けますか?</string>
     <string name="sim_enabler_airplane_on">機内モードが ON になっている間はこの操作を実行することはできません</string>
     <string name="sim_enabler_in_call">通話中はこの操作を実行することはできません</string>
     <string name="sim_enabler_both_inactive">全ての SIM を無効にできません</string>
@@ -49,7 +49,7 @@
     <string name="sub_deactivate_failed">アクティベート解除に失敗しました</string>
     <!-- Color Picker -->
     <string name="dialog_color_picker">カラーピッカー</string>
-    <string name="press_color_to_apply">適用するには色をタップしてください</string>
+    <string name="press_color_to_apply">適用するには色をタップして下さい</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">16進数:</string>
@@ -59,7 +59,7 @@
     <!-- Vibrate on plug -->
     <string name="vibrate_on_plug_title">接続時に振動</string>
     <!-- Battery Light -->
-    <string name="battery_light_title">バッテリーLED</string>
+    <string name="battery_light_title">バッテリーライト</string>
     <string name="battery_light_title_summary_on">ON / バッテリー残量が表示されます</string>
     <string name="battery_light_title_summary_off">OFF / バッテリー残量が表示されません</string>
     <string name="battery_light_description">バッテリーライト表示の切替えや動作の変更</string>
@@ -68,7 +68,7 @@
     <string name="battery_light_only_full_charge_title">充電完了表示</string>
     <string name="battery_light_only_full_charge_title_summary">端末が完全に充電されている場合のみバッテリーライトを表示する</string>
     <string name="battery_light_list_title">色</string>
-    <string name="battery_light_low_color_title">低バッテリー</string>
+    <string name="battery_light_low_color_title">低残量時</string>
     <string name="battery_light_medium_color_title">充電中</string>
     <string name="battery_light_full_color_title">充電完了 (90%)</string>
     <string name="battery_light_really_full_color_title">充電完了 (100%)</string>
@@ -77,23 +77,23 @@
     <string name="fast_charging_led_enabled_summary">急速充電の時は90％充電するまで異なる色を使用する</string>
     <string name="fast_charging_light_color_title">色</string>
     <string name="edit_battery_settings">バッテリー設定を編集</string>
-    <string name="led_color_green">緑</string>
-    <string name="led_color_red">赤</string>
-    <string name="led_color_blue">青</string>
+    <string name="led_color_green">グリーン</string>
+    <string name="led_color_red">レッド</string>
+    <string name="led_color_blue">ブルー</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">リセット</string>
     <!-- Custom light color -->
-    <string name="light_customization">LEDライトによる通知</string>
+    <string name="light_customization">LED ライトによる通知</string>
     <string name="custom_light_title">ライトの色</string>
     <string name="custom_light_on_time_title">"LED パルス中の点灯時間 (ms)"</string>
     <string name="custom_light_off_time_title">"LED パルス中の消灯時間 (ms)"</string>
     <string name="app_notifications_info_desc">上記のいずれかのチャンネルをタップして明るい色やその他のオプションを設定する</string>
     <string name="value_equals_default">既定</string>
     <string name="show_light_on_zen_title">マナーモード中は点滅させる</string>
-    <string name="link_volume_option_title">着信音と通知音をリンクさせる</string>
+    <string name="link_volume_option_title">着信音と通知音をリンク</string>
     <!-- Font picker -->
     <string name="font_picker_title">フォント</string>
-    <string name="font_subs_info">これを使用する前に Substratum の全てのフォントオーバーレイを無効にしてください。\nSubstratum の使用に戻る場合は、ここで既定のフォント (Roboto) を選択してください。</string>
-    <string name="font_picker_reboot_recommended">最適な体験のために\n端末を再起動してください</string>
+    <string name="font_subs_info">これを使用する前に Substratum の全てのフォントオーバーレイを無効にしてください。\nSubstratum の使用に戻る場合は、ここで既定のフォント (Roboto) を選択して下さい。</string>
+    <string name="font_picker_reboot_recommended">最適な体験のために\n端末を再起動して下さい</string>
 </resources>

@@ -34,13 +34,22 @@
     <string name="sim_enabler_need_disable_sim">SIM 카드가 비활성화됩니다. 계속 하시겠습니까?</string>
     <string name="sim_enabler_will_disable_sim_title">주의</string>
     <!-- Color Picker -->
+    <string name="dialog_color_picker">색상 선택기</string>
+    <string name="press_color_to_apply">적용할 색상을 아래에서 누르세요</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
     <string name="color_default">기본값</string>
     <!-- Vibrate on plug -->
     <string name="vibrate_on_plug_title">케이블 연결 시 진동</string>
     <!-- Battery Light -->
     <string name="battery_light_title">배터리 표시등</string>
+    <string name="battery_light_title_summary_on">켜짐 / 배터리의 상태를 표시합니다.</string>
+    <string name="battery_light_title_summary_off">꺼짐 / 배터리의 상태를 표시하지 않습니다.</string>
+    <string name="battery_low_pulse_title">배터리가 낮을 때 깜박이기</string>
+    <string name="battery_low_pulse_title_summary">배터리의 상태가 낮으면 표시등이 깜박입니다.</string>
+    <string name="battery_light_only_full_charge_title">완충시 표시</string>
     <string name="battery_light_only_full_charge_title_summary">완전히 충전되었을 때만 배터리 표시등 보이기</string>
     <string name="battery_light_list_title">색상</string>
     <string name="battery_light_low_color_title">배터리 부족</string>
@@ -48,6 +57,8 @@
     <string name="battery_light_full_color_title">충전됨 (90%)</string>
     <string name="battery_light_really_full_color_title">충전됨 (100%)</string>
     <string name="fast_color_cat_title">고속 충전</string>
+    <string name="fast_charging_led_enabled_title">고속 충전 색상 활성화</string>
+    <string name="fast_charging_led_enabled_summary">고속 충전중일 때, 90% 충전됐을 때와 다른 색상을 사용합니다.</string>
     <string name="fast_charging_light_color_title">색상</string>
     <string name="edit_battery_settings">배터리 설정 편집</string>
     <string name="led_color_green">녹색</string>
@@ -59,7 +70,10 @@
     <!-- Custom light color -->
     <string name="light_customization">LED 표시등 알림</string>
     <string name="custom_light_title">표시등 색상</string>
+    <string name="value_equals_default">기본값</string>
+    <string name="show_light_on_zen_title">알림 일시중지 모드 중에 깜박임</string>
     <string name="link_volume_option_title">벨소리 음량과 알림 음량을 공유</string>
     <!-- Font picker -->
     <string name="font_picker_title">글꼴</string>
+    <string name="font_subs_info">이 것을 사용하기 전에 Substratum에서 모든 글꼴 오버레이를 비활성화 해주세요.\n만약 Substratum을 다시 사용하고 싶다면, 여기에서 기본 글꼴(Roboto)을 선택하세요.</string>
 </resources>

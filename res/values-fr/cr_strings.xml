@@ -62,7 +62,11 @@
     <string name="fast_charging_led_enabled_summary">En charge rapide, utiliser une couleur différente jusqu\'à 90% de charge</string>
     <string name="fast_charging_light_color_title">Couleur</string>
     <string name="edit_battery_settings">Modifier les paramètres de la batterie</string>
+    <string name="led_color_green">Vert</string>
+    <string name="led_color_red">Rouge</string>
+    <string name="led_color_blue">Bleu</string>
     <!-- General strings -->
+    <string name="ok">OK</string>
     <!-- Custom light color -->
     <!-- Font picker -->
 </resources>

@@ -32,10 +32,26 @@
     <string name="supersu_title">SuperSU</string>
     <string name="screenshot_shutter_sound_title">Schermafbeelding sluitergeluid</string>
     <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <!-- Color Picker -->
     <!-- Vibrate on plug -->
     <!-- Battery Light -->
+    <string name="battery_light_list_title">Kleuren</string>
+    <string name="battery_light_low_color_title">Batterij bijna leeg</string>
+    <string name="battery_light_medium_color_title">Opladen</string>
+    <string name="battery_light_full_color_title">Opgeladen (90%)</string>
+    <string name="battery_light_really_full_color_title">Opgeladen (100%)</string>
+    <string name="fast_color_cat_title">Snel opladen</string>
+    <string name="fast_charging_led_enabled_title">Schakel kleur voor snel opladen in</string>
+    <string name="fast_charging_light_color_title">Kleur</string>
+    <string name="led_color_green">Groen</string>
+    <string name="led_color_red">Rood</string>
+    <string name="led_color_blue">Blauw</string>
     <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Opnieuw instellen</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">Lichtkleur</string>
     <!-- Font picker -->
+    <string name="font_picker_title">Lettertype</string>
 </resources>
