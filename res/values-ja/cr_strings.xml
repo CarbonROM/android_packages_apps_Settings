@@ -91,7 +91,7 @@
     <string name="app_ops_turn_on_screen">画面の点灯</string>
     <string name="app_ops_get_accounts">端末アカウントの取得</string>
     <string name="app_ops_run_in_background">バックグラウンドで実行</string>
-    <string name="app_ops_accessibility_volume">アクセシビリティ音量の使用</string>
+    <string name="app_ops_accessibility_volume">ユーザー補助音量の使用</string>
     <string name="app_ops_read_phone_numbers">電話番号の読取</string>
     <string name="app_ops_request_install_packages">アプリのインストール</string>
     <string name="app_ops_picture_in_picture">Picture in Picture モードの使用</string>
@@ -114,9 +114,9 @@
     <!-- App ops menu options -->
     <string name="app_ops_show_user_apps">ユーザーアプリを表示</string>
     <string name="app_ops_show_system_apps">ビルドインアプリを表示</string>
-    <string name="app_ops_reset_counters">許可/拒否 カウンターを初期化</string>
+    <string name="app_ops_reset_counters">許可/拒否 カウンターをリセット</string>
     <string name="app_ops_reset_confirm_title">カウンターリセットの確認</string>
-    <string name="app_ops_reset_confirm_mesg">カウンターを初期化してもよろしいですか？</string>
+    <string name="app_ops_reset_confirm_mesg">カウンターをリセットしてもよろしいですか?</string>
     <!-- FontEngine -->
     <string name="font_picker_title">フォント</string>
     <string name="disable_fonts_installed_title">フォントピッカーは Substratum との競合のために使用できません。フォントピッカーを使用する場合は Substratum をアンインストールして下さい。</string>

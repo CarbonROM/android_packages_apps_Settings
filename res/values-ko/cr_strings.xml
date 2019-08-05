@@ -17,17 +17,75 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- CarbonROM version -->
+    <string name="carbon_version">ROM 버전</string>
     <string name="carbon_version_default">알 수 없음</string>
     <!-- Carbon Fibers -->
     <string name="cf_settings_title">Carbon Fibers</string>
     <!-- App Ops Categories -->
     <string name="app_ops_cat_location">위치</string>
+    <string name="app_ops_cat_personal">개인</string>
+    <string name="app_ops_cat_messaging">메시지</string>
+    <string name="app_ops_cat_media">미디어</string>
     <!-- App ops labels -->
+    <string name="app_ops_access_camera">카메라</string>
+    <string name="app_ops_access_location">위치</string>
+    <string name="app_ops_access_notifications">알림</string>
     <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">부팅 시 실행</string>
+    <string name="app_ops_delete_call_log">통화 기록 삭제</string>
+    <string name="app_ops_delete_contacts">연락처 삭제</string>
+    <string name="app_ops_delete_mms">MMS 삭제</string>
+    <string name="app_ops_delete_sms">SMS 삭제</string>
+    <string name="app_ops_keep_device_awake">기기 켜짐 유지</string>
+    <string name="app_ops_modify_call_log">통화 기록 수정</string>
+    <string name="app_ops_modify_clipboard">클립보드 수정</string>
+    <string name="app_ops_modify_contacts">연락처 수정</string>
+    <string name="app_ops_play_audio">오디오 재생</string>
+    <string name="app_ops_post_notification">알림 전송</string>
+    <string name="app_ops_read_call_log">통화 기록 읽기</string>
+    <string name="app_ops_read_clipboard">클립보드 읽기</string>
+    <string name="app_ops_read_contacts">연락처 읽기</string>
+    <string name="app_ops_read_mms">MMS 읽기</string>
+    <string name="app_ops_read_sms">SMS 읽기</string>
+    <string name="app_ops_receive_sms">SMS 수신</string>
+    <string name="app_ops_record_audio">오디오 녹음</string>
+    <string name="app_ops_send_mms">MMS 전송</string>
+    <string name="app_ops_send_sms">SMS 전송</string>
+    <string name="app_ops_toast_window">토스트 메시지 전송</string>
+    <string name="app_ops_use_alarm_volume">알람 음량 사용</string>
+    <string name="app_ops_use_bluetooth_volume">블루투스 음량 사용</string>
+    <string name="app_ops_use_master_volume">마스터 음량 사용</string>
+    <string name="app_ops_use_media_buttons">미디어 버튼 사용</string>
+    <string name="app_ops_use_media_volume">미디어 음량 사용</string>
+    <string name="app_ops_use_notification_volume">알림 음량 사용</string>
+    <string name="app_ops_use_ring_volume">벨소리 음량 사용</string>
+    <string name="app_ops_use_vibrate">진동 제어</string>
+    <string name="app_ops_use_voice_volume">통화 음량 사용</string>
+    <string name="app_ops_write_mms">MMS 쓰기</string>
+    <string name="app_ops_write_sms">SMS 쓰기</string>
+    <string name="app_ops_use_fingerprint">지문 사용</string>
+    <string name="app_ops_scan_wifi">Wi-Fi 네트워크 탐색</string>
+    <string name="app_ops_change_wallpaper">배경화면 변경</string>
+    <string name="app_ops_assist_screenshot">스크린샷</string>
+    <string name="app_ops_turn_on_screen">화면 켜기</string>
+    <string name="app_ops_run_in_background">백그라운드에서 실행</string>
+    <string name="app_ops_read_phone_numbers">전화번호 읽기</string>
+    <string name="app_ops_request_install_packages">앱 설치</string>
+    <string name="app_ops_run_any_in_background">백그라운드에서 작업</string>
+    <string name="app_ops_change_wifi_state">Wi-Fi 상태 변경</string>
+    <string name="app_ops_request_delete_packages">앱 제거</string>
+    <string name="app_ops_bluetooth_scan">블루투스 탐색</string>
+    <string name="app_ops_boot_completed">부팅 시 실행</string>
     <!-- App ops detail -->
     <!-- App ops menu options -->
+    <string name="app_ops_show_user_apps">설치한 앱 보기</string>
+    <string name="app_ops_show_system_apps">내장된 앱 보기</string>
+    <string name="app_ops_reset_counters">허가/거부 횟수 초기화</string>
+    <string name="app_ops_reset_confirm_title">횟수 초기화 승인</string>
+    <string name="app_ops_reset_confirm_mesg">정말 횟수를 초기화 하시겠습니까?</string>
     <!-- FontEngine -->
     <string name="font_picker_title">글꼴</string>
+    <string name="font_picker_progress">새 글꼴을 적용하는 중\u2026</string>
     <!-- System theme -->
     <string name="system_theme_wallpaper">시간에 따라 자동으로 변경</string>
     <string name="system_theme_light">밝은 테마</string>

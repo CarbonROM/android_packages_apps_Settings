@@ -17,17 +17,120 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- CarbonROM version -->
+    <string name="carbon_version">Versão da ROM</string>
     <string name="carbon_version_default">Desconhecido</string>
     <!-- Carbon Fibers -->
+    <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">Uma fonte saudável de sua fibra diária</string>
+    <string name="gesture_double_tap_power_torch_toast">Tela desligada gesto lanterna agora está desabilitado</string>
     <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">Localização</string>
+    <string name="app_ops_cat_personal">Pessoal</string>
+    <string name="app_ops_cat_messaging">Mensagens</string>
+    <string name="app_ops_cat_media">Mídia</string>
+    <string name="app_ops_cat_device">Dispositivo</string>
+    <string name="app_ops_cat_bootup">Inicialização</string>
     <!-- App ops labels -->
+    <string name="app_ops_access_camera">Câmera</string>
+    <string name="app_ops_access_location">Localização</string>
+    <string name="app_ops_access_notifications">Notificações</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">Iniciar na inicialização</string>
+    <string name="app_ops_delete_call_log">Excluir registro de chamadas</string>
+    <string name="app_ops_delete_contacts">Excluir contatos</string>
+    <string name="app_ops_delete_mms">Excluir MMS</string>
+    <string name="app_ops_delete_sms">Excluir SMS</string>
+    <string name="app_ops_draw_on_top">Desenhar no topo de outros apps</string>
+    <string name="app_ops_get_usage_stats">Obter estatísticas de uso</string>
+    <string name="app_ops_keep_device_awake">Manter dispositivo ativo</string>
+    <string name="app_ops_make_phone_call">Fazer uma chamada</string>
+    <string name="app_ops_modify_calendar">Modificar calendário</string>
+    <string name="app_ops_modify_call_log">Modificar registro de chamadas</string>
+    <string name="app_ops_modify_clipboard">Modificar área de transferência</string>
+    <string name="app_ops_modify_contacts">Modificar contatos</string>
+    <string name="app_ops_modify_settings">Modificar configurações</string>
+    <string name="app_ops_mute_unmute_microphone">Silenciar/Reativar o Microfone</string>
+    <string name="app_ops_play_audio">Reproduzir áudio</string>
+    <string name="app_ops_post_notification">Enviar notificação</string>
+    <string name="app_ops_project_media">Projetar mídia</string>
+    <string name="app_ops_read_calendar">Ler calendário</string>
+    <string name="app_ops_read_call_log">Ler registro de chamadas</string>
+    <string name="app_ops_read_clipboard">Ler área de transferência</string>
+    <string name="app_ops_read_contacts">Ler contatos</string>
+    <string name="app_ops_read_mms">Ler MMS</string>
+    <string name="app_ops_read_sms">Ler SMS</string>
+    <string name="app_ops_receive_sms">Receber SMS</string>
+    <string name="app_ops_record_audio">Gravar áudio</string>
+    <string name="app_ops_send_mms">Enviar MMS</string>
+    <string name="app_ops_send_sms">Enviar SMS</string>
+    <string name="app_ops_toast_window">Enviar mensagens de toast</string>
+    <string name="app_ops_use_alarm_volume">Usar volume do alarme</string>
+    <string name="app_ops_use_audio_focus">Alterar foco de áudio</string>
+    <string name="app_ops_use_bluetooth_volume">Usar volume bluetooth</string>
+    <string name="app_ops_use_master_volume">Usar o volume principal</string>
+    <string name="app_ops_use_media_buttons">Usar botões de mídia</string>
+    <string name="app_ops_use_media_volume">Usar volume de mídia</string>
+    <string name="app_ops_use_notification_volume">Usar volume de notificação</string>
+    <string name="app_ops_use_ring_volume">Usar volume do toque</string>
+    <string name="app_ops_use_vibrate">Controlar vibração</string>
+    <string name="app_ops_use_voice_volume">Usar volume de chamada</string>
+    <string name="app_ops_write_mms">Escrever MMS</string>
+    <string name="app_ops_write_sms">Escrever SMS</string>
+    <string name="app_ops_use_fingerprint">Usar impressão digital</string>
+    <string name="app_ops_add_voicemail">Adicionar correio de voz</string>
+    <string name="app_ops_read_phone_state">Acessar estado do telefone</string>
+    <string name="app_ops_scan_wifi">Verificar redes Wi-Fi</string>
+    <string name="app_ops_change_wallpaper">Mudar papel de parede</string>
+    <string name="app_ops_assist_structure">Assistente de estrutura</string>
+    <string name="app_ops_assist_screenshot">Captura de tela</string>
+    <string name="app_ops_use_body_sensors">Usar sensores corporais</string>
+    <string name="app_ops_read_cell_broadcasts">Ler transmissões de rede</string>
+    <string name="app_ops_mock_location">Localização falsa</string>
+    <string name="app_ops_read_external_storage">Leia o armazenamento do usuário</string>
+    <string name="app_ops_write_external_storage">Escreva o armazenamento do usuário</string>
+    <string name="app_ops_turn_on_screen">Ligar a tela</string>
+    <string name="app_ops_get_accounts">Leia as contas do dispositivo</string>
+    <string name="app_ops_run_in_background">Executar em segundo plano</string>
+    <string name="app_ops_accessibility_volume">Usar volume de acessibilidade</string>
+    <string name="app_ops_read_phone_numbers">Ler número de telefone</string>
+    <string name="app_ops_request_install_packages">Instalar apps</string>
+    <string name="app_ops_picture_in_picture">Usar modo Picture in Picture</string>
+    <string name="app_ops_app_start_foreground">Iniciar primeiro plano</string>
+    <string name="app_ops_answer_phone_calls">Atender chamadas</string>
+    <string name="app_ops_run_any_in_background">Executar tarefas em segundo plano</string>
+    <string name="app_ops_change_wifi_state">Alterar estado do Wi-Fi</string>
+    <string name="app_ops_request_delete_packages">Desinstalar apps</string>
+    <string name="app_ops_bind_accessibility_service">Usar serviço de acessibilidade</string>
+    <string name="app_ops_accept_handover">Aceitar entrega</string>
+    <string name="app_ops_manage_ipsec_tunnels">Gerenciar túneis IP</string>
+    <string name="app_ops_start_foreground">Iniciar primeiro plano</string>
+    <string name="app_ops_bluetooth_scan">Verificação Bluetooth</string>
+    <string name="app_ops_boot_completed">Iniciar na inicialização</string>
     <!-- App ops detail -->
+    <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (used <xliff:g id="count">%2$s</xliff:g>)</string>
+    <string name="app_ops_allowed_count">Permitido <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_ignored_count">Negado <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_both_count">Permitido <xliff:g id="count">%1$s</xliff:g>, negado <xliff:g id="count">%2$s</xliff:g></string>
     <!-- App ops menu options -->
+    <string name="app_ops_show_user_apps">Mostrar aplicativos do usuário</string>
+    <string name="app_ops_show_system_apps">Mostrar aplicativos integrados</string>
+    <string name="app_ops_reset_counters">Redefinir contadores de permissão/recusa</string>
+    <string name="app_ops_reset_confirm_title">Confirme os contadores redefinidos</string>
+    <string name="app_ops_reset_confirm_mesg">Tem certeza de que deseja redefinir os contadores?</string>
     <!-- FontEngine -->
     <string name="font_picker_title">Fonte</string>
+    <string name="disable_fonts_installed_title">Seletor de fontes indisponível para evitar conflitos com o Substratum. Desinstalar se você deseja usar o seletor de fontes.</string>
+    <string name="font_picker_progress">Aplicando nova fonte\u2026</string>
     <!-- System theme -->
+    <string name="system_theme_wallpaper">Automático (baseado na hora do dia)</string>
+    <string name="system_theme_light">Claro</string>
+    <string name="system_theme_dark">Escuro</string>
+    <string name="black_theme_title">Usar tema preto</string>
+    <string name="black_theme_summary">Usar tema preto no lugar escuro</string>
     <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Battery temp -->
+    <string name="battery_temp_title">Temperatura da bateria</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Som de captura de tela</string>
 </resources>
