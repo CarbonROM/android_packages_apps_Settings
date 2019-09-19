@@ -38,4 +38,7 @@
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sound</string>
 
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Close</string>
+
 </resources>
