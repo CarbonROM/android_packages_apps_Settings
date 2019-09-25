@@ -21,4 +21,9 @@
     <string name="summary_placeholder">N/A</string>
     <string name="carbon_vendor_security_patch">Vendor security patch level</string>
 
+    <!-- SELinux Status -->
+    <string name="selinux_status">SELinux status</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
 </resources>
