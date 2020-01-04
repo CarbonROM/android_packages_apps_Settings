@@ -33,7 +33,8 @@ android_library {
     aaptflags: ["--extra-packages org.carbonrom.carbonfibers"],
 
     resource_dirs: ["res",
-                    "CarbonFibers/res"
+                    "CarbonFibers/res",
+                    "TouchGestures/res"
     ],
 
     static_libs: [
