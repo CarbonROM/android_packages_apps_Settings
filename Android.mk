@@ -22,6 +22,7 @@ LOCAL_USE_AAPT2 := true
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../CarbonFibers/src)
+LOCAL_SRC_FILES += $(call all-java-files-under, ../SmartActions/settings_src/src)
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx-constraintlayout_constraintlayout \
@@ -35,7 +36,8 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.recyclerview_recyclerview \
     com.google.android.material_material \
     setupcompat \
-    setupdesign
+    setupdesign \
+    SmartActions-core
 
 LOCAL_JAVA_LIBRARIES := \
     telephony-common \
@@ -54,18 +56,24 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     zxing-core-1.7
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
-    packages/apps/CarbonFibers/res
+    packages/apps/CarbonFibers/res \
+    packages/apps/SmartActions/settings_res
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
-    --extra-packages org.carbonrom.carbonfibers
+    --extra-packages org.carbonrom.carbonfibers \
+    --extra-packages com.android.smartactions
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
     LOCAL_JACK_ENABLED := incremental
     LOCAL_JACK_FLAGS := --multi-dex native
 endif
+
+
+# SmartActionSettings activities
+LOCAL_FULL_LIBS_MANIFEST_FILES += packages/apps/SmartActions/SmartActionSettings_manifest.xml
 
 include frameworks/base/packages/SettingsLib/common.mk
 include frameworks/base/packages/SettingsLib/search/common.mk
