@@ -195,6 +195,13 @@
           android:key="screenshot_sounds"
           android:title="@string/screenshot_sound_title" />
 
+	<!-- Notification sound/vibration with screen on -->
+	<com.android.settings.carbon.SystemSettingSwitchPreference
+          android:key="notification_sound_vib_screen_on"
+          android:title="@string/notification_sound_vib_screen_on_title"
+          android:summary="@string/notification_sound_vib_screen_on_summary"
+          android:defaultValue="true" />
+
         <!-- Emergency tone -->
         <DropDownPreference
           android:key="emergency_tone"
