@@ -332,5 +332,6 @@ public class SettingsGateway {
             Settings.CarbonFibersActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
             Settings.CarbonFibersSystemActivity.class.getName(),
+            Settings.SystemNavActivity.class.getName(),
     };
 }

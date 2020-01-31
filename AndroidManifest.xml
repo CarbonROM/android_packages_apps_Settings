@@ -3364,6 +3364,17 @@
         <!-- Hide Apps from Recents (HAFR) -->
         <activity android:name="org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents.HAFRAppListActivity" />
 
+        <!-- System Navigation -->
+        <activity android:name="Settings$SystemNavActivity"
+                android:label="@string/system_navigation_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.gestures.SystemNavigationGestureSettings" />
+        </activity>
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
