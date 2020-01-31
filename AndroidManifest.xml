@@ -3410,6 +3410,17 @@
                        android:value="true" />
         </activity>
 
+        <!-- System Navigation -->
+        <activity android:name="Settings$SystemNavActivity"
+                android:label="@string/system_navigation_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.gestures.SystemNavigationGestureSettings" />
+        </activity>
+
         <activity android:name="Settings$MediaControlsSettingsActivity"
                   android:exported="true"
                   android:label="@strings/media_controls_title">
