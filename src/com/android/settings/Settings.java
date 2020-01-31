@@ -324,4 +324,5 @@ public class Settings extends SettingsActivity {
      * Activity for AppDashboard.
      */
     public static class AppDashboardActivity extends SettingsActivity {}
+    public static class SystemNavActivity extends SettingsActivity { /* empty */ }
 }
