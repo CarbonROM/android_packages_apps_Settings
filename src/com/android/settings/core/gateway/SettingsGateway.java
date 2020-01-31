@@ -354,5 +354,6 @@ public class SettingsGateway {
             UserBackupSettingsActivity.class.getName(),
             Settings.CarbonFibersActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
+            Settings.SystemNavActivity.class.getName(),
     };
 }
