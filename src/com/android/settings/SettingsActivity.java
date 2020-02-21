@@ -924,7 +924,7 @@ public class SettingsActivity extends SettingsDrawerActivity
         },
         {
             "com.topjohnwu.magisk", //pkg name
-            "com.topjohnwu.magisk.SplashActivity", // class name
+            "a.c", // class name
             0,
         },
     };
