@@ -19,13 +19,13 @@
     <!-- Carbon Fibers -->
     <!-- App Ops Categories -->
     <!-- App ops labels -->
+    <string name="app_ops_assist_screenshot">擷取螢幕畫面</string>
     <!-- App ops detail -->
     <!-- App ops menu options -->
     <!-- FontEngine -->
-    <string name="font_picker_title">Fontti</string>
     <!-- System theme -->
     <!-- Manage applications, package string displayed in app snippet -->
     <!-- Battery temp -->
-    <string name="battery_temp_title">Akun lämpötila</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">擷取熒幕畫面音效</string>
 </resources>

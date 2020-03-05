@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CarbonROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- CarbonROM version -->
+    <string name="carbon_version">ROM versioon</string>
+    <string name="carbon_version_default">Tundmatu</string>
+    <!-- Carbon Fibers -->
+    <string name="cf_settings_title">Carbon Fibers</string>
+    <string name="cf_dashboard_summary">Kvaliteetse kiu allikas iga päev</string>
+    <string name="gesture_double_tap_power_torch_toast">Ekraani väljalülitamise žest on nüüd keelatud</string>
+    <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">Asukoht</string>
+    <string name="app_ops_cat_personal">Isiklik</string>
+    <string name="app_ops_cat_messaging">Sõnumside</string>
+    <string name="app_ops_cat_media">Meedia</string>
+    <string name="app_ops_cat_device">Seade</string>
+    <string name="app_ops_cat_bootup">Automaatlaadimine</string>
+    <!-- App ops labels -->
+    <string name="app_ops_access_camera">Kaamera</string>
+    <string name="app_ops_access_location">Asukoht</string>
+    <string name="app_ops_access_notifications">Teated</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">Alustage alglaadimisest</string>
+    <string name="app_ops_delete_call_log">Kustuta kõnelogi</string>
+    <string name="app_ops_delete_contacts">Kustuta kontaktid</string>
+    <string name="app_ops_delete_mms">Kustuta MMS</string>
+    <string name="app_ops_delete_sms">Kustuta SMS</string>
+    <string name="app_ops_draw_on_top">Joonistage muude rakenduste peale</string>
+    <string name="app_ops_get_usage_stats">Hankige kasutusstatistika</string>
+    <string name="app_ops_keep_device_awake">Hoidke seade ärkvel</string>
+    <string name="app_ops_make_phone_call">Helista</string>
+    <string name="app_ops_modify_calendar">Muuda kalendrit</string>
+    <string name="app_ops_modify_call_log">Muutke kõnelogi</string>
+    <string name="app_ops_modify_clipboard">Muutke lõikelauda</string>
+    <string name="app_ops_modify_contacts">Muutke kontakte</string>
+    <string name="app_ops_modify_settings">Muutke seadeid</string>
+    <string name="app_ops_mute_unmute_microphone">Mikrofoni heli sisse/välja:</string>
+    <string name="app_ops_play_audio">Esita audio</string>
+    <string name="app_ops_post_notification">Saada teavitus</string>
+    <string name="app_ops_project_media">Käivita saade</string>
+    <string name="app_ops_read_calendar">Loe kalendrit</string>
+    <string name="app_ops_read_call_log">Kõnelogi lugemine</string>
+    <string name="app_ops_read_clipboard">Loe lõikelauda</string>
+    <string name="app_ops_read_contacts">Loe kontakte</string>
+    <string name="app_ops_read_mms">Lugege MMS-i</string>
+    <string name="app_ops_read_sms">Lugege SMS-i</string>
+    <string name="app_ops_receive_sms">SMS-i vastuvõtmine</string>
+    <string name="app_ops_record_audio">Salvesta heli</string>
+    <string name="app_ops_send_mms">MMS-i saatmine</string>
+    <string name="app_ops_send_sms">SMS-i saatmine</string>
+    <string name="app_ops_toast_window">Hüpiksõnumi saatmine</string>
+    <string name="app_ops_use_alarm_volume">Äratuse helitugevuse muutmine</string>
+    <string name="app_ops_use_audio_focus">Helifookuse muutmine</string>
+    <string name="app_ops_use_bluetooth_volume">Bluetooth-seadmete helitugevuse muutmine</string>
+    <string name="app_ops_use_master_volume">Muutke üldist helitugevust</string>
+    <string name="app_ops_use_media_buttons">Muutke multimeedia nuppe</string>
+    <string name="app_ops_use_media_volume">Muutke meediumimahtu</string>
+    <string name="app_ops_use_notification_volume">Muutke teatise mahtu</string>
+    <string name="app_ops_use_ring_volume">Helina helitugevuse muutmine</string>
+    <string name="app_ops_use_vibrate">Juhtige vibreerimist</string>
+    <string name="app_ops_use_voice_volume">Muutke kõne helitugevust</string>
+    <string name="app_ops_write_mms">Koosta MMS</string>
+    <string name="app_ops_write_sms">Koosta SMS</string>
+    <string name="app_ops_use_fingerprint">Kasutage sõrmejälgi</string>
+    <string name="app_ops_add_voicemail">Lisa kõneposti</string>
+    <string name="app_ops_read_phone_state">Telefoni olek</string>
+    <string name="app_ops_scan_wifi">Skaneerige WiFi-võrke</string>
+    <string name="app_ops_change_wallpaper">Muutke taustapilti</string>
+    <string name="app_ops_assist_structure">Abistruktuur</string>
+    <string name="app_ops_assist_screenshot">Ekraanipilt</string>
+    <string name="app_ops_use_body_sensors">Kasutage kehaandureid</string>
+    <string name="app_ops_read_cell_broadcasts">Loe kärjeülekandeid</string>
+    <string name="app_ops_mock_location">Fiktiivne asukoht</string>
+    <string name="app_ops_read_external_storage">Lugege kasutaja salvestusruumi</string>
+    <string name="app_ops_write_external_storage">Kirjutage kasutaja salvestusruumi</string>
+    <string name="app_ops_turn_on_screen">Lülitage ekraan sisse</string>
+    <string name="app_ops_get_accounts">Hankige konto</string>
+    <string name="app_ops_run_in_background">Käivita tausta resiimil</string>
+    <string name="app_ops_accessibility_volume">Juurdepääs mahule</string>
+    <string name="app_ops_read_phone_numbers">Loe telefoninumbrit</string>
+    <string name="app_ops_request_install_packages">Rakenduste installimine</string>
+    <string name="app_ops_picture_in_picture">Kasutage pilt pildis režiimi</string>
+    <string name="app_ops_app_start_foreground">Käivitage esiplaanil</string>
+    <string name="app_ops_answer_phone_calls">Kõnedele vastamine</string>
+    <string name="app_ops_run_any_in_background">Tehke ülesandeid taustal</string>
+    <string name="app_ops_change_wifi_state">WiFi oleku muutmine</string>
+    <string name="app_ops_request_delete_packages">Desinstalli rakendused</string>
+    <string name="app_ops_bind_accessibility_service">Kasutage juurdepääsetavusteenust</string>
+    <string name="app_ops_accept_handover">Nõustu üleandmisega</string>
+    <string name="app_ops_manage_ipsec_tunnels">IP-tunnelite haldamine</string>
+    <string name="app_ops_start_foreground">Käivitage esiplaanil</string>
+    <string name="app_ops_bluetooth_scan">Bluetooth-skannimine</string>
+    <string name="app_ops_boot_completed">Alustage alglaadimisest</string>
+    <!-- App ops detail -->
+    <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (kasutatud <xliff:g id="count">%2$s</xliff:g>)</string>
+    <string name="app_ops_allowed_count">Lubatud <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_ignored_count">Keelatud <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_both_count">Lubatud <xliff:g id="count">%1$s</xliff:g>, keelatud <xliff:g id="count">%2$s</xliff:g></string>
+    <!-- App ops menu options -->
+    <string name="app_ops_show_user_apps">Kuva kasutajarakendused</string>
+    <string name="app_ops_show_system_apps">Näita sisseehitatud rakendusi</string>
+    <string name="app_ops_reset_counters">Lähtestage loendurite lubamine / keelamine</string>
+    <string name="app_ops_reset_confirm_title">Kinnitage loendurite lähtestamine</string>
+    <string name="app_ops_reset_confirm_mesg">Kas soovite kindlasti loendurid lähtestada?</string>
+    <!-- FontEngine -->
+    <string name="font_picker_title">Font</string>
+    <string name="disable_fonts_installed_title">Fondi valija pole Substratumiga konfliktide vältimiseks saadaval. Kui soovite kasutada fondi valijat, desinstallige see.</string>
+    <string name="font_picker_progress">Uue fondi rakendamine\u2026</string>
+    <!-- System theme -->
+    <string name="system_theme_wallpaper">Automaatne (põhineb kellaajal)</string>
+    <string name="system_theme_light">Hele</string>
+    <string name="system_theme_dark">Tume</string>
+    <string name="black_theme_title">Kasutage musta teemat</string>
+    <string name="black_theme_summary">Kasutage pimeda asemel musta teemat</string>
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Aku temperatuur</string>
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Ekraanipildi heli</string>
+</resources>
