@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CarbonROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- CarbonROM version -->
+    <string name="carbon_version">CarbonROM versioon</string>
+    <string name="carbon_version_default">Tundmatu</string>
+    <!-- CarbonFibers -->
+    <string name="cf_settings_title">Kiud</string>
+    <string name="cf_dashboard_summary">Kvaliteetse kiu allikas iga päev</string>
+    <!-- Encryption and credential -->
+    <string name="custom_encryption_and_credential_settings_summary_on">Seade on krüptitud</string>
+    <string name="custom_encryption_and_credential_settings_summary_off">Seade on krüptimata</string>
+    <!-- Root Management -->
+    <string name="rootmanagement_title">Root haldamine</string>
+    <string name="rootmanagement_dashboard_summary">Halda juurkasutaja ligipääsu</string>
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <string name="supersu_title">SuperSU</string>
+    <string name="screenshot_shutter_sound_title">Ekraanipildi tegemise heli</string>
+    <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">keelatud</string>
+    <string name="sim_missing">puudub või on vigane</string>
+    <string name="sim_enabler_need_disable_sim">SIM-kaart desaktiveeritakse. Kas soovid jätkata?</string>
+    <string name="sim_enabler_will_disable_sim_title">Tähelepanu</string>
+    <string name="sim_enabler_need_switch_data_service">See SIM keelatakse ja SIMi <xliff:g id="slotid">%1$s</xliff:g> kasutatakse andmesideteenuste jaoks. Kas soovid kindlasti jätkata?</string>
+    <string name="sim_enabler_airplane_on">Toimingut ei saa sooritada, kuni lennurežiim on aktiivne.</string>
+    <string name="sim_enabler_in_call">Toimingut ei saa sooritada kõne ajal.</string>
+    <string name="sim_enabler_both_inactive">Kõiki SIM-kaarte ei saa keelata</string>
+    <string name="sim_enabler_enabling">Aktiveerin\u2026</string>
+    <string name="sim_enabler_disabling">Desaktiveerin\u2026</string>
+    <string name="sub_activate_success">SIM aktiveeritud.</string>
+    <string name="sub_activate_failed">Aktiveerimine ebaõnnestus.</string>
+    <string name="sub_deactivate_success">SIM desaktiveeritud.</string>
+    <string name="sub_deactivate_failed">Desaktiveerimine ebaõnnestus.</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Värvi valik</string>
+    <string name="press_color_to_apply">Rakendamiseks klõpsake värvil</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Määra</string>
+    <string name="color_default">Vaikimisi</string>
+    <!-- Vibrate on plug -->
+    <string name="vibrate_on_plug_title">Vibreeri puutumisel</string>
+    <!-- Battery Light -->
+    <string name="battery_light_title">Aku valgus</string>
+    <string name="battery_light_title_summary_on">Sees / Kuvatakse aku laetuse tase</string>
+    <string name="battery_light_title_summary_off">Väljas / Aku laetuse taset ei kuvata</string>
+    <string name="battery_light_description">Aku indikaator sees/väljas, või selle käitumise muutmine</string>
+    <string name="battery_low_pulse_title">Vilgub aku tühjenemisel</string>
+    <string name="battery_low_pulse_title_summary">Vilgub, kui aku on tühi</string>
+    <string name="battery_light_only_full_charge_title">Täislaetud aku näit</string>
+    <string name="battery_light_only_full_charge_title_summary">Aku märgutuld näidake ainult siis, kui seade on täielikult laetud</string>
+    <string name="battery_light_list_title">Värvid</string>
+    <string name="battery_light_low_color_title">Aku tühjeneb</string>
+    <string name="battery_light_medium_color_title">Laadimine</string>
+    <string name="battery_light_full_color_title">Laetud (90%)</string>
+    <string name="battery_light_really_full_color_title">Laetud (100%)</string>
+    <string name="fast_color_cat_title">Kiirlaadimine</string>
+    <string name="fast_charging_led_enabled_title">Luba kiirlaadimise värv</string>
+    <string name="fast_charging_led_enabled_summary">Kiirlaadides kasuta teist värvi, kuni on laetud 90%</string>
+    <string name="fast_charging_light_color_title">Värv</string>
+    <string name="edit_battery_settings">Muuda aku seadeid</string>
+    <string name="led_color_green">Roheline</string>
+    <string name="led_color_red">Punane</string>
+    <string name="led_color_blue">Sinine</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Lähtesta</string>
+    <!-- Custom light color -->
+    <string name="light_customization">LED-tulukese teade</string>
+    <string name="custom_light_title">Märgutule värv</string>
+    <string name="custom_light_on_time_title">"Valguse SEES oleku aeg LED-vilgutamise ajal (ms)"</string>
+    <string name="custom_light_off_time_title">"Valguse VÄLJAS oleku aeg LED-vilgutamise ajal (ms)"</string>
+    <string name="app_notifications_info_desc">Koputa ühele eespool olevale kanalile, et seadistada selle valguse värvi ja muid valikuid</string>
+    <string name="value_equals_default">Vaikimisi</string>
+    <string name="show_light_on_zen_title">Vilgu, kui mitte segada režiim on sees</string>
+    <string name="link_volume_option_title">Ühenda helina ja teadete helitugevus</string>
+    <!-- Font picker -->
+    <string name="font_picker_title">Font</string>
+    <string name="font_subs_info">Enne selle kasutamist lülitage Substratumis välja kõik fondi ülekatted.\nSubstratumi fondide uuesti kasutamiseks valige vaikimisi kasutatav font (Roboto).</string>
+    <string name="font_picker_reboot_recommended">Kõigi sätete rakendamiseks\ntaaskäivitage seade</string>
+</resources>
