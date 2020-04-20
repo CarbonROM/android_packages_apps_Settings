@@ -23,6 +23,9 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
+import android.provider.Settings;
+
+import androidx.preference.PreferenceScreen;
 
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.display.BrightnessLevelPreferenceController;
@@ -42,6 +45,8 @@ import com.android.settings.search.Indexable;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
+
+import com.android.settings.carbon.GlobalSettingListPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,6 +69,9 @@ public class DisplaySettings extends DashboardFragment {
             }
         }
     };
+    private static final String KEY_REFRESH_RATE_SETTING = "refresh_rate_setting";
+
+    private GlobalSettingListPreference mVariableRefreshRate;
 
     @Override
     public int getMetricsCategory() {
@@ -100,6 +108,22 @@ public class DisplaySettings extends DashboardFragment {
         final Context context = getActivity();
         context.unregisterReceiver(mIntentReceiver);
         mFontPickerPreference.stopProgress();
+
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mVariableRefreshRate = (GlobalSettingListPreference) prefScreen.findPreference(KEY_REFRESH_RATE_SETTING);
+        boolean hasVariableRefreshRate =
+            getContext().getResources().getBoolean(com.android.internal.R.bool.config_hasVariableRefreshRate);
+
+        if (!hasVariableRefreshRate) {
+            prefScreen.removePreference(mVariableRefreshRate);
+        } else {
+            int defVarRateSetting = getContext().getResources().getInteger(
+                 com.android.internal.R.integer.config_defaultVariableRefreshRateSetting);
+            int mVarRateSetting = Settings.Global.getInt(getContext().getContentResolver(),
+                 Settings.Global.REFRESH_RATE_SETTING, defVarRateSetting);
+            mVariableRefreshRate.setValue(String.valueOf(mVarRateSetting));
+        }
     }
 
     @Override
