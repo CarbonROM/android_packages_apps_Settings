@@ -20,19 +20,50 @@
     <string name="cf_dashboard_summary">Uma fonte saudável de sua fibra diária</string>
     <string name="gesture_double_tap_power_torch_toast">Tela desligada gesto lanterna agora está desabilitado</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- CarbonROM version -->
     <string name="carbon_version">Versão CarbonROM</string>
+    <string name="summary_placeholder">Não Disponível</string>
+    <string name="carbon_vendor_security_patch">Patch de segurança do fornecedor</string>
     <string name="battery_temp">Temperatura da bateria</string>
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Som de captura de tela</string>
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Fechar</string>
+    <string name="notification_sound_vib_screen_on_title">Som de notificação se ativo</string>
+    <string name="notification_sound_vib_screen_on_summary">Reproduzir som e vibração para notificações quando a tela estiver ativada</string>
     <!-- Navigation settings -->
+    <string name="back_height_low_label">Completa</string>
+    <string name="back_height_high_label">Botão</string>
+    <string name="back_options_dialog_title">Opcões</string>
+    <string name="back_height_message">Quantidade de altura da tela usada como região sensível para o gesto traseiro.</string>
     <!-- Back gesture animation -->
+    <string name="back_gesture_arrow_message">Mostrar uma seta animada para o gesto de voltar</string>
     <!-- NavigationBar Gestural Mode Tweaks -->
+    <string name="gesture_pill_message">Ocultar o pílula da barra de navegação para gestos inteiros ininterruptos.</string>
     <!-- Swipe fingerprint -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Deslize a digital para a esquerda ou direita para dispensar as notificações</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Para descartar suas notificações, deslize para esquerda ou direita no sensor de impressões digitais na parte de trás do seu telefone.</string>
     <!-- Swipe to screenshot -->
+    <string name="swipe_to_screenshot_title">Deslize para capturar a tela</string>
+    <string name="swipe_to_screenshot_summary">Deslize 3 dedos para baixo na tela para tirar uma captura de tela</string>
     <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Localize o sensor de impressão digital no <xliff:g id="sensor_location">%1$s</xliff:g> do seu tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Localize o sensor de impressão digital no <xliff:g id="sensor_location">%1$s</xliff:g> do seu dispositivo.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Localize o sensor de impressão digital no <xliff:g id="sensor_location">%1$s</xliff:g> do seu telefone.</string>
     <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">Voltar</string>
+    <string name="security_settings_fingerprint_sensor_location_front">Frente</string>
+    <string name="security_settings_fingerprint_sensor_location_left">Lado esquerdo</string>
+    <string name="security_settings_fingerprint_sensor_location_right">lado direito</string>
+    <!-- Lock screen pattern size -->
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <!-- Display : Rotation -->
+    <!-- FontEngine -->
+    <string name="font_picker_title">Fonte</string>
+    <string name="disable_fonts_installed_title">Seletor de fontes indisponível para evitar conflitos com o Substratum. Desinstalar se você deseja usar o seletor de fontes.</string>
+    <string name="font_picker_progress">Aplicando nova fonte\u2026</string>
 </resources>

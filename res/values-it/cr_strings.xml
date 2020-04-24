@@ -20,14 +20,17 @@
     <string name="cf_dashboard_summary">Una sana fonte di fibre quotidiane</string>
     <string name="gesture_double_tap_power_torch_toast">Il gesto a schermo spento della torcia è ora disattivato</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- CarbonROM version -->
     <string name="carbon_version">Versione CarbonROM</string>
+    <string name="summary_placeholder">Non disponibile</string>
     <string name="battery_temp">Temperatura batteria</string>
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Suono screenshot</string>
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Chiudi</string>
     <!-- Navigation settings -->
     <!-- Back gesture animation -->
     <!-- NavigationBar Gestural Mode Tweaks -->
@@ -35,4 +38,12 @@
     <!-- Swipe to screenshot -->
     <!-- Format string for fingerprint location message -->
     <!-- Fingerprint sensor locations -->
+    <!-- Lock screen pattern size -->
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <!-- Display : Rotation -->
+    <!-- FontEngine -->
+    <string name="font_picker_title">Carattere</string>
+    <string name="disable_fonts_installed_title">La selezione del carattere non è disponibile per evitare conflitti con Substratum. Disinstallarlo se si desidera utilizzare la selezione del tipo di carattere.</string>
+    <string name="font_picker_progress">Applicando il nuovo font\u2026</string>
 </resources>

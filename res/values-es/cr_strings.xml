@@ -30,4 +30,10 @@
     <!-- Swipe to screenshot -->
     <!-- Format string for fingerprint location message -->
     <!-- Fingerprint sensor locations -->
+    <!-- Lock screen pattern size -->
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <!-- Display : Rotation -->
+    <!-- FontEngine -->
+    <string name="font_picker_title">Fuente</string>
 </resources>
