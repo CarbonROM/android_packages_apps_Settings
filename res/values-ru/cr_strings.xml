@@ -62,8 +62,11 @@
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <!-- Display : Rotation -->
+    <string name="display_rotation_disabled">Автоповорот отключен</string>
     <!-- FontEngine -->
     <string name="font_picker_title">Шрифт</string>
     <string name="disable_fonts_installed_title">Управление шрифтом недоступно, чтобы предотвратить конфликты с Substratum. Удалите его, если хотите и дальше использовать системное управление шрифтом.</string>
     <string name="font_picker_progress">Применяем новый шрифт\u2026</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
 </resources>

@@ -24,7 +24,7 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- CarbonROM version -->
-    <string name="carbon_version">CarbonROMバージョン</string>
+    <string name="carbon_version">CarbonROM バージョン</string>
     <string name="summary_placeholder">N/A</string>
     <string name="carbon_vendor_security_patch">ベンダーセキュリティパッチレベル</string>
     <string name="battery_temp">バッテリー温度</string>
@@ -59,11 +59,25 @@
     <string name="security_settings_fingerprint_sensor_location_left">左側面</string>
     <string name="security_settings_fingerprint_sensor_location_right">右側面</string>
     <!-- Lock screen pattern size -->
+    <string name="lock_settings_picker_pattern_size_message">パターンサイズを選択</string>
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <string name="lockpattern_settings_enable_error_path_title">パターンエラーを表示</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <string name="lockpattern_settings_enable_dots_title">パターンドットを表示</string>
     <!-- Display : Rotation -->
+    <string name="display_rotation_title">回転の設定</string>
+    <string name="display_rotation_enabled">自動回転が有効です</string>
+    <string name="display_rotation_disabled">自動回転が無効です</string>
+    <string name="display_rotation_unit">角度</string>
+    <string name="display_rotation_category_title">回転モード</string>
+    <string name="display_rotation_0_title">0度</string>
+    <string name="display_rotation_90_title">90度</string>
+    <string name="display_rotation_180_title">180度</string>
+    <string name="display_rotation_270_title">270度</string>
     <!-- FontEngine -->
     <string name="font_picker_title">フォント</string>
     <string name="disable_fonts_installed_title">フォントピッカーは Substratum との競合のために使用できません。フォントピッカーを使用する場合は Substratum をアンインストールして下さい。</string>
     <string name="font_picker_progress">新しいフォントを適用しています\u2026</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
 </resources>

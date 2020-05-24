@@ -61,4 +61,6 @@
     <string name="font_picker_title">Font</string>
     <string name="disable_fonts_installed_title">Le sélecteur de police n\'est pas disponible pour éviter les conflits avec Substratum. Désinstallez-le si vous souhaitez utiliser le sélecteur de polices.</string>
     <string name="font_picker_progress">Application de la nouvelle police\u2026</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
 </resources>

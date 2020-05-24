@@ -78,4 +78,6 @@
     <string name="font_picker_title">Schriftart</string>
     <string name="disable_fonts_installed_title">Schriftauswahl ist nicht verfügbar, um Konflikte mit Substratum zu vermeiden. Deinstallieren Sie Substratum, wenn Sie die Schriftauswahl verwenden möchten.</string>
     <string name="font_picker_progress">Die neue Schriftart\u2026 wird angewendet</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
 </resources>
