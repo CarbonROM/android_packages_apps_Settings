@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2022 CarbonROM
+     Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,19 +14,8 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-
-    <!-- Whether to show peak refresh rate in display settings -->
-    <bool name="config_show_peak_refresh_rate_switch">false</bool>
-
-    <!-- Whether to show min refresh rate in display settings -->
-    <bool name="config_show_min_refresh_rate_switch">false</bool>
-
-    <!-- Max network scan search time in seconds -->
-    <integer name="config_network_scan_helper_max_search_time_sec">300</integer>
-
-    <string-array name="config_ignored_backup_transports" translatable="false">
-        <item>com.android.localtransport/.LocalTransport</item>
-    </string-array>
-
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Backup Transport selection settings menu and activity title -->
+    <string name="backup_transport_setting_label">Change backup provider</string>
+    <string name="backup_transport_title">Select backup provider</string>
 </resources>
