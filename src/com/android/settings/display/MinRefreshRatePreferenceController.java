@@ -20,6 +20,7 @@ import static android.provider.Settings.System.MIN_REFRESH_RATE;
 
 import android.content.Context;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.Display;
 
 import androidx.preference.ListPreference;
@@ -36,6 +37,7 @@ import java.util.Locale;
 public class MinRefreshRatePreferenceController extends BasePreferenceController implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String TAG = "RefreshRateControl";
     private static final String KEY_MIN_REFRESH_RATE = "min_refresh_rate";
 
     private ListPreference mListPreference;
@@ -59,6 +61,7 @@ public class MinRefreshRatePreferenceController extends BasePreferenceController
     @Override
     public void displayPreference(PreferenceScreen screen) {
         mListPreference = screen.findPreference(getPreferenceKey());
+	Log.d(TAG, "inside displaypreference()");
 
         List<String> entries = new ArrayList<>(), values = new ArrayList<>();
         Display.Mode mode = mContext.getDisplay().getMode();
@@ -66,33 +69,36 @@ public class MinRefreshRatePreferenceController extends BasePreferenceController
         for (Display.Mode m : modes) {
             if (m.getPhysicalWidth() == mode.getPhysicalWidth() &&
                     m.getPhysicalHeight() == mode.getPhysicalHeight()) {
-                entries.add(String.format("%.02fHz", m.getRefreshRate())
-                        .replaceAll("[\\.,]00", ""));
-                values.add(String.format(Locale.US, "%.02f", m.getRefreshRate()));
+		entries.add(String.format("%d", Math.round(m.getRefreshRate())));
+                values.add(String.format("%d", Math.round(m.getRefreshRate())));
+
+
             }
         }
+	Log.d(TAG, "inside displaypreference() setting entries and values");
         mListPreference.setEntries(entries.toArray(new String[entries.size()]));
         mListPreference.setEntryValues(values.toArray(new String[values.size()]));
 
         super.displayPreference(screen);
     }
 
-    @Override
-    public void updateState(Preference preference) {
-        final float currentValue = Settings.System.getFloat(mContext.getContentResolver(),
-                MIN_REFRESH_RATE, 60.00f);
-        int index = mListPreference.findIndexOfValue(
-                String.format(Locale.US, "%.02f", currentValue));
-        if (index < 0) index = 0;
+    public void updateState(int newRefreshRate) {
+	Log.d(TAG, "entering updateState()");
+        int index = mListPreference.findIndexOfValue(Integer.toString(newRefreshRate));
         mListPreference.setValueIndex(index);
         mListPreference.setSummary(mListPreference.getEntries()[index]);
+	Log.d(TAG, "exiting updateState()");
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        Settings.System.putFloat(mContext.getContentResolver(), MIN_REFRESH_RATE,
-                Float.valueOf((String) newValue));
-        updateState(preference);
+	Log.d(TAG, "entering onpreferencechange()");
+        int newRefreshRate = Integer.valueOf((String) newValue);
+	Log.d(TAG, "new value updating");
+        Settings.System.putInt(mContext.getContentResolver(), MIN_REFRESH_RATE,
+			newRefreshRate);
+	Log.d(TAG, "new value updated calling updatestate");
+        updateState(newRefreshRate);
         return true;
     }
 
