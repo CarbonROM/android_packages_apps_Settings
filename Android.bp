@@ -96,6 +96,7 @@ android_library {
         "SettingsLibActivityEmbedding",
         "Settings-change-ids",
         "SystemUIUnfoldLib",
+        "vendor.lineage.fastcharge-V1.0-java",
     ],
 
     libs: [
