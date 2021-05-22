@@ -50,9 +50,9 @@
     <string name="swipe_to_screenshot_title">スワイプでスクリーンショット</string>
     <string name="swipe_to_screenshot_summary">3本指を下方にスワイプすることでスクリーンショットを撮ります</string>
     <!-- Format string for fingerprint location message -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">端末の<xliff:g id="sensor_location">%1$s</xliff:g>にある指紋センサーの場所を探して下さい</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">タブレットの<xliff:g id="sensor_location">%1$s</xliff:g>にある指紋センサーの場所を探して下さい</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">端末の<xliff:g id="sensor_location">%1$s</xliff:g>にある指紋センサーの場所を探して下さい</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">端末の<xliff:g id="sensor_location">%1$s</xliff:g>にある指紋センサーの場所を探して下さい</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">スマートフォンの<xliff:g id="sensor_location">%1$s</xliff:g>にある指紋センサーの場所を探して下さい</string>
     <!-- Fingerprint sensor locations -->
     <string name="security_settings_fingerprint_sensor_location_back">背面</string>
     <string name="security_settings_fingerprint_sensor_location_front">前面</string>
@@ -82,4 +82,6 @@
     <string name="ringtone1_title">着信音 - SIM 1</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
     <string name="ringtone2_title">着信音 - SIM 2</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">保存されたイヤホン</string>
 </resources>
