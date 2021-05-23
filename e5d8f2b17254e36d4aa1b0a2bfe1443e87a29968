@@ -16,6 +16,24 @@
       "message": "What for though?",
       "revId": "e5d8f2b17254e36d4aa1b0a2bfe1443e87a29968",
       "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b8d7b86d_8f6917df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 439
+      },
+      "writtenOn": "2021-05-23T04:36:14Z",
+      "side": 1,
+      "message": "For Navigation settings in CarbonSetupWizard to work\n\nhttps://github.com/CarbonROM/android_packages_apps_CarbonSetupWizard/commit/7f6174229bb4ccadec896e0f9be2450f6a457475",
+      "parentUuid": "08527d54_fd301958",
+      "revId": "e5d8f2b17254e36d4aa1b0a2bfe1443e87a29968",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     }
   ]
 }
