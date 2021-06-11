@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CarbonROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbon_version">CarbonROM バージョン</string>
+    <string name="summary_placeholder">N/A</string>
+    <string name="carbon_vendor_security_patch">ベンダーセキュリティパッチレベル</string>
+    <string name="cf_settings_title">Carbon Fibers</string>
+    <string name="cf_dashboard_summary">貴方の日々のファイバーに健康の源を</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="swipe_to_screenshot_gesture_title">スワイプでスクリーンショット</string>
+    <string name="screenshot_shutter_sound_title">スクリーンショットの音</string>
+    <string name="notification_sound_vib_screen_on_title">画面点灯中の通知サウンド</string>
+    <string name="notification_sound_vib_screen_on_summary">画面点灯中に通知の音楽を振動を鳴らす</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">タブレットの<xliff:g id="sensor_location">%1$s</xliff:g>にある指紋センサーの場所を探して下さい</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">端末の<xliff:g id="sensor_location">%1$s</xliff:g>にある指紋センサーの場所を探して下さい</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">スマートフォンの<xliff:g id="sensor_location">%1$s</xliff:g>にある指紋センサーの場所を探して下さい</string>
+    <string name="security_settings_fingerprint_sensor_location_back">背面</string>
+    <string name="security_settings_fingerprint_sensor_location_front">前面</string>
+    <string name="security_settings_fingerprint_sensor_location_left">左側面</string>
+    <string name="security_settings_fingerprint_sensor_location_right">右側面</string>
+    <string name="connected_tws_device_saved_title">保存されたイヤホン</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">指紋センサーを左右にスワイプして通知を消去</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">通知を消去するには、端末背面の指紋センサーを右または左にスワイプして下さい。</string>
+    <string name="font_picker_title">フォント</string>
+    <string name="disable_fonts_installed_title">フォントピッカーは Substratum との競合のために使用できません。フォントピッカーを使用する場合は Substratum をアンインストールして下さい。</string>
+    <string name="font_picker_progress">新しいフォントを適用しています\u2026</string>
+    <string name="ringtone1_title">着信音 - SIM 1</string>
+    <string name="ringtone2_title">着信音 - SIM 2</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CarbonROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbon_version">CarbonROM versioon</string>
+    <string name="summary_placeholder">N/A</string>
+    <string name="carbon_vendor_security_patch">Müüja turvapaikade tase</string>
+    <string name="cf_settings_title">Carbon Fibers</string>
+    <string name="cf_dashboard_summary">Kvaliteetse kiu allikas iga päev</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="swipe_to_screenshot_gesture_title">Pühkige ekraanipilti</string>
+    <string name="screenshot_shutter_sound_title">Ekraanipildi heli</string>
+    <string name="notification_sound_vib_screen_on_title">Märguandeheli, kui see on aktiivne</string>
+    <string name="notification_sound_vib_screen_on_summary">Esitage heli ja vibratsiooni, kui ekraan on sisse lülitatud</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Leia sõrmejäljelugeja oma tahvli <xliff:g id="sensor_location">%1$s</xliff:g>küljel.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Leia sõrmejäljelugeja oma seadme <xliff:g id="sensor_location">%1$s</xliff:g>küljel.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Leia sõrmejäljelugeja oma telefoni <xliff:g id="sensor_location">%1$s</xliff:g>küljel.</string>
+    <string name="security_settings_fingerprint_sensor_location_back">taga</string>
+    <string name="security_settings_fingerprint_sensor_location_front">ees</string>
+    <string name="security_settings_fingerprint_sensor_location_left">vasakul </string>
+    <string name="security_settings_fingerprint_sensor_location_right">paremal </string>
+    <string name="connected_tws_device_saved_title">Salvestatud kõrvaklapi</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Märguannete tagasilükkamiseks libistage sõrmejälge vasakule või paremale</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Teavituste tagasilükkamiseks libistage telefoni tagaküljel asuvas sõrmejäljeanduris vasakule või paremale.</string>
+    <string name="font_picker_title">Font</string>
+    <string name="disable_fonts_installed_title">Fondi valija pole Substratumiga konfliktide vältimiseks saadaval. Kui soovite kasutada fondi valijat, desinstallige see.</string>
+    <string name="font_picker_progress">Uue fondi rakendamine\u2026</string>
+    <string name="ringtone1_title">Telefonihelin - SIM 1</string>
+    <string name="ringtone2_title">Telefonihelin - SIM 2</string>
+</resources>

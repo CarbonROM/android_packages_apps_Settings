@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CarbonROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbon_version">Wersja CarbonROM</string>
+    <string name="summary_placeholder">Nie dotyczy</string>
+    <string name="carbon_vendor_security_patch">Poziom aktualizacji zabezpieczeń dostawcy</string>
+    <string name="cf_settings_title">Ustawienia Carbon ROM</string>
+    <string name="cf_dashboard_summary">Dostosuj swojego CarbonRoma</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="swipe_to_screenshot_gesture_title">Przesuń, aby zrzut ekranu</string>
+    <string name="screenshot_shutter_sound_title">Dźwięk zrzutu ekranu</string>
+    <string name="notification_sound_vib_screen_on_title">Dźwięk powiadomienia, jeśli aktywny</string>
+    <string name="notification_sound_vib_screen_on_summary">Odtwarzaj dźwięk i wibracje dla powiadomień, gdy ekran jest włączony</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Określ lokalizację czujnika odcisków palców na <xliff:g id="sensor_location">%1$s</xliff:g> telefonu.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Zlokalizuj czytnik linii papilarnych na <xliff:g id="sensor_location">%1$s</xliff:g> na urządzeniu.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Określ lokalizację czujnika odcisków palców na <xliff:g id="sensor_location">%1$s</xliff:g> telefonu.</string>
+    <string name="security_settings_fingerprint_sensor_location_back">Wstecz</string>
+    <string name="security_settings_fingerprint_sensor_location_front">Przedni</string>
+    <string name="security_settings_fingerprint_sensor_location_left">Lewa strona</string>
+    <string name="security_settings_fingerprint_sensor_location_right">Prawa strona</string>
+    <string name="connected_tws_device_saved_title">Zapisane słuchawki</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Przesuń po czytniku, żeby pozbyć się powiadomień</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Aby odrzucić powiadomienia, przesuń palcem w lewo lub w prawo po czytniku linii papilarnych na odwrocie telefonu.</string>
+    <string name="font_picker_title">Czcionka</string>
+    <string name="disable_fonts_installed_title">Wybór akcentu jest niedostępny, aby zapobiec konfliktom z Substratum. Odinstaluj go, jeśli chcesz wybrać akcent.</string>
+    <string name="font_picker_progress">Stosowanie nowej czcionki\u2026</string>
+    <string name="ringtone1_title">Dzwonek telefonu - SIM 1</string>
+    <string name="ringtone2_title">Dzwonek telefonu - SIM 2</string>
+</resources>

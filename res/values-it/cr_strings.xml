@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CarbonROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbon_version">Versione CarbonROM</string>
+    <string name="summary_placeholder">Non disponibile</string>
+    <string name="carbon_vendor_security_patch">Livello patch di sicurezza fornitore</string>
+    <string name="cf_settings_title">Fibre di carbonio</string>
+    <string name="cf_dashboard_summary">Una sana fonte di fibre quotidiane</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="swipe_to_screenshot_gesture_title">Scorri per screenshot</string>
+    <string name="screenshot_shutter_sound_title">Suono screenshot</string>
+    <string name="notification_sound_vib_screen_on_title">Suono di notifica se attivo</string>
+    <string name="notification_sound_vib_screen_on_summary">Riproduci suono e vibrazione per le notifiche quando lo schermo è acceso</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Individua il sensore di impronte digitali sul <xliff:g id="sensor_location">%1$s</xliff:g> del tuo tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Individua il sensore di impronte digitali sul <xliff:g id="sensor_location">%1$s</xliff:g> del tuo dispositivo.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Individuare il sensore di impronte digitali sul <xliff:g id="sensor_location">%1$s </xliff:g> del telefono.</string>
+    <string name="security_settings_fingerprint_sensor_location_back">retro</string>
+    <string name="security_settings_fingerprint_sensor_location_front">anteriore</string>
+    <string name="security_settings_fingerprint_sensor_location_left">lato sinistro</string>
+    <string name="security_settings_fingerprint_sensor_location_right">lato destro</string>
+    <string name="connected_tws_device_saved_title">Auricolari salvati</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Scorri l\'impronta digitale verso sinistra o destra per ignorare le notifiche</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Per ignorare le notifiche, scorrere verso sinistra o destra sul sensore di impronte digitali sul retro del telefono.</string>
+    <string name="font_picker_title">Carattere</string>
+    <string name="disable_fonts_installed_title">La selezione del carattere non è disponibile per evitare conflitti con Substratum. Disinstallarlo se si desidera utilizzare la selezione del tipo di carattere.</string>
+    <string name="font_picker_progress">Applicando il nuovo font\u2026</string>
+    <string name="ringtone1_title">Suoneria telefono - SIM 1</string>
+    <string name="ringtone2_title">Suoneria telefono - SIM 2</string>
+</resources>
