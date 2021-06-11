@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CarbonROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbon_version">CarbonROM 版本</string>
+    <string name="summary_placeholder">不可用</string>
+    <string name="carbon_vendor_security_patch">厂商安全补丁等级</string>
+    <string name="cf_settings_title">Carbon Fibers</string>
+    <string name="cf_dashboard_summary">个性化设置</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="swipe_to_screenshot_gesture_title">滑动截图</string>
+    <string name="screenshot_shutter_sound_title">截屏提示音</string>
+    <string name="notification_sound_vib_screen_on_title">启用通知提示音</string>
+    <string name="notification_sound_vib_screen_on_summary">在亮屏时为通知开启声音和震动提醒</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">请找到位于您平板<xliff:g id="sensor_location">%1$s</xliff:g> 的指纹传感器。</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">请找到位于您设备<xliff:g id="sensor_location">%1$s</xliff:g> 的指纹传感器。</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">请找到位于您手机<xliff:g id="sensor_location">%1$s</xliff:g> 的指纹传感器。</string>
+    <string name="security_settings_fingerprint_sensor_location_back">背面</string>
+    <string name="security_settings_fingerprint_sensor_location_front">正面</string>
+    <string name="security_settings_fingerprint_sensor_location_left">左侧</string>
+    <string name="security_settings_fingerprint_sensor_location_right">右侧</string>
+    <string name="connected_tws_device_saved_title">已保存的耳机</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">在指纹按钮上向左或向右滑动忽略通知</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">在手机背部的指纹传感器上向左或向右滑动以忽略通知信息。</string>
+    <string name="font_picker_title">字体</string>
+    <string name="disable_fonts_installed_title">字体选择器与 Substratum 冲突。如果您想使用字体选择器，请卸载 Substratum。</string>
+    <string name="font_picker_progress">正在应用新字体\u2026</string>
+    <string name="ringtone1_title">手机铃声 - SIM 卡 1</string>
+    <string name="ringtone2_title">手机铃声 - SIM 卡 2</string>
+</resources>
