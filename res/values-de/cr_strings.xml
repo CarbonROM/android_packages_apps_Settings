@@ -20,10 +20,15 @@
     <string name="carbon_vendor_security_patch">Sicherheits-Patch-Level des Herstellers</string>
     <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">Eine Gesunde Quelle für deine täglichen Ballaststoff</string>
+    <string name="darker_theme_enable">Schwarzes Theme verwenden</string>
+    <string name="selinux_status">SELinux-Status</string>
     <string name="selinux_status_disabled">Deaktiviert</string>
     <string name="selinux_status_permissive">Moderat</string>
     <string name="selinux_status_enforcing">Strikt</string>
+    <string name="doubletap_lockscreen_screen_title">Bildschirm ausschalten</string>
     <string name="app_play_store">Google Play</string>
+    <string name="data_usage_app_restrict_mobile">Mobile Daten</string>
+    <string name="data_usage_app_restrict_mobile_summary">Nutzung mobiler Daten aktivieren</string>
     <string name="data_usage_app_restrict_vpn">VPN-Daten</string>
     <string name="data_usage_app_restrict_vpn_summary">Nutzung von VPN-Daten aktivieren</string>
     <string name="data_usage_app_restrict_wifi">W\u2011Lan-Daten</string>
