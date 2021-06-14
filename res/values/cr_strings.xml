@@ -57,4 +57,7 @@
     <!-- [CHAR_LIMIT=NONE] Display Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher icons). -->
     <string name="theme_customization_icon_shape_title">Icon shape</string>
 
+    <!-- Max refresh rate -->
+    <string name="max_refresh_rate_title">Peak refresh rate</string>
+
 </resources>
