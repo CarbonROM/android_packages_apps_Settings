@@ -15,50 +15,47 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Carbon Fibers -->
     <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">Une source saine de votre fibre quotidienne</string>
     <string name="gesture_double_tap_power_torch_toast">Le geste de la torche lorsque l\'écran est éteint est désormais désactivé</string>
-    <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
-    <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
-    <!-- CarbonROM version -->
     <string name="carbon_version">Version CarbonROM</string>
     <string name="summary_placeholder">N/D</string>
     <string name="carbon_vendor_security_patch">Niveau de correctif de sécurité du fabricant</string>
     <string name="battery_temp">Température de la batterie</string>
-    <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Son de capture d\'écran</string>
-    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Fermer</string>
     <string name="notification_sound_vib_screen_on_title">Son de notification si actif</string>
     <string name="notification_sound_vib_screen_on_summary">Jouer un son et une vibration pour les notifications lorsque l\'écran est allumé</string>
-    <!-- Navigation settings -->
     <string name="back_options_dialog_title">Options</string>
     <string name="back_height_message">Quantité de la hauteur de l\'écran utilisée comme zone touchable pour le geste retour.</string>
-    <!-- Back gesture animation -->
     <string name="back_gesture_arrow_message">Afficher une flèche animée pour les gestes arrière.</string>
-    <!-- NavigationBar Gestural Mode Tweaks -->
-    <!-- Swipe fingerprint -->
-    <!-- Swipe to screenshot -->
+    <string name="fp_swipe_to_dismiss_notifications_summary">Pour ignorer vos notifications, balayez vers la gauche ou la droite sur le capteur d\'empreintes digitales à l\'arrière de votre téléphone.</string>
     <string name="swipe_to_screenshot_title">Glisser pour faire une capture d\'écran</string>
     <string name="swipe_to_screenshot_summary">Glissez 3 doigts vers le bas de l\'écran pour prendre une capture d\'écran</string>
-    <!-- Format string for fingerprint location message -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Localisez le capteur d\'empreintes digitales sur le <xliff:g id="sensor_location">%1$s</xliff:g> de votre tablette.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Localisez le capteur d\'empreintes digitales sur le <xliff:g id="sensor_location">%1$s</xliff:g> de votre appareil.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Localisez le capteur d\'empreintes digitales sur le <xliff:g id="sensor_location">%1$s</xliff:g> de votre téléphone.</string>
-    <!-- Fingerprint sensor locations -->
     <string name="security_settings_fingerprint_sensor_location_back">arrière</string>
     <string name="security_settings_fingerprint_sensor_location_front">avant</string>
     <string name="security_settings_fingerprint_sensor_location_left">côté gauche</string>
     <string name="security_settings_fingerprint_sensor_location_right">côté droit</string>
-    <!-- Lock screen pattern size -->
-    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
-    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
-    <!-- Display : Rotation -->
-    <!-- FontEngine -->
+    <string name="lock_settings_picker_pattern_size_message">Choisissez une taille de schéma</string>
+    <string name="lockpattern_settings_enable_error_path_title">Afficher les erreurs de schéma</string>
+    <string name="lockpattern_settings_enable_dots_title">Afficher les points de schéma</string>
+    <string name="display_rotation_title">Paramètres de rotation</string>
+    <string name="display_rotation_enabled">La rotation automatique est activée</string>
+    <string name="display_rotation_disabled">La rotation automatique est désactivée</string>
+    <string name="display_rotation_unit">degrés</string>
+    <string name="display_rotation_category_title">Modes de rotation</string>
+    <string name="display_rotation_0_title">0 degré</string>
+    <string name="display_rotation_90_title">90 degrés</string>
+    <string name="display_rotation_180_title">180 degrés</string>
+    <string name="display_rotation_270_title">270 degrés</string>
     <string name="font_picker_title">Font</string>
     <string name="disable_fonts_installed_title">Le sélecteur de police n\'est pas disponible pour éviter les conflits avec Substratum. Désinstallez-le si vous souhaitez utiliser le sélecteur de polices.</string>
     <string name="font_picker_progress">Application de la nouvelle police\u2026</string>
+    <string name="ringtone1_title">Sonnerie du téléphone - SIM 1</string>
+    <string name="ringtone2_title">Sonnerie du téléphone - SIM 2</string>
 </resources>

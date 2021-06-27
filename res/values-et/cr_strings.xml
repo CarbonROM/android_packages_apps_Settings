@@ -15,56 +15,39 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Carbon Fibers -->
     <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">Kvaliteetse kiu allikas iga päev</string>
     <string name="gesture_double_tap_power_torch_toast">Ekraani väljalülitamise žest on nüüd keelatud</string>
-    <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
-    <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
-    <!-- CarbonROM version -->
     <string name="carbon_version">CarbonROM versioon</string>
     <string name="summary_placeholder">N/A</string>
     <string name="carbon_vendor_security_patch">Müüja turvapaikade tase</string>
     <string name="battery_temp">Aku temperatuur</string>
-    <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Ekraanipildi heli</string>
-    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Sulge</string>
     <string name="notification_sound_vib_screen_on_title">Märguandeheli, kui see on aktiivne</string>
     <string name="notification_sound_vib_screen_on_summary">Esitage heli ja vibratsiooni, kui ekraan on sisse lülitatud</string>
-    <!-- Navigation settings -->
     <string name="back_height_low_label">Täielik</string>
     <string name="back_height_high_label">Alumine</string>
     <string name="back_options_dialog_title">Valikud</string>
     <string name="back_height_message">Ekraani kõrgus, mida kasutatakse tagasiviipe puudutatava alana.</string>
-    <!-- Back gesture animation -->
     <string name="back_gesture_arrow_message">Näita tagumise žesti jaoks animeeritud noolt.</string>
-    <!-- NavigationBar Gestural Mode Tweaks -->
     <string name="gesture_pill_message">Peida navigeerimisriba sujuvate täisekraaniliigutuste jaoks.</string>
-    <!-- Swipe fingerprint -->
     <string name="fp_swipe_to_dismiss_notifications_title">Märguannete tagasilükkamiseks libistage sõrmejälge vasakule või paremale</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Teavituste tagasilükkamiseks libistage telefoni tagaküljel asuvas sõrmejäljeanduris vasakule või paremale.</string>
-    <!-- Swipe to screenshot -->
     <string name="swipe_to_screenshot_title">Pühkige ekraanipilti</string>
     <string name="swipe_to_screenshot_summary">Pühkige ekraanipildi tegemiseks 3 sõrmega ekraanil alla</string>
-    <!-- Format string for fingerprint location message -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Leia sõrmejäljelugeja oma tahvli <xliff:g id="sensor_location">%1$s</xliff:g>küljel.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Leia sõrmejäljelugeja oma seadme <xliff:g id="sensor_location">%1$s</xliff:g>küljel.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Leia sõrmejäljelugeja oma telefoni <xliff:g id="sensor_location">%1$s</xliff:g>küljel.</string>
-    <!-- Fingerprint sensor locations -->
     <string name="security_settings_fingerprint_sensor_location_back">taga</string>
     <string name="security_settings_fingerprint_sensor_location_front">ees</string>
     <string name="security_settings_fingerprint_sensor_location_left">vasakul </string>
     <string name="security_settings_fingerprint_sensor_location_right">paremal </string>
-    <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">Valige mustri suurus</string>
-    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
     <string name="lockpattern_settings_enable_error_path_title">Näita mustri viga</string>
-    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Näita mustri punkte</string>
-    <!-- Display : Rotation -->
     <string name="display_rotation_title">Keeramise seaded</string>
     <string name="display_rotation_enabled">Automaatne pööramine on lubatud</string>
     <string name="display_rotation_disabled">Automaatne pööramine on keelatud</string>
@@ -74,14 +57,10 @@
     <string name="display_rotation_90_title">90 kraadi</string>
     <string name="display_rotation_180_title">180 kraadi</string>
     <string name="display_rotation_270_title">270 kraadi</string>
-    <!-- FontEngine -->
     <string name="font_picker_title">Font</string>
     <string name="disable_fonts_installed_title">Fondi valija pole Substratumiga konfliktide vältimiseks saadaval. Kui soovite kasutada fondi valijat, desinstallige see.</string>
     <string name="font_picker_progress">Uue fondi rakendamine\u2026</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
     <string name="ringtone1_title">Telefonihelin - SIM 1</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
     <string name="ringtone2_title">Telefonihelin - SIM 2</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Salvestatud kõrvaklapi</string>
 </resources>

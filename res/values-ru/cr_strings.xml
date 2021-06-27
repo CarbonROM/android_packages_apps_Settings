@@ -15,56 +15,39 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Carbon Fibers -->
     <string name="cf_settings_title">Углеродные волокна</string>
     <string name="cf_dashboard_summary">Источник качественной клетчатки на каждый день</string>
     <string name="gesture_double_tap_power_torch_toast">Жест выключения фонарика теперь отключен</string>
-    <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
-    <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="client_name">%1$s</xliff:g></string>
-    <!-- CarbonROM version -->
     <string name="carbon_version">Версия CarbonROM</string>
     <string name="summary_placeholder">Не применимо</string>
     <string name="carbon_vendor_security_patch">Уровень исправлений системы безопасности от производителя</string>
     <string name="battery_temp">Температура батареи</string>
-    <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Звук скриншота</string>
-    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Закрыть</string>
     <string name="notification_sound_vib_screen_on_title">Звук уведомления, если активен</string>
     <string name="notification_sound_vib_screen_on_summary">Воспроизводить звук и вибрацию при включении экрана</string>
-    <!-- Navigation settings -->
     <string name="back_height_low_label">Полный</string>
     <string name="back_height_high_label">Внизу</string>
     <string name="back_options_dialog_title">Параметры</string>
     <string name="back_height_message">Высота экрана, используемая в качестве сенсорной области для жеста назад.</string>
-    <!-- Back gesture animation -->
     <string name="back_gesture_arrow_message">Показать анимированную стрелку для жеста назад.</string>
-    <!-- NavigationBar Gestural Mode Tweaks -->
     <string name="gesture_pill_message">Скрыть полоску панели навигации для использования полноэкранный жестов</string>
-    <!-- Swipe fingerprint -->
     <string name="fp_swipe_to_dismiss_notifications_title">Смахните отпечаток пальца влево или вправо, чтобы удалить уведомления</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Чтобы отклонить ваши уведомления, проведите пальцем влево или вправо на сенсоре отпечатка пальца на задней панели телефона.</string>
-    <!-- Swipe to screenshot -->
     <string name="swipe_to_screenshot_title">Свайп для снимка экрана</string>
     <string name="swipe_to_screenshot_summary">Проведите 3 пальца вниз по экрану, чтобы сделать снимок экрана</string>
-    <!-- Format string for fingerprint location message -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Найдите датчик отпечатков пальцев на <xliff:g id="sensor_location">%1$s</xliff:g> вашего планшета.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Найдите датчик отпечатков пальцев на <xliff:g id="sensor_location">%1$s</xliff:g> вашего устройства.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Найдите датчик отпечатков пальцев на <xliff:g id="sensor_location">%1$s</xliff:g> вашего устройства.</string>
-    <!-- Fingerprint sensor locations -->
     <string name="security_settings_fingerprint_sensor_location_back">сзади</string>
     <string name="security_settings_fingerprint_sensor_location_front">спереди</string>
     <string name="security_settings_fingerprint_sensor_location_left">слева</string>
     <string name="security_settings_fingerprint_sensor_location_right">справа</string>
-    <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">Выберите размер графического ключа</string>
-    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
     <string name="lockpattern_settings_enable_error_path_title">Показывать ошибку при вводе граф. ключа</string>
-    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Показывать след при вводе граф. ключа</string>
-    <!-- Display : Rotation -->
     <string name="display_rotation_title">Настройки поворота</string>
     <string name="display_rotation_enabled">Автоповорот включен</string>
     <string name="display_rotation_disabled">Автоповорот отключен</string>
@@ -74,14 +57,10 @@
     <string name="display_rotation_90_title">90 градусов</string>
     <string name="display_rotation_180_title">180 градусов</string>
     <string name="display_rotation_270_title">270 градусов</string>
-    <!-- FontEngine -->
     <string name="font_picker_title">Шрифт</string>
     <string name="disable_fonts_installed_title">Управление шрифтом недоступно, чтобы предотвратить конфликты с Substratum. Удалите его, если хотите и дальше использовать системное управление шрифтом.</string>
     <string name="font_picker_progress">Применяем новый шрифт\u2026</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
     <string name="ringtone1_title">Мелодия звонка - SIM 1</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
     <string name="ringtone2_title">Мелодия звонка - SIM 2</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Сохранённые наушники</string>
 </resources>

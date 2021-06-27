@@ -15,25 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Carbon Fibers -->
     <string name="cf_dashboard_summary">Una font saludable de la teva fibra diària</string>
-    <!-- App details: open play store link if app is user installed -->
-    <!-- Manage applications, package string displayed in app snippet -->
-    <!-- CarbonROM version -->
     <string name="carbon_version">Versió CarbonROM</string>
-    <!-- Screenshot sound -->
-    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
-    <!-- Navigation settings -->
-    <!-- Back gesture animation -->
-    <!-- NavigationBar Gestural Mode Tweaks -->
-    <!-- Swipe fingerprint -->
-    <!-- Swipe to screenshot -->
-    <!-- Format string for fingerprint location message -->
-    <!-- Fingerprint sensor locations -->
-    <!-- Lock screen pattern size -->
-    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
-    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
-    <!-- Display : Rotation -->
-    <!-- FontEngine -->
     <string name="font_picker_title">Tipus de lletra</string>
 </resources>

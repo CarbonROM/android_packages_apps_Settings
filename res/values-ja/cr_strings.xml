@@ -15,56 +15,39 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Carbon Fibers -->
     <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">貴方の日々のファイバーに健康の源を</string>
     <string name="gesture_double_tap_power_torch_toast">画面消灯トーチジェスチャーは現在無効です</string>
-    <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
-    <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
-    <!-- CarbonROM version -->
     <string name="carbon_version">CarbonROM バージョン</string>
     <string name="summary_placeholder">N/A</string>
     <string name="carbon_vendor_security_patch">ベンダーセキュリティパッチレベル</string>
     <string name="battery_temp">バッテリー温度</string>
-    <!-- Screenshot sound -->
     <string name="screenshot_sound_title">スクリーンショットの音</string>
-    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">閉じる</string>
     <string name="notification_sound_vib_screen_on_title">画面点灯中の通知サウンド</string>
     <string name="notification_sound_vib_screen_on_summary">画面点灯中に通知の音楽を振動を鳴らす</string>
-    <!-- Navigation settings -->
     <string name="back_height_low_label">全部</string>
     <string name="back_height_high_label">下部</string>
     <string name="back_options_dialog_title">オプション</string>
     <string name="back_height_message">戻るジェスチャーの入力領域に用いる画面の高さ</string>
-    <!-- Back gesture animation -->
     <string name="back_gesture_arrow_message">戻るジェスチャーの矢印のアニメーションを表示する</string>
-    <!-- NavigationBar Gestural Mode Tweaks -->
     <string name="gesture_pill_message">シームレスな全画面ジェスチャーのためにナビゲーションバーのピルを隠す</string>
-    <!-- Swipe fingerprint -->
     <string name="fp_swipe_to_dismiss_notifications_title">指紋センサーを左右にスワイプして通知を消去</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">通知を消去するには、端末背面の指紋センサーを右または左にスワイプして下さい。</string>
-    <!-- Swipe to screenshot -->
     <string name="swipe_to_screenshot_title">スワイプでスクリーンショット</string>
     <string name="swipe_to_screenshot_summary">3本指を下方にスワイプすることでスクリーンショットを撮ります</string>
-    <!-- Format string for fingerprint location message -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">タブレットの<xliff:g id="sensor_location">%1$s</xliff:g>にある指紋センサーの場所を探して下さい</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">端末の<xliff:g id="sensor_location">%1$s</xliff:g>にある指紋センサーの場所を探して下さい</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">スマートフォンの<xliff:g id="sensor_location">%1$s</xliff:g>にある指紋センサーの場所を探して下さい</string>
-    <!-- Fingerprint sensor locations -->
     <string name="security_settings_fingerprint_sensor_location_back">背面</string>
     <string name="security_settings_fingerprint_sensor_location_front">前面</string>
     <string name="security_settings_fingerprint_sensor_location_left">左側面</string>
     <string name="security_settings_fingerprint_sensor_location_right">右側面</string>
-    <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">パターンサイズを選択</string>
-    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
     <string name="lockpattern_settings_enable_error_path_title">パターンエラーを表示</string>
-    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">パターンドットを表示</string>
-    <!-- Display : Rotation -->
     <string name="display_rotation_title">回転の設定</string>
     <string name="display_rotation_enabled">自動回転が有効です</string>
     <string name="display_rotation_disabled">自動回転が無効です</string>
@@ -74,14 +57,10 @@
     <string name="display_rotation_90_title">90度</string>
     <string name="display_rotation_180_title">180度</string>
     <string name="display_rotation_270_title">270度</string>
-    <!-- FontEngine -->
     <string name="font_picker_title">フォント</string>
     <string name="disable_fonts_installed_title">フォントピッカーは Substratum との競合のために使用できません。フォントピッカーを使用する場合は Substratum をアンインストールして下さい。</string>
     <string name="font_picker_progress">新しいフォントを適用しています\u2026</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
     <string name="ringtone1_title">着信音 - SIM 1</string>
-    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
     <string name="ringtone2_title">着信音 - SIM 2</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">保存されたイヤホン</string>
 </resources>
