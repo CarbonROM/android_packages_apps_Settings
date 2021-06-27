@@ -63,4 +63,5 @@
     <string name="ringtone1_title">Telefon zil sesi - SIM 1</string>
     <string name="ringtone2_title">Telefon zil sesi - SIM 2</string>
     <string name="connected_tws_device_saved_title">Kulaklıklar kaydedildi</string>
+    <string name="volume_link_notification_title">Zil sesi ve Bildirim sesini bağla</string>
 </resources>
