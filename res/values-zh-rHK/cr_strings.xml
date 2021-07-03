@@ -19,7 +19,6 @@
     <string name="summary_placeholder"> 不適用</string>
     <string name="carbon_vendor_security_patch">Vendor安全補丁級別</string>
     <string name="app_play_store">Google Play</string>
-    <string name="swipe_to_screenshot_gesture_title">滑動以進行熒幕截圖</string>
     <string name="notification_sound_vib_screen_on_title">活動時通知音</string>
     <string name="notification_sound_vib_screen_on_summary">當熒幕開啟時，播放聲音與震動</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">於您的平板裝置的<xliff:g id="sensor_location">%1$s</xliff:g>檢測到指紋感測器。</string>

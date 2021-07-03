@@ -21,7 +21,6 @@
     <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">貴方の日々のファイバーに健康の源を</string>
     <string name="app_play_store">Google Play</string>
-    <string name="swipe_to_screenshot_gesture_title">スワイプでスクリーンショット</string>
     <string name="screenshot_shutter_sound_title">スクリーンショットの音</string>
     <string name="notification_sound_vib_screen_on_title">画面点灯中の通知サウンド</string>
     <string name="notification_sound_vib_screen_on_summary">画面点灯中に通知の音楽を振動を鳴らす</string>

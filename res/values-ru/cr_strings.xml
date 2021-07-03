@@ -21,7 +21,6 @@
     <string name="cf_settings_title">Углеродные волокна</string>
     <string name="cf_dashboard_summary">Источник качественной клетчатки на каждый день</string>
     <string name="app_play_store">Google Play</string>
-    <string name="swipe_to_screenshot_gesture_title">Свайп для снимка экрана</string>
     <string name="screenshot_shutter_sound_title">Звук скриншота</string>
     <string name="notification_sound_vib_screen_on_title">Звук уведомления, если активен</string>
     <string name="notification_sound_vib_screen_on_summary">Воспроизводить звук и вибрацию при включении экрана</string>

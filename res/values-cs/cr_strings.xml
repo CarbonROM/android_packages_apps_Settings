@@ -25,9 +25,6 @@
     <string name="selinux_status_disabled">Vypnuto</string>
     <string name="selinux_status_permissive">Mírný</string>
     <string name="selinux_status_enforcing">Vynucený</string>
-    <string name="doubletap_lockscreen_screen_title">Vypnout obrazovku</string>
-    <string name="doubletap_lockscreen_title">Dvojitým poklepáním na zamykací obrazovku uspat zařízení</string>
-    <string name="doubletap_lockscreen_summary">Dvojitým poklepáním na zamykací obrazovku vypnout obrazovku</string>
     <string name="app_play_store">Obchod Play</string>
     <string name="volume_link_notification_title">Sjednotit hlasitost oznámení a vyzvánění</string>
     <string name="data_usage_app_restrict_mobile">Mobilní data</string>
@@ -36,8 +33,6 @@
     <string name="data_usage_app_restrict_vpn_summary">Povolit používání VPN dat</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
     <string name="data_usage_app_restrict_wifi_summary">Povolit používání Wi\u2011Fi dat</string>
-    <string name="swipe_to_screenshot_gesture_title">Snímek obrazovky třemi prsty</string>
-    <string name="swipe_to_screenshot_gesture_summary">Snímek obrazovky přejetím tří prstů</string>
     <string name="screenshot_shutter_sound_title">Zvuk při snímku obrazovky</string>
     <string name="notification_sound_vib_screen_on_title">Zvuk oznámení při aktivaci</string>
     <string name="notification_sound_vib_screen_on_summary">Přehrát zvuk a vibrovat pro oznámení při zapnuté obrazovce</string>
@@ -52,11 +47,6 @@
     <string name="connected_tws_device_saved_title">Uložená sluchátka</string>
     <string name="fp_swipe_to_dismiss_notifications_title">Zrušit oznámení přejetím doleva nebo doprava přes snímač otisků prstů</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Chcete-li zrušit oznámení, přejeďte prstem doleva nebo doprava přes snímač otisků prstů na zadní straně telefonu.</string>
-    <string name="double_tap_power_flashlight_screen_title">Zapnout svítilnu</string>
-    <string name="double_tap_power_flashlight_title">Přepínání svítilny tlačítkem napájení při vypnuté obrazovce</string>
-    <string name="torch_power_button_gesture_none">Vypnuto</string>
-    <string name="torch_power_button_gesture_dt">Dvojím klepnutím přepínat svítilnu</string>
-    <string name="torch_power_button_gesture_lp">Dlouhým stiskem tlačítka napájení přepínat svítilnu</string>
     <string name="fast_charging_title">Rychlé nabíjení</string>
     <string name="fast_charging_summary">Vypněte pro snížení tepla vytvořeného zařízením při nabíjení nebo prodloužení životnosti baterie</string>
     <string name="font_picker_title">Písmo</string>

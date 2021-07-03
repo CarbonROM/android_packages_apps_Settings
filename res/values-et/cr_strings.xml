@@ -21,7 +21,6 @@
     <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">Kvaliteetse kiu allikas iga päev</string>
     <string name="app_play_store">Google Play</string>
-    <string name="swipe_to_screenshot_gesture_title">Pühkige ekraanipilti</string>
     <string name="screenshot_shutter_sound_title">Ekraanipildi heli</string>
     <string name="notification_sound_vib_screen_on_title">Märguandeheli, kui see on aktiivne</string>
     <string name="notification_sound_vib_screen_on_summary">Esitage heli ja vibratsiooni, kui ekraan on sisse lülitatud</string>

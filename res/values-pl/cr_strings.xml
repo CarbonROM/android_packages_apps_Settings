@@ -21,7 +21,6 @@
     <string name="cf_settings_title">Ustawienia Carbon ROM</string>
     <string name="cf_dashboard_summary">Dostosuj swojego CarbonRoma</string>
     <string name="app_play_store">Google Play</string>
-    <string name="swipe_to_screenshot_gesture_title">Przesuń, aby zrzut ekranu</string>
     <string name="screenshot_shutter_sound_title">Dźwięk zrzutu ekranu</string>
     <string name="notification_sound_vib_screen_on_title">Dźwięk powiadomienia, jeśli aktywny</string>
     <string name="notification_sound_vib_screen_on_summary">Odtwarzaj dźwięk i wibracje dla powiadomień, gdy ekran jest włączony</string>

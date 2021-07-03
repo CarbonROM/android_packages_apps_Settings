@@ -25,7 +25,6 @@
     <string name="selinux_status_disabled">Deaktiviert</string>
     <string name="selinux_status_permissive">Moderat</string>
     <string name="selinux_status_enforcing">Strikt</string>
-    <string name="doubletap_lockscreen_screen_title">Bildschirm ausschalten</string>
     <string name="app_play_store">Google Play</string>
     <string name="data_usage_app_restrict_mobile">Mobile Daten</string>
     <string name="data_usage_app_restrict_mobile_summary">Nutzung mobiler Daten aktivieren</string>
@@ -33,8 +32,6 @@
     <string name="data_usage_app_restrict_vpn_summary">Nutzung von VPN-Daten aktivieren</string>
     <string name="data_usage_app_restrict_wifi">W\u2011Lan-Daten</string>
     <string name="data_usage_app_restrict_wifi_summary">Nutzung von W\u2011Lan-Daten aktivieren</string>
-    <string name="swipe_to_screenshot_gesture_title">Für Screenshot wischen</string>
-    <string name="swipe_to_screenshot_gesture_summary">Wische mit drei Fingern um Screenshot zu machen</string>
     <string name="screenshot_shutter_sound_title">Ton bei Bildschirmfoto</string>
     <string name="notification_sound_vib_screen_on_title">Benachrichtigungston wenn aktiv</string>
     <string name="notification_sound_vib_screen_on_summary">Ton und Vibration für Benachrichtigungen bei eingeschaltetem Bildschirm abspielen</string>
@@ -49,11 +46,6 @@
     <string name="connected_tws_device_saved_title">Gespeicherte Ohrhörer</string>
     <string name="fp_swipe_to_dismiss_notifications_title">Wischen Sie mit dem Finger nach links oder rechts, um Benachrichtigungen zu schließen</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Wischen Sie nach links oder rechts auf dem Fingerabdrucksensor auf der Rückseite des Telefons, um Ihre Benachrichtigungen zu schließen.</string>
-    <string name="double_tap_power_flashlight_screen_title">Taschenlampe aktivieren</string>
-    <string name="double_tap_power_flashlight_title">Power-Button Taschenlampe bei ausgeschaltetem Bildschirm</string>
-    <string name="torch_power_button_gesture_none">Deaktiviert</string>
-    <string name="torch_power_button_gesture_dt">Doppelt drücken, um die Taschenlampe zu nutzen</string>
-    <string name="torch_power_button_gesture_lp">Lange drücken, um die Taschenlampe zu nutzen</string>
     <string name="fast_charging_title">Fast Charging</string>
     <string name="fast_charging_summary">Deaktivieren, um die vom Gerät erzeugte Hitze während des Ladevorgangs zu reduzieren oder die Lebensdauer des Akkus zu verlängern</string>
     <string name="font_picker_title">Schriftart</string>

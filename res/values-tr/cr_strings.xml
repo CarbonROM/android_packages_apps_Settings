@@ -25,9 +25,6 @@
     <string name="selinux_status_disabled">Devre dışı</string>
     <string name="selinux_status_permissive">Permissive (Serbest)</string>
     <string name="selinux_status_enforcing">Enforcing (Zorunlu)</string>
-    <string name="doubletap_lockscreen_screen_title">Ekranı kapat</string>
-    <string name="doubletap_lockscreen_title">Kilit ekranında uyutmak için iki kez dokunun</string>
-    <string name="doubletap_lockscreen_summary">Ekranı kapatmak için kilit ekranına iki kez dokunun</string>
     <string name="app_play_store">Google Play</string>
     <string name="volume_link_notification_title">Zil sesi ve Bildirim sesini bağla</string>
     <string name="data_usage_app_restrict_mobile">Mobil veri</string>
@@ -36,8 +33,6 @@
     <string name="data_usage_app_restrict_vpn_summary">VPN veri kullanımını etkinleştirin</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi verisi</string>
     <string name="data_usage_app_restrict_wifi_summary">Wi\u2011Fi veri kullanımını etkinleştirin</string>
-    <string name="swipe_to_screenshot_gesture_title">Ekran resmi için kaydırın</string>
-    <string name="swipe_to_screenshot_gesture_summary">Ekran görüntüsü almak için üç parmağınızı kaydırın</string>
     <string name="screenshot_shutter_sound_title">Ekran görüntüsü sesi</string>
     <string name="notification_sound_vib_screen_on_title">Aktif olduğunda bildirim sesi açık</string>
     <string name="notification_sound_vib_screen_on_summary">Ekran açık olduğunda ses ve titreşimi aç</string>
@@ -52,11 +47,6 @@
     <string name="connected_tws_device_saved_title">Kulaklıklar kaydedildi</string>
     <string name="fp_swipe_to_dismiss_notifications_title">Parmak izini sola veya sağa kaydırarak bildirimi reddet</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Bildirimleri reddetmek için parmak izini sola veya sağa kaydırın.</string>
-    <string name="double_tap_power_flashlight_screen_title">Feneri etkinleştir</string>
-    <string name="double_tap_power_flashlight_title">Güç tuşu ile fener açma</string>
-    <string name="torch_power_button_gesture_none">Devre dışı</string>
-    <string name="torch_power_button_gesture_dt">Feneri değiştirmek için iki kez güç tuşuna dokunun</string>
-    <string name="torch_power_button_gesture_lp">Feneri değiştirmek için güç tuşuna uzun basın</string>
     <string name="fast_charging_title">Hızlı şarj</string>
     <string name="fast_charging_summary">Cihazın şarj ederken ürettiği ısıyı azaltmak veya pilin ömrünü uzatmak için devre dışı bırakın</string>
     <string name="font_picker_title">Yazı tipi</string>

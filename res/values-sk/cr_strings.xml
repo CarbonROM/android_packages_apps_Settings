@@ -21,7 +21,6 @@
     <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">Zdravý zdroj dennej vlákniny</string>
     <string name="app_play_store">Google Play</string>
-    <string name="swipe_to_screenshot_gesture_title">Snímka obrazovky troma prstami</string>
     <string name="screenshot_shutter_sound_title">Zvuk pri snímke obrazovky</string>
     <string name="notification_sound_vib_screen_on_title">Zvuk upozornenia pri aktivácii</string>
     <string name="notification_sound_vib_screen_on_summary">Prehrať zvuk a vibrovať pre upozornenia pri zapnutej obrazovke </string>

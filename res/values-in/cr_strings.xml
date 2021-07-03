@@ -21,7 +21,6 @@
     <string name="cf_settings_title">Serat Carbon</string>
     <string name="cf_dashboard_summary">Sumber serat harian Anda yang sehat</string>
     <string name="app_play_store">Google Play</string>
-    <string name="swipe_to_screenshot_gesture_title">Geser untuk tangkapan layar</string>
     <string name="notification_sound_vib_screen_on_title">Suara notifikasi jika aktif</string>
     <string name="notification_sound_vib_screen_on_summary">Putar suara dan getaran untuk notifikasi saat layar menyala</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Temukan sensor sidik jari di <xliff:g id="sensor_location">%1$s</xliff:g> perangkat Anda.</string>

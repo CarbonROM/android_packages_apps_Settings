@@ -21,7 +21,6 @@
     <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">日常纖維的健康來源</string>
     <string name="app_play_store">Google Play</string>
-    <string name="swipe_to_screenshot_gesture_title">滑動後擷取螢幕畫面</string>
     <string name="screenshot_shutter_sound_title">擷取熒幕畫面音效</string>
     <string name="notification_sound_vib_screen_on_title">啟用通知聲音</string>
     <string name="notification_sound_vib_screen_on_summary">解鎖螢幕時播放聲音及振動進行通知</string>
