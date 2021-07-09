@@ -95,4 +95,7 @@
     <string name="proximity_wake_title">Prevent accidental wake-up</string>
     <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 
+    <!-- Custom Ambient Display Package Description -->
+    <string name="ambient_display_screen_summary">Additional configurations for ambient display</string>
+
 </resources>

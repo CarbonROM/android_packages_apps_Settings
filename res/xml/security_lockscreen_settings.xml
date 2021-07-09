@@ -67,7 +67,8 @@
 
         <Preference
             android:key="ambient_display_carbon"
-            android:title="@string/ambient_display_screen_title" >
+            android:title="@string/ambient_display_screen_title"
+            android:summary="@string/ambient_display_screen_summary" >
             <intent
                 android:action="org.carbonrom.settings.device.DOZE_SETTINGS"
                 android:targetPackage="org.carbonrom.settings.doze" />
