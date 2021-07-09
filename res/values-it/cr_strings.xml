@@ -20,6 +20,9 @@
     <string name="carbon_vendor_security_patch">Livello patch di sicurezza fornitore</string>
     <string name="cf_settings_title">Fibre di carbonio</string>
     <string name="cf_dashboard_summary">Una sana fonte di fibre quotidiane</string>
+    <string name="darker_theme_enable">Abilita tema nero</string>
+    <string name="selinux_status">Stato SELinux</string>
+    <string name="selinux_status_disabled">Disattivato</string>
     <string name="app_play_store">Google Play</string>
     <string name="screenshot_shutter_sound_title">Suono screenshot</string>
     <string name="notification_sound_vib_screen_on_title">Suono di notifica se attivo</string>

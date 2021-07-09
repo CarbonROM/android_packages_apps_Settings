@@ -20,10 +20,23 @@
     <string name="carbon_vendor_security_patch">Niveau de correctif de sécurité du fabricant</string>
     <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">Une source saine de votre fibre quotidienne</string>
+    <string name="darker_theme_enable">Activer le thème noir</string>
+    <string name="selinux_status">État SELinux</string>
+    <string name="selinux_status_disabled">Désactivé</string>
+    <string name="selinux_status_permissive">Permissif</string>
+    <string name="selinux_status_enforcing">Appliquer</string>
     <string name="app_play_store">Google Play</string>
+    <string name="volume_link_notification_title">Lier le volume de la sonnerie et des notifications</string>
+    <string name="data_usage_app_restrict_mobile">Données mobiles</string>
+    <string name="data_usage_app_restrict_mobile_summary">Activer l\'utilisation des données mobiles</string>
+    <string name="data_usage_app_restrict_vpn">Données VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Activer l\'utilisation des données VPN</string>
+    <string name="data_usage_app_restrict_wifi">Données Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Activer l\'utilisation des données Wi-Fi\u2011Fi</string>
     <string name="screenshot_shutter_sound_title">Son de capture d\'écran</string>
     <string name="notification_sound_vib_screen_on_title">Son de notification si actif</string>
     <string name="notification_sound_vib_screen_on_summary">Jouer un son et une vibration pour les notifications lorsque l\'écran est allumé</string>
+    <string name="min_refresh_rate_title">Taux de rafraîchissement minimum</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Localisez le capteur d\'empreintes digitales sur le <xliff:g id="sensor_location">%1$s</xliff:g> de votre tablette.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Localisez le capteur d\'empreintes digitales sur le <xliff:g id="sensor_location">%1$s</xliff:g> de votre appareil.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Localisez le capteur d\'empreintes digitales sur le <xliff:g id="sensor_location">%1$s</xliff:g> de votre téléphone.</string>
@@ -31,7 +44,11 @@
     <string name="security_settings_fingerprint_sensor_location_front">avant</string>
     <string name="security_settings_fingerprint_sensor_location_left">côté gauche</string>
     <string name="security_settings_fingerprint_sensor_location_right">côté droit</string>
+    <string name="connected_tws_device_saved_title">Écouteurs enregistrés</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Balayer le doigt de gauche à droite pour faire disparaitre les notifications</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Pour ignorer vos notifications, balayez vers la gauche ou la droite sur le capteur d\'empreintes digitales à l\'arrière de votre téléphone.</string>
+    <string name="fast_charging_title">Charge rapide</string>
+    <string name="fast_charging_summary">Désactiver pour réduire la chaleur produite par l\'appareil pendant la charge ou pour prolonger la durée de vie de la batterie</string>
     <string name="font_picker_title">Font</string>
     <string name="disable_fonts_installed_title">Le sélecteur de police n\'est pas disponible pour éviter les conflits avec Substratum. Désinstallez-le si vous souhaitez utiliser le sélecteur de polices.</string>
     <string name="font_picker_progress">Application de la nouvelle police\u2026</string>

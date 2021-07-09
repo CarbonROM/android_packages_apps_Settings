@@ -20,10 +20,23 @@
     <string name="carbon_vendor_security_patch">Nivel de parche de seguridad del proveedor</string>
     <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">Una fuente saludable para tu fibra diaria</string>
+    <string name="darker_theme_enable">Activar tema oscuro</string>
+    <string name="selinux_status">Estado de SELinux</string>
+    <string name="selinux_status_disabled">Deshabilitado</string>
+    <string name="selinux_status_permissive">Permisivo</string>
+    <string name="selinux_status_enforcing">Obligatorio</string>
     <string name="app_play_store">Google Play</string>
+    <string name="volume_link_notification_title">Usar el mismo volumen para llamadas y notificaciones</string>
+    <string name="data_usage_app_restrict_mobile">Datos móviles</string>
+    <string name="data_usage_app_restrict_mobile_summary">Activar el uso de datos móviles</string>
+    <string name="data_usage_app_restrict_vpn">Datos VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Activar el uso de datos VPN</string>
+    <string name="data_usage_app_restrict_wifi">Datos Wi-Fi\u2011</string>
+    <string name="data_usage_app_restrict_wifi_summary">Activar el uso de datos Wi\u2011Fi</string>
     <string name="screenshot_shutter_sound_title">Sonido de captura de pantalla</string>
     <string name="notification_sound_vib_screen_on_title">Sonido de notificación si está activo</string>
     <string name="notification_sound_vib_screen_on_summary">Reproducir sonido y vibración para notificaciones cuando la pantalla esté encendida</string>
+    <string name="min_refresh_rate_title">Frecuencia de actualización mínima</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Localice el sensor de huella digital en el <xliff:g id="sensor_location">%1$s </xliff:g> de su teléfono.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Localice el sensor de huella dactilar en <xliff:g id="sensor_location">%1$s</xliff:g> de su dispositivo.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Localice el sensor de huella digital en el <xliff:g id="sensor_location">%1$s </xliff:g> de su teléfono.</string>
@@ -34,6 +47,8 @@
     <string name="connected_tws_device_saved_title">Auriculares guardados</string>
     <string name="fp_swipe_to_dismiss_notifications_title">Deslizar huella dactilar a la izquierda o a la derecha para descartar notificaciones</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Para descartar tus notificaciones, desliza a la izquierda o a la derecha en el sensor de huellas dactilares en la parte trasera del teléfono.</string>
+    <string name="fast_charging_title">Carga rápida</string>
+    <string name="fast_charging_summary">Desactivar para reducir el calor producido por el dispositivo mientras se carga o para extender la duración de la batería</string>
     <string name="font_picker_title">Fuente</string>
     <string name="disable_fonts_installed_title">El selector de fuentes no está disponible para evitar conflictos con Substratum. Desinstálelo si desea utilizar el selector de fuentes.</string>
     <string name="font_picker_progress">Aplicando nueva fuente\u2026</string>

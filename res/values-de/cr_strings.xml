@@ -26,6 +26,7 @@
     <string name="selinux_status_permissive">Moderat</string>
     <string name="selinux_status_enforcing">Strikt</string>
     <string name="app_play_store">Google Play</string>
+    <string name="volume_link_notification_title">Klingel- und Benachrichtigungslautstärken verbinden</string>
     <string name="data_usage_app_restrict_mobile">Mobile Daten</string>
     <string name="data_usage_app_restrict_mobile_summary">Nutzung mobiler Daten aktivieren</string>
     <string name="data_usage_app_restrict_vpn">VPN-Daten</string>
@@ -53,4 +54,7 @@
     <string name="font_picker_progress">Die neue Schriftart\u2026 wird angewendet</string>
     <string name="ringtone1_title">Klingelton - SIM 1</string>
     <string name="ringtone2_title">Klingelton - SIM 2</string>
+    <string name="proximity_wake_title">Unbeabsichtigtes Aufwecken verhindern</string>
+    <string name="proximity_wake_summary">Vor Einschalten des Bildschirms Näherungssensor überprüfen</string>
+    <string name="ambient_display_screen_summary">Zusätzliche Einstellungen für das Inaktivitätsdisplay</string>
 </resources>

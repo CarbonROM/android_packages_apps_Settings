@@ -20,10 +20,23 @@
     <string name="carbon_vendor_security_patch">厂商安全补丁等级</string>
     <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">个性化设置</string>
+    <string name="darker_theme_enable">启用黑色主题</string>
+    <string name="selinux_status">SELinux 状态</string>
+    <string name="selinux_status_disabled">已禁用</string>
+    <string name="selinux_status_permissive">宽容模式</string>
+    <string name="selinux_status_enforcing">强制模式</string>
     <string name="app_play_store">Google Play</string>
+    <string name="volume_link_notification_title">连接铃声和通知音量</string>
+    <string name="data_usage_app_restrict_mobile">移动数据</string>
+    <string name="data_usage_app_restrict_mobile_summary">启用移动数据</string>
+    <string name="data_usage_app_restrict_vpn">VPN 数据</string>
+    <string name="data_usage_app_restrict_vpn_summary">启用 VPN 数据</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi 数据</string>
+    <string name="data_usage_app_restrict_wifi_summary">启用 Wi\u2011Fi 数据</string>
     <string name="screenshot_shutter_sound_title">截屏提示音</string>
     <string name="notification_sound_vib_screen_on_title">启用通知提示音</string>
     <string name="notification_sound_vib_screen_on_summary">在亮屏时为通知开启声音和震动提醒</string>
+    <string name="min_refresh_rate_title">最小刷新率</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">请找到位于您平板<xliff:g id="sensor_location">%1$s</xliff:g> 的指纹传感器。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">请找到位于您设备<xliff:g id="sensor_location">%1$s</xliff:g> 的指纹传感器。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">请找到位于您手机<xliff:g id="sensor_location">%1$s</xliff:g> 的指纹传感器。</string>
@@ -34,6 +47,8 @@
     <string name="connected_tws_device_saved_title">已保存的耳机</string>
     <string name="fp_swipe_to_dismiss_notifications_title">在指纹按钮上向左或向右滑动忽略通知</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">在手机背部的指纹传感器上向左或向右滑动以忽略通知信息。</string>
+    <string name="fast_charging_title">快速充电</string>
+    <string name="fast_charging_summary">禁用以降低设备在充电时产生的热量或延长电池寿命</string>
     <string name="font_picker_title">字体</string>
     <string name="disable_fonts_installed_title">字体选择器与 Substratum 冲突。如果您想使用字体选择器，请卸载 Substratum。</string>
     <string name="font_picker_progress">正在应用新字体\u2026</string>

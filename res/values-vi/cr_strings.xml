@@ -19,12 +19,41 @@
     <string name="summary_placeholder">Không xác định</string>
     <string name="carbon_vendor_security_patch">Cấp bản vá bảo mật của nhà cung cấp</string>
     <string name="cf_settings_title"> Sợi Carbon</string>
-    <string name="cf_dashboard_summary">Chất xơ là một trong những nguồn sức khỏe của bạn</string>
+    <string name="cf_dashboard_summary">Một nguồn chất xơ lành mạnh hàng ngày của bạn</string>
+    <string name="darker_theme_enable">Bật chủ đề màu đen</string>
+    <string name="selinux_status">Trạng thái SELinux</string>
+    <string name="selinux_status_disabled">Tắt</string>
+    <string name="selinux_status_permissive">Cho phép</string>
+    <string name="selinux_status_enforcing">Thực thi</string>
     <string name="app_play_store">CH PLAY</string>
+    <string name="volume_link_notification_title">Thay đổi đồng thời âm lượng chuông &amp; thông báo</string>
+    <string name="data_usage_app_restrict_mobile">Dữ liệu di động</string>
+    <string name="data_usage_app_restrict_mobile_summary">Cho phép sử dụng dữ liệu di động</string>
+    <string name="data_usage_app_restrict_vpn">Dữ liệu VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Cho phép sử dụng dữ liệu di động</string>
+    <string name="data_usage_app_restrict_wifi">Dữ liệu Wi \ u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Cho phép sử dụng dữ liệu Wi \ u2011Fi</string>
     <string name="screenshot_shutter_sound_title">Âm thanh chụp màn hình</string>
     <string name="notification_sound_vib_screen_on_title">Thông báo nghe cứu</string>
     <string name="notification_sound_vib_screen_on_summary">Phát âm thanh và rung cho các thông báo khi màn hình bật</string>
+    <string name="min_refresh_rate_title">Tốc độ làm mới tối thiểu</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Tìm cảm biến vân tay trên &lt;xliff: g id = "sensor_location"&gt;% 1 $ s &lt;/ xliff: g&gt; của máy tính bảng của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Tìm cảm biến vân tay trên &lt;xliff: g id = "sensor_location"&gt;% 1 $ s &lt;/ xliff: g&gt; của máy tính bảng của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Tìm cảm biến vân tay trên &lt;xliff: g id = "sensor_location"&gt;% 1 $ s &lt;/ xliff: g&gt; của máy tính bảng của bạn.</string>
+    <string name="security_settings_fingerprint_sensor_location_back">Trở lại</string>
+    <string name="security_settings_fingerprint_sensor_location_front">trước</string>
+    <string name="security_settings_fingerprint_sensor_location_left">bên trái</string>
+    <string name="security_settings_fingerprint_sensor_location_right">bên phải</string>
+    <string name="connected_tws_device_saved_title">Tai nghe đã lưu</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Vuốt tay sang trái hoặc phải để bỏ qua thông báo</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Bỏ qua thông báo, hãy trượt sang trái hoặc phải trên cảm biến vân tay ở mặt sau của điện thoại của bạn.</string>
+    <string name="fast_charging_title">Sạc nhanh</string>
+    <string name="fast_charging_summary">Tắt để giảm nhiệt do thiết bị tạo ra trong khi sạc hoặc để kéo dài tuổi thọ của pin</string>
     <string name="font_picker_title">Phông chữ</string>
     <string name="disable_fonts_installed_title">Bộ chọn phông chữ không khả dụng để tránh xung đột với Substratum. Gỡ cài đặt nó nếu bạn muốn sử dụng bộ chọn phông chữ.</string>
     <string name="font_picker_progress">Áp dụng phông chữ mới\u2026</string>
+    <string name="ringtone1_title">Nhạc chuông điện thoại - SIM 1</string>
+    <string name="ringtone2_title">Nhạc chuông điện thoại - SIM 2</string>
+    <string name="proximity_wake_title">Ngăn chặn đánh thức tình cờ</string>
+    <string name="proximity_wake_summary">Kiểm tra cảm biến khoảng cách trước khi đánh thức màn hình</string>
 </resources>
