@@ -20,10 +20,19 @@
     <string name="carbon_vendor_security_patch">Poziom aktualizacji zabezpieczeń dostawcy</string>
     <string name="cf_settings_title">Ustawienia Carbon ROM</string>
     <string name="cf_dashboard_summary">Dostosuj swojego CarbonRoma</string>
+    <string name="darker_theme_enable">Włącz czarny motyw</string>
+    <string name="selinux_status">Stan SELinux</string>
+    <string name="selinux_status_disabled">Wyłączony</string>
+    <string name="selinux_status_permissive">Zezwolony</string>
+    <string name="selinux_status_enforcing">Restrykcyjny</string>
     <string name="app_play_store">Google Play</string>
+    <string name="volume_link_notification_title">Połącz głośność dzwonka i powiadomień</string>
+    <string name="data_usage_app_restrict_mobile">Dane mobilne</string>
+    <string name="data_usage_app_restrict_mobile_summary">Włącz użycie danych mobilnych</string>
     <string name="screenshot_shutter_sound_title">Dźwięk zrzutu ekranu</string>
     <string name="notification_sound_vib_screen_on_title">Dźwięk powiadomienia, jeśli aktywny</string>
     <string name="notification_sound_vib_screen_on_summary">Odtwarzaj dźwięk i wibracje dla powiadomień, gdy ekran jest włączony</string>
+    <string name="min_refresh_rate_title">Minimalna częstotliwość odświeżania</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Określ lokalizację czujnika odcisków palców na <xliff:g id="sensor_location">%1$s</xliff:g> telefonu.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Zlokalizuj czytnik linii papilarnych na <xliff:g id="sensor_location">%1$s</xliff:g> na urządzeniu.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Określ lokalizację czujnika odcisków palców na <xliff:g id="sensor_location">%1$s</xliff:g> telefonu.</string>
@@ -34,9 +43,12 @@
     <string name="connected_tws_device_saved_title">Zapisane słuchawki</string>
     <string name="fp_swipe_to_dismiss_notifications_title">Przesuń po czytniku, żeby pozbyć się powiadomień</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Aby odrzucić powiadomienia, przesuń palcem w lewo lub w prawo po czytniku linii papilarnych na odwrocie telefonu.</string>
+    <string name="fast_charging_title">Szybkie ładowanie</string>
+    <string name="fast_charging_summary">Wyłącz, aby zmniejszyć ciepło wytwarzane przez urządzenie podczas ładowania lub wydłużyć żywotność baterii</string>
     <string name="font_picker_title">Czcionka</string>
     <string name="disable_fonts_installed_title">Wybór akcentu jest niedostępny, aby zapobiec konfliktom z Substratum. Odinstaluj go, jeśli chcesz wybrać akcent.</string>
     <string name="font_picker_progress">Stosowanie nowej czcionki\u2026</string>
     <string name="ringtone1_title">Dzwonek telefonu - SIM 1</string>
     <string name="ringtone2_title">Dzwonek telefonu - SIM 2</string>
+    <string name="ambient_display_screen_summary">Dodatkowe konfiguracje aktywnego wyświetlacza</string>
 </resources>

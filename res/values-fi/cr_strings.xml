@@ -15,5 +15,23 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="darker_theme_enable">Ota musta teema käyttöön</string>
+    <string name="selinux_status">SELinux tila</string>
+    <string name="selinux_status_disabled">Pois käytöstä</string>
+    <string name="selinux_status_permissive">Salliva</string>
+    <string name="selinux_status_enforcing">Pakottava</string>
+    <string name="volume_link_notification_title">Yhdistä soitto- ja  ilmoitusäänien ääntenvoimakkuus</string>
+    <string name="data_usage_app_restrict_mobile">Mobiilidata</string>
+    <string name="data_usage_app_restrict_mobile_summary">Kytke mobiilidata käyttöön</string>
+    <string name="data_usage_app_restrict_vpn">VPN data</string>
+    <string name="data_usage_app_restrict_vpn_summary">Kytke käyttöön VPN data</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
+    <string name="data_usage_app_restrict_wifi_summary">Kytke käyttöön Wi\u2011Fi data</string>
+    <string name="min_refresh_rate_title">Pienin tahdistusnopeus</string>
+    <string name="fast_charging_title">Nopea lataus</string>
+    <string name="fast_charging_summary">Poista käytöstä vähentääksesi laitteen lämmöntuotantoa ladattaessa tai pidentääksesi akun käyttöikää</string>
     <string name="font_picker_title">Fontti</string>
+    <string name="proximity_wake_title">Estä vahinkoherääminen</string>
+    <string name="proximity_wake_summary">Tarkista etäisyysanturi ennen näytön heräämistä</string>
+    <string name="ambient_display_screen_summary">Taustanäytön lisäasetukset</string>
 </resources>

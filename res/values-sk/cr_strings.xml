@@ -20,10 +20,23 @@
     <string name="carbon_vendor_security_patch">Úroveň opravy zabezpečenia špecifická pre dodávateľa</string>
     <string name="cf_settings_title">Carbon Fibers</string>
     <string name="cf_dashboard_summary">Zdravý zdroj dennej vlákniny</string>
+    <string name="darker_theme_enable">Použiť čiernu tému</string>
+    <string name="selinux_status">Stav zabezpečenia SELinux</string>
+    <string name="selinux_status_disabled">Vypnuté</string>
+    <string name="selinux_status_permissive">Mierne</string>
+    <string name="selinux_status_enforcing">Vynútené</string>
     <string name="app_play_store">Google Play</string>
+    <string name="volume_link_notification_title">Prepojiť hlasitosť zvonenia a upozornení</string>
+    <string name="data_usage_app_restrict_mobile">Mobilné dáta</string>
+    <string name="data_usage_app_restrict_mobile_summary">Povoliť používanie mobilných dát</string>
+    <string name="data_usage_app_restrict_vpn">VPN dáta</string>
+    <string name="data_usage_app_restrict_vpn_summary">Povoliť používanie VPN dát</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi dáta</string>
+    <string name="data_usage_app_restrict_wifi_summary">Povoliť používanie Wi\u2011Fi dát</string>
     <string name="screenshot_shutter_sound_title">Zvuk pri snímke obrazovky</string>
     <string name="notification_sound_vib_screen_on_title">Zvuk upozornenia pri aktivácii</string>
     <string name="notification_sound_vib_screen_on_summary">Prehrať zvuk a vibrovať pre upozornenia pri zapnutej obrazovke </string>
+    <string name="min_refresh_rate_title">Minimálna obnovovacia frekvencia</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Snímač odtlačkov nájdete na <xliff:g id="sensor_location">%1$s </xliff:g> tabletu.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Snímač odtlačkov nájdete na <xliff:g id="sensor_location">%1$s </xliff:g> vášho zariadenia.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Snímač odtlačkov nájdete na <xliff:g id="sensor_location">%1$s </xliff:g> telefónu.</string>
@@ -34,9 +47,14 @@
     <string name="connected_tws_device_saved_title">Uložené slúchadlá</string>
     <string name="fp_swipe_to_dismiss_notifications_title">Zrušiť upozornenia prejdením doľava alebo doprava cez snímač odtlačkov prstov</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Ak chcete zrušiť upozornenie, prejdite prstom doľava alebo doprava cez snímač odtlačkov prstov na zadnej strane telefónu.</string>
+    <string name="fast_charging_title">Rýchle nabíjanie</string>
+    <string name="fast_charging_summary">Vypnite pre zníženie tepla vytvoreného zariadením pri nabíjaní alebo predĺženie životnosti batérie</string>
     <string name="font_picker_title">Písmo</string>
     <string name="disable_fonts_installed_title">Nástroj na výber písma nie je k dispozícii, aby sa predišlo konfliktom so Substratum. Ak chcete použiť nástroj na výber písma, odinštalujte Substratum.</string>
     <string name="font_picker_progress">Aplikujem nové písmo\u2026</string>
     <string name="ringtone1_title">Vyzváňanie telefónu - SIM 1</string>
     <string name="ringtone2_title">Vyzváňanie telefónu - SIM 2</string>
+    <string name="proximity_wake_title">Zabránenie náhodnému prebudeniu</string>
+    <string name="proximity_wake_summary">Pred prebudením obrazovky skontrolovať senzor priblíženia</string>
+    <string name="ambient_display_screen_summary">Ďalšie konfigurácie pre nastavenie Ambientneho displeja</string>
 </resources>

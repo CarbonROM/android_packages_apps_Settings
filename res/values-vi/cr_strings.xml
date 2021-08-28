@@ -56,4 +56,5 @@
     <string name="ringtone2_title">Nhạc chuông điện thoại - SIM 2</string>
     <string name="proximity_wake_title">Ngăn chặn đánh thức tình cờ</string>
     <string name="proximity_wake_summary">Kiểm tra cảm biến khoảng cách trước khi đánh thức màn hình</string>
+    <string name="ambient_display_screen_summary">Các cấu hình bổ sung cho màn hình xung quanh</string>
 </resources>
