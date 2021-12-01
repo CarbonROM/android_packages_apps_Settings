@@ -271,6 +271,7 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
         if (activity == null) {
             return;
         }
+        mWifiManager = activity.getSystemService(WifiManager.class);
 
         if (mIsInSetupWizard) {
             GlifPreferenceLayout layout = (GlifPreferenceLayout) view;
@@ -285,7 +286,6 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
         setPinnedHeaderView(R.layout.progress_header);
         setProgressBarVisible(false);
 
-        mWifiManager = activity.getSystemService(WifiManager.class);
         if (mWifiManager != null) {
             setLoading(true, false);
             mIsViewLoading = true;
