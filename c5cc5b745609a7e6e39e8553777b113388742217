@@ -17,6 +17,23 @@
       "message": "This requires the other commits in Settings first, specifically the SystemSettingsSwitchPreference",
       "revId": "c5cc5b745609a7e6e39e8553777b113388742217",
       "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4969d7c5_80fc1a41",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 341
+      },
+      "writtenOn": "2021-12-11T09:11:36Z",
+      "side": 1,
+      "message": "Tested working on GSI (barbet)",
+      "revId": "c5cc5b745609a7e6e39e8553777b113388742217",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     }
   ]
 }
