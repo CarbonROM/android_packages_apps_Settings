@@ -493,8 +493,14 @@ public class AppInfoDashboardFragment extends DashboardFragment
         i.setData(Uri.parse(playURL));
         startActivity(i);
     }
-     private boolean isAospOrStore(String packageName) {
+
+    private boolean isAospOrStore(String packageName) {
         return packageName.contains("com.android");
+    }
+
+    @Override
+    protected boolean shouldSkipForInitialSUW() {
+        return true;
     }
 
     private void uninstallPkg(String packageName, boolean allUsers, boolean andDisable) {
