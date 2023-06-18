@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c8e8d14_82b3101a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2023-06-18T15:33:37Z",
+      "side": 1,
+      "message": "Cosmetical change - would prefer to leave it as is.",
+      "revId": "2b09f2761371bf2f636a08384a20c77072a9a66e",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
+    }
+  ]
+}
