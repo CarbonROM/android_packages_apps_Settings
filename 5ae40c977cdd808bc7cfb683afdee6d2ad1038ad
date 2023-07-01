@@ -1,4 +1,5 @@
 {
   "pushCert": "certificate version 0.1\npusher xenreon \u003cmain.xenreon@gmail.com\u003e 1525550512 +0530\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_packages_apps_Settings\nnonce 1525550528-7FB2B5F6E7FC3BAFC7F42E233DE1A64430CF919E\n\n0000000000000000000000000000000000000000 e67f6326105c1d8aeb65a87d51a6b06431afee06 refs/for/cr-6.1\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1\n\niQEcBAABAgAGBQJa7g2wAAoJEDeF3aHmD1149akH/1+nMdYA/iMKtCDbsCCrhVA1\nP7rdMqxJgTvsM3CTjWWJ5EmrtaubADekFkVsHjyzL1yhY6iUNyqulmv4gvsw6tuT\nL4lev/5ol6mPnI3nEs0uZRwhJ+Smn/xxyNeRRK0JgjfuP3dx28Q7YJ2R+BYry7Un\n8crt58ruMIYrMK0plFXAQ+z2tIQjVo3yiCcsKnNp06hRHC53tgjUxVKbyK/da35y\nOjAWpC+Ln6Hi2KCMy8knCFlyTOGs5XJnQF0wQzhJUgHHQquMd42gJzDypvAVDELB\n6rZNOHxAz61bi7A2R4g0ebFYHdALXD08qZjEJ3eymcVO7s+yydcNW2CqKSaxyaA\u003d\n\u003dy2dP\n-----END PGP SIGNATURE-----\n",
-  "comments": []
+  "comments": [],
+  "submitRequirementResults": []
 }
