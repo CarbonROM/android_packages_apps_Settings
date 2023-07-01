@@ -1,4 +1,5 @@
 {
   "pushCert": "certificate version 0.1\npusher E41DE2CB 1560193802 -0400\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_packages_apps_Settings\nnonce 1560193801-8D674B107CDEBF11A0A98E55E97287A03811CE39\n\n0000000000000000000000000000000000000000 ea2632e67bbab0e85779345f2c475ba7802b94ed refs/for/cr-7.0\n-----BEGIN PGP SIGNATURE-----\n\niQGzBAABCgAdFiEEsCVXsPtgWqYG51H6H3GWBOQd4ssFAlz+qwoACgkQH3GWBOQd\n4svd3wv/eICrxmbpzcy62B3tZN4u/LCqv9z5fPUo7u/Yds4UbqiNPLH1DMhqtCuQ\nZFBQ3OqvbpZ6qtjZ2hiBKlPg5KEvaxMfmsULybWe2U/ZgaUw9ttnprJD1rmV6L9v\nZFbjtd01/v3xC0tOgB+G83AslEJphXeAme7AnaVseoWl9x590EOgSQTx3J4b1y3Z\n72gjehjQxhi3Qsk4naF6hX+xiReBCsCr2hTyE3NcqaBrZq2XAMT4Cti9M/63A8Zz\nZ3mT/I2Fgd9kr5lnhEb/9ij5GXSmaiLCG63j9vpvMV1HngbGahZRq52HXNANJ31t\nPRAhSz5H3L6+OuG3W8UbecDq69+IALTH6GUp8g3W/jdAOKrHNTC9zKmVimRN4jyR\nL/zkmh8GRSFNkhYTRykUk5OtU9ME7uc2RnqEyhISBWfzEeHJMjI56lxZolPooDlh\naUB+aq2pqLHQ70a06VZHuvY0xYi50FeobpwKqOEeV5xrvo03CQfJ3QpaIn9s2eFQ\nKp2HiKx1\n\u003dC8P8\n-----END PGP SIGNATURE-----\n",
-  "comments": []
+  "comments": [],
+  "submitRequirementResults": []
 }
