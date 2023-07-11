@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015-2022 CarbonROM
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbon_version">CarbonROM version</string>
+    <string name="summary_placeholder">Ikke tilgængelig</string>
+    <string name="carbon_vendor_security_patch">Leverandør sikkerhedsrettelse niveau</string>
+    <string name="selinux_status">SELinux status</string>
+    <string name="selinux_status_disabled">Deaktiveret</string>
+    <string name="selinux_status_permissive">Eftergivende</string>
+    <string name="selinux_status_enforcing">Håndhæver</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="proximity_wake_title">Undgå utilsigtet vækning</string>
+    <string name="proximity_wake_summary">Kontrollér nærhedssensoren før skærmen vågner</string>
+    <string name="fast_charging_title">Hurtig opladning</string>
+    <string name="fast_charging_summary">Deaktiver for at reducere varmen, som produceres af enheden, mens du oplader eller for at forlænge batteriets levetid</string>
+    <string name="min_refresh_rate_title">Mindste opdateringshastighed</string>
+    <string name="backup_transport_setting_label">Skift backup udbyder</string>
+    <string name="backup_transport_title">Vælg backup udbyder</string>
+    <string name="ringtone1_title">Telefonens ringetone - SIM 1</string>
+    <string name="ringtone2_title">Telefonens ringetone - SIM 2</string>
+</resources>

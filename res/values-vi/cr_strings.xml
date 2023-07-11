@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015-2022 CarbonROM
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbon_version">Phiên bản CarbonROM</string>
+    <string name="summary_placeholder">Không xác định</string>
+    <string name="carbon_vendor_security_patch">Cấp bản vá bảo mật</string>
+    <string name="cf_settings_title">Tùy chỉnh Carbon</string>
+    <string name="cf_dashboard_summary">Một nguồn chất xơ lành mạnh hàng ngày của bạn</string>
+    <string name="selinux_status">Trạng thái SELinux</string>
+    <string name="selinux_status_disabled">Tắt</string>
+    <string name="selinux_status_permissive">Cho phép</string>
+    <string name="selinux_status_enforcing">Buộc cho phép</string>
+    <string name="app_play_store">CH Play</string>
+    <string name="proximity_wake_title">Ngăn chặn đánh thức tình cờ</string>
+    <string name="proximity_wake_summary">Kiểm tra cảm biến khoảng cách trước khi đánh thức màn hình</string>
+    <string name="fast_charging_title">Sạc nhanh</string>
+    <string name="fast_charging_summary">Tắt để giảm nhiệt do thiết bị tạo ra trong khi sạc hoặc để kéo dài tuổi thọ của pin</string>
+    <string name="theme_customization_font_title">Phông chữ</string>
+    <string name="min_refresh_rate_title">Tốc độ làm mới tối thiểu</string>
+    <string name="backup_transport_setting_label">Thay đổi nhà cung cấp sao lưu</string>
+    <string name="backup_transport_title">Chọn nhà cung cấp sao lưu</string>
+    <string name="ringtone1_title">Nhạc chuông điện thoại - SIM 1</string>
+    <string name="ringtone2_title">Nhạc chuông điện thoại - SIM 2</string>
+    <string name="screenshot_shutter_sound_title">Âm thanh chụp màn hình</string>
+    <string name="font_picker_title">Phông chữ</string>
+    <string name="disable_fonts_installed_title">Bộ chọn phông chữ không khả dụng để tránh xung đột với Substratum. Gỡ cài đặt nó nếu bạn muốn sử dụng bộ chọn phông chữ.</string>
+    <string name="font_picker_progress">Áp dụng phông chữ mới\u2026</string>
+</resources>

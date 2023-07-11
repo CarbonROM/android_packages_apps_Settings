@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015-2022 CarbonROM
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbon_version">CarbonROM 版本</string>
+    <string name="summary_placeholder">不可用</string>
+    <string name="carbon_vendor_security_patch">厂商安全补丁等级</string>
+    <string name="cf_settings_title">Carbon Fibers</string>
+    <string name="cf_dashboard_summary">个性化设置</string>
+    <string name="selinux_status">SELinux 状态</string>
+    <string name="selinux_status_disabled">已禁用</string>
+    <string name="selinux_status_permissive">宽容模式</string>
+    <string name="selinux_status_enforcing">强制模式</string>
+    <string name="app_play_store">Google Play</string>
+    <string name="fast_charging_title">快速充电</string>
+    <string name="fast_charging_summary">禁用以降低设备在充电时产生的热量或延长电池寿命</string>
+    <string name="theme_customization_font_title">字体</string>
+    <string name="min_refresh_rate_title">最小刷新率</string>
+    <string name="ringtone1_title">手机铃声 - SIM 卡 1</string>
+    <string name="ringtone2_title">手机铃声 - SIM 卡 2</string>
+    <string name="screenshot_shutter_sound_title">截屏提示音</string>
+    <string name="font_picker_title">字体</string>
+    <string name="disable_fonts_installed_title">字体选择器与 Substratum 冲突。如果您想使用字体选择器，请卸载 Substratum。</string>
+    <string name="font_picker_progress">正在应用新字体\u2026</string>
+</resources>

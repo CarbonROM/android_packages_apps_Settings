@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015-2022 CarbonROM
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbon_version">Verze CarbonROM</string>
+    <string name="summary_placeholder">N/A</string>
+    <string name="carbon_vendor_security_patch">Úroveň opravy zabezpečení dodavatele</string>
+    <string name="cf_settings_title">Carbon Fibers</string>
+    <string name="cf_dashboard_summary">Přizpůsobení Carbon Fibres</string>
+    <string name="selinux_status">Stav zabezpečení SELinux</string>
+    <string name="selinux_status_disabled">Vypnuto</string>
+    <string name="selinux_status_permissive">Mírný</string>
+    <string name="selinux_status_enforcing">Vynucený</string>
+    <string name="app_play_store">Obchod Play</string>
+    <string name="proximity_wake_title">Zabránit náhodnému probuzení</string>
+    <string name="proximity_wake_summary">Před probuzením obrazovky zkontrolovat senzor přiblížení</string>
+    <string name="fast_charging_title">Rychlé nabíjení</string>
+    <string name="fast_charging_summary">Vypněte pro snížení tepla vytvořeného zařízením při nabíjení nebo prodloužení životnosti baterie</string>
+    <string name="theme_customization_font_title">Písmo</string>
+    <string name="min_refresh_rate_title">Minimální obnovovací frekvence</string>
+    <string name="backup_transport_setting_label">Změnit poskytovatele zálohování</string>
+    <string name="backup_transport_title">Vyberte poskytovatele zálohování</string>
+    <string name="ringtone1_title">Vyzvánění telefonu — SIM 1</string>
+    <string name="ringtone2_title">Vyzvánění telefonu — SIM 2</string>
+    <string name="screenshot_shutter_sound_title">Zvuk při snímku obrazovky</string>
+    <string name="font_picker_title">Písmo</string>
+    <string name="disable_fonts_installed_title">Nástroj pro výběr písma není k dispozici, aby se předešlo konfliktům se Substratum. Chcete-li použít nástroj pro výběr písma, odinstalujte Substratum.</string>
+    <string name="font_picker_progress">Aplikuji nové písmo\u2026</string>
+</resources>
